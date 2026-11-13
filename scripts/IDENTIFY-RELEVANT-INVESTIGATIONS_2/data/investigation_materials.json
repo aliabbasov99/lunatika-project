@@ -1,0 +1,1599 @@
+[
+  {
+    "investigation_id": "PSI-10",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-10/Reports/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+      "PSI-10/Raw Data/Reduced Gravity/1_normal_ethylene_flames_inferior_burner_1002",
+      "PSI-10/Raw Data/Reduced Gravity/4_inverse_ethylene_flames_burner_1003"
+    ],
+    "evidence_quote": "Except for the single propane (C3H8) test day previously mentioned, all ISS tests were conducted with the fuel ethylene (C2H4).",
+    "notes": "Primary flight fuel; normal and inverse spherical diffusion flames."
+  },
+  {
+    "investigation_id": "PSI-10",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 75,
+    "evidence_files": [
+      "PSI-10/Reports/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+      "PSI-10/Raw Data/Reduced Gravity/3_normal_propane_flames_burner_1003"
+    ],
+    "evidence_quote": "the first day of testing in the second round was carried out in the normal flame configuration, with propane (with or without nitrogen) flowing into an oxygen/nitrogen atmosphere.",
+    "notes": "One propane test day; not the main fuel."
+  },
+  {
+    "investigation_id": "PSI-10",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "planned_not_tested",
+    "confidence": "low",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 45,
+    "evidence_files": [
+      "PSI-10/Reports/PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf"
+    ],
+    "evidence_quote": "Desired ISS testing with the fuel methane (CH4), inert carbon dioxide (CO2), and coflow flame configuration was not ...",
+    "notes": "Methane was planned but the reported ISS test campaign focused on ethylene/propane."
+  },
+  {
+    "investigation_id": "PSI-100",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+      "PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx"
+    ],
+    "evidence_quote": "The sample material for SAFFIRE-I and SAFFIRE-III is a composite fabric consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It is called SIBAL cloth ...",
+    "notes": "Large-scale fire growth at 30 cm/s airflow."
+  },
+  {
+    "investigation_id": "PSI-100",
+    "material_id": "cotton",
+    "material_name": "Cotton (cellulose)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Combustible constituent of SIBAL."
+  },
+  {
+    "investigation_id": "PSI-100",
+    "material_id": "fiberglass",
+    "material_name": "Fiberglass (glass fiber)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Noncombustible reinforcement that preserves sample geometry after cotton burns."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "ptfe_teflon",
+    "material_name": "Polytetrafluoroethylene (PTFE / Teflon)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf",
+      "PSI-101/Raw Data/Reduced Gravity/Teflon"
+    ],
+    "evidence_quote": "included 6 Pyrell, 6 silicone rubber, 9 Kapton, 5 lamp wick and 4 Teflon samples.",
+    "notes": "Smoke particle size and morphology; Teflon produces very small particles."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "polyimide_kapton",
+    "material_name": "Polyimide (Kapton)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf",
+      "PSI-101/Raw Data/Reduced Gravity/Kapton"
+    ],
+    "evidence_quote": "included 6 Pyrell, 6 silicone rubber, 9 Kapton, 5 lamp wick and 4 Teflon samples.",
+    "notes": "Kapton was the most frequently tested material in SAME-R."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "silicone_rubber",
+    "material_name": "Silicone rubber",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf",
+      "PSI-101/Raw Data/Reduced Gravity/Silicone"
+    ],
+    "evidence_quote": "included 6 Pyrell, 6 silicone rubber, 9 Kapton, 5 lamp wick and 4 Teflon samples.",
+    "notes": "Silicone smoke has a larger particle mode than Teflon/Kapton."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "pyrell_foam",
+    "material_name": "Pyrell intumescent foam",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf",
+      "PSI-101/Raw Data/Reduced Gravity/Pyrell"
+    ],
+    "evidence_quote": "Pyrell®, an intumescent fire-retardant foam by Foamex, was introduced to replace DBP samples ...",
+    "notes": "New solid foam test material in SAME-R."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "cotton_lampwick",
+    "material_name": "Cotton lamp wick (cellulose)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf",
+      "PSI-101/Raw Data/Reduced Gravity/Cotton Lamp wick"
+    ],
+    "evidence_quote": "included 6 Pyrell, 6 silicone rubber, 9 Kapton, 5 lamp wick and 4 Teflon samples.",
+    "notes": "Cellulosic reference material."
+  },
+  {
+    "investigation_id": "PSI-101",
+    "material_id": "dbp",
+    "material_name": "Dibutyl phthalate (DBP)",
+    "role": "replaced_material",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 75,
+    "data_completeness": 55,
+    "evidence_files": [
+      "PSI-101/Reports/PSI-101_Reports_SAME-R_Final Report.pdf"
+    ],
+    "evidence_quote": "Pyrell®, an intumescent fire-retardant foam by Foamex, was introduced to replace DBP samples ...",
+    "notes": "DBP was the SAME liquid smoke source; SAME-R replaced it with Pyrell."
+  },
+  {
+    "investigation_id": "PSI-102",
+    "material_id": "ptfe_teflon",
+    "material_name": "Polytetrafluoroethylene (PTFE / Teflon)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-102/Reports/PSI-102_Reports_SAME_Final Science Report.pdf",
+      "PSI-102/Analyzed Data/Reduced Gravity/Teflon"
+    ],
+    "evidence_quote": "Four materials, typical of those found in spacecraft, were tested including cellulose (lamp wick), Kapton, silicone rubber, and Teflon.",
+    "notes": "Smoke generation and particle size in microgravity."
+  },
+  {
+    "investigation_id": "PSI-102",
+    "material_id": "polyimide_kapton",
+    "material_name": "Polyimide (Kapton)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-102/Reports/PSI-102_Reports_SAME_Final Science Report.pdf",
+      "PSI-102/Analyzed Data/Reduced Gravity/Kapton"
+    ],
+    "evidence_quote": "Four materials, typical of those found in spacecraft, were tested including cellulose (lamp wick), Kapton, silicone rubber, and Teflon.",
+    "notes": "Smoke generation and particle size in microgravity."
+  },
+  {
+    "investigation_id": "PSI-102",
+    "material_id": "silicone_rubber",
+    "material_name": "Silicone rubber",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-102/Reports/PSI-102_Reports_SAME_Final Science Report.pdf",
+      "PSI-102/Analyzed Data/Reduced Gravity/Silicone"
+    ],
+    "evidence_quote": "Four materials, typical of those found in spacecraft, were tested including cellulose (lamp wick), Kapton, silicone rubber, and Teflon.",
+    "notes": "Silicone smoke produced a larger detector response than Teflon."
+  },
+  {
+    "investigation_id": "PSI-102",
+    "material_id": "cotton_lampwick",
+    "material_name": "Cotton lamp wick (cellulose)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-102/Reports/PSI-102_Reports_SAME_Final Science Report.pdf",
+      "PSI-102/Analyzed Data/Reduced Gravity/Cotton Lamp wick"
+    ],
+    "evidence_quote": "Four materials, typical of those found in spacecraft, were tested including cellulose (lamp wick), Kapton, silicone rubber, and Teflon.",
+    "notes": "Cellulosic reference material."
+  },
+  {
+    "investigation_id": "PSI-102",
+    "material_id": "dbp",
+    "material_name": "Dibutyl phthalate (DBP)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-102/Reports/PSI-102_Reports_SAME_Final Science Report.pdf",
+      "PSI-102/Analyzed Data/Reduced Gravity/Dibutyl Phthalate"
+    ],
+    "evidence_quote": "A fifth material, dibutyl-phthalate (DBP) retained in a cotton wick ...",
+    "notes": "Liquid smoke source; five materials total."
+  },
+  {
+    "investigation_id": "PSI-106",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-106/Raw Data/Legacy/2015 - SLICE Final Report/SLICE final report 20151224.pdf"
+    ],
+    "evidence_quote": "CH4 methane (a SLICE fuel)",
+    "notes": "Primary SLICE fuel."
+  },
+  {
+    "investigation_id": "PSI-106",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-106/Raw Data/Legacy/2015 - SLICE Final Report/SLICE final report 20151224.pdf"
+    ],
+    "evidence_quote": "C2H4 ethylene (a SLICE fuel)",
+    "notes": "Primary SLICE fuel."
+  },
+  {
+    "investigation_id": "PSI-106",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 80,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-106/Raw Data/Legacy/2015 - SLICE Final Report/SLICE final report 20151224.pdf"
+    ],
+    "evidence_quote": "C3H8 propane (a SPICE fuel)",
+    "notes": "Used in limited SLICE tests, mainly as a comparison fuel."
+  },
+  {
+    "investigation_id": "PSI-106",
+    "material_id": "ethane",
+    "material_name": "Ethane",
+    "role": "fuel",
+    "confidence": "low",
+    "is_primary": false,
+    "evidence_quality": 75,
+    "data_completeness": 65,
+    "evidence_files": [
+      "PSI-106/Raw Data/Legacy/2015 - SLICE Final Report/SLICE final report 20151224.pdf"
+    ],
+    "evidence_quote": "C2H6 ethane (a SPICE fuel that was used in limited SLICE tests)",
+    "notes": "Limited tests only."
+  },
+  {
+    "investigation_id": "PSI-107",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf"
+    ],
+    "evidence_quote": "Fifty-two smoke points were found for ethylene, propane, propylene, and propylene/nitrogen ...",
+    "notes": "Primary smoke-point fuel."
+  },
+  {
+    "investigation_id": "PSI-107",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf"
+    ],
+    "evidence_quote": "Fifty-two smoke points were found for ethylene, propane, propylene, and propylene/nitrogen ...",
+    "notes": "Unusually high sooting propensity in microgravity."
+  },
+  {
+    "investigation_id": "PSI-107",
+    "material_id": "propylene",
+    "material_name": "Propylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf"
+    ],
+    "evidence_quote": "Fifty-two smoke points were found for ethylene, propane, propylene, and propylene/nitrogen ...",
+    "notes": "Strongest sooting fuel in the SPICE set."
+  },
+  {
+    "investigation_id": "PSI-107",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 75,
+    "evidence_files": [
+      "PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf"
+    ],
+    "evidence_quote": "Smoke points were attempted with methane, but could not ...",
+    "notes": "Attempted but smoke points were not obtained for all conditions."
+  },
+  {
+    "investigation_id": "PSI-115",
+    "material_id": "dbp",
+    "material_name": "Dibutyl phthalate (DBP)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-115/Reports/PSI-115_Reports_NNX17AF08A_FinalReport.pdf"
+    ],
+    "evidence_quote": "The formation and growth of dibutyl-phthalate (DBP) particles in Earth gravity and microgravity environments were simulated.",
+    "notes": "Numerical simulation of SAME smoke; DBP is the modeled smoke source."
+  },
+  {
+    "investigation_id": "PSI-115",
+    "material_id": "smoke_aerosol",
+    "material_name": "Smoke aerosol",
+    "role": "combustion_product",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-115/Reports/PSI-115_Reports_NNX17AF08A_FinalReport.pdf"
+    ],
+    "evidence_quote": "The intention of this effort is to quantify the differences between microgravity and Earth gravity smoke ...",
+    "notes": "Focus is smoke particle growth, not a new material."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "methanol",
+    "material_name": "Methanol",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": true,
+    "evidence_quality": 75,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "Methanol was used as model fuel",
+    "notes": "FLEX-derived model study; methanol is one of the oxygenated reference fuels."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "ethanol",
+    "material_name": "Ethanol",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": true,
+    "evidence_quality": 75,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "methanol, ethanol, and n-Butanol droplet combustion",
+    "notes": "FLEX-derived model study; ethanol is one of the oxygenated reference fuels."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "n_heptane",
+    "material_name": "n-Heptane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": true,
+    "evidence_quality": 75,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "n-heptane and n-decane",
+    "notes": "FLEX-derived n-alkane model fuel."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "n_decane",
+    "material_name": "n-Decane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 70,
+    "data_completeness": 65,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "n-heptane and n-decane",
+    "notes": "n-Alkane reference fuel in the dissertation."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "n_octane",
+    "material_name": "n-Octane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 70,
+    "data_completeness": 65,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "n-heptane, n-octane, and n-decane",
+    "notes": "n-Alkane reference fuel in the dissertation."
+  },
+  {
+    "investigation_id": "PSI-117",
+    "material_id": "n_dodecane",
+    "material_name": "n-Dodecane",
+    "role": "fuel",
+    "confidence": "low",
+    "is_primary": false,
+    "evidence_quality": 65,
+    "data_completeness": 60,
+    "evidence_files": [
+      "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+    ],
+    "evidence_quote": "higher molecular weight straight chain alkanes e.g. n-dodecane",
+    "notes": "Mentioned as a large n-alkane; not the main test fuel."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "n_heptane",
+    "material_name": "n-Heptane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "nC7",
+    "notes": "n-Heptane is represented by the nC7 dataset in the PSI data summary."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "n_dodecane",
+    "material_name": "n-Dodecane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "nC12",
+    "notes": "n-Alkane dataset in the PSI data summary."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "n_tetradecane",
+    "material_name": "n-Tetradecane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "nC14",
+    "notes": "n-Alkane dataset in the PSI data summary."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "n_decane",
+    "material_name": "n-Decane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "nC10",
+    "notes": "n-Alkane dataset in the PSI data summary."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "n_octane",
+    "material_name": "n-Octane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "nC8",
+    "notes": "n-Alkane dataset in the PSI data summary."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "dimethyl_ether",
+    "material_name": "Dimethyl ether (DME)",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 70,
+    "data_completeness": 65,
+    "evidence_files": [],
+    "evidence_quote": "one dimensional freely-propagating dimethyl ether (DME) flames",
+    "notes": "DME/air cool-flame modeling. Evidence is the investigations.approach text in the lunatika DB; no matching local file."
+  },
+  {
+    "investigation_id": "PSI-142",
+    "material_id": "ozone",
+    "material_name": "Ozone",
+    "role": "additive",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx"
+    ],
+    "evidence_quote": "cool diffusion flame extinction limits, with ozone",
+    "notes": "Ozone is an experimental sensitizer, not a fuel."
+  },
+  {
+    "investigation_id": "PSI-159",
+    "material_id": "ethane",
+    "material_name": "Ethane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-159/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+      "PSI-159/Raw Data/Reduced Gravity/1_normal_flames_ethane"
+    ],
+    "evidence_quote": "testing was instead conducted with ethane as an alternate",
+    "notes": "Substituted for n-pentane; normal and inverse cool flames."
+  },
+  {
+    "investigation_id": "PSI-159",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-159/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+      "PSI-159/Raw Data/Reduced Gravity/2_normal_flames_propane"
+    ],
+    "evidence_quote": "Cool diffusion flames burning propane, n-butane, and n-pentane",
+    "notes": "Primary CFI-G fuel."
+  },
+  {
+    "investigation_id": "PSI-159",
+    "material_id": "n_butane",
+    "material_name": "n-Butane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-159/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+      "PSI-159/Raw Data/Reduced Gravity/3_normal_flames_n-butane"
+    ],
+    "evidence_quote": "Cool diffusion flames burning propane, n-butane, and n-pentane",
+    "notes": "Primary CFI-G fuel; normal and inverse flames."
+  },
+  {
+    "investigation_id": "PSI-159",
+    "material_id": "n_pentane",
+    "material_name": "n-Pentane",
+    "role": "planned_not_tested",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 60,
+    "evidence_files": [
+      "PSI-159/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf"
+    ],
+    "evidence_quote": "testing was instead conducted with ethane as an alternate",
+    "notes": "Planned but not tested because of low vapor pressure."
+  },
+  {
+    "investigation_id": "PSI-20",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf",
+      "PSI-20/Raw Data/Reduced Gravity/25-mm burner_100% ethylene"
+    ],
+    "evidence_quote": "100% ethylene",
+    "notes": "Primary BRE fuel."
+  },
+  {
+    "investigation_id": "PSI-20",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf"
+    ],
+    "evidence_quote": "CH4/N2 and C2H4/N2 mixtures on porous circular burners",
+    "notes": "Primary BRE fuel."
+  },
+  {
+    "investigation_id": "PSI-20",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 75,
+    "evidence_files": [
+      "PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf"
+    ],
+    "evidence_quote": "propane and propylene to emulate additional condensed fuels",
+    "notes": "Used to emulate other condensed fuels."
+  },
+  {
+    "investigation_id": "PSI-20",
+    "material_id": "propylene",
+    "material_name": "Propylene",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 75,
+    "evidence_files": [
+      "PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf"
+    ],
+    "evidence_quote": "propane and propylene to emulate additional condensed fuels",
+    "notes": "Used to emulate other condensed fuels."
+  },
+  {
+    "investigation_id": "PSI-20",
+    "material_id": "pmma_acrylic",
+    "material_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "role": "emulated_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 80,
+    "data_completeness": 65,
+    "evidence_files": [
+      "PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf"
+    ],
+    "evidence_quote": "could represent PMMA as a material solid.",
+    "notes": "BRE emulates the burning rate of solid PMMA with a gas burner; PMMA is not the actual sample."
+  },
+  {
+    "investigation_id": "PSI-21",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-21/Raw Data/Legacy/2022 - ACME CLD Flame Final Report (2022)/CLD_Flame_final_report_20220330.pdf",
+      "PSI-21/Raw Data/Legacy/Methane, dilute (0-40%)"
+    ],
+    "evidence_quote": "highly diluted and sooting methane coflow flames",
+    "notes": "Primary CLD fuel; dilution series."
+  },
+  {
+    "investigation_id": "PSI-21",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-21/Raw Data/Legacy/2022 - ACME CLD Flame Final Report (2022)/CLD_Flame_final_report_20220330.pdf",
+      "PSI-21/Raw Data/Legacy/Ethylene (100% C2H4)"
+    ],
+    "evidence_quote": "dilution limits of coflow laminar methane and ethylene flames",
+    "notes": "Primary CLD fuel."
+  },
+  {
+    "investigation_id": "PSI-22",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-22/Reports/PSI-22_Reports_E-FIELD Flames Final Report.pdf"
+    ],
+    "evidence_quote": "total fuel (methane and ethylene) flow rate",
+    "notes": "Primary E-FIELD fuel."
+  },
+  {
+    "investigation_id": "PSI-22",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-22/Reports/PSI-22_Reports_E-FIELD Flames Final Report.pdf"
+    ],
+    "evidence_quote": "total fuel (methane and ethylene) flow rate",
+    "notes": "Primary E-FIELD fuel."
+  },
+  {
+    "investigation_id": "PSI-23",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-23/Reports/PSI-23_Reports_s_Flame_final_report_20210729.pdf"
+    ],
+    "evidence_quote": "Conventional gaseous fuels including hydrogen, methane, and ethylene are used.",
+    "notes": "Primary s-Flame fuel."
+  },
+  {
+    "investigation_id": "PSI-23",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-23/Reports/PSI-23_Reports_s_Flame_final_report_20210729.pdf"
+    ],
+    "evidence_quote": "Conventional gaseous fuels including hydrogen, methane, and ethylene are used.",
+    "notes": "Primary s-Flame fuel."
+  },
+  {
+    "investigation_id": "PSI-25",
+    "material_id": "pmma_acrylic",
+    "material_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf"
+    ],
+    "evidence_quote": "A number of sample geometries were used in BASS-II: cast polymethylmethacrylate (PMMA) samples were shaped as rods ... thin to thick slabs ... or a section of a 4-cm-diameter sphere.",
+    "notes": "Main solid fuel; rods, slabs and spheres."
+  },
+  {
+    "investigation_id": "PSI-25",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf",
+      "PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx"
+    ],
+    "evidence_quote": "flat cotton-fiberglass blended fabric samples were also burned",
+    "notes": "Concurrent and opposed flame spread over fabric."
+  },
+  {
+    "investigation_id": "PSI-25",
+    "material_id": "cotton",
+    "material_name": "Cotton (cellulose)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf"
+    ],
+    "evidence_quote": "cotton-fiberglass blended fabric",
+    "notes": "Combustible constituent of SIBAL."
+  },
+  {
+    "investigation_id": "PSI-25",
+    "material_id": "fiberglass",
+    "material_name": "Fiberglass (glass fiber)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf"
+    ],
+    "evidence_quote": "cotton-fiberglass blended fabric",
+    "notes": "Noncombustible reinforcement."
+  },
+  {
+    "investigation_id": "PSI-25",
+    "material_id": "nomex_aramid",
+    "material_name": "Nomex aramid fabric",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 75,
+    "evidence_files": [
+      "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf"
+    ],
+    "evidence_quote": "3.1 Nomex® Flammability",
+    "notes": "Nomex flammability is a dedicated section of the BASS-II report."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf",
+      "PSI-26/Presentations/PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf"
+    ],
+    "evidence_quote": "The cotton-fiberglass fabric blend SIBAL1 fuel is our leading ...",
+    "notes": "Primary BASS solid fuel."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "nomex_aramid",
+    "material_name": "Nomex aramid fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf",
+      "PSI-26/Presentations/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf"
+    ],
+    "evidence_quote": "Nomex III (Blend) ... WSTF Nomex Natural (HT90-40)",
+    "notes": "Nomex variants tested in BASS."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "ultem_pei",
+    "material_name": "Ultem polyetherimide (PEI)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf",
+      "PSI-26/Presentations/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf"
+    ],
+    "evidence_quote": "Ultem® 1000 C37H24O6N2",
+    "notes": "Ultem rods tested; did not sustain burning in ISS atmosphere."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "pmma_acrylic",
+    "material_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf",
+      "PSI-26/Presentations/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf"
+    ],
+    "evidence_quote": "PMMA Sphere 1 and 2-cm width ... 1 and 2-cm PMMA",
+    "notes": "PMMA spheres, rods and slabs."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "paraffin_wax",
+    "material_name": "Paraffin wax",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf"
+    ],
+    "evidence_quote": "A flat slab of fiberglass fabric saturated with wax",
+    "notes": "Wax-saturated fiberglass sample."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "japan_wax",
+    "material_name": "Japan wax (candle wax)",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-26/Science Documents/PSI-26_Science Documents_SRD_BASS.pdf"
+    ],
+    "evidence_quote": "Candle (Japan wax) within tube",
+    "notes": "Candle-flame tests."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "cotton",
+    "material_name": "Cotton (cellulose)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-26/Presentations/PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf"
+    ],
+    "evidence_quote": "25% fiberglass, 75% cotton blend",
+    "notes": "Combustible constituent of SIBAL."
+  },
+  {
+    "investigation_id": "PSI-26",
+    "material_id": "fiberglass",
+    "material_name": "Fiberglass (glass fiber)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-26/Presentations/PSI-26_Presentations_FlammabilityAspectsofCottonFiberglassFabric_ASGSR2012.pdf"
+    ],
+    "evidence_quote": "25% fiberglass, 75% cotton blend",
+    "notes": "Noncombustible reinforcement."
+  },
+  {
+    "investigation_id": "PSI-39",
+    "material_id": "n_dodecane",
+    "material_name": "n-Dodecane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-39/Reports/PSI-39_Reports_CFI Science Final Report.pdf",
+      "PSI-39/Raw Data/Reduced Gravity/CFI – DODECANE"
+    ],
+    "evidence_quote": "Examine the cool flame combustion behavior of n-dodecane, n-dodecane/iso-dodecane fuel mixtures, and farnesane fuels over a rage of pressure from 0.25 atm to 5 atm.",
+    "notes": "Primary CFI fuel."
+  },
+  {
+    "investigation_id": "PSI-39",
+    "material_id": "iso_dodecane",
+    "material_name": "iso-Dodecane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-39/Reports/PSI-39_Reports_CFI Science Final Report.pdf",
+      "PSI-39/Raw Data/Reduced Gravity/CFI - DODECANE (75) ISODODECANE (25)"
+    ],
+    "evidence_quote": "n-dodecane/iso-dodecane fuel mixtures",
+    "notes": "Blend component; 60/40 and 75/25 mixtures."
+  },
+  {
+    "investigation_id": "PSI-39",
+    "material_id": "farnesane",
+    "material_name": "Farnesane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-39/Reports/PSI-39_Reports_CFI Science Final Report.pdf",
+      "PSI-39/Raw Data/Reduced Gravity/CFI - FARNESANE"
+    ],
+    "evidence_quote": "farnesane",
+    "notes": "Branched C15 fuel; extends cool-flame data."
+  },
+  {
+    "investigation_id": "PSI-47",
+    "material_id": "arizona_road_dust",
+    "material_name": "Arizona Road Dust (fine)",
+    "role": "test_aerosol",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-47/Reports/PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf"
+    ],
+    "evidence_quote": "it was proposed to use Arizona Road Dust (ARD, Fine) instead, in combination with ISS GN2 to create an aerosol",
+    "notes": "Instrument-validation aerosol, not a combustion fuel."
+  },
+  {
+    "investigation_id": "PSI-60",
+    "material_id": "methane",
+    "material_name": "Methane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "SPICE smoke-point data set",
+    "notes": "No local files in PSI-TEXT-FILES_1_1; linked from investigation metadata. SPICE fuel set."
+  },
+  {
+    "investigation_id": "PSI-60",
+    "material_id": "ethylene",
+    "material_name": "Ethylene",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "SPICE smoke-point data set",
+    "notes": "No local files; linked from investigation metadata. SPICE fuel set."
+  },
+  {
+    "investigation_id": "PSI-60",
+    "material_id": "propane",
+    "material_name": "Propane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "SPICE smoke-point data set",
+    "notes": "No local files; linked from investigation metadata. SPICE fuel set."
+  },
+  {
+    "investigation_id": "PSI-60",
+    "material_id": "propylene",
+    "material_name": "Propylene",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "SPICE smoke-point data set",
+    "notes": "No local files; linked from investigation metadata. SPICE fuel set."
+  },
+  {
+    "investigation_id": "PSI-60",
+    "material_id": "soot",
+    "material_name": "Soot",
+    "role": "combustion_product",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "soot formation in 1g and 0g flames",
+    "notes": "No local files; linked from investigation metadata."
+  },
+  {
+    "investigation_id": "PSI-62",
+    "material_id": "pmma_acrylic",
+    "material_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": true,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "flat sheets, spheres, and rod-shaped polymethyl methacrylate (PMMA) samples",
+    "notes": "No local files; linked from investigation metadata. BASS/BASS-II benchmark."
+  },
+  {
+    "investigation_id": "PSI-62",
+    "material_id": "paraffin_wax",
+    "material_name": "Paraffin wax",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "wax cylinders",
+    "notes": "No local files; linked from investigation metadata."
+  },
+  {
+    "investigation_id": "PSI-62",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 55,
+    "data_completeness": 40,
+    "evidence_files": [],
+    "evidence_quote": "BASS and BASS-II experiments as benchmarks",
+    "notes": "No local files; linked from investigation metadata. BASS fabric benchmark."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "ethanol",
+    "material_name": "Ethanol",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/Binary Array 2014 - Ethanol"
+    ],
+    "evidence_quote": "They focus on ethanol and decane as fuels, as well as various fuel mixtures",
+    "notes": "Primary FLEX-2 fuel."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "n_decane",
+    "material_name": "n-Decane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/Quiescent 2012 - Decane"
+    ],
+    "evidence_quote": "They focus on ethanol and decane as fuels, as well as various fuel mixtures",
+    "notes": "Primary FLEX-2 fuel."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "n_heptane",
+    "material_name": "n-Heptane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/SurrogateFuel 2013 - Heptane"
+    ],
+    "evidence_quote": "n-heptane/iso-octane",
+    "notes": "Surrogate-fuel test matrix."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "n_octane",
+    "material_name": "n-Octane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/SurrogateFuel 2012 - N_Octane"
+    ],
+    "evidence_quote": "heptane/octane mixture",
+    "notes": "Surrogate-fuel test matrix."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "iso_octane",
+    "material_name": "iso-Octane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/SurrogateFuel 2014 - IsoOctane"
+    ],
+    "evidence_quote": "n-heptane/iso-octane (2,2,4 trimethylpentane)",
+    "notes": "Surrogate-fuel test matrix."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "toluene",
+    "material_name": "Toluene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Raw Data/Reduced Gravity/SurrogateFuel 2014 - Toluene"
+    ],
+    "evidence_quote": "SurrogateFuel 2014 - Toluene",
+    "notes": "Aromatic surrogate component; evidence quote is the raw-data folder name."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "propylbenzene",
+    "material_name": "n-Propylbenzene",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/SurrogateFuel 2012 - Propylbenzene"
+    ],
+    "evidence_quote": "n-decane/n-propylbenzene",
+    "notes": "Aromatic surrogate component."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "n_propanol",
+    "material_name": "1-Propanol",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/95% Propanol, 5% Glycerol"
+    ],
+    "evidence_quote": "1-propanol/glycerol",
+    "notes": "Condensed-phase test mixture."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "glycerol",
+    "material_name": "Glycerol",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf",
+      "PSI-68/Raw Data/Reduced Gravity/95% Propanol, 5% Glycerol"
+    ],
+    "evidence_quote": "1-propanol/glycerol",
+    "notes": "Condensed-phase additive."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "methanol",
+    "material_name": "Methanol",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 80,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf"
+    ],
+    "evidence_quote": "methanol, for example, in increased-oxygen atmospheres",
+    "notes": "Reference/comparison fuel in the SRD; not the primary FLEX-2 fuel."
+  },
+  {
+    "investigation_id": "PSI-68",
+    "material_id": "n_hexadecane",
+    "material_name": "n-Hexadecane",
+    "role": "fuel",
+    "confidence": "medium",
+    "is_primary": false,
+    "evidence_quality": 80,
+    "data_completeness": 70,
+    "evidence_files": [
+      "PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final.pdf"
+    ],
+    "evidence_quote": "heptane-hexadecane mixture droplets",
+    "notes": "Bi-component droplet reference."
+  },
+  {
+    "investigation_id": "PSI-69",
+    "material_id": "n_heptane",
+    "material_name": "n-Heptane",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-69/Science Documents/PSI-69_Science Documents_FLEX_Test_Plan.pdf",
+      "PSI-69/Raw Data/Reduced Gravity/Heptane"
+    ],
+    "evidence_quote": "the LOI as a function of pressure for heptane and methanol",
+    "notes": "Primary FLEX fuel."
+  },
+  {
+    "investigation_id": "PSI-69",
+    "material_id": "methanol",
+    "material_name": "Methanol",
+    "role": "fuel",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-69/Science Documents/PSI-69_Science Documents_FLEX_Test_Plan.pdf",
+      "PSI-69/Raw Data/Reduced Gravity/MeOH"
+    ],
+    "evidence_quote": "the LOI as a function of pressure for heptane and methanol",
+    "notes": "Primary FLEX fuel."
+  },
+  {
+    "investigation_id": "PSI-69",
+    "material_id": "carbon_dioxide",
+    "material_name": "Carbon dioxide",
+    "role": "suppressant",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-69/Science Documents/PSI-69_Science Documents_FLEX_Test_Plan.pdf"
+    ],
+    "evidence_quote": "CO2 , He and SF6 . The tests use the two test fuels, are over a range of pressures, oxygen mole",
+    "notes": "Suppressant tested in FLEX. Quote spacing reflects PDF subscript extraction."
+  },
+  {
+    "investigation_id": "PSI-69",
+    "material_id": "helium",
+    "material_name": "Helium",
+    "role": "suppressant",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-69/Science Documents/PSI-69_Science Documents_FLEX_Test_Plan.pdf"
+    ],
+    "evidence_quote": "CO2 , He and SF6 . The tests use the two test fuels, are over a range of pressures, oxygen mole",
+    "notes": "Suppressant tested in FLEX. Quote spacing reflects PDF subscript extraction."
+  },
+  {
+    "investigation_id": "PSI-69",
+    "material_id": "sulfur_hexafluoride",
+    "material_name": "Sulfur hexafluoride",
+    "role": "suppressant",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 90,
+    "data_completeness": 85,
+    "evidence_files": [
+      "PSI-69/Science Documents/PSI-69_Science Documents_FLEX_Test_Plan.pdf"
+    ],
+    "evidence_quote": "CO2 , He and SF6 . The tests use the two test fuels, are over a range of pressures, oxygen mole",
+    "notes": "Suppressant tested in FLEX. Quote spacing reflects PDF subscript extraction."
+  },
+  {
+    "investigation_id": "PSI-98",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+      "PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx"
+    ],
+    "evidence_quote": "The sample material for SAFFIRE-I and SAFFIRE-III is a composite fabric consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight).",
+    "notes": "Large-scale fire growth at 20 cm/s airflow."
+  },
+  {
+    "investigation_id": "PSI-98",
+    "material_id": "cotton",
+    "material_name": "Cotton (cellulose)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Combustible constituent of SIBAL."
+  },
+  {
+    "investigation_id": "PSI-98",
+    "material_id": "fiberglass",
+    "material_name": "Fiberglass (glass fiber)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Noncombustible reinforcement."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "sibal_fabric",
+    "material_name": "SIBAL cotton-fiberglass fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II Readme.docx"
+    ],
+    "evidence_quote": "SIBAL fabric 0.33 mm",
+    "notes": "SAFFIRE-II sample card includes SIBAL fabric."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "cotton",
+    "material_name": "Cotton (cellulose)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Combustible constituent of SIBAL."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "fiberglass",
+    "material_name": "Fiberglass (glass fiber)",
+    "role": "constituent",
+    "confidence": "high",
+    "is_primary": false,
+    "evidence_quality": 85,
+    "data_completeness": 80,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "75% cotton, 25% fiberglass by weight",
+    "notes": "Noncombustible reinforcement."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "silicone_rubber",
+    "material_name": "Silicone rubber",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "S1 Silicone 0.25 mm ... S4 Silicone 0.36 mm",
+    "notes": "Five silicone samples of different thickness."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "pmma_acrylic",
+    "material_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "S9 Flat PMMA tapered edge 30 Upstream",
+    "notes": "Flat PMMA sample."
+  },
+  {
+    "investigation_id": "PSI-99",
+    "material_id": "nomex_aramid",
+    "material_name": "Nomex aramid fabric",
+    "role": "test_material",
+    "confidence": "high",
+    "is_primary": true,
+    "evidence_quality": 95,
+    "data_completeness": 90,
+    "evidence_files": [
+      "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+    ],
+    "evidence_quote": "Nomex",
+    "notes": "Nomex sample on the SAFFIRE-II card."
+  }
+]

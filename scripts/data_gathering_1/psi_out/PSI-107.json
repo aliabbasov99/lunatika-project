@@ -1,0 +1,1291 @@
+{
+  "id": "PSI-107",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "title": "PSI-107Version 4 Smoke Point In Co-flow Experiment(SPICE) Investigation",
+  "Objectives": "The objective of SPICE is to better understand the complex process of combustion by observing flames in a microgravity environment aboard the International Space Station (ISS) and analogous ground experiments.\nSpecific objectives were:\n(1) Identify the laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity.\n(2) Determine the effects of burner diameter and co-flow velocity on the luminous flame lengths and smoke points.\n(3) Quantify the sooting propensity of different fuels, such as ethylene, propane, and propylene mixtures.\n(4) Validate the correlation between luminous flame shape and residence time under microgravity conditions.\n(5) Investigate the impact of air and fuel flow rate variations on smoke point phenomena in space.",
+  "Project": "Project Type\tMicrogravity Investigation\nFlight Platform\tInternational Space Station (ISS)\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA)\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "The experimental setup in the microgravity science glovebox consisted of an apparatus with a flow duct with integrated nozzles, cameras, and fuel delivery systems. Fuels tested included methane, ethylene, propane, propylene, and propylene mixtures. Each flame was ignited in a controlled co-flow air environment, with burner diameters of 0.41 mm, 0.76 mm, and 1.6 mm and co-flow velocities ranging from 5.4 cm/s to 65 cm/s. Fuel flow rates were adjusted to identify the smoke point, marked by the flame's transition to emitting soot. Data such as flame lengths were recorded using still and video cameras. Measurements included flame height, radiative heat losses, and co-flow air velocity distributions. In total 526 flames were studied.",
+  "Hypothesis": "The research hypothesizes that by minimizing gravity-driven transport phenomena scientists can study the laminar smoke-point properties of non-buoyant jet diffusion flames. Flame properties are expected to differ significantly from those observed under normal gravity.",
+  "Research Impacts/Earth Benefits": "(1) Will improve our understanding of soot formation mechanisms and help design safer spacecraft environments.\n(2) Will contribute to refining our computational models for predicting flame behaviors under non-buoyant conditions.\n(3) Will enhance our knowledge of soot generation\n(4) Could possibly provide insights to better fuel formulations and combustion processes.",
+  "Contact(s)": "David Urbanemail,Peter Sunderlandemail\ntable_view\nExperimental Table\nSelect Experimental Table\nFilter\nGMT date\tGMT ignition\tGMT Flame Off\tFuel\tNozzle (mm)\tFuel Rate (sccm)\tFuel Rate (mg/s)\tHC Fuel Rate (mg/s)\tAir Rate (cm/s)\n45\t14:37:08\t14:48:03\tEthylene\t1.6002\t103.8\t1.971\t1.971\t36.39\n45\t14:37:08\t14:48:03\tEthylene\t1.6002\t103.8\t1.971\t1.971\t36.39\n45\t14:50:07\t14:52:11\tEthylene\t1.6002\t51\t0.968\t0.968\t40.15\n45\t14:50:07\t14:52:11\tEthylene\t1.6002\t51.6\t0.98\t0.98\t40.15\n45\t15:35:44\t15:37:00\tEthylene\t1.6002\t138\t2.62\t2.62\t57.08\nItems per page:\n5\n1 – 5 of 470\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nIdentifier\nMicrogravity Science Glovebox (MSG)\nimage\nRepresentative Images/Videos\nNo associated investigation representative image(s).\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-107",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-107/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Investigation Metadata Files/PSI-107_metadata_PSI-176_SPICE.zip",
+      "type": "file",
+      "size": "9.09 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Reports",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND NORMAL GRAVITY COFLOW DIFFUSION FLAMES_DotsonThesis.pdf",
+      "type": "file",
+      "size": "2.12 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Reports/PSI-107_Reports_SPICE_30-DayPostFlightReport.pdf",
+      "type": "file",
+      "size": "157.14 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf",
+      "type": "file",
+      "size": "587.65 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Science Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Science Documents/PSI-107_Science Documents_SPICE_SRD.doc",
+      "type": "file",
+      "size": "1.06 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Presentations",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Presentations/PSI-107_Presentations_SPICE Overview.ppt",
+      "type": "file",
+      "size": "27.53 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Presentations/PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf",
+      "type": "file",
+      "size": "1.25 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Presentations/PSI-107_Presentations_SPICE-1 Ops Overview and Smoke Point Cue Card.ppt",
+      "type": "file",
+      "size": "3.86 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Presentations/PSI-107_Presentations_IP-C Crew training 2010.pdf",
+      "type": "file",
+      "size": "1.29 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Presentations/PSI-107_Presentations_IP-D Crew training 2011.pdf",
+      "type": "file",
+      "size": "1.28 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Raw Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_Ethylene assembled smoke hieght slide. GMT 045 1503 11 26 2011.pptx",
+      "type": "file",
+      "size": "1.38 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE_GMT045_2009_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "89.51 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_Spice_Flight_Flamelength.xls",
+      "type": "file",
+      "size": "16.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_045_SPICE_DSC_num.txt",
+      "type": "file",
+      "size": "1.44 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SmokePointReview-0g-3.xlsx",
+      "type": "file",
+      "size": "288.8 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE_GMT045_2009_NEF.zip",
+      "type": "file",
+      "size": "237.8 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE Image Organization Guide.docx",
+      "type": "file",
+      "size": "136.24 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_Spice Flight Test Data II modified.xls",
+      "type": "file",
+      "size": "419.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_vlcsnap downlink frame grabs.zip",
+      "type": "file",
+      "size": "46.41 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE Day 045 Test Point Images.zip",
+      "type": "file",
+      "size": "2.87 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE GMT045 2009 Contact Sheets.zip",
+      "type": "file",
+      "size": "82.65 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_SPICE GMT045 2009 jpegs.zip",
+      "type": "file",
+      "size": "6.48 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 045/PSI-107_Raw Data_Downlink Frame Grabs 36f.zip",
+      "type": "file",
+      "size": "7.04 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_048_SPICE_num.txt",
+      "type": "file",
+      "size": "1.54 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_SPICE_GMT048_2009_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "84.67 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_SPICE_GMT048_2009_NEF.zip",
+      "type": "file",
+      "size": "241.11 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_Downlink Frame Grabs - Ruler.zip",
+      "type": "file",
+      "size": "1004.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_Downlink Frame Grabs - TP 13.zip",
+      "type": "file",
+      "size": "1.23 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_Downlink Frame Grabs - TP 14.zip",
+      "type": "file",
+      "size": "2.02 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_Downlink Frame Grabs - TP 15.zip",
+      "type": "file",
+      "size": "1.26 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_Downlink Frame Grabs - TP 16.zip",
+      "type": "file",
+      "size": "14.77 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_SPICE GMT048 2009 Contact Sheets.zip",
+      "type": "file",
+      "size": "77.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 048/PSI-107_Raw Data_SPICE GMT048 2009 jpegs.zip",
+      "type": "file",
+      "size": "8.59 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_SPICE_GMT052_2009_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "219.14 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_SPICE_GMT052_2009_NEF.zip",
+      "type": "file",
+      "size": "630.22 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_GMT052nikon_propy.xls",
+      "type": "file",
+      "size": "5.2 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 25.zip",
+      "type": "file",
+      "size": "9.5 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 26.zip",
+      "type": "file",
+      "size": "2.45 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 27.zip",
+      "type": "file",
+      "size": "4.55 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 28.zip",
+      "type": "file",
+      "size": "1.34 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 29.zip",
+      "type": "file",
+      "size": "3.93 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 30.zip",
+      "type": "file",
+      "size": "2.57 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs - TP 31_Liftoff.zip",
+      "type": "file",
+      "size": "15.38 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 32a.zip",
+      "type": "file",
+      "size": "3.62 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 32b.zip",
+      "type": "file",
+      "size": "4.95 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grab TP 33a.zip",
+      "type": "file",
+      "size": "1.91 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 33b.zip",
+      "type": "file",
+      "size": "2.1 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 33c.zip",
+      "type": "file",
+      "size": "4.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP34.zip",
+      "type": "file",
+      "size": "1.14 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 35_36.zip",
+      "type": "file",
+      "size": "11.71 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 36b.zip",
+      "type": "file",
+      "size": "8.83 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 36c.zip",
+      "type": "file",
+      "size": "3.42 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP36d.zip",
+      "type": "file",
+      "size": "4.07 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 36e.zip",
+      "type": "file",
+      "size": "8.78 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 36g_i.zip",
+      "type": "file",
+      "size": "5.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 36j_last_propane.zip",
+      "type": "file",
+      "size": "1.88 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 37.zip",
+      "type": "file",
+      "size": "2.17 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 38.zip",
+      "type": "file",
+      "size": "1.98 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 39_40.zip",
+      "type": "file",
+      "size": "8.07 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 41_42.zip",
+      "type": "file",
+      "size": "6.96 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 43_44.zip",
+      "type": "file",
+      "size": "1.5 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 43a_44a.zip",
+      "type": "file",
+      "size": "11.79 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 45.zip",
+      "type": "file",
+      "size": "12.06 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 46.zip",
+      "type": "file",
+      "size": "7.54 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 49_50.zip",
+      "type": "file",
+      "size": "8.16 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 51_52.zip",
+      "type": "file",
+      "size": "11.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Downlink Frame Grabs TP 53.zip",
+      "type": "file",
+      "size": "10.15 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_SPICE_GMT052_2009_ContactSheet.zip",
+      "type": "file",
+      "size": "198.94 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_SPICE_GMT052_2009_jpegs.zip",
+      "type": "file",
+      "size": "125.38 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 052/PSI-107_Raw Data_Still Images.zip",
+      "type": "file",
+      "size": "31.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_GMT055nikon.xls",
+      "type": "file",
+      "size": "4.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_SPICE_GMT2009_055_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "137.51 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 55.zip",
+      "type": "file",
+      "size": "9.4 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 57.zip",
+      "type": "file",
+      "size": "8.13 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 59.zip",
+      "type": "file",
+      "size": "15.07 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 61.zip",
+      "type": "file",
+      "size": "14.63 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 63.zip",
+      "type": "file",
+      "size": "6.8 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 65.zip",
+      "type": "file",
+      "size": "23.78 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 67.zip",
+      "type": "file",
+      "size": "5.71 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_Downlink Frame Grabs TP 67A.zip",
+      "type": "file",
+      "size": "6.64 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_SPICE_GMT2009_055_Contact Sheet.zip",
+      "type": "file",
+      "size": "122.19 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_SPICE_GMT2009_055_jpeg.zip",
+      "type": "file",
+      "size": "73.93 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 055/PSI-107_Raw Data_SPICE_GMT2009_055_NEF.zip",
+      "type": "file",
+      "size": "441.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_GMT058nikon.xls",
+      "type": "file",
+      "size": "10.92 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_SPICE_GMT2009_058_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "186.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs Playback Images.zip",
+      "type": "file",
+      "size": "35.27 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 73.zip",
+      "type": "file",
+      "size": "13.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 75.zip",
+      "type": "file",
+      "size": "8.11 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 77.zip",
+      "type": "file",
+      "size": "6.55 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 79.zip",
+      "type": "file",
+      "size": "8.36 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 81.zip",
+      "type": "file",
+      "size": "6.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 83.zip",
+      "type": "file",
+      "size": "2.88 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 85.zip",
+      "type": "file",
+      "size": "8.17 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 87.zip",
+      "type": "file",
+      "size": "6.76 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 89.zip",
+      "type": "file",
+      "size": "7.13 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 90B.zip",
+      "type": "file",
+      "size": "11.88 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 90C.zip",
+      "type": "file",
+      "size": "11.0 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame GrabsTP 90D Manual Camera 0.4mm.zip",
+      "type": "file",
+      "size": "7.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 058/PSI-107_Raw Data_Downlink Frame Grabs TP 90E Manual Camera 0.8mm.zip",
+      "type": "file",
+      "size": "6.28 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 119",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 119/PSI-107_Raw Data_SPICE_GMT2009_119_ContactSheet.pdf",
+      "type": "file",
+      "size": "67.16 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 119/PSI-107_Raw Data_SPICE_GMT2009_119_video.mp4",
+      "type": "file",
+      "size": "79.1 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 119/PSI-107_Raw Data_SPICE_GMT2009_119_video.avi",
+      "type": "file",
+      "size": "1.14 GB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Ign7.mp4",
+      "type": "file",
+      "size": "292.63 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Ign8a.mp4",
+      "type": "file",
+      "size": "36.05 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Ign6.mp4",
+      "type": "file",
+      "size": "316.99 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Ign8.mp4",
+      "type": "file",
+      "size": "76.3 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Ign8b.mp4",
+      "type": "file",
+      "size": "188.63 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 136/PSI-107_Raw Data_SPICE_GMT136_Contact_Sheet.pdf",
+      "type": "file",
+      "size": "81.87 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 166",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 166/PSI-107_Raw Data_SPICE_GMT2009_166_SootClean_ContactSheet.pdf",
+      "type": "file",
+      "size": "209.13 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 167",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 167/PSI-107_Raw Data_SPICE_GMT2009_167_ContactSheet.pdf",
+      "type": "file",
+      "size": "145.76 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 173",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 173/PSI-107_Raw Data_SPICE_GMT2009_173_ContactSheet.pdf",
+      "type": "file",
+      "size": "339.49 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 174",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 174/PSI-107_Raw Data_SPICE_GMT2009_174_ContactSheet.pdf",
+      "type": "file",
+      "size": "395.86 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_SPICE_GMT2009_062_NEF.zip",
+      "type": "file",
+      "size": "400.1 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_SPICE_GMT2009_062_NikonD100_PictureBook.ppt",
+      "type": "file",
+      "size": "154.07 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.16.mp4",
+      "type": "file",
+      "size": "15.9 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.20.mp4",
+      "type": "file",
+      "size": "13.31 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.25.mp4",
+      "type": "file",
+      "size": "9.46 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.27.mp4",
+      "type": "file",
+      "size": "7.92 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.32.mp4",
+      "type": "file",
+      "size": "8.11 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.41.mp4",
+      "type": "file",
+      "size": "6.51 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.45.mp4",
+      "type": "file",
+      "size": "4.6 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.39.mp4",
+      "type": "file",
+      "size": "6.81 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_11.55.mp4",
+      "type": "file",
+      "size": "18.36 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_12.06.mp4",
+      "type": "file",
+      "size": "3.61 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_12.03.mp4",
+      "type": "file",
+      "size": "11.88 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_GMT62_12.12.mp4",
+      "type": "file",
+      "size": "14.83 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0091_2_1.6Nzl.zip",
+      "type": "file",
+      "size": "5.67 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0091.zip",
+      "type": "file",
+      "size": "460.54 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0093.zip",
+      "type": "file",
+      "size": "485.65 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0093_4.zip",
+      "type": "file",
+      "size": "4.79 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0095.zip",
+      "type": "file",
+      "size": "471.37 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 95_6.zip",
+      "type": "file",
+      "size": "3.19 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0096.zip",
+      "type": "file",
+      "size": "683.58 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0096B_C.zip",
+      "type": "file",
+      "size": "2.4 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0096D_E.zip",
+      "type": "file",
+      "size": "3.33 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0097.zip",
+      "type": "file",
+      "size": "569.86 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0097_8_0.8Nzl.zip",
+      "type": "file",
+      "size": "3.28 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0099.zip",
+      "type": "file",
+      "size": "471.61 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0099_100.zip",
+      "type": "file",
+      "size": "2.78 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0101.zip",
+      "type": "file",
+      "size": "252.72 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0101_102_end_of 1st bottle.zip",
+      "type": "file",
+      "size": "1.71 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0102.zip",
+      "type": "file",
+      "size": "1.17 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0102_b_NewBottle_Fumi.zip",
+      "type": "file",
+      "size": "8.85 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_062 TP 103 vlcsnap-4272441.zip",
+      "type": "file",
+      "size": "412.74 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0103a_e_104_0.4Nzl.zip",
+      "type": "file",
+      "size": "3.95 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0103f_blowoff.zip",
+      "type": "file",
+      "size": "2.02 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0104.zip",
+      "type": "file",
+      "size": "1.42 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0104_1.zip",
+      "type": "file",
+      "size": "835.56 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Downlink Frame Grabs TP 0104b.zip",
+      "type": "file",
+      "size": "8.68 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_Focus Check - Flight Hdwr.nef",
+      "type": "file",
+      "size": "10.71 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_SPICE_GMT2009_062_jpegs.zip",
+      "type": "file",
+      "size": "90.36 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Reduced Gravity/SPICE Day 062/PSI-107_Raw Data_SPICE_GMT2009_062_Movie Files.zip",
+      "type": "file",
+      "size": "68.48 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE_Airflow_Test_VelocityData.xlsx",
+      "type": "file",
+      "size": "252.33 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE_Airflow_Test_VelocityComparison.xlsx",
+      "type": "file",
+      "size": "91.3 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 57 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 19 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 19 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 19 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 36 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 36 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 36 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 57 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 13 mm Station x 57 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE_Airflow_Test_Duct Velocity Profiles.xls",
+      "type": "file",
+      "size": "73.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE_AIRFLOW_TEST.ppt",
+      "type": "file",
+      "size": "1.24 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 57 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 19 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 19 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 19 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 36 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 36 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 36 mm Height, OUTSIDE.xls",
+      "type": "file",
+      "size": "85.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 57 mm Height, CENTER.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Airflow Test/PSI-107_Raw Data_SPICE Flow Duct Cal - 56 mm Station x 57 mm Height, INSIDE.xls",
+      "type": "file",
+      "size": "85.5 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow_EngineeringUnitControl.pptx",
+      "type": "file",
+      "size": "867.94 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow_EngineeringUnitControl.xlsx",
+      "type": "file",
+      "size": "635.23 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_MASS_FLOW_CALIBRATION.xls",
+      "type": "file",
+      "size": "20.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow_MFC_settings.xlsx",
+      "type": "file",
+      "size": "58.94 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE Flow settings_w chart.xls",
+      "type": "file",
+      "size": "27.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow__Voltage.xlsx",
+      "type": "file",
+      "size": "40.37 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow_411259meter.xls",
+      "type": "file",
+      "size": "17.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Raw Data/Earth Gravity/Calibration Data, Fuel Flow/PSI-107_Raw Data_SPICE_FuelFlow_EngineeringUnitControl.pdf",
+      "type": "file",
+      "size": "887.91 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-107/Engineering Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Engineering Documents/PSI-107_Engineering Documents_SPICE_Phase III Flight Safety Data Package.pdf",
+      "type": "file",
+      "size": "4.28 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Engineering Documents/PSI-107_Engineering Documents_SPICE-MEM-010.pdf",
+      "type": "file",
+      "size": "110.46 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Engineering Documents/PSI-107_Engineering Documents_60054MAFH000-C SPICE Experiment Assembly.pdf",
+      "type": "file",
+      "size": "577.21 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Engineering Documents/PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+      "type": "file",
+      "size": "231.45 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Reference Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Reference Data/PSI-107_Reference Data_SPICE_VIDEO OVERLAY RESET.pdf",
+      "type": "file",
+      "size": "1.01 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-107/Experimental table",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+      "type": "file",
+      "size": "30.47 KB",
+      "depth": 2
+    }
+  ]
+}

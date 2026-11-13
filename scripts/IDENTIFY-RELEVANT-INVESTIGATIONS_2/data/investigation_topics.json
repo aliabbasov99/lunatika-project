@@ -1,0 +1,199 @@
+[
+  {
+    "id": "solid_polymer_flammability",
+    "name": "Solid polymer / fabric flammability",
+    "description": "Ignition, flame spread, extinction and flammability limits of solid spacecraft materials (polymers, fabrics, foams, composites).",
+    "keywords": [
+      "polymer",
+      "plastic",
+      "fabric",
+      "cloth",
+      "foam",
+      "PMMA",
+      "Teflon",
+      "Kapton",
+      "silicone",
+      "SIBAL",
+      "Nomex",
+      "Ultem",
+      "Pyrell",
+      "flame spread",
+      "flammability limit",
+      "material screening"
+    ],
+    "investigations": [
+      "PSI-25",
+      "PSI-26",
+      "PSI-62",
+      "PSI-98",
+      "PSI-99",
+      "PSI-100"
+    ]
+  },
+  {
+    "id": "smoke_aerosol_detection",
+    "name": "Smoke generation and fire detection",
+    "description": "Smoke particle size, morphology, transport and detector response for microgravity fires.",
+    "keywords": [
+      "smoke",
+      "aerosol",
+      "particle",
+      "detector",
+      "detection",
+      "P-Trak",
+      "DustTrak",
+      "SAME",
+      "DAFT",
+      "soot",
+      "alarm"
+    ],
+    "investigations": [
+      "PSI-47",
+      "PSI-101",
+      "PSI-102",
+      "PSI-115"
+    ]
+  },
+  {
+    "id": "liquid_droplet_combustion",
+    "name": "Liquid fuel droplet combustion and extinction",
+    "description": "Droplet burning, cool flames, radiative extinction, limiting oxygen index and suppressant effectiveness for liquid fuels.",
+    "keywords": [
+      "droplet",
+      "liquid fuel",
+      "heptane",
+      "dodecane",
+      "decane",
+      "ethanol",
+      "methanol",
+      "LOI",
+      "extinction",
+      "suppressant",
+      "FLEX",
+      "CFI"
+    ],
+    "investigations": [
+      "PSI-39",
+      "PSI-68",
+      "PSI-69",
+      "PSI-117",
+      "PSI-142"
+    ]
+  },
+  {
+    "id": "gaseous_diffusion_flames",
+    "name": "Gaseous diffusion flames, soot and flame structure",
+    "description": "Laminar gas-jet and coflow flames, flame stability, soot formation, smoke point and electric-field effects.",
+    "keywords": [
+      "gas",
+      "methane",
+      "ethylene",
+      "propane",
+      "propylene",
+      "soot",
+      "smoke point",
+      "flame structure",
+      "liftoff",
+      "coflow",
+      "electric field",
+      "ACME",
+      "SPICE",
+      "SLICE"
+    ],
+    "investigations": [
+      "PSI-10",
+      "PSI-20",
+      "PSI-21",
+      "PSI-22",
+      "PSI-23",
+      "PSI-106",
+      "PSI-107",
+      "PSI-159",
+      "PSI-60"
+    ]
+  },
+  {
+    "id": "fire_growth_suppression",
+    "name": "Large-scale fire growth and suppression",
+    "description": "Large-scale fire growth in low gravity, low-g flammability limits and suppression / extinguishment.",
+    "keywords": [
+      "fire growth",
+      "large scale",
+      "suppression",
+      "extinguishment",
+      "SAFFIRE",
+      "BASS",
+      "oxygen limit",
+      "CO2",
+      "helium",
+      "SF6"
+    ],
+    "investigations": [
+      "PSI-25",
+      "PSI-26",
+      "PSI-98",
+      "PSI-99",
+      "PSI-100"
+    ]
+  },
+  {
+    "id": "cool_flames",
+    "name": "Cool flames and low-temperature combustion",
+    "description": "Cool diffusion flames, warm flames, oscillatory and extinction behavior at low temperature.",
+    "keywords": [
+      "cool flame",
+      "warm flame",
+      "low temperature",
+      "ozone",
+      "DME",
+      "CFI",
+      "FLEX",
+      "oscillation",
+      "extinction"
+    ],
+    "investigations": [
+      "PSI-39",
+      "PSI-117",
+      "PSI-142",
+      "PSI-159"
+    ]
+  },
+  {
+    "id": "electric_field_effects",
+    "name": "Electric-field effects on flames",
+    "description": "How electric fields alter flame shape, stability, soot and chemi-ion currents in microgravity.",
+    "keywords": [
+      "electric field",
+      "voltage",
+      "ion current",
+      "chemi-ion",
+      "E-FIELD",
+      "ACME"
+    ],
+    "investigations": [
+      "PSI-22"
+    ]
+  },
+  {
+    "id": "modeling_and_simulation",
+    "name": "Modeling, simulation and data reuse",
+    "description": "Ground-based modeling and re-analysis of PSI data: soot, flame spread, cool flames and smoke.",
+    "keywords": [
+      "model",
+      "simulation",
+      "CFD",
+      "FGM",
+      "soot model",
+      "radiation",
+      "data reuse",
+      "PSI data"
+    ],
+    "investigations": [
+      "PSI-60",
+      "PSI-62",
+      "PSI-115",
+      "PSI-117",
+      "PSI-142"
+    ]
+  }
+]

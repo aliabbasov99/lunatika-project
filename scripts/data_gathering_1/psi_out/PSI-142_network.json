@@ -1,0 +1,657 @@
+[
+  {
+    "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-142",
+    "method": "GET",
+    "status": 200,
+    "body": {
+      "accession": "PSI-142",
+      "acknowledgments": "",
+      "added": [
+        {
+          "bucket": "",
+          "date_created": {
+            "$date": 1741286023524
+          },
+          "date_modified": {
+            "$date": 1741286023524
+          },
+          "file_name": "PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+          "file_size": 735232.0,
+          "organization": "shared",
+          "psi_legacy": true,
+          "psi_legacy_s3_path": "legacy/116733/227/PSI data summary Princeton with links.xlsx",
+          "remote_path": "/Home/psi-data/PSI-142/Analyzed Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+          "remote_url": "https://psi.ndc.nasa.gov/mpglobal/api/athena/file/9688113/?inline=1&log=1",
+          "resource_id": {
+            "$oid": "65e737ee8e263688e9f9200c"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Analyzed Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+          "s3_version_id": null,
+          "study_id": {
+            "$oid": "67c9ea87ccb9559f59bfc704"
+          },
+          "subcategory": "Modeling Data",
+          "version": 1,
+          "visible": true
+        },
+        {
+          "bucket": "psi-repo-prod",
+          "date_created": {
+            "$date": 1741286023608
+          },
+          "date_modified": {
+            "$date": 1741286023608
+          },
+          "file_name": "PSI-142_Experimental table_Data Summary Table.csv",
+          "file_size": 727,
+          "organization": "shared",
+          "remote_path": "/Home/psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "remote_url": "/datamanager/file/Home/psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "resource_id": {
+            "$oid": "66cf53d46f1142c964b2e0a8"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "s3_version_id": "P2Yx91VbxrIhv7SqrVVtOWcd0S0af3IZ",
+          "study_id": {
+            "$oid": "67c9ea87ccb9559f59bfc704"
+          },
+          "subcategory": "",
+          "version": 1,
+          "visible": true
+        }
+      ],
+      "approach": "Using the experimental conditions of FLEX flight, a comparative studies of the oxygen concentration effects on the extinction limits of cool flames was conducted using three different numerical modeling schemes, (a) spark-assisted flame propagation of a n-heptane/air mixture, (b) one dimensional freely-propagating dimethyl ether (DME) flames using an arc-length continuation method and (c) simulated cool flame regimes and burning limits at elevated pressure (up to 20 atm) using DME/air mixtures.\n\nSpecific research details are outlined in the publication, ''Dynamics of cool flames'' [https://doi.org/10.1016/j.pecs.2019.100787]; '' Understanding Cool Flames and Warm Flames'', [https://doi.org/10.1016/j.proci.2020.09.019] and ''Study of the low-temperature reactivity of large n-alkanes through cool diffusion flame extinction'', [https://doi.org/10.1016/j.combustflame.2017.01.028].",
+      "assays": [],
+      "contacts": [
+        {
+          "@id": "",
+          "address": "",
+          "affiliation": "Princeton University",
+          "comments": [
+            {
+              "name": "Study Person REF",
+              "value": ""
+            }
+          ],
+          "email": "yju@princeton.edu",
+          "fax": "",
+          "firstName": "Yiguang",
+          "lastName": "Ju",
+          "midInitials": "",
+          "phone": "",
+          "roles": [
+            {
+              "@id": "dEBvA2jSs25xM9IfCv5ploF8MUDFt0ACKekf97KJ",
+              "annotationValue": "Principal Investigator (PI)",
+              "comments": [],
+              "termAccession": "Principal Investigator (PI)",
+              "termSource": ""
+            }
+          ]
+        },
+        {
+          "@id": "",
+          "address": "",
+          "affiliation": "NASA GRC",
+          "comments": [
+            {
+              "name": "Study Person REF",
+              "value": ""
+            }
+          ],
+          "email": "daniel.l.dietrich@nasa.gov",
+          "fax": "",
+          "firstName": "Daniel",
+          "lastName": "Dietrich",
+          "midInitials": "",
+          "phone": "",
+          "roles": [
+            {
+              "@id": "Dnk4ouM7YjrcdVdTTgeNZZuCETslO4fpv4OhnLfr",
+              "annotationValue": "Technical Point of Contact",
+              "comments": [],
+              "termAccession": "Technical Point of Contact",
+              "termSource": ""
+            }
+          ]
+        },
+        {
+          "@id": "",
+          "address": "",
+          "affiliation": "Princeton University",
+          "comments": [
+            {
+              "name": "Study Person REF",
+              "value": ""
+            }
+          ],
+          "email": "cbreuter@princeton.edu",
+          "fax": "",
+          "firstName": "Christopher",
+          "lastName": "Reuter",
+          "midInitials": "",
+          "phone": "",
+          "roles": [
+            {
+              "@id": "59J36d8A36ZR1iSs6NNVDRYelIkilTNb30me8Erm",
+              "annotationValue": "Co-Investigator (Co-I)",
+              "comments": [],
+              "termAccession": "Co-Investigator (Co-I)",
+              "termSource": ""
+            }
+          ]
+        }
+      ],
+      "description": "",
+      "dirty": false,
+      "doi": "10.60555/80qf-vj95",
+      "experimentHardware": "Principal Investigator Laboratory Hardware",
+      "experimentHardwareLink": "https://doi.org/10.1016/j.combustflame.2016.01.008",
+      "experimentalTable": [
+        {
+          "_id": {
+            "$oid": "67c9ea87ccb9559f59bfc700"
+          },
+          "date_created": {
+            "$date": 1741286023608
+          },
+          "date_modified": {
+            "$date": 1741286023608
+          },
+          "file_name": "PSI-142_Experimental table_Data Summary Table.csv",
+          "file_size": 727,
+          "remote_path": "/Home/psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "remote_url": "/datamanager/file/Home/psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "resource_id": {
+            "$oid": "66cf53d46f1142c964b2e0a8"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+          "s3_version_id": "P2Yx91VbxrIhv7SqrVVtOWcd0S0af3IZ",
+          "study_id": {
+            "$oid": "67c9ea87ccb9559f59bfc704"
+          },
+          "subcategory": "",
+          "version": 1,
+          "visible": true
+        }
+      ],
+      "experiments": [],
+      "factors": [],
+      "filesDisabled": null,
+      "flightProgram": "Not Applicable",
+      "funding": "NNX16AK07G",
+      "hypothesis": "This investigation attempts to answer the critical question as to what conditions causes the hot flames transfer to cool flames and how the cool flame flammable region is related to hot flame flammability limit and extinction limit. The investigation hypothesizes that factors such as oxygen concentration, dilution, pressure, diffusion, and convection transport processes affect the cool flame transition.",
+      "identifiers": [],
+      "images": [],
+      "investigationAcronym": "",
+      "investigationEndDate": "07-31-2021",
+      "investigationStartDate": "08-01-2016",
+      "licenseIdentifier": "CC0-1.0",
+      "licenseLink": "https://spdx.org/licenses/CC0-1.0.html",
+      "licenseName": "Creative Commons Zero v1.0 Universal",
+      "managingNasaCenter": "Glenn Research Center (GRC)",
+      "missionEnd": "",
+      "missionLink": "",
+      "missionName": "",
+      "missionStart": "",
+      "modified": [
+        {
+          "bucket": "psi-repo-prod",
+          "date_created": {
+            "$date": 1733418341537
+          },
+          "date_modified": {
+            "$date": 1733418341537
+          },
+          "file_name": "PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+          "file_size": 11675,
+          "organization": "OSD",
+          "remote_path": "/Home/psi-data/PSI-142/metadata/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+          "remote_url": "/datamanager/file/Home/psi-data/PSI-142/metadata/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+          "resource_id": {
+            "$oid": "65e0a4d4931988043eebcd6e"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/metadata/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+          "s3_version_id": "YG1FzNaVcVPGTpfL1_ufVF5cdtl4TYHF",
+          "study_id": {
+            "$oid": "6751dd65754fcbc3b70fa01c"
+          },
+          "version": 1,
+          "visible": true
+        }
+      ],
+      "modifiedDate": "06-Mar-2025",
+      "objective": "By using the Flame Extinguishment (FLEX) experimental data from the Physical Sciences Informatics (PSI) system of combustion science, the purpose of this grant was to conduct new simulations and ground-based experiments using ozone-sensitized counterflow flames to:\n    1) Develop a new diagram of the flammability limits of diffusional cool flames affected by radiation, diffusion, and convection.\n    2) Bridge the knowledge gap between the flammability limits and extinction limits of hot flames and cool flames.\n    3) Verify the phenomena observed on the ISS flame extinguishment experiments.\n    4) Obtain new, quantitative data of extinction limit, flame temperature, and species distribution for the validation of kinetic and radiation models involving cool flames.\n    5) Extend the cool flame experiments from the original ISS droplet experiments to a more general ground-based combustion system involving radiation, diffusion, convection, and low-temperature chemistry while maintaining a one-dimensional geometry.",
+      "organizations": [],
+      "payloads": [],
+      "projectIdentifier": "",
+      "projectLink": "",
+      "projectTitle": "",
+      "projectType": "Ground Investigation",
+      "proposalTitle": "",
+      "public": true,
+      "publications": [
+        {
+          "authorList": "Ju Yiguang, Reuter Christopher B., Yehia Omar R., Farouk Tanvir I., Won Sang Hee",
+          "comments": [],
+          "doi": "10.1016/j.pecs.2019.100787",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Dynamics of cool flames"
+        },
+        {
+          "authorList": "Zhou Mengni, Yehia Omar R., Xu Wenbin, Reuter Christopher B., Wang Ziyu, Yan Chao, Jiang Bo, Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.combustflame.2021.111471",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "The radical index and the effect of oxygen concentration on non-premixed cool flame extinction of large n-alkanes"
+        },
+        {
+          "authorList": "Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.combustflame.2017.01.006",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "On the propagation limits and speeds of premixed cool flames at elevated pressures"
+        },
+        {
+          "authorList": "Reuter Christopher B., Lee Minhyeok, Won Sang Hee, Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.combustflame.2017.01.028",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Study of the low-temperature reactivity of large n-alkanes through cool diffusion flame extinction"
+        },
+        {
+          "authorList": "Reuter Christopher B., Zhang Rui, Yehia Omar R., Rezgui Yacine, Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.combustflame.2018.06.004",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Counterflow flame experiments and chemical kinetic modeling of dimethyl ether/methane mixtures"
+        },
+        {
+          "authorList": "Yehia Omar R., Reuter Christopher B., Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.combustflame.2018.03.013",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Low-temperature multistage warm diffusion flames"
+        },
+        {
+          "authorList": "Lin Eric, Reuter Christopher B., Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.proci.2018.05.082",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Dynamics and burning limits of near-limit hot, warm, and cool diffusion flames of dimethyl ether at elevated pressures"
+        },
+        {
+          "authorList": "Yehia Omar R., Reuter Christopher B., Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.proci.2018.06.161",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "On the chemical characteristics and dynamics of n-alkane low-temperature multistage diffusion flames"
+        },
+        {
+          "authorList": "Kurimoto Naoki, Brumfield Brian, Yang Xueliang, Wada Tomoya, Diévart Pascal, Wysocki Gerard, Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.proci.2014.05.120",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Quantitative measurements of HO 2 /H 2 O 2 and intermediate species in low and intermediate temperature oxidation of dimethyl ether"
+        },
+        {
+          "authorList": "Yiguang Ju, Mengni Zhou, Omar R. Yehia, Wenbin Xu, Christopher B. Reuter, Ziyu Wang,  Chao Yan",
+          "comments": [],
+          "doi": "",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "SUPPLEMENTARY MATERIAL\nThe radical index and the effect of oxygen concentration on non-premixed cool flame extinction of large n-alkanes"
+        },
+        {
+          "authorList": "CB. Reuter, E. Lin, Y. Ju",
+          "comments": [],
+          "doi": "",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Pressure and Radiation Effects on the Dynamics of Hot and Cool Diffusion Flames"
+        },
+        {
+          "authorList": "Reuter Christopher B., Katta Viswanath R., Yehia Omar R., Ju Yiguang",
+          "comments": [],
+          "doi": "10.1016/j.proci.2018.07.050",
+          "pubMedID": "",
+          "status": {
+            "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+            "annotationValue": "published",
+            "comments": [],
+            "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+            "termSource": "EFO"
+          },
+          "title": "Transient interactions between a premixed double flame and a vortex"
+        }
+      ],
+      "related_glds": "PSI-69",
+      "releaseDate": "18-Sep-2024",
+      "removed": [
+        {
+          "bucket": "",
+          "date_created": {
+            "$date": 1733418341538
+          },
+          "date_modified": {
+            "$date": 1733418341538
+          },
+          "file_name": "1-Cover Page.docx",
+          "file_size": 25619.0,
+          "organization": "shared",
+          "psi_legacy": true,
+          "psi_legacy_s3_path": "legacy/116732/10430/1-Cover Page.docx",
+          "remote_path": "/Home/psi-data/PSI-142/Raw Data/1-Cover Page.docx",
+          "remote_url": "https://psi.ndc.nasa.gov/mpglobal/api/athena/file/9687939/?inline=1&log=1",
+          "resource_id": {
+            "$oid": "65e739c18e263688e9f9200d"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Raw Data/1-Cover Page.docx",
+          "s3_version_id": null,
+          "study_id": {
+            "$oid": "6751dd65754fcbc3b70fa01c"
+          },
+          "subcategory": "Legacy/",
+          "version": 1,
+          "visible": true
+        },
+        {
+          "bucket": "",
+          "date_created": {
+            "$date": 1733418341539
+          },
+          "date_modified": {
+            "$date": 1733418341539
+          },
+          "file_name": "PSI data summary Princeton with links.xlsx",
+          "file_size": 735232.0,
+          "organization": "shared",
+          "psi_legacy": true,
+          "psi_legacy_s3_path": "legacy/116733/227/PSI data summary Princeton with links.xlsx",
+          "remote_path": "/Home/psi-data/PSI-142/Analyzed Data/PSI data summary Princeton with links.xlsx",
+          "remote_url": "https://psi.ndc.nasa.gov/mpglobal/api/athena/file/9688113/?inline=1&log=1",
+          "resource_id": {
+            "$oid": "65e737ee8e263688e9f9200c"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Analyzed Data/PSI data summary Princeton with links.xlsx",
+          "s3_version_id": null,
+          "study_id": {
+            "$oid": "6751dd65754fcbc3b70fa01c"
+          },
+          "subcategory": "Legacy/Analyzed Data - Data ID 1 - 8",
+          "version": 1,
+          "visible": true
+        },
+        {
+          "bucket": "",
+          "date_created": {
+            "$date": 1733418341540
+          },
+          "date_modified": {
+            "$date": 1733418341540
+          },
+          "file_name": "Quantitative Studies of Cool Flame Transitions at RadiationStretch Extinction Using Counterflow Flames DoD.docx",
+          "file_size": 104065.0,
+          "organization": "shared",
+          "psi_legacy": true,
+          "psi_legacy_s3_path": "legacy/116732/11572/Quantitative Studies of Cool Flame Transitions at RadiationStretch Extinction Using Counterflow Flames DoD.docx",
+          "remote_path": "/Home/psi-data/PSI-142/Raw Data/Quantitative Studies of Cool Flame Transitions at RadiationStretch Extinction Using Counterflow Flames DoD.docx",
+          "remote_url": "https://psi.ndc.nasa.gov/mpglobal/api/athena/file/10441948/?inline=1&log=1",
+          "resource_id": {
+            "$oid": "65e739c18e263688e9f9200d"
+          },
+          "restricted": false,
+          "s3_path": "psi-data/PSI-142/Raw Data/Quantitative Studies of Cool Flame Transitions at RadiationStretch Extinction Using Counterflow Flames DoD.docx",
+          "s3_version_id": null,
+          "study_id": {
+            "$oid": "6751dd65754fcbc3b70fa01c"
+          },
+          "subcategory": "Legacy/",
+          "version": 1,
+          "visible": true
+        }
+      ],
+      "researchArea": "Combustion Science",
+      "researchImpacts": "Obtaining a fundamental understanding of the warm diffusion flame is particularly relevant to combustion in highly turbulent flow fields and in microgravity environments, owing to the possibility of long residence times. The results showed that the warm flame has a double reaction zone structure and plays a critical role in the transition between cool flames and hot flames. At elevated pressures, it was found that the flammable region of warm flames and cool flames expands due to the increase in low-temperature and intermediate-temperature reactivity with pressure. Since many real engines operate in the 20-40 atm pressure range, therefore, cool flames and warm flames are relevant and important flame regimes for high-pressure near-limit combustion applications. These calculations from this investigation will serve to advance the understanding of near-limit flame dynamics and provide guidance for experimental observation of different flame regimes.",
+      "restricted": false,
+      "sourceAccession": "",
+      "sourceLink": "",
+      "spaceProgram": "National Aeronautics and Space Administration (NASA)",
+      "subResearchArea": "Spacecraft Fire Safety",
+      "submissionDate": "18-Sep-2024",
+      "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+      "totalFileSize": 748117.0,
+      "version": 2,
+      "versionMessage": "",
+      "versionMessageLevel": "",
+      "versionMessageLocations": [],
+      "versionReason": "Analyzed data release"
+    }
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-F74BF8KLKS&gtm=45je6b91v9226092080za208zd9226092080xf1&_p=1794414585130&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=837915675.1794414586&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=1600x1000&uaa=x86&uab=64&uafvl=Chromium%3B158.0.8127.18%7CNot.A%252FBrand%3B24.0.0.0%7CHeadlessChrome%3B158.0.8127.18&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119860443~120213116~120385422~120412526~120420414~120469145~120469153~121246026~121246034~123329123~124170883&sid=1794414585&sct=1&seg=0&dl=https%3A%2F%2Fpsi.nasa.gov%2Fphysci%2Frepo%2Fdata%2Finvestigations%2FPSI-142&dt=NASA%20PSI%3A%20PSI-142&en=page_view&_fv=1&_nsi=1&_ss=1&_c=1&_ee=1&tfd=42077",
+    "method": "POST",
+    "status": 204,
+    "body": ""
+  },
+  {
+    "url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+    "method": "POST",
+    "status": 200,
+    "body": {
+      "files": [
+        {
+          "ChecksumAlgorithm": "",
+          "ETag": "",
+          "StorageClass": "",
+          "displayName": "Investigation Metadata Files",
+          "files": [
+            {
+              "ChecksumAlgorithm": "",
+              "ETag": "",
+              "StorageClass": "",
+              "bytes_size": 12158,
+              "directory": false,
+              "files": [],
+              "id": "67c9ea87ccb9559f59bfc6fe",
+              "key": "psi-data/PSI-142/metadata/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+              "restricted": false,
+              "restrictedAccess": false,
+              "size": "11.87 KB",
+              "sortingCategory": "Investigation Metadata Files",
+              "status": "active",
+              "subcategory": null,
+              "updated": "Fri, 07 Mar 2025 02:33:43 GMT",
+              "version": 2,
+              "visible": true
+            }
+          ],
+          "key": "psi-data/PSI-142/metadata/",
+          "restricted": false,
+          "restrictedAccess": false,
+          "size": 0,
+          "updated": "",
+          "version": 0,
+          "visible": true
+        },
+        {
+          "ChecksumAlgorithm": "",
+          "ETag": "",
+          "StorageClass": "",
+          "displayName": "Analyzed Data",
+          "files": [
+            {
+              "ChecksumAlgorithm": "",
+              "ETag": "",
+              "StorageClass": "",
+              "displayName": "Modeling Data",
+              "files": [
+                {
+                  "ChecksumAlgorithm": "",
+                  "ETag": "",
+                  "StorageClass": "",
+                  "bytes_size": 735232.0,
+                  "directory": false,
+                  "files": [],
+                  "id": "67c9ea87ccb9559f59bfc6ff",
+                  "key": "psi-data/PSI-142/Analyzed Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+                  "restricted": false,
+                  "restrictedAccess": false,
+                  "size": "718.0 KB",
+                  "sortingCategory": "Analyzed Data",
+                  "status": "active",
+                  "subcategory": "Modeling Data",
+                  "updated": "Fri, 07 Mar 2025 02:33:43 GMT",
+                  "version": 1,
+                  "visible": true
+                }
+              ],
+              "key": "psi-data/PSI-142/Analyzed Data/Modeling Data/",
+              "restricted": false,
+              "restrictedAccess": false,
+              "size": 0,
+              "sortingCategory": "Analyzed Data",
+              "updated": "",
+              "version": 0,
+              "visible": true
+            }
+          ],
+          "key": "psi-data/PSI-142/Analyzed Data/",
+          "restricted": false,
+          "restrictedAccess": false,
+          "size": 0,
+          "updated": "",
+          "version": 0,
+          "visible": true
+        },
+        {
+          "ChecksumAlgorithm": "",
+          "ETag": "",
+          "StorageClass": "",
+          "displayName": "Experimental table",
+          "files": [
+            {
+              "ChecksumAlgorithm": "",
+              "ETag": "",
+              "StorageClass": "",
+              "bytes_size": 727,
+              "directory": false,
+              "files": [],
+              "id": "67c9ea87ccb9559f59bfc700",
+              "key": "psi-data/PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+              "restricted": false,
+              "restrictedAccess": false,
+              "size": "727.0 B",
+              "sortingCategory": "Experimental table",
+              "status": "active",
+              "subcategory": "",
+              "updated": "Fri, 07 Mar 2025 02:33:43 GMT",
+              "version": 1,
+              "visible": true
+            }
+          ],
+          "key": "psi-data/PSI-142/Experimental table/",
+          "restricted": false,
+          "restrictedAccess": false,
+          "size": 0,
+          "updated": "",
+          "version": 0,
+          "visible": true
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-142/download?file=PSI-142_Experimental%20table_Data%20Summary%20Table.csv&version=1&redirect=false",
+    "method": "GET",
+    "status": 200,
+    "body": "https://psi-repo-prod.s3.amazonaws.com/psi-data/PSI-142/Experimental%20table/PSI-142_Experimental%20table_Data%20Summary%20Table.csv?versionId=P2Yx91VbxrIhv7SqrVVtOWcd0S0af3IZ&response-content-disposition=inline%3B%20filename%3D%22PSI-142_Experimental%20table_Data%20Summary%20Table.csv%22&AWSAccessKeyId=ASIAQKGGXEZEXNORUOKS&Signature=Ah0RFtBGmHAzCCYCsnFcWGHuric%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGFxy2R7JFinlg5xr7N8AFGbZ0c1qurCx34bEea4%2F8WZAiAEHRSZDCLgIVgwIemVwGlcCHwb%2BDLn3PGRcb6%2FrunqESq9BQhXEAAaDDAyMTg5MTU4OTcwNSIMsdY90QXkd1GI86sIKpoFLGKy4mKWGzSyn7AIXQJdaHwEzZ6HGua4PgmvOiFM44Iw%2F6mP23jxKGjVqO9YHO47LGCFBcWB8vOw79uqtf4MmDw%2BboYmLbkyrNT62QtN1kyimAaNupvLjIXLH1EUJNTacjE6cuqqI6PKLxDL4DT0CqN1a9qHIZf458fUwtiGxTas%2FEsSLDQ0yOntdfiMtkhZRZKIKDEatT8gtw1%2FyKHuQPQCRRmXEix8WLA0CHyLkAUIMLkdFhkfgFRtg%2BoIzFV2htT0RsIG1KxVHd0lmcoyNSXNtTUotKAzYn1Yeu%2B%2BoMuhw%2BTFisNs1xy%2FrLAih4n9rggxGUNUf2UVnHosw0bGIx2VHvfkyIB%2FYj6Y2FL1oczHjoUnDTo79lCCtRg8fb6AGuvFaAxYHhdKU5ZpqQify3cxRHVeYXkIA4rpRYE6ZIRgF9dpMELpjmBq0z3vCbD5J9bBqWyl%2B4AG9k4y8Bpq3SdhgF8q2cBpIUyGQ8n5VzM%2FBt3RSe4Iy6LMw2eFgyxZZ9a%2FHXf7k80sRiPzmmMLufiRvNgK7DKwbnKiA5O5Aroz2yDoJTC%2Fj14ejJn%2FF9vpE5JSipqy13qiI8ZXe7ju2roqFjYxcWDCygVjSmO5L%2F24ylNFUJPksNM%2F2XK%2Fu4rAXhXCOSxI774LBHo9Ug1VbNvwM3FinEktLiH2PsXsJvCVK8uTTzH6Z2YC2KKj%2B8Rw3ZEzDjlmrs9NQnHyt85ZbOg8CDcDAWHujlM4G5XfItC1xyDfMK9vBq1n95wy70gGSvybpLUxL0gCEWjdwLgjsMiZoCR1dMSD8nn6B2CjDvn97c007Aw0s0UholHCcg%2FjWkLEh6D9PXySsEkm8hPtEQOuDC%2BpNCcRcY0ap4OztYPZKKWzqW3XLRtYMIfx0dcGOrIBSM52FUF3WjdX0yYXfAQPcFhzuWky5C6%2FuNO54xkp5uSQoA%2F8e8qPp5TfRB15KVzKSO%2FhImajPR%2BepAqECZ8dXOo%2FEiVSHEoWVA6FPQtyiF85PMCck5QZrDuhc9XGygT0bmIbqjD0Lkdq8C5WVmJpmse2i9S28yrXvp5XHxV4KE4%2BCUMn7oC9CrnpLk0wyca8YTAFoY04TXG3sOwI8oBwmcC7Leo4gam%2F09T8KnfrHjVPGw%3D%3D&Expires=1794418186"
+  },
+  {
+    "url": "https://psi-repo-prod.s3.amazonaws.com/psi-data/PSI-142/Experimental%20table/PSI-142_Experimental%20table_Data%20Summary%20Table.csv?versionId=P2Yx91VbxrIhv7SqrVVtOWcd0S0af3IZ&response-content-disposition=inline%3B%20filename%3D%22PSI-142_Experimental%20table_Data%20Summary%20Table.csv%22&AWSAccessKeyId=ASIAQKGGXEZEXNORUOKS&Signature=Ah0RFtBGmHAzCCYCsnFcWGHuric%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGFxy2R7JFinlg5xr7N8AFGbZ0c1qurCx34bEea4%2F8WZAiAEHRSZDCLgIVgwIemVwGlcCHwb%2BDLn3PGRcb6%2FrunqESq9BQhXEAAaDDAyMTg5MTU4OTcwNSIMsdY90QXkd1GI86sIKpoFLGKy4mKWGzSyn7AIXQJdaHwEzZ6HGua4PgmvOiFM44Iw%2F6mP23jxKGjVqO9YHO47LGCFBcWB8vOw79uqtf4MmDw%2BboYmLbkyrNT62QtN1kyimAaNupvLjIXLH1EUJNTacjE6cuqqI6PKLxDL4DT0CqN1a9qHIZf458fUwtiGxTas%2FEsSLDQ0yOntdfiMtkhZRZKIKDEatT8gtw1%2FyKHuQPQCRRmXEix8WLA0CHyLkAUIMLkdFhkfgFRtg%2BoIzFV2htT0RsIG1KxVHd0lmcoyNSXNtTUotKAzYn1Yeu%2B%2BoMuhw%2BTFisNs1xy%2FrLAih4n9rggxGUNUf2UVnHosw0bGIx2VHvfkyIB%2FYj6Y2FL1oczHjoUnDTo79lCCtRg8fb6AGuvFaAxYHhdKU5ZpqQify3cxRHVeYXkIA4rpRYE6ZIRgF9dpMELpjmBq0z3vCbD5J9bBqWyl%2B4AG9k4y8Bpq3SdhgF8q2cBpIUyGQ8n5VzM%2FBt3RSe4Iy6LMw2eFgyxZZ9a%2FHXf7k80sRiPzmmMLufiRvNgK7DKwbnKiA5O5Aroz2yDoJTC%2Fj14ejJn%2FF9vpE5JSipqy13qiI8ZXe7ju2roqFjYxcWDCygVjSmO5L%2F24ylNFUJPksNM%2F2XK%2Fu4rAXhXCOSxI774LBHo9Ug1VbNvwM3FinEktLiH2PsXsJvCVK8uTTzH6Z2YC2KKj%2B8Rw3ZEzDjlmrs9NQnHyt85ZbOg8CDcDAWHujlM4G5XfItC1xyDfMK9vBq1n95wy70gGSvybpLUxL0gCEWjdwLgjsMiZoCR1dMSD8nn6B2CjDvn97c007Aw0s0UholHCcg%2FjWkLEh6D9PXySsEkm8hPtEQOuDC%2BpNCcRcY0ap4OztYPZKKWzqW3XLRtYMIfx0dcGOrIBSM52FUF3WjdX0yYXfAQPcFhzuWky5C6%2FuNO54xkp5uSQoA%2F8e8qPp5TfRB15KVzKSO%2FhImajPR%2BepAqECZ8dXOo%2FEiVSHEoWVA6FPQtyiF85PMCck5QZrDuhc9XGygT0bmIbqjD0Lkdq8C5WVmJpmse2i9S28yrXvp5XHxV4KE4%2BCUMn7oC9CrnpLk0wyca8YTAFoY04TXG3sOwI8oBwmcC7Leo4gam%2F09T8KnfrHjVPGw%3D%3D&Expires=1794418186",
+    "method": "GET",
+    "status": 200,
+    "body": "Data ID,Data Description,Reference Publication Link,Figure ID in Reference\r\n1,CFE limit with ozone,http://dx.doi.org/10.1016/j.combustflame.2017.01.028,4\r\n2,CFE limit without ozone,http://dx.doi.org/10.1016/j.combustflame.2017.01.028,5\r\n3,CFE and HFE Predicted vs Measured ,http://dx.doi.org/10.1016/j.combustflame.2017.01.028,7\r\n4,Measured and computed DME/O2/O3 CFE and HFE,https://doi.org/10.1016/j.proci.2018.07.050,2\r\n5,CH2O PLIF and thermometry,https://doi.org/10.1016/j.combustflame.2018.03.013,8\r\n6,nC7/nC10/nC12 chemiluminescence,https://doi.org/10.1016/j.proci.2018.06.161,2\r\n7,nC12 chemiluminescence,https://doi.org/10.1016/j.proci.2018.06.162,7\r\n8,nC12 thermometry,https://doi.org/10.1016/j.proci.2018.06.163,9\r\n"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "id": "PSI-142",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142",
+  "title": "PSI-142Version 2 Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames Investigation",
+  "Objectives": "By using the Flame Extinguishment (FLEX) experimental data from the Physical Sciences Informatics (PSI) system of combustion science, the purpose of this grant was to conduct new simulations and ground-based experiments using ozone-sensitized counterflow flames to:\n1) Develop a new diagram of the flammability limits of diffusional cool flames affected by radiation, diffusion, and convection.\n2) Bridge the knowledge gap between the flammability limits and extinction limits of hot flames and cool flames.\n3) Verify the phenomena observed on the ISS flame extinguishment experiments.\n4) Obtain new, quantitative data of extinction limit, flame temperature, and species distribution for the validation of kinetic and radiation models involving cool flames.\n5) Extend the cool flame experiments from the original ISS droplet experiments to a more general ground-based combustion system involving radiation, diffusion, convection, and low-temperature chemistry while maintaining a one-dimensional geometry.",
+  "Project": "Project Type\tGround Investigation\nFlight Platform\tNot Applicable\nInvestigation Start Date\t08-01-2016\nInvestigation End Date\t07-31-2021\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA)\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "Using the experimental conditions of FLEX flight, a comparative studies of the oxygen concentration effects on the extinction limits of cool flames was conducted using three different numerical modeling schemes, (a) spark-assisted flame propagation of a n-heptane/air mixture, (b) one dimensional freely-propagating dimethyl ether (DME) flames using an arc-length continuation method and (c) simulated cool flame regimes and burning limits at elevated pressure (up to 20 atm) using DME/air mixtures.\nSpecific research details are outlined in the publication, ''Dynamics of cool flames'' [https://doi.org/10.1016/j.pecs.2019.100787]; '' Understanding Cool Flames and Warm Flames'', [https://doi.org/10.1016/j.proci.2020.09.019] and ''Study of the low-temperature reactivity of large n-alkanes through cool diffusion flame extinction'', [https://doi.org/10.1016/j.combustflame.2017.01.028].",
+  "Hypothesis": "This investigation attempts to answer the critical question as to what conditions causes the hot flames transfer to cool flames and how the cool flame flammable region is related to hot flame flammability limit and extinction limit. The investigation hypothesizes that factors such as oxygen concentration, dilution, pressure, diffusion, and convection transport processes affect the cool flame transition.",
+  "Research Impacts/Earth Benefits": "Obtaining a fundamental understanding of the warm diffusion flame is particularly relevant to combustion in highly turbulent flow fields and in microgravity environments, owing to the possibility of long residence times. The results showed that the warm flame has a double reaction zone structure and plays a critical role in the transition between cool flames and hot flames. At elevated pressures, it was found that the flammable region of warm flames and cool flames expands due to the increase in low-temperature and intermediate-temperature reactivity with pressure. Since many real engines operate in the 20-40 atm pressure range, therefore, cool flames and warm flames are relevant and important flame regimes for high-pressure near-limit combustion applications. These calculations from this investigation will serve to advance the understanding of near-limit flame dynamics and provide guidance for experimental observation of different flame regimes.",
+  "Contact(s)": "Yiguang Juemail,Christopher Reuteremail,Daniel Dietrichemail\ntable_view\nExperimental Table\nSelect Experimental Table\nFilter\nData ID\tData Description\tReference Publication Link\tFigure ID in Reference\n1\tCFE limit with ozone\thttp://dx.doi.org/10.1016/j.combustflame.2017.01.028\t4\n2\tCFE limit without ozone\thttp://dx.doi.org/10.1016/j.combustflame.2017.01.028\t5\n3\tCFE and HFE Predicted vs Measured\thttp://dx.doi.org/10.1016/j.combustflame.2017.01.028\t7\n4\tMeasured and computed DME/O2/O3 CFE and HFE\thttps://doi.org/10.1016/j.proci.2018.07.050\t2\n5\tCH2O PLIF and thermometry\thttps://doi.org/10.1016/j.combustflame.2018.03.013\t8\nItems per page:\n5\n1 – 5 of 9\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nIdentifier\nPrincipal Investigator Laboratory Hardware\nimage\nRepresentative Images/Videos\nNo associated investigation representative image(s).\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-142",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-142/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-142/Investigation Metadata Files/PSI-142_metadata_PSI-164_Quantitative Studies.zip",
+      "type": "file",
+      "size": "11.87 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-142/Analyzed Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-142/Analyzed Data/Modeling Data",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-142/Analyzed Data/Modeling Data/PSI-142_Analyzed Data_PSI data summary Princeton with links.xlsx",
+      "type": "file",
+      "size": "718.0 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-142/Experimental table",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-142/Experimental table/PSI-142_Experimental table_Data Summary Table.csv",
+      "type": "file",
+      "size": "727.0 B",
+      "depth": 2
+    }
+  ]
+}

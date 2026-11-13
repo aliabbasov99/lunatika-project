@@ -1,0 +1,706 @@
+[
+  {
+    "id": "ptfe_teflon",
+    "canonical_name": "Polytetrafluoroethylene (PTFE / Teflon)",
+    "category": "fluoropolymer",
+    "phase": "solid",
+    "chemical_formula": "(C2F4)n",
+    "aliases": [
+      "Teflon",
+      "Teflon®",
+      "PTFE",
+      "polytetrafluoroethylene"
+    ],
+    "spacecraft_relevance": "Wire insulation, tubing, seals, thermal blankets and other polymer components in crewed habitats.",
+    "fire_safety_notes": "Melts and can drip; thermal decomposition can release HF and carbonyl fluoride. SAME data show very small smoke particles that are hard for optical detectors to see.",
+    "is_fuel": true
+  },
+  {
+    "id": "polyimide_kapton",
+    "canonical_name": "Polyimide (Kapton)",
+    "category": "polyimide",
+    "phase": "solid",
+    "chemical_formula": "(C22H10N2O5)n",
+    "aliases": [
+      "Kapton",
+      "Kapton®",
+      "polyimide",
+      "PI"
+    ],
+    "spacecraft_relevance": "Wire and cable insulation, flexible circuits, thermal blankets and heater films.",
+    "fire_safety_notes": "Chars rather than melts; can smolder and produce ultrafine smoke. Relevant to detection and to arc-track / insulation failure scenarios.",
+    "is_fuel": true
+  },
+  {
+    "id": "silicone_rubber",
+    "canonical_name": "Silicone rubber",
+    "category": "elastomer",
+    "phase": "solid",
+    "chemical_formula": "[-Si(CH3)2O-]n",
+    "aliases": [
+      "silicone",
+      "silicone rubber",
+      "RTV silicone",
+      "siloxane"
+    ],
+    "spacecraft_relevance": "Seals, gaskets, potting compounds, flexible insulation and crew equipment.",
+    "fire_safety_notes": "Leaves silica ash; can smolder. SAME data show a larger smoke-particle mode than Teflon or Kapton.",
+    "is_fuel": true
+  },
+  {
+    "id": "pyrell_foam",
+    "canonical_name": "Pyrell intumescent foam",
+    "category": "foam",
+    "phase": "solid",
+    "chemical_formula": null,
+    "aliases": [
+      "Pyrell",
+      "Pyrell®",
+      "Pyrel",
+      "intumescent polyurethane foam"
+    ],
+    "spacecraft_relevance": "Fire-retardant foam used as a test material for smoke generation and material flammability.",
+    "fire_safety_notes": "Intumescent fire-retardant foam by Foamex. SAME-R introduced Pyrell to replace the liquid DBP smoke source and to test a realistic solid foam.",
+    "is_fuel": true
+  },
+  {
+    "id": "cotton_lampwick",
+    "canonical_name": "Cotton lamp wick (cellulose)",
+    "category": "cellulose",
+    "phase": "solid",
+    "chemical_formula": "(C6H10O5)n",
+    "aliases": [
+      "lampwick",
+      "lamp wick",
+      "cotton lamp wick",
+      "cotton wick",
+      "cellulose"
+    ],
+    "spacecraft_relevance": "Cellulosic representative fuel; wick material used to hold liquid smoke sources.",
+    "fire_safety_notes": "Pyrolysis, charring and smoldering; a standard cellulosic solid fuel in SAME and SAME-R.",
+    "is_fuel": true
+  },
+  {
+    "id": "sibal_fabric",
+    "canonical_name": "SIBAL cotton-fiberglass fabric",
+    "category": "composite_fabric",
+    "phase": "solid",
+    "chemical_formula": null,
+    "aliases": [
+      "SIBAL",
+      "Sibal",
+      "cotton-fiberglass fabric",
+      "cotton fiberglass fabric",
+      "SIBAL cloth"
+    ],
+    "spacecraft_relevance": "NASA solid-fuel flammability test material; analog for clothing, linens and other cellulosic fabrics in spacecraft.",
+    "fire_safety_notes": "75% cotton + 25% fiberglass by mass. Burns like cotton but keeps structural integrity after the cotton is consumed, which makes it useful for long-duration flame-spread tests.",
+    "is_fuel": true
+  },
+  {
+    "id": "cotton",
+    "canonical_name": "Cotton (cellulose)",
+    "category": "cellulose",
+    "phase": "solid",
+    "chemical_formula": "(C6H10O5)n",
+    "aliases": [
+      "cotton",
+      "cellulose"
+    ],
+    "spacecraft_relevance": "Constituent of SIBAL and a common clothing/bedding material.",
+    "fire_safety_notes": "Cellulosic fuel; burns and chars. The combustible part of SIBAL.",
+    "is_fuel": true
+  },
+  {
+    "id": "fiberglass",
+    "canonical_name": "Fiberglass (glass fiber)",
+    "category": "inorganic_fiber",
+    "phase": "solid",
+    "chemical_formula": "SiO2-based glass",
+    "aliases": [
+      "fiberglass",
+      "fibre glass",
+      "glass fiber",
+      "glass fibre",
+      "E-glass"
+    ],
+    "spacecraft_relevance": "Composite reinforcement and fire-resistant structural fabric.",
+    "fire_safety_notes": "Noncombustible inorganic reinforcement. Retains the sample shape after the cotton burns, affecting flame spread and extinction.",
+    "is_fuel": false
+  },
+  {
+    "id": "nomex_aramid",
+    "canonical_name": "Nomex aramid fabric",
+    "category": "aramid",
+    "phase": "solid",
+    "chemical_formula": "(C14H12O2N2)n",
+    "aliases": [
+      "Nomex",
+      "Nomex®",
+      "meta-aramid",
+      "aramid",
+      "Nomex III"
+    ],
+    "spacecraft_relevance": "Fire-resistant clothing, insulation, stowage and cabin fabrics.",
+    "fire_safety_notes": "Char-forming aramid. BASS showed that some Nomex variants can burn in high-oxygen, low-velocity microgravity conditions, while others self-extinguish.",
+    "is_fuel": true
+  },
+  {
+    "id": "ultem_pei",
+    "canonical_name": "Ultem polyetherimide (PEI)",
+    "category": "polyetherimide",
+    "phase": "solid",
+    "chemical_formula": "(C37H24O6N2)n",
+    "aliases": [
+      "Ultem",
+      "Ultem®",
+      "PEI",
+      "polyetherimide"
+    ],
+    "spacecraft_relevance": "High-performance aerospace plastic used for connectors, brackets and structural parts.",
+    "fire_safety_notes": "BASS tested Ultem rods; the material did not sustain burning in ISS atmosphere in those tests.",
+    "is_fuel": true
+  },
+  {
+    "id": "pmma_acrylic",
+    "canonical_name": "Polymethyl methacrylate (PMMA / acrylic)",
+    "category": "acrylic",
+    "phase": "solid",
+    "chemical_formula": "(C5H8O2)n",
+    "aliases": [
+      "PMMA",
+      "polymethyl methacrylate",
+      "polymethylmethacrylate",
+      "acrylic",
+      "Plexiglas",
+      "Lucite"
+    ],
+    "spacecraft_relevance": "Transparent structural plastic; idealized solid fuel for flame-spread experiments.",
+    "fire_safety_notes": "Clean-burning thermoplastic and a standard benchmark for opposed and concurrent flame spread. BASS used rods, slabs and spheres; SAFFIRE-II used flat PMMA.",
+    "is_fuel": true
+  },
+  {
+    "id": "paraffin_wax",
+    "canonical_name": "Paraffin wax",
+    "category": "wax",
+    "phase": "solid",
+    "chemical_formula": "CnH2n+2 (C20-C40)",
+    "aliases": [
+      "paraffin",
+      "paraffin wax",
+      "wax"
+    ],
+    "spacecraft_relevance": "Phase-change material, candle analog and solid fuel.",
+    "fire_safety_notes": "Melts and burns as a pool. BASS used fiberglass fabric saturated with paraffin wax.",
+    "is_fuel": true
+  },
+  {
+    "id": "japan_wax",
+    "canonical_name": "Japan wax (candle wax)",
+    "category": "wax",
+    "phase": "solid",
+    "chemical_formula": "triglyceride mixture",
+    "aliases": [
+      "Japan wax",
+      "candle wax",
+      "candle"
+    ],
+    "spacecraft_relevance": "Candle analog for microgravity flame studies.",
+    "fire_safety_notes": "BASS burned Japan-wax candles inside tubes to study low-velocity candle flames.",
+    "is_fuel": true
+  },
+  {
+    "id": "dbp",
+    "canonical_name": "Dibutyl phthalate (DBP)",
+    "category": "phthalate",
+    "phase": "liquid",
+    "chemical_formula": "C16H22O4",
+    "aliases": [
+      "DBP",
+      "dibutyl phthalate",
+      "dibutyl-phthalate"
+    ],
+    "spacecraft_relevance": "Liquid smoke source used to generate controlled pyrolysis aerosol in SAME.",
+    "fire_safety_notes": "Deposited on a cotton wick and heated. Replaced by Pyrell in SAME-R because a solid fire-retardant foam was more representative.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_heptane",
+    "canonical_name": "n-Heptane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C7H16",
+    "aliases": [
+      "heptane",
+      "n-heptane",
+      "C7H16"
+    ],
+    "spacecraft_relevance": "Reference liquid fuel and diesel/Jet-A surrogate.",
+    "fire_safety_notes": "Well-characterized droplet fuel; FLEX measured LOI and suppression effectiveness, FLEX-2 used heptane in surrogate mixtures.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_dodecane",
+    "canonical_name": "n-Dodecane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C12H26",
+    "aliases": [
+      "dodecane",
+      "n-dodecane",
+      "C12H26"
+    ],
+    "spacecraft_relevance": "Diesel and Jet-A surrogate; cool-flame droplet fuel.",
+    "fire_safety_notes": "CFI burned n-dodecane droplets and n-dodecane/iso-dodecane blends at 0.25-5 atm.",
+    "is_fuel": true
+  },
+  {
+    "id": "iso_dodecane",
+    "canonical_name": "iso-Dodecane",
+    "category": "branched_alkane",
+    "phase": "liquid",
+    "chemical_formula": "C12H26",
+    "aliases": [
+      "isododecane",
+      "iso-dodecane",
+      "2,2,4,6,6-pentamethylheptane"
+    ],
+    "spacecraft_relevance": "Branched surrogate component in aviation/diesel fuel blends.",
+    "fire_safety_notes": "CFI tested 60/40 and 75/25 n-dodecane/iso-dodecane blends to study cool-flame behavior.",
+    "is_fuel": true
+  },
+  {
+    "id": "farnesane",
+    "canonical_name": "Farnesane",
+    "category": "branched_alkane",
+    "phase": "liquid",
+    "chemical_formula": "C15H32",
+    "aliases": [
+      "farnesane",
+      "2,6,10-trimethyldodecane"
+    ],
+    "spacecraft_relevance": "Sustainable aviation fuel surrogate.",
+    "fire_safety_notes": "Branched C15 alkane burned as a droplet in CFI to extend cool-flame data to larger molecules.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_decane",
+    "canonical_name": "n-Decane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C10H22",
+    "aliases": [
+      "decane",
+      "n-decane",
+      "C10H22"
+    ],
+    "spacecraft_relevance": "Diesel/Jet-A surrogate and FLEX-2 droplet fuel.",
+    "fire_safety_notes": "FLEX-2 focused on ethanol and decane as fuels and on decane/propylbenzene surrogate mixtures.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_octane",
+    "canonical_name": "n-Octane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C8H18",
+    "aliases": [
+      "octane",
+      "n-octane",
+      "C8H18"
+    ],
+    "spacecraft_relevance": "Gasoline surrogate component.",
+    "fire_safety_notes": "FLEX-2 surrogate-fuel test matrix included 100% n-octane and iso-octane.",
+    "is_fuel": true
+  },
+  {
+    "id": "iso_octane",
+    "canonical_name": "iso-Octane",
+    "category": "branched_alkane",
+    "phase": "liquid",
+    "chemical_formula": "C8H18",
+    "aliases": [
+      "isooctane",
+      "iso-octane",
+      "2,2,4-trimethylpentane"
+    ],
+    "spacecraft_relevance": "Gasoline surrogate component.",
+    "fire_safety_notes": "FLEX-2 surrogate-fuel test matrix.",
+    "is_fuel": true
+  },
+  {
+    "id": "toluene",
+    "canonical_name": "Toluene",
+    "category": "aromatic",
+    "phase": "liquid",
+    "chemical_formula": "C7H8",
+    "aliases": [
+      "toluene",
+      "methylbenzene",
+      "C7H8"
+    ],
+    "spacecraft_relevance": "Aromatic surrogate component; soot precursor.",
+    "fire_safety_notes": "FLEX-2 surrogate-fuel test matrix; aromatic fuels strongly affect soot production.",
+    "is_fuel": true
+  },
+  {
+    "id": "propylbenzene",
+    "canonical_name": "n-Propylbenzene",
+    "category": "aromatic",
+    "phase": "liquid",
+    "chemical_formula": "C9H12",
+    "aliases": [
+      "propylbenzene",
+      "n-propylbenzene",
+      "C9H12"
+    ],
+    "spacecraft_relevance": "Aromatic surrogate component; soot precursor.",
+    "fire_safety_notes": "FLEX-2 used propylbenzene and decane/propylbenzene mixtures.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_propanol",
+    "canonical_name": "1-Propanol",
+    "category": "alcohol",
+    "phase": "liquid",
+    "chemical_formula": "C3H8O",
+    "aliases": [
+      "propanol",
+      "1-propanol",
+      "n-propanol",
+      "C3H8O"
+    ],
+    "spacecraft_relevance": "Oxygenated fuel component.",
+    "fire_safety_notes": "FLEX-2 condensed-phase test matrix used propanol/glycerol mixtures.",
+    "is_fuel": true
+  },
+  {
+    "id": "glycerol",
+    "canonical_name": "Glycerol",
+    "category": "polyol",
+    "phase": "liquid",
+    "chemical_formula": "C3H8O3",
+    "aliases": [
+      "glycerol",
+      "glycerin",
+      "C3H8O3"
+    ],
+    "spacecraft_relevance": "Condensed-phase fuel additive; biofuel byproduct.",
+    "fire_safety_notes": "FLEX-2 used 95% propanol / 5% glycerol and 80/20 mixtures to study condensed-phase droplet burning.",
+    "is_fuel": true
+  },
+  {
+    "id": "ethanol",
+    "canonical_name": "Ethanol",
+    "category": "alcohol",
+    "phase": "liquid",
+    "chemical_formula": "C2H6O",
+    "aliases": [
+      "ethanol",
+      "ethyl alcohol",
+      "C2H6O"
+    ],
+    "spacecraft_relevance": "Biofuel constituent and oxygenated fuel.",
+    "fire_safety_notes": "FLEX-2 focused on ethanol and decane; ethanol/decane binary droplets were used to study differential vaporization.",
+    "is_fuel": true
+  },
+  {
+    "id": "methanol",
+    "canonical_name": "Methanol",
+    "category": "alcohol",
+    "phase": "liquid",
+    "chemical_formula": "CH4O",
+    "aliases": [
+      "methanol",
+      "methyl alcohol",
+      "MeOH",
+      "CH3OH"
+    ],
+    "spacecraft_relevance": "Oxygenated fuel and cool-flame reference fuel.",
+    "fire_safety_notes": "FLEX measured LOI and suppressant effectiveness for heptane and methanol; PSI-117 modeled methanol cool flames.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_hexadecane",
+    "canonical_name": "n-Hexadecane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C16H34",
+    "aliases": [
+      "hexadecane",
+      "n-hexadecane",
+      "cetane",
+      "C16H34"
+    ],
+    "spacecraft_relevance": "Bi-component droplet fuel; diesel surrogate.",
+    "fire_safety_notes": "FLEX-2 references heptane-hexadecane mixture droplets for differential vaporization studies.",
+    "is_fuel": true
+  },
+  {
+    "id": "methane",
+    "canonical_name": "Methane",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "CH4",
+    "aliases": [
+      "methane",
+      "CH4",
+      "natural gas"
+    ],
+    "spacecraft_relevance": "Gaseous fuel; relevant to cabin atmosphere contamination and life-support processes.",
+    "fire_safety_notes": "Simple gaseous fuel used in ACME CLD, s-Flame, E-FIELD, SLICE, SPICE and BRE. Cleaner soot behavior than ethylene.",
+    "is_fuel": true
+  },
+  {
+    "id": "ethylene",
+    "canonical_name": "Ethylene",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "C2H4",
+    "aliases": [
+      "ethylene",
+      "ethene",
+      "C2H4"
+    ],
+    "spacecraft_relevance": "Gaseous fuel and soot precursor; common in combustion research.",
+    "fire_safety_notes": "Strongly sooting gaseous fuel used in ACME Flame Design, CLD, s-Flame, E-FIELD, SLICE, SPICE, BRE and PSI-10.",
+    "is_fuel": true
+  },
+  {
+    "id": "ethane",
+    "canonical_name": "Ethane",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "C2H6",
+    "aliases": [
+      "ethane",
+      "C2H6"
+    ],
+    "spacecraft_relevance": "Gaseous fuel; CFI-G alternative fuel.",
+    "fire_safety_notes": "Substituted for n-pentane in CFI-G because n-pentane's vapor pressure was too low.",
+    "is_fuel": true
+  },
+  {
+    "id": "propane",
+    "canonical_name": "Propane",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "C3H8",
+    "aliases": [
+      "propane",
+      "C3H8",
+      "LPG"
+    ],
+    "spacecraft_relevance": "Gaseous fuel; smoke-point and flame-design studies.",
+    "fire_safety_notes": "SPICE found an unusually high sooting propensity for propane in microgravity. CFI-G burned propane cool flames.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_butane",
+    "canonical_name": "n-Butane",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "C4H10",
+    "aliases": [
+      "butane",
+      "n-butane",
+      "C4H10"
+    ],
+    "spacecraft_relevance": "Gaseous fuel; CFI-G.",
+    "fire_safety_notes": "CFI-G burned normal and inverse n-butane cool diffusion flames.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_pentane",
+    "canonical_name": "n-Pentane",
+    "category": "gas_fuel",
+    "phase": "liquid/gas",
+    "chemical_formula": "C5H12",
+    "aliases": [
+      "pentane",
+      "n-pentane",
+      "C5H12"
+    ],
+    "spacecraft_relevance": "Planned CFI-G fuel.",
+    "fire_safety_notes": "Planned for CFI-G but replaced by ethane because its vapor pressure was too low for the ACME hardware.",
+    "is_fuel": true
+  },
+  {
+    "id": "propylene",
+    "canonical_name": "Propylene",
+    "category": "gas_fuel",
+    "phase": "gas",
+    "chemical_formula": "C3H6",
+    "aliases": [
+      "propylene",
+      "propene",
+      "C3H6"
+    ],
+    "spacecraft_relevance": "Gaseous fuel and soot precursor.",
+    "fire_safety_notes": "SPICE measured smoke points for propylene and propylene/nitrogen mixtures; it is the most strongly sooting fuel in that set.",
+    "is_fuel": true
+  },
+  {
+    "id": "dimethyl_ether",
+    "canonical_name": "Dimethyl ether (DME)",
+    "category": "oxygenated_fuel",
+    "phase": "gas/liquid",
+    "chemical_formula": "C2H6O",
+    "aliases": [
+      "dimethyl ether",
+      "DME",
+      "methoxymethane",
+      "C2H6O"
+    ],
+    "spacecraft_relevance": "Oxygenated fuel used in cool-flame ground experiments.",
+    "fire_safety_notes": "PSI-142 used DME/air mixtures for 1-D cool-flame and warm-flame modeling.",
+    "is_fuel": true
+  },
+  {
+    "id": "n_tetradecane",
+    "canonical_name": "n-Tetradecane",
+    "category": "alkane",
+    "phase": "liquid",
+    "chemical_formula": "C14H30",
+    "aliases": [
+      "tetradecane",
+      "n-tetradecane",
+      "C14H30"
+    ],
+    "spacecraft_relevance": "Large n-alkane cool-flame reference fuel.",
+    "fire_safety_notes": "PSI-142 compiled nC7, nC8, nC10, nC12 and nC14 cool-flame extinction data.",
+    "is_fuel": true
+  },
+  {
+    "id": "ozone",
+    "canonical_name": "Ozone",
+    "category": "oxidizer_additive",
+    "phase": "gas",
+    "chemical_formula": "O3",
+    "aliases": [
+      "ozone",
+      "O3"
+    ],
+    "spacecraft_relevance": "Laboratory sensitizer for cool-flame experiments.",
+    "fire_safety_notes": "PSI-142 used ozone-sensitized counterflow flames to access cool-flame regimes at ground conditions.",
+    "is_fuel": false
+  },
+  {
+    "id": "arizona_road_dust",
+    "canonical_name": "Arizona Road Dust (fine)",
+    "category": "aerosol_standard",
+    "phase": "solid",
+    "chemical_formula": null,
+    "aliases": [
+      "Arizona Road Dust",
+      "ARD",
+      "ARD Fine"
+    ],
+    "spacecraft_relevance": "Standardized aerosol for instrument validation, not a spacecraft material.",
+    "fire_safety_notes": "DAFT used ARD to validate the modified P-Trak and DustTrak aerosol monitors in microgravity. It is a test aerosol, not a combustion fuel.",
+    "is_fuel": false
+  },
+  {
+    "id": "soot",
+    "canonical_name": "Soot",
+    "category": "combustion_product",
+    "phase": "solid",
+    "chemical_formula": "C (black carbon)",
+    "aliases": [
+      "soot",
+      "black carbon",
+      "carbonaceous particulate"
+    ],
+    "spacecraft_relevance": "Fire signature, radiant heat source and detector challenge.",
+    "fire_safety_notes": "Soot volume fraction and radiation are central to flame spread and smoke detection.",
+    "is_fuel": false
+  },
+  {
+    "id": "smoke_aerosol",
+    "canonical_name": "Smoke aerosol",
+    "category": "combustion_product",
+    "phase": "solid/gas",
+    "chemical_formula": null,
+    "aliases": [
+      "smoke",
+      "aerosol",
+      "particulate",
+      "particle size distribution"
+    ],
+    "spacecraft_relevance": "Fire detection and crew warning.",
+    "fire_safety_notes": "SAME and SAME-R measured smoke particle size distributions for different materials; detector response depends strongly on particle size.",
+    "is_fuel": false
+  },
+  {
+    "id": "nitrogen",
+    "canonical_name": "Nitrogen",
+    "category": "atmosphere",
+    "phase": "gas",
+    "chemical_formula": "N2",
+    "aliases": [
+      "nitrogen",
+      "N2",
+      "GN2"
+    ],
+    "spacecraft_relevance": "Cabin diluent and test-atmosphere balance gas.",
+    "fire_safety_notes": "Diluent; lowering oxygen mole fraction by adding nitrogen is a standard suppression/flammability-limit variable.",
+    "is_fuel": false
+  },
+  {
+    "id": "carbon_dioxide",
+    "canonical_name": "Carbon dioxide",
+    "category": "suppressant",
+    "phase": "gas",
+    "chemical_formula": "CO2",
+    "aliases": [
+      "carbon dioxide",
+      "CO2"
+    ],
+    "spacecraft_relevance": "Fire suppressant and metabolic product.",
+    "fire_safety_notes": "FLEX measured CO2 suppression effectiveness for heptane and methanol flames.",
+    "is_fuel": false
+  },
+  {
+    "id": "helium",
+    "canonical_name": "Helium",
+    "category": "suppressant",
+    "phase": "gas",
+    "chemical_formula": "He",
+    "aliases": [
+      "helium",
+      "He"
+    ],
+    "spacecraft_relevance": "Inert suppressant/diluent.",
+    "fire_safety_notes": "FLEX tested helium as a fire suppressant; its high diffusivity changes flame behavior.",
+    "is_fuel": false
+  },
+  {
+    "id": "sulfur_hexafluoride",
+    "canonical_name": "Sulfur hexafluoride",
+    "category": "suppressant",
+    "phase": "gas",
+    "chemical_formula": "SF6",
+    "aliases": [
+      "sulfur hexafluoride",
+      "SF6",
+      "sulphur hexafluoride"
+    ],
+    "spacecraft_relevance": "High-performance gaseous fire suppressant.",
+    "fire_safety_notes": "FLEX tested SF6 as a suppressant for heptane and methanol flames.",
+    "is_fuel": false
+  },
+  {
+    "id": "oxygen",
+    "canonical_name": "Oxygen",
+    "category": "oxidizer",
+    "phase": "gas",
+    "chemical_formula": "O2",
+    "aliases": [
+      "oxygen",
+      "O2"
+    ],
+    "spacecraft_relevance": "Cabin oxidizer; oxygen concentration is a primary flammability variable.",
+    "fire_safety_notes": "Lowering oxygen mole fraction is the main lever for material flammability limits; many PSI tests vary O2 from ~15% to ~40%.",
+    "is_fuel": false
+  }
+]

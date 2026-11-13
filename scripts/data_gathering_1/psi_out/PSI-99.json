@@ -1,0 +1,1537 @@
+{
+  "id": "PSI-99",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+  "title": "PSI-99Version 5 Spacecraft Fire Experiment-II(SAFFIRE-II) Investigation",
+  "Objectives": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+  "Project": "Project Type\tMicrogravity Investigation\nFlight Platform\tCygnus Spacecraft\nInvestigation Start Date\t09-30-2016\nInvestigation End Date\t04-01-2017\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA)\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "The Saffire-II experiment was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. As a follow on to the Saffire-I investigation, the Saffire-II investigation added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex. The Saffire-1I flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-II has a sample card that contains 9 samples, each 5 cm x 29 cm. Depending on the sample material, the Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s, the flow being either concurrent or opposed. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. Details related to samples and experimental parameters are provided in the Experimental Details file in the Science document folder.",
+  "Hypothesis": "This investigation hypothesizes that due to large differences between fire behavior in normal and reduced gravity, the use of terrestrial fires and fire standards to design spacecraft fire safety systems presents an inherent risk to the vehicle because of the significant level of uncertainty. While this approach has been successful thus far, the uncertainty and risk will increase as exploration missions venture further from earth with considerably longer transit times for a safe return. There is a significant lack of microgravity data available for spacecraft designers on which to base their fire safety designs and procedures. To address this knowledge gap, this investigation proposed to conduct large-scale fire safety experiments in an expendable spacecraft without risk to a crew.",
+  "Research Impacts/Earth Benefits": "The Saffire-II experiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame. Results determine microgravity flammability limits for several spacecraft materials, help to validate NASA’s material selection criteria, and how microgravity and limited oxygen affect flame size. The investigation is crucial for the safety of current and future space missions. Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.",
+  "Contact(s)": "David L. Urbanemail,Gary Ruffemail\ntable_view\nExperimental Table\nSelect Experimental Table\nFilter\nSample Number\tMaterial\tSamle Thickness\tSample Length\tSample Width (cm)\tAir Flow (cm/s)\tPercent O2 (Note 1)\tIgnition Power (W)\tIgnition Time (s)\tBurn Time (s)\tFlow Direction\t?-g Burn Length\t?-g Spread Length\t1-g Burn Length\t1-g Spread Rate\tCamera 1\tCamera 2\n2-1\tSilicone\t0.27 mm\t29 cm\t5 cm\t20 cm/s\t~ 21.5\t80 W\t9.2 s\tInsignificant\tConcurrent\t~ 0\tn/a\tComplete\tAcceleratory\tS1C1\tS1C2\n2-2\tSilicone\t0.61 mm\t29 cm\t5 cm\t20 cm/s\t~ 22.1\t80 W\t9.2 s\tInsignificant\tConcurrent\t~ 0\tn/a\t7.6 cm\t1.2 mm/s\tn/a\tS2C2\n2-3\tSilicone\t1.03 mm\t29 cm\t5 cm\t20 cm/s\t~ 22.1\t80 W\t9.2 s\tInsignificant\tConcurrent\t~ 0\tn/a\t~ 0\tn/a\t\tS3C2\n2-4\tSilicone\t037 mm\t29 cm\t5 cm\t20 cm/s\t~ 22.1\t80 W\t9.2 s\tInsignificant\tOpposed\t~ 0\tn/a\tComplete\t0.6 mm/s\tS4C1\tS4C1\n2-5\tCotton-Fiberglass (SIBAL)\t037 mm\t29 cm\t5 cm\t20 cm/s\t~ 22.1\t80 W\t9.2 s\t145 s\tConcurrent\t29 cm\t2.1 mm/s\tComplete\tAcceleratory\tS5C1\tS5C2\nItems per page:\n5\n1 – 5 of 16\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nIdentifier\nCygnus Pressurized Cargo Module\nSAFFIRE\nimage\nRepresentative Images/Videos\nNo associated investigation representative image(s).\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-99",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-99/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Investigation Metadata Files/PSI-99_metadata_PSI-167_SAFFIRE-II.zip",
+      "type": "file",
+      "size": "10.29 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Experimental table",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv",
+      "type": "file",
+      "size": "1.93 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Engineering Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Engineering Documents/PSI-99_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+      "type": "file",
+      "size": "1.62 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Presentations",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Presentations/PSI-99_Presentations_SAFFIRE_45 I Con of Env Sys presentation.pdf",
+      "type": "file",
+      "size": "2.69 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Presentations/PSI-99_Presentations_SAFFIRE_46th I Con of Env Sys presentation.pdf",
+      "type": "file",
+      "size": "2.1 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Presentations/PSI-99_Presentations_SAFFIRE_47th I Con of Env Sys presentation.pdf",
+      "type": "file",
+      "size": "4.98 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Raw Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE_II_F1C1-BIT_jpeg.zip",
+      "type": "file",
+      "size": "20.45 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_DistortionGrid-30mmBlock_1280x916_mono.zip",
+      "type": "file",
+      "size": "182.13 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_DistortionGrid-30mmBlock_1360x1024.zip",
+      "type": "file",
+      "size": "3.22 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_DistortionGrid-30mmBlock_1280x916_color.zip",
+      "type": "file",
+      "size": "1.68 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE_II_F1C1_Image_Data_All_JPEGS.zip",
+      "type": "file",
+      "size": "28.97 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE_II_F1C1_Raw2TIFF.zip",
+      "type": "file",
+      "size": "1014.23 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "126.01 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE_II_F1C1_Illustrative_images.zip",
+      "type": "file",
+      "size": "181.32 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_Image_Data_JPEGs_Mapped.zip",
+      "type": "file",
+      "size": "46.87 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II_F1C1_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "551.78 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C1/PSI-99_Raw Data_SAFFIRE-II Operations.pdf",
+      "type": "file",
+      "size": "13.65 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_BIT_jpeg.zip",
+      "type": "file",
+      "size": "23.24 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_DistortionGrids_1280x916.zip",
+      "type": "file",
+      "size": "8.81 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_DistortionGrids_1360x1024.zip",
+      "type": "file",
+      "size": "2.08 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "1.61 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_Image_Data_JPEGS.zip",
+      "type": "file",
+      "size": "31.16 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_Image_Data_RAWs.zip",
+      "type": "file",
+      "size": "20.73 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE-II_F1C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "112.68 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE_II_F1C2_Illustrative_images.zip",
+      "type": "file",
+      "size": "163.7 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE-II_F1C2_Image_Data_All_JPEGs_Mapped.zip",
+      "type": "file",
+      "size": "50.61 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F1C2/PSI-99_Raw Data_SAFFIRE-II_F1C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "32.14 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C1/PSI-99_Raw Data_SAFFIRE_II_F2C1_Image_Data_All_JPEGS.zip",
+      "type": "file",
+      "size": "26.77 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C1/PSI-99_Raw Data_SAFFIRE_II_F2C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "12.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C1/PSI-99_Raw Data_SAFFIRE-II_F2C1_Image_Data_All_JPEGs_Mapped.zip",
+      "type": "file",
+      "size": "46.09 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C2/PSI-99_Raw Data_SAFFIRE_II_F2C2_Image_Data_All-JPEGS.zip",
+      "type": "file",
+      "size": "37.96 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C2/PSI-99_Raw Data_SAFFIRE_II_F2C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "10.67 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II F2C2/PSI-99_Raw Data_SAFFIRE-II_F2C2_Image_Data_All_JPEGs_Mapped.zip",
+      "type": "file",
+      "size": "59.68 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C1/PSI-99_Raw Data_SAFFIRE_II_S1C1_BIT_jpeg.zip",
+      "type": "file",
+      "size": "2.64 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE_II_S1C2_BIT_jpeg.zip",
+      "type": "file",
+      "size": "11.34 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE_II_S1C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "132.57 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE_II_S1C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "41.19 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "9.47 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "64.86 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "73.54 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGS_part1.zip",
+      "type": "file",
+      "size": "22.97 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGS_part3.zip",
+      "type": "file",
+      "size": "6.76 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGS_part2.zip",
+      "type": "file",
+      "size": "24.46 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "372.04 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_jpegs2png_icmad_part3.zip",
+      "type": "file",
+      "size": "110.03 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "400.15 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "29.48 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "8.16 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S1C2/PSI-99_Raw Data_SAFFIRE-II_S1C2_Image_Data_All-JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "27.74 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE_II_S2C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "126.23 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE_II_S2C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "59.03 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "9.71 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "81.15 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "81.16 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "22.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "22.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "21.63 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "356.37 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_jpegs2png_icmad_part3.zip",
+      "type": "file",
+      "size": "355.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "340.02 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "27.84 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "27.83 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S2C2/PSI-99_Raw Data_SAFFIRE-II_S2C2_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "26.74 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE_II_S3C2_DistortionGrids_Sample_ROI_JPEGS.zip",
+      "type": "file",
+      "size": "130.72 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE_II_S3C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "90.83 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "10.49 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "136.41 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "136.43 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_All-JPEGs_part2.zip",
+      "type": "file",
+      "size": "22.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_All-JPEGs_part3.zip",
+      "type": "file",
+      "size": "22.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE_II_S3C2_Image_Data_All-JPEGs_part1.zip",
+      "type": "file",
+      "size": "21.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "341.59 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "368.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S3C2/PSI-99_Raw Data_SAFFIRE-II_S3C2_Image_Data_jpegs2png_icmad_part3.zip",
+      "type": "file",
+      "size": "362.35 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE_II_S4C1_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "125.12 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE_II_S4C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "32.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "7.87 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "68.19 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "77.64 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_RAW2TIFF_Mapped_v2_ICMAD.zip",
+      "type": "file",
+      "size": "76.17 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "8.12 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "8.01 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "8.02 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE_II_S4C1_Image_Data_jpegs2png_icmad_part3.zip",
+      "type": "file",
+      "size": "115.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE_II_S4C1_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "117.08 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE_II_S4C1_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "115.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "10.54 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "10.53 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C1/PSI-99_Raw Data_SAFFIRE-II_S4C1_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "10.77 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE_II_S4C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "110.71 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE_II_S4C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "72.21 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "12.41 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_RAW2TIFF_Maped.zip",
+      "type": "file",
+      "size": "117.95 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "140.4 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE_II_S4C2_Image_Data_All_JPEGS_part2.zip",
+      "type": "file",
+      "size": "20.2 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "19.82 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE_II_S4C2_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "19.9 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "347.74 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_jpegs2png_icmad_part3.zip",
+      "type": "file",
+      "size": "340.44 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "341.79 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_All-JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "33.99 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_All-JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "33.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S4C2/PSI-99_Raw Data_SAFFIRE-II_S4C2_Image_Data_All-JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "33.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE_II_S5C1_DistortionGrids_Sample-ROI.zip",
+      "type": "file",
+      "size": "103.18 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE_II_S5C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "45.99 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "9.6 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "107.98 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "120.45 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_All_JPEGS_part1.zip",
+      "type": "file",
+      "size": "11.72 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_All_JPEGS_part2.zip",
+      "type": "file",
+      "size": "20.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE_II_S5C1_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "177.54 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE_II_S5C1_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "326.85 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "30.59 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C1/PSI-99_Raw Data_SAFFIRE-II_S5C1_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "18.03 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE_II_Data Package Sensor Telemetry",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE_II_Data Package Sensor Telemetry/PSI-99_Raw Data_SaffireIIStitchedCO2V7.pdf",
+      "type": "file",
+      "size": "25.34 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE_II_Data Package Sensor Telemetry/PSI-99_Raw Data_SFS-W-009_MFB340-Saffire-2 SIBAL samples-Gas phase TC height nonconformance.pdf",
+      "type": "file",
+      "size": "19.58 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE_II_Data Package Sensor Telemetry/PSI-99_Raw Data_Saffire-II Telemetry Data.xlsx",
+      "type": "file",
+      "size": "39.55 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S1/PSI-99_Raw Data_Saffire-II Sample 1 TM Graphs.docx",
+      "type": "file",
+      "size": "831.94 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S1/PSI-99_Raw Data_Saffire Sensor Data Sample 1.xlsx",
+      "type": "file",
+      "size": "13.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S1/PSI-99_Raw Data_Saffire-II Sample 9 TM Graphs.docx",
+      "type": "file",
+      "size": "900.75 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S2/PSI-99_Raw Data_Saffire-II Sample 2 TM Graphs.docx",
+      "type": "file",
+      "size": "746.27 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S2/PSI-99_Raw Data_Saffire Sensor Data Sample 2.xlsx",
+      "type": "file",
+      "size": "16.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S3/PSI-99_Raw Data_Saffire-II Sample 3 TM Graphs.docx",
+      "type": "file",
+      "size": "803.68 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S3/PSI-99_Raw Data_Saffire Sensor Data Sample 3.xlsx",
+      "type": "file",
+      "size": "16.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S4/PSI-99_Raw Data_Saffire-II Sample 4 TM Graphs.docx",
+      "type": "file",
+      "size": "828.78 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S4/PSI-99_Raw Data_Saffire Sensor Data Sample 4.xlsx",
+      "type": "file",
+      "size": "16.7 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S5/PSI-99_Raw Data_Saffire-II Sample 5 TM Graphs.docx",
+      "type": "file",
+      "size": "762.89 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S5/PSI-99_Raw Data_Saffire Sensor Data Sample 5.xlsx",
+      "type": "file",
+      "size": "11.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S6/PSI-99_Raw Data_Saffire-II Sample 6 TM Graphs.docx",
+      "type": "file",
+      "size": "801.86 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S6/PSI-99_Raw Data_Saffire Sensor Data Sample 6.xlsx",
+      "type": "file",
+      "size": "11.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S7",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S7/PSI-99_Raw Data_Saffire-II Sample 7 TM Graphs.docx",
+      "type": "file",
+      "size": "907.53 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S7/PSI-99_Raw Data_Saffire Sensor Data Sample 7.xlsx",
+      "type": "file",
+      "size": "20.43 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S8",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S8/PSI-99_Raw Data_Saffire-II Sample 8 TM Graphs.docx",
+      "type": "file",
+      "size": "817.69 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S8/PSI-99_Raw Data_Saffire Sensor Data Sample 8.xlsx",
+      "type": "file",
+      "size": "22.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/Data Package Sensor Telemetry/SAFFIRE_II_S9/PSI-99_Raw Data_Saffire Sensor Data Sample 9.xlsx",
+      "type": "file",
+      "size": "31.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "141.8 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE_II_S5C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "72.63 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "12.09 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "129.39 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "143.98 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE_II_S5C2_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "14.98 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE_II_S5C2_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "27.5 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE_II_S5C2_Image_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "424.55 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE_II_S5C2_Image_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "216.3 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "21.45 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S5C2/PSI-99_Raw Data_SAFFIRE-II_S5C2_Image_Data_All-JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "36.82 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE_II_S9C1_DistortionGrids_ROI.zip",
+      "type": "file",
+      "size": "208.69 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_DistortionGrids_Samples_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "14.79 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE_II_S9C1_Illustrative_Images.zip",
+      "type": "file",
+      "size": "21.22 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "13.2 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part4.zip",
+      "type": "file",
+      "size": "14.08 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part5.zip",
+      "type": "file",
+      "size": "14.52 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part6.zip",
+      "type": "file",
+      "size": "17.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "12.56 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "12.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE_II_S9C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "335.38 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "19.12 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part4.zip",
+      "type": "file",
+      "size": "20.37 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part5.zip",
+      "type": "file",
+      "size": "20.86 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part6.zip",
+      "type": "file",
+      "size": "23.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "18.11 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "18.67 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_RAW2TIFF_Mapped_jpegs.zip",
+      "type": "file",
+      "size": "15.27 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S9C1/PSI-99_Raw Data_SAFFIRE-II_S9C1_Image_Data_RAW2TIFF_Mapped_ICMAD_jpegs.zip",
+      "type": "file",
+      "size": "30.03 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE_II_S8C1_DistortionGrids_ROI.zip",
+      "type": "file",
+      "size": "201.72 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "14.41 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_20161207_-_Overlap_verification_S8C1.zip",
+      "type": "file",
+      "size": "19.78 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "13.08 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "12.51 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All_JPEGs_part4.zip",
+      "type": "file",
+      "size": "19.58 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "13.08 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE_II_S8C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "441.93 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All-JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "18.79 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All-JPEGs_Mapped_part4.zip",
+      "type": "file",
+      "size": "26.99 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All-JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "19.49 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_All-JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "19.32 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "849.68 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S8C1/PSI-99_Raw Data_SAFFIRE-II_S8C1_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "934.07 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE_II_S6C1_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "129.62 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "13.62 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_All_JPEGS_part2.zip",
+      "type": "file",
+      "size": "21.93 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_jpegs2pnc_icmad_part1.zip",
+      "type": "file",
+      "size": "216.41 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_jpegs2pnc_icmad_part2.zip",
+      "type": "file",
+      "size": "362.81 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE_II_S6C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "43.48 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "14.46 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_All-JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "24.18 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II-S6C1_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "38.05 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "118.64 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "134.06 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C1/PSI-99_Raw Data_SAFFIRE-II_S6C1_Image_Data_RAW2TIFF_Mapped_v2_ICMAD.zip",
+      "type": "file",
+      "size": "130.77 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE_II_S6C2_DistortionGrids_Sample_ROI.zip",
+      "type": "file",
+      "size": "167.41 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE_II_S6C2_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "15.41 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE_II_S6C2_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "25.6 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Data_jpegs2png_icmad_part1.zip",
+      "type": "file",
+      "size": "248.89 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Data_jpegs2png_icmad_part2.zip",
+      "type": "file",
+      "size": "399.5 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE_II_S6C2_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "56.86 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "10.83 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "20.34 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "29.96 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "101.09 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S6C2/PSI-99_Raw Data_SAFFIRE-II_S6C2_Image_Data_RAW2TIFF-Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "111.7 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE_II_S7C1_DistortionGrids_ROI.zip",
+      "type": "file",
+      "size": "143.21 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_part1.zip",
+      "type": "file",
+      "size": "13.04 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_part2.zip",
+      "type": "file",
+      "size": "23.61 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_part4.zip",
+      "type": "file",
+      "size": "17.93 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_part3.zip",
+      "type": "file",
+      "size": "24.42 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE_II_S7C1_Image_Data_RAW2TIFF.zip",
+      "type": "file",
+      "size": "55.05 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+      "type": "file",
+      "size": "11.65 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_Mapped_part2.zip",
+      "type": "file",
+      "size": "31.49 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_Mapped_part3.zip",
+      "type": "file",
+      "size": "32.62 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_Mapped_part4.zip",
+      "type": "file",
+      "size": "23.84 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_All_JPEGs_Mapped_part1.zip",
+      "type": "file",
+      "size": "18.8 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_RAW2TIFF_Mapped.zip",
+      "type": "file",
+      "size": "110.25 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Raw Data/Reduced Gravity/SAFFIRE-II S7C1/PSI-99_Raw Data_SAFFIRE-II_S7C1_Image_Data_RAW2TIFF_Mapped_ICMAD.zip",
+      "type": "file",
+      "size": "122.2 MB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-99/Science Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+      "type": "file",
+      "size": "737.54 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_MergeResult-jpeg_v5_Final.xlsx",
+      "type": "file",
+      "size": "19.86 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+      "type": "file",
+      "size": "181.89 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II Readme.docx",
+      "type": "file",
+      "size": "131.27 KB",
+      "depth": 2
+    }
+  ]
+}

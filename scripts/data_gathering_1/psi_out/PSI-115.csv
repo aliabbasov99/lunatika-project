@@ -1,0 +1,64 @@
+﻿path,type,size
+PSI-115,folder,
+PSI-115/Investigation Metadata Files,folder,
+PSI-115/Investigation Metadata Files/PSI-115_metadata_PSI-185_Utilization of the S.zip,file,6.86 KB
+PSI-115/Analyzed Data,folder,
+PSI-115/Analyzed Data/Modeling Data,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityNumDen.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityNucRate.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravitySmoke.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityDAM.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityU.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityPSD.dat,file,1.68 KB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityVort.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravitySpeciesMF.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityTemperature.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityV.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; no settling,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; no settling/PSI-115_Analyzed Data_8cmGravityNS_PSD.dat,file,1.71 KB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityuR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityvR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityNumdenR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityPSD.dat,file,1.68 KB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityNumDen.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravitySmoke.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityDAM.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityNucRate.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityV.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityVaporMF.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityVort.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityTemperature.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityU.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cm_sGrid_grid3d.dat,file,17.14 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_PSD.dat,file,1.71 KB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_u.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_v.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_NumDen.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated,folder,
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityuR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityvR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityNumDenR.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2,folder,
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity,folder,
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravitySmoke.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityU.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityV.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityPSD.dat,file,1.68 KB
+PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityNumDen.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity,folder,
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravitySmoke.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityU.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityV.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityPSD.dat,file,1.68 KB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityNumDen.dat,file,5.93 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cm_sGrid_grid3d.dat,file,17.14 MB
+PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_nodeDiameters.dat,file,1.03 KB
+PSI-115/Reports,folder,
+PSI-115/Reports/PSI-115_Reports_NNX17AF08A_FinalReport.pdf,file,10.13 MB
+PSI-115/Science Documents,folder,
+PSI-115/Science Documents/PSI-115_Science Documents_DataOrganizationDocument.pdf,file,94.63 KB

@@ -1,0 +1,5 @@
+# Yükləmək istədiyin faylların adı (hər sətirdə bir fayl). # ilə başlayan sətir şərhdir.
+# Tam ad, ya da psi_files.json-dakı tam path yaza bilərsən.
+PSI-101_Engineering Documents_SAME-R_ThermalPrecipitatorUsage.xlsx
+PSI-101_Raw Data_HKPData_gmt236_2.csv
+PSI-101_Engineering Documents_SAME VPRED Matrix PLN-005 Baseline.xls

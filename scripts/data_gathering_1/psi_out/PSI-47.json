@@ -1,0 +1,301 @@
+{
+  "id": "PSI-47",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "title": "PSI-47Version 5 Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2(DAFT / DAFT-2) Investigation",
+  "Objectives": "The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuclei counter, the TSI P-Trak, to quantify smoke aerosols in a microgravity environment, however there were concerns that th P-Trak would not be reliable in microgravity as it relies on gravity to recycle isopropyl alcohol used in the measurement process.\nDAFT / DAFT-2 tests that a modified P-Trak particulate counter would be accurate in microgravity.\nSummarized objectives include:\n1) Demonstrate the Functionality of the Modified TSI P-Trak in Microgravity\n2) Compare the TSI P-Trak Performance against the DustTrak control\n3) Create and Analyze Aerosol Standards in Microgravity\n4) Ensure the reliability of future aerosol experiments",
+  "Project": "Project Type\tMicrogravity Investigation\nFlight Platform\tInternational Space Station (ISS)\nInvestigation Start Date\t03-01-2003\nInvestigation End Date\t06-01-2009\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA)\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "The experimental approach consists of the following components:\n1) Modification of Instrumentation: TSI P-Trak was modified for use in microgravity by redesigning the condenser tube to use capillary forces for recycling isopropyl alcohol and removing the mercury switch responsible for detecting instrument orientation.\n2) Aerosol Generation: Arizona Red Dust (ARD) was chosen as an aerosol standard due to its ease of dispersion. The ARD was aerosolized with GN2 to create particle samples. The aerosol was contained within 15-liter Mylar bags.\n3) On-Orbit Testing: The modified P-Trak gathered data from counting aerosol particles and these data were compared to the DustTrak CNC specifically designed to work in microgravity.",
+  "Hypothesis": "The TSI P-Trak operates by condensing isopropanol around aerosol particulates that are subsequently laser counted. It was hypothesized that the P-Trak would not work in microgravity due to two potential failure modes that exist. 1) the system would clog or become obscured by isopropanol, and 2) the internal air-flow dynamics of the optics chamber of the device will cause an over counting of particulates.\nThe TSI P-Trak was modified for microgravity use via using capillary action to recycle the isopropanol. Therefore, there are two basic hypotheses:\n1) that the P-Trak, as modified for use in SAME, would function normally in microgravity.\n2) that the aerosol created and filtered per the experiment design would be within the measurement capabilities of the test devices.",
+  "Research Impacts/Earth Benefits": "Extended duration space flight missions with larger vessels will require fire detection systems with increased reliability and sensitivity. This research will impact the development of novel fire and smoke detection systems for the International Space Station and future spacecrafts. Additionally, the successful adaptation of the TSI P-Trak for microgravity can inform the design of instruments for use in other challenging Earth environments, such as submarines or underwater laboratories where accurate detection of smoke can save lives.",
+  "Contact(s)": "David L Urbanemail,Claire Fortenberryemail\ntable_view\nExperimental Table\nSelect Experimental Table\nFilter\nSession Name\tActual Day\tHardware Description\tSample Material\tSampled Location\nD1\tGMT 54 (2005)\tContained the modified P-Trak with Alcohol Wick and batteries\tArizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes.\tSampled air near Express rack 4\nD2\tGMT 63 (2005)\tContained DustTrak and batteries\tArizona Road Dust (ARD Fine) in combination with ISS GN2 to create an aerosol for measurement purposes.\tSampled separated Velcro and the air near Port rack 6 and in Node 1\nItems per page:\n5\n1 – 3 of 3\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nIdentifier\nTSI P-Trak\nimage\nRepresentative Images/Videos\nPSI-47_Representative Image(s)_DAFT on ISS.jpg\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-47",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-47/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Investigation Metadata Files/PSI-47_metadata_PSI-126_DAFT_DAFT-2.zip",
+      "type": "file",
+      "size": "8.26 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Reports",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Reports/PSI-47_Reports_DAFT_FinalReport.doc",
+      "type": "file",
+      "size": "8.44 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Reports/PSI-47_Reports_DAFT_30Day.PostFlightReport.pdf",
+      "type": "file",
+      "size": "181.3 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Reports/PSI-47_Reports_DAFT_1YearReport.doc",
+      "type": "file",
+      "size": "4.69 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Presentations",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Presentations/PSI-47_Presentations_DAFT_Increment13SciSymposium_2006.ppt",
+      "type": "file",
+      "size": "5.76 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Presentations/PSI-47_Presentations_SmokeDetectionfromMicrogravityFires.ppt",
+      "type": "file",
+      "size": "7.88 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Presentations/PSI-47_Presentations_Daft_FactSheet.pdf",
+      "type": "file",
+      "size": "744.82 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Analyzed Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_DAFT Flight Data GMT053.xls",
+      "type": "file",
+      "size": "126.0 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_flight data 063.xls",
+      "type": "file",
+      "size": "262.0 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_flight data 063_TIMING.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_ISS_Daft_Aug21_06 urban.xls",
+      "type": "file",
+      "size": "29.0 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_ISS_Daft_Aug21_0611zgy time hist.xls",
+      "type": "file",
+      "size": "37.5 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/PSI-47_Analyzed Data_DAFT Retrieved Data Summary.xls",
+      "type": "file",
+      "size": "980.5 KB",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/P-TRAK",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/P-TRAK/PSI-47_Analyzed Data_flight data 063_PTrk0003.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/P-TRAK/PSI-47_Analyzed Data_flight data 063_PTrk0002.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/P-TRAK/PSI-47_Analyzed Data_flight data 063_PTrk0004.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/DustTrak",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/DustTrak/PSI-47_Analyzed Data_flight data 063_DTrk0003.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/DustTrak/PSI-47_Analyzed Data_flight data 063_DTrk0002.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Analyzed Data/Reduced Gravity/DustTrak/PSI-47_Analyzed Data_flight data 063_DTrk0004.xls",
+      "type": "file",
+      "size": "277.0 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/P-TRAK",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/P-TRAK/PSI-47_Raw Data_PTrk0003.txt",
+      "type": "file",
+      "size": "2.93 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/P-TRAK/PSI-47_Raw Data_PTrk0002.txt",
+      "type": "file",
+      "size": "3.94 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/P-TRAK/PSI-47_Raw Data_PTrk0004.txt",
+      "type": "file",
+      "size": "1.96 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/DustTrak",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/DustTrak/PSI-47_Raw Data_DTrk0003.txt",
+      "type": "file",
+      "size": "3.23 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/DustTrak/PSI-47_Raw Data_DTrk0002.txt",
+      "type": "file",
+      "size": "3.66 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Raw Data/Reduced Gravity/DustTrak/PSI-47_Raw Data_DTrk0004.txt",
+      "type": "file",
+      "size": "2.42 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-47/Engineering Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_DAFT Images.ppt",
+      "type": "file",
+      "size": "7.28 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+      "type": "file",
+      "size": "159.04 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_Procedure.Sampling.pdf",
+      "type": "file",
+      "size": "44.7 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_Procedure.DataTransfer.pdf",
+      "type": "file",
+      "size": "44.95 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_Procedure.Restow.pdf",
+      "type": "file",
+      "size": "33.74 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Engineering Documents/PSI-47_Engineering Documents_Procedure.SetUp.pdf",
+      "type": "file",
+      "size": "33.12 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Representative Image(s)",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Representative Image(s)/PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+      "type": "file",
+      "size": "1.25 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-47/Experimental table",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv",
+      "type": "file",
+      "size": "518.0 B",
+      "depth": 2
+    }
+  ]
+}

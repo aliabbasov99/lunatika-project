@@ -1,0 +1,391 @@
+{
+  "id": "PSI-115",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+  "title": "PSI-115Version 3 Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity Investigation",
+  "Objectives": "The objective of this investigation was to use numerical simulation to explore the influence of gravity on pyrolysis smoke growth from a fundamental perspective. The intention of this effort is to quantify the differences between microgravity and Earth gravity smoke, and to identify the fluid dynamic mechanisms that cause the differences.",
+  "Project": "Project Type\tGround Investigation\nFlight Platform\tNot Applicable\nInvestigation Start Date\t01-30-2017\nInvestigation End Date\t12-31-2019\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA), PSI Grant\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "The formation and growth of dibutyl-phthalate (DBP) particles in Earth gravity and microgravity environments was simulated. Direct numerical simulation via a Navier-Stokes nodal approach was utlilized. The smoke originates from pyrolysis vapor expelled from a heated sample in a geometry similar to that considered in the SAME experiments. This study considered two cross-flow velocities of sufficiently low speed that buoyancy cannot be neglected in the presence of gravity. Simulations are presented to assess the dependence of particle size distributions on thermophoresis, particle settling, and flow geometry. The final report for this investigation introduces the simulation and modeling methodology, followed by a description of the flow geometry and the parameter space under consideration.The differences in the wake geometry attributable to buoyancy for the lower of two flow speeds was examined. Instantaneous scalar fields were used to describe particle accumulation and growth in the buoyant and non-buoyant wakes that form downstream of the hot vapor source.",
+  "Hypothesis": "Without buoyancy, mixing and heat transfer are reduced, the time-temperature history of the combustion vapors (or particle precursors) and particle trajectories are significantly altered, changing the composition of the smoke. The chemical composition of the burning material also affects the characteristics of the smoke generated.",
+  "Research Impacts/Earth Benefits": "Models and tools that characterize particles generated as smoke can be used to ascertain how temperature, gravity, and material properties affect the smoke produced. This would directly lead to better smoke detection devices and prevent fires that can lead to loss of materiel and loss of life.",
+  "Contact(s)": "Sean Garrickemail,Michael Hicksemail\ntable_view\nExperimental Table\nNo associated Experimental Table\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nNo associated hardware\nimage\nRepresentative Images/Videos\nNo associated investigation representative image(s).\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-115",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-115/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-115/Investigation Metadata Files/PSI-115_metadata_PSI-185_Utilization of the S.zip",
+      "type": "file",
+      "size": "6.86 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-115/Analyzed Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityNumDen.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityNucRate.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravitySmoke.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityDAM.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityU.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityPSD.dat",
+      "type": "file",
+      "size": "1.68 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityVort.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravitySpeciesMF.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityTemperature.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity/PSI-115_Analyzed Data_8cmGravityV.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; no settling",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; no settling/PSI-115_Analyzed Data_8cmGravityNS_PSD.dat",
+      "type": "file",
+      "size": "1.71 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityuR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityvR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Earth Gravity; rotated/PSI-115_Analyzed Data_8cmGravityNumdenR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityPSD.dat",
+      "type": "file",
+      "size": "1.68 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityNumDen.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravitySmoke.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityDAM.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityNucRate.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityV.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityVaporMF.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityVort.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityTemperature.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cmNoGravityU.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity/PSI-115_Analyzed Data_8cm_sGrid_grid3d.dat",
+      "type": "file",
+      "size": "17.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_PSD.dat",
+      "type": "file",
+      "size": "1.71 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_u.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_v.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; no thermophoresis/PSI-115_Analyzed Data_8cmNoGravityNoTF_NumDen.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityuR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityvR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case1/Microgravity; rotated/PSI-115_Analyzed Data_8cmNoGravityNumDenR.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravitySmoke.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityU.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityV.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityPSD.dat",
+      "type": "file",
+      "size": "1.68 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Earth Gravity/PSI-115_Analyzed Data_10cmGravityNumDen.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravitySmoke.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityU.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityV.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityPSD.dat",
+      "type": "file",
+      "size": "1.68 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cmNoGravityNumDen.dat",
+      "type": "file",
+      "size": "5.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_10cm_sGrid_grid3d.dat",
+      "type": "file",
+      "size": "17.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Analyzed Data/Modeling Data/Case2/Microgravity/PSI-115_Analyzed Data_nodeDiameters.dat",
+      "type": "file",
+      "size": "1.03 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-115/Reports",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-115/Reports/PSI-115_Reports_NNX17AF08A_FinalReport.pdf",
+      "type": "file",
+      "size": "10.13 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-115/Science Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-115/Science Documents/PSI-115_Science Documents_DataOrganizationDocument.pdf",
+      "type": "file",
+      "size": "94.63 KB",
+      "depth": 2
+    }
+  ]
+}

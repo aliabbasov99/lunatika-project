@@ -1,0 +1,4969 @@
+{
+  "id": "PSI-25",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "title": "PSI-25Version 4 Burning and Suppression of Solids - II(BASS-II) Investigation",
+  "Objectives": "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth.\nObjectives Include:\n1) Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in low-velocity forced flows in microgravity.\n2) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method, ground-based microgravity tests, and actual material flammability in microgravity.\n3) Provide SoFIE PIs with preliminary data to refine Science Requirements.\n4) Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs, cylinders, and spherical sections.\nThe primary variables include:\n• Forced flow velocity (speed and direction)\n• Ambient oxygen concentration (via working volume nitrogen vitiation)\n• Sample geometry (rods, spherical section, slabs, films, and fabric sheets",
+  "Project": "Project Type\tMicrogravity Investigation\nFlight Platform\tInternational Space Station (ISS)\nInvestigation Start Date\t01-01-2010\nInvestigation End Date\t12-31-2022\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA)\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "To summarize, BASS-II's approach, microgravity combustion tests were performed aboard the International Space Station. Active crew support for real-time “lab partner” operations. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds up to 40 cm/s. Main variables are airflow speed and oxygen concentration (oxygen varied below 21% by adding nitrogen). Flame appearance, flame growth, and spread rates were determined in both the opposed and concurrent flow.",
+  "Hypothesis": "BASS–II tests the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, O2\nconcentration, temperature, etc.). NASA tests and controls materials from a flammability perspective using an upward burning test in normal gravity, which is considered to be the worst-case geometry for\nflammability of the material on Earth. However, it may not be conservative for flammability in space. Testing at constant O2 mole fractions permits studying flame spread and extinction at low and high flow speed. We are interested in finding the fundamental limit for a given material.",
+  "Research Impacts/Earth Benefits": "A primary goal of BASS-II is improved spacecraft fire safety, improved understanding of combustion in space and how to avoid it. If you’re on a mission far from Earth, a fire can be catastrophic. BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions. In outer space, fuels burn as oval balls rather than with an upward pointed cone flame as they do on Earth. This simpler combustion process enables researchers to evaluate computer models of fuel burning. These models can then be used to more accurately study flames on Earth, such as in wildfires, building fires, energy recapture from waste recycling, and other combustion problems.",
+  "Contact(s)": "Paul Ferkulemail,Carlos Fernandez-Pelloemail,Fletcher J. Milleremail,James T'ienemail,Subrata Bhattachjeeemail\ntable_view\nExperimental Table\nSelect Experimental Table\nFilter\nPI\tTest #\tDate\tGMT\tSample #\tFuel Sample Material\tFlow restrictor\tFan display\tAir display\tRadiometer gain (1000 250 50 10)\tTotal Frames Shot\tCalibrated initial O2 % by vol\tCalibrated final O2 % by vol\tInitial CO2 % by vol\tFinal CO2 % by vol\tInitial CO (ppm)\tFinal CO (ppm)\nBhattacharjee\tB1\t2/19/2014\t50\t147\t100 micron PMMA film 2 cm wide\t2\t62\t5\t50\t57\t22.2\t22.2\t0.44\t0.44\t0\t6\nBhattacharjee\tB2\t2/19/2014\t50\t155\t200 micron PMMA film 2 cm wide\t2\t62\t5\t50\tnone\t22.2\t1.6\t0.44\t\t6\nBhattacharjee\tB3\t2/19/2014\t50\t148\t100 micron film 2 cm wide\t2\t47\t2\t50\t253\t22.2\t21.8\t0.43\t0.49\t12\t19\nBhattacharjee\tB4\t2/19/2014\t50\t159\t300 micron PMMA film 2 cm wide\t2\t61\t5\t50\t137\t22.2\t22.2\t0.44\t0.51\t-1\t10\nBhattacharjee\tB5\t2/19/2014\t50\t156\t200 micron 2 cm wide\t2\t59\t5\t50\t206\t22.2\t21.9\t0.43\t0.43\t0\t12\nItems per page:\n5\n1 – 5 of 130\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nIdentifier\nMicrogravity Science Glovebox (MSG)\nimage\nRepresentative Images/Videos\nPSI-25_Representative Image(s)_BASS-II_flame testing.jpg\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-25",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-25/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Investigation Metadata Files/PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+      "type": "file",
+      "size": "13.12 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Engineering Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Engineering Documents/PSI-25_Engineering Documents_BASS-II_Engineering Requirements.pptx",
+      "type": "file",
+      "size": "1.07 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Engineering Documents/PSI-25_Engineering Documents_BASS-II_Ops.docx",
+      "type": "file",
+      "size": "1.06 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Raw Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_147_TEST_B1.mp4",
+      "type": "file",
+      "size": "5.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_147_TEST_B1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.7 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_iss038e051108.zip",
+      "type": "file",
+      "size": "627.61 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_148_TEST_B3.mp4",
+      "type": "file",
+      "size": "7.63 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_GMT2014_050_BASS_S147M_TPB1_ProofSheet.pdf",
+      "type": "file",
+      "size": "258.21 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_147_TEST_B1 original videos.zip",
+      "type": "file",
+      "size": "13.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B3/PSI-25_Raw Data_BASS_GMT50_SAMPLE_148_TEST_B3_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.98 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B3/PSI-25_Raw Data_iss038e051295.zip",
+      "type": "file",
+      "size": "534.48 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B3/PSI-25_Raw Data_GMT2014_050_BASS_S148M_TPB3_ProofSheet.pdf",
+      "type": "file",
+      "size": "242.37 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B3/PSI-25_Raw Data_BASS_GMT50_SAMPLE_148_TEST_B3 original videos.zip",
+      "type": "file",
+      "size": "14.92 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B2/PSI-25_Raw Data_BASS_GMT50_SAMPLE_155_TEST_B2.mp4",
+      "type": "file",
+      "size": "7.49 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B2/PSI-25_Raw Data_iss038e051200.zip",
+      "type": "file",
+      "size": "146.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B2/PSI-25_Raw Data_GMT2014_050_BASS_S155M_TPB2_ProofSheet.pdf",
+      "type": "file",
+      "size": "100.6 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B2/PSI-25_Raw Data_BASS_GMT50_SAMPLE_155_TEST_B2 original videos.zip",
+      "type": "file",
+      "size": "10.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5/PSI-25_Raw Data_BASS_GMT50_SAMPLE_156_TEST_B5.mp4",
+      "type": "file",
+      "size": "10.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5/PSI-25_Raw Data_BASS_GMT50_SAMPLE_156_TEST_B5_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5/PSI-25_Raw Data_iss038e051258.zip",
+      "type": "file",
+      "size": "678.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5/PSI-25_Raw Data_GMT2014_050_BASS_S156M_TPB5_ProofSheet.pdf",
+      "type": "file",
+      "size": "316.64 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B5/PSI-25_Raw Data_BASS_GMT50_SAMPLE_156_TEST_B5 original videos.zip",
+      "type": "file",
+      "size": "20.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4/PSI-25_Raw Data_BASS_GMT50_SAMPLE_159_TEST_B4.mp4",
+      "type": "file",
+      "size": "12.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4/PSI-25_Raw Data_BASS_GMT50_SAMPLE_159_TEST_B4_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.2 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4/PSI-25_Raw Data_iss038e051182.zip",
+      "type": "file",
+      "size": "875.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4/PSI-25_Raw Data_GMT2014_050_BASS_S159M_TPB4_ProofSheet.pdf",
+      "type": "file",
+      "size": "350.83 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B4/PSI-25_Raw Data_BASS_GMT50_SAMPLE_159_TEST_B4 original videos.zip",
+      "type": "file",
+      "size": "23.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12/PSI-25_Raw Data_BASS_GMT50_SAMPLE_160_TEST_B12.mp4",
+      "type": "file",
+      "size": "12.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12/PSI-25_Raw Data_BASS_GMT50_SAMPLE_160_TEST_B12_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12/PSI-25_Raw Data_iss038e051408.zip",
+      "type": "file",
+      "size": "927.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12/PSI-25_Raw Data_GMT2014_050_BASS_S160M_TPB12_ProofSheet.pdf",
+      "type": "file",
+      "size": "399.04 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B12/PSI-25_Raw Data_BASS_GMT50_SAMPLE_160_TEST_B12 original videos.zip",
+      "type": "file",
+      "size": "24.41 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16/PSI-25_Raw Data_BASS_GMT183_SAMPLE_150_TESTB16.mp4",
+      "type": "file",
+      "size": "11.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16/PSI-25_Raw Data_BASS_GMT183_SAMPLE_150_TESTB16_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "17.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16/PSI-25_Raw Data_iss040e031282.zip",
+      "type": "file",
+      "size": "1.13 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16/PSI-25_Raw Data_GMT2014_183_BASS_S150M_TPB16ProofSheet.pdf",
+      "type": "file",
+      "size": "493.15 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B16/PSI-25_Raw Data_BASS_GMT183_SAMPLE_150_TESTB16 original videos.zip",
+      "type": "file",
+      "size": "46.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_BASS_GMT183_SAMPLE_151_TESTB19.mp4",
+      "type": "file",
+      "size": "10.05 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_BASS_GMT183_SAMPLE_151_TESTB19_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "10.45 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_BASS_GMT183_SAMPLE_151_TESTB19_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_iss040e031379.zip",
+      "type": "file",
+      "size": "1.11 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_GMT2014_183_BASS_S151M_TPB19_ProofSheet.pdf",
+      "type": "file",
+      "size": "569.96 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B19/PSI-25_Raw Data_BASS_GMT183_SAMPLE_151_TESTB19 original videos.zip",
+      "type": "file",
+      "size": "41.92 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_BASS_GMT183_SAMPLE_152_TESTB20_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "14.03 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_BASS_GMT183_SAMPLE_152_TESTB20.mp4",
+      "type": "file",
+      "size": "9.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_BASS_GMT183_SAMPLE_152_TESTB20_Still_Sequence.mp4",
+      "type": "file",
+      "size": "5.45 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_iss040e031181.zip",
+      "type": "file",
+      "size": "1.29 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_GMT2014_183_BASS_S152M_TPB20_ProofSheet.pdf",
+      "type": "file",
+      "size": "626.46 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B20/PSI-25_Raw Data_BASS_GMT183_SAMPLE_152_TESTB20 original videos.zip",
+      "type": "file",
+      "size": "53.66 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14/PSI-25_Raw Data_BASS_GMT183_SAMPLE_174_TESTB14_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "9.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14/PSI-25_Raw Data_iss040e030711.zip",
+      "type": "file",
+      "size": "489.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14/PSI-25_Raw Data_GMT2014_183_BASS_S174M_TPB14_ProofSheet.pdf",
+      "type": "file",
+      "size": "226.54 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14/PSI-25_Raw Data_BASS_GMT183_SAMPLE_174_TESTB14 original videos.zip",
+      "type": "file",
+      "size": "25.35 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B14/PSI-25_Raw Data_BASS_GMT183_SAMPLE_174_TESTB14.mp4",
+      "type": "file",
+      "size": "3.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17/PSI-25_Raw Data_BASS_GMT183_SAMPLE_175_TESTB15.mp4",
+      "type": "file",
+      "size": "20.11 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17/PSI-25_Raw Data_BASS_GMT183_SAMPLE_175_TESTB15_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "30.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17/PSI-25_Raw Data_iss040e030906.zip",
+      "type": "file",
+      "size": "2.25 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17/PSI-25_Raw Data_GMT2014_183_BASS_S175M_TPB17_ProofSheet.pdf",
+      "type": "file",
+      "size": "751.47 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B17/PSI-25_Raw Data_BASS_GMT183_SAMPLE_175_TESTB15 original videos.zip",
+      "type": "file",
+      "size": "80.06 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_BASS_GMT183_SAMPLE_176_TESTB18.mp4",
+      "type": "file",
+      "size": "13.83 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_BASS_GMT183_SAMPLE_176_TESTB18_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_BASS_GMT183_SAMPLE_176_TESTB18_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "21.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_iss040e031063.zip",
+      "type": "file",
+      "size": "1.8 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_GMT2014_183_BASS_S176M_TPB18_ProofSheet.pdf",
+      "type": "file",
+      "size": "738.38 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B18/PSI-25_Raw Data_BASS_GMT183_SAMPLE_176_TESTB18 original videos.zip",
+      "type": "file",
+      "size": "62.77 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_149_TESTB15.mp4",
+      "type": "file",
+      "size": "10.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_149_TESTB15_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "9.78 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_149_TESTB15_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_iss040e045850.zip",
+      "type": "file",
+      "size": "832.52 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_GMT2014_188_BASS_S149M_TPB15_ProofSheet.pdf",
+      "type": "file",
+      "size": "475.03 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_149_TESTB15 original videos.zip",
+      "type": "file",
+      "size": "35.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_BASS_GMT188_SAMPLE_153_TESTB6.mp4",
+      "type": "file",
+      "size": "7.24 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_BASS_GMT188_SAMPLE_153_TESTB6_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "8.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_BASS_GMT188_SAMPLE_153_TESTB6_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_iss040e045728.zip",
+      "type": "file",
+      "size": "878.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_GMT2014_188_BASS_S153M_TPB6_ProofSheet.pdf",
+      "type": "file",
+      "size": "501.7 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B6/PSI-25_Raw Data_BASS_GMT188_SAMPLE_153_TESTB6 original videos.zip",
+      "type": "file",
+      "size": "31.32 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9/PSI-25_Raw Data_BASS_GMT188_SAMPLE_154_TESTB9.mp4",
+      "type": "file",
+      "size": "4.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9/PSI-25_Raw Data_BASS_GMT188_SAMPLE_154_TESTB9_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "4.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9/PSI-25_Raw Data_iss040e045775.zip",
+      "type": "file",
+      "size": "561.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9/PSI-25_Raw Data_GMT2014_188_BASS_S154M_TPB9_ProofSheet.pdf",
+      "type": "file",
+      "size": "306.04 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B9/PSI-25_Raw Data_BASS_GMT188_SAMPLE_154_TESTB9 original vidoes.zip",
+      "type": "file",
+      "size": "14.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_BASS_GMT188_SAMPLE_157_TESTB8.mp4",
+      "type": "file",
+      "size": "17.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_BASS_GMT188_SAMPLE_157_TESTB8_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "14.98 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_BASS_GMT188_SAMPLE_157_TESTB8_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_iss040e045964.zip",
+      "type": "file",
+      "size": "1.28 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_GMT2014_188_BASS_S157M_TPB8_ProofSheet.pdf",
+      "type": "file",
+      "size": "816.7 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B8/PSI-25_Raw Data_BASS_GMT188_SAMPLE_157_TESTB8 original videos.zip",
+      "type": "file",
+      "size": "53.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_BASS_GMT188_SAMPLE_162_TESTB13.mp4",
+      "type": "file",
+      "size": "27.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_BASS_GMT188_SAMPLE_162_TESTB13_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.02 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_BASS_GMT188_SAMPLE_162_TESTB13_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "30.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_iss040e046276.zip",
+      "type": "file",
+      "size": "2.12 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_GMT2014_188_BASS_S162M_TPB13_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B13/PSI-25_Raw Data_BASS_GMT188_SAMPLE_162_TESTB13 original videos.zip",
+      "type": "file",
+      "size": "89.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_BASS_GMT188_SAMPLE_173_TESTB10.mp4",
+      "type": "file",
+      "size": "16.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_BASS_GMT188_SAMPLE_173_TESTB10_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_BASS_GMT188_SAMPLE_173_TESTB10_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "20.55 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_iss040e046091.zip",
+      "type": "file",
+      "size": "1.35 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_GMT2014_188_BASS_S173M_TPB10_ProofSheet.pdf",
+      "type": "file",
+      "size": "723.06 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B10/PSI-25_Raw Data_BASS_GMT188_SAMPLE_173_TESTB10 original videos.zip",
+      "type": "file",
+      "size": "61.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22/PSI-25_Raw Data_BASS_GMT216_SAMPLE_176_TEST_B22.mp4",
+      "type": "file",
+      "size": "12.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22/PSI-25_Raw Data_BASS_GMT216_SAMPLE_176_TEST_B22_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "15.02 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22/PSI-25_Raw Data_GMT2014_216_BASS_S176M_TPB22.zip",
+      "type": "file",
+      "size": "783.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22/PSI-25_Raw Data_GMT2014_216_BASS_S176M_TPB22_ProofSheet.pdf",
+      "type": "file",
+      "size": "392.97 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B22/PSI-25_Raw Data_BASS_GMT216_SAMPLE_176_TEST_B22 original videos.zip",
+      "type": "file",
+      "size": "48.05 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7/PSI-25_Raw Data_iss038e051384.zip",
+      "type": "file",
+      "size": "1.06 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7/PSI-25_Raw Data_GMT2014_050_BASS_S161M_TPB7_ProofSheet.pdf",
+      "type": "file",
+      "size": "470.71 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7/PSI-25_Raw Data_BASS_GMT50_SAMPLE_161_TEST_B7_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7/PSI-25_Raw Data_BASS_GMT50_SAMPLE_161_TEST_B7.mp4",
+      "type": "file",
+      "size": "15.92 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B7/PSI-25_Raw Data_BASS_GMT50_SAMPLE_161_TEST_B7 original videos.zip",
+      "type": "file",
+      "size": "29.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21/PSI-25_Raw Data_GMT2014_216_BASS_S174M_TPB21.zip",
+      "type": "file",
+      "size": "965.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21/PSI-25_Raw Data_GMT2014_216_BASS_S174M_TPB21_ProofSheet.pdf",
+      "type": "file",
+      "size": "469.75 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21/PSI-25_Raw Data_BASS_GMT216_SAMPLE_174_TEST_B21.mp4",
+      "type": "file",
+      "size": "19.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21/PSI-25_Raw Data_BASS_GMT216_SAMPLE_174_TEST_B21_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "19.35 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B21/PSI-25_Raw Data_BASS_GMT216_SAMPLE_174_TEST_B21 original videos.zip",
+      "type": "file",
+      "size": "59.77 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_iss040e042733.zip",
+      "type": "file",
+      "size": "1.43 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_GMT2014_188_BASS_S158M_TPB11_ProofSheet.pdf",
+      "type": "file",
+      "size": "778.72 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_BASS_GMT188_SAMPLE_158_TESTB11 original videos.zip",
+      "type": "file",
+      "size": "59.16 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_BASS_GMT188_SAMPLE_158_TESTB11_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_BASS_GMT188_SAMPLE_158_TESTB11_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "19.42 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Bhattacharjee/B11/PSI-25_Raw Data_BASS_GMT188_SAMPLE_158_TESTB11.mp4",
+      "type": "file",
+      "size": "16.67 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_227_TEST_F1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_227_TEST_F1.mp4",
+      "type": "file",
+      "size": "10.27 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1/PSI-25_Raw Data_iss038e051507.zip",
+      "type": "file",
+      "size": "629.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1/PSI-25_Raw Data_GMT2014_050_BASS_S227M_TPF1_ProofSheet.pdf",
+      "type": "file",
+      "size": "394.13 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F1/PSI-25_Raw Data_BASS_GMT50_SAMPLE_227_TEST_F1 original videos.zip",
+      "type": "file",
+      "size": "16.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4/PSI-25_Raw Data_BASS_GMT175_SAMPLE_039_TEST_F4.mp4",
+      "type": "file",
+      "size": "41.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4/PSI-25_Raw Data_BASS_GMT175_SAMPLE_039_TEST_F4_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "56.41 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4/PSI-25_Raw Data_iss040e018147.zip",
+      "type": "file",
+      "size": "1.77 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4/PSI-25_Raw Data_GMT2014_175_BASS_S39M_TPF04_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.03 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F4/PSI-25_Raw Data_BASS_GMT175_SAMPLE_039_TEST_F4 original videos.zip",
+      "type": "file",
+      "size": "136.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3/PSI-25_Raw Data_BASS_GMT213_SAMPLE_229_TEST_F3.mp4",
+      "type": "file",
+      "size": "12.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3/PSI-25_Raw Data_BASS_GMT213_SAMPLE_229_TEST_F3_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "15.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3/PSI-25_Raw Data_GMT2014_213_BASS_S229M_TPF3.zip",
+      "type": "file",
+      "size": "401.3 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3/PSI-25_Raw Data_GMT2014_213_BASS_S229M_TPF3_ProofSheet.pdf",
+      "type": "file",
+      "size": "229.12 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Ferkul/F3/PSI-25_Raw Data_BASS_GMT213_SAMPLE_229_TEST_F3 original videos.zip",
+      "type": "file",
+      "size": "42.63 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_BASS_GMT167_SAMPLE_188_TEST_P2.mp4",
+      "type": "file",
+      "size": "54.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_BASS_GMT167_SAMPLE_188_TEST_P2_Still_Sequence.mp4",
+      "type": "file",
+      "size": "634.65 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_BASS_GMT167_SAMPLE_188_TEST_P2_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "66.32 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_iss040e012916.zip",
+      "type": "file",
+      "size": "3.35 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_GMT2014_167_BASS_S188M_TPP2_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P2/PSI-25_Raw Data_BASS_GMT167_SAMPLE_188_TEST original videos.zip",
+      "type": "file",
+      "size": "172.52 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3a.mp4",
+      "type": "file",
+      "size": "57.84 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3a_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.05 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "73.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3b.mp4",
+      "type": "file",
+      "size": "104.09 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "139.61 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_iss040e013020.zip",
+      "type": "file",
+      "size": "1.08 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_iss040e013123.zip",
+      "type": "file",
+      "size": "1.15 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_iss040e013223.zip",
+      "type": "file",
+      "size": "1.16 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_iss040e013526.zip",
+      "type": "file",
+      "size": "3.42 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_GMT2014_167_BASS_S215M_TPP3a_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_GMT2014_167_BASS_S215M_TPP3b_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P3/PSI-25_Raw Data_BASS_GMT167_SAMPLE_215_TEST_P3a original videos.zip",
+      "type": "file",
+      "size": "522.68 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14/PSI-25_Raw Data_BASS_GMT174_SAMPLE_189_TEST_P14.mp4",
+      "type": "file",
+      "size": "81.03 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14/PSI-25_Raw Data_BASS_GMT174_SAMPLE_189_TEST_P14_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "138.78 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14/PSI-25_Raw Data_iss040e020561.zip",
+      "type": "file",
+      "size": "1.7 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14/PSI-25_Raw Data_GMT2014_174_BASS_S189M_TPP14_ProofSheet.pdf",
+      "type": "file",
+      "size": "725.97 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P14/PSI-25_Raw Data_BASS_GMT174_SAMPLE_189_TEST_P14 original videos.zip",
+      "type": "file",
+      "size": "262.45 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_BASS_GMT174_SAMPLE_190_TEST_P15.mp4",
+      "type": "file",
+      "size": "67.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_BASS_GMT174_SAMPLE_190_TEST_P15_Still_Sequence.mp4",
+      "type": "file",
+      "size": "4.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_BASS_GMT174_SAMPLE_190_TEST_P15_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "109.39 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_iss040e017750.zip",
+      "type": "file",
+      "size": "1.98 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_GMT2014_174_BASS_S190M_TPP15_ProofSheet.pdf",
+      "type": "file",
+      "size": "894.23 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P15/PSI-25_Raw Data_BASS_GMT174_SAMPLE_190_TEST_P15 original videos.zip",
+      "type": "file",
+      "size": "225.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_BASS_GMT174_SAMPLE_196_TEST_P21a.mp4",
+      "type": "file",
+      "size": "42.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_BASS_GMT174_SAMPLE_196_TEST_P21a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "55.87 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_BASS_GMT174_SAMPLE_196_TEST_P21b.mp4",
+      "type": "file",
+      "size": "34.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_BASS_GMT174_SAMPLE_196_TEST_P21b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "43.74 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_iss040e017812.zip",
+      "type": "file",
+      "size": "726.41 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_iss040e017813.zip",
+      "type": "file",
+      "size": "726.41 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_iss040e017831.zip",
+      "type": "file",
+      "size": "163.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_GMT2014_174_BASS_S196M_TPP21a_ProofSheet.pdf",
+      "type": "file",
+      "size": "291.42 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_GMT2014_174_BASS_S196M_TPP21b_ProofSheet.pdf",
+      "type": "file",
+      "size": "81.92 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P21/PSI-25_Raw Data_BASS_GMT174_SAMPLE_196_TEST_P21a original videos.zip",
+      "type": "file",
+      "size": "248.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P6/PSI-25_Raw Data_BASS_GMT184_SAMPLE_186_TESTP6.mp4",
+      "type": "file",
+      "size": "54.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P6/PSI-25_Raw Data_iss040e032206.zip",
+      "type": "file",
+      "size": "1.79 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P6/PSI-25_Raw Data_GMT2014_184_BASS_S186M_TPP6_ProofSheet.pdf",
+      "type": "file",
+      "size": "906.62 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P6/PSI-25_Raw Data_BASS_GMT184_SAMPLE_186_TESTP6 original videos.zip",
+      "type": "file",
+      "size": "76.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4/PSI-25_Raw Data_BASS_GMT184_SAMPLE_197_TESTP4.mp4",
+      "type": "file",
+      "size": "148.97 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4/PSI-25_Raw Data_iss040e032358.zip",
+      "type": "file",
+      "size": "1.66 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4/PSI-25_Raw Data_iss040e032501.zip",
+      "type": "file",
+      "size": "1.73 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4/PSI-25_Raw Data_GMT2014_184_BASS_S197M_TPP4_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P4/PSI-25_Raw Data_BASS_GMT184_SAMPLE_197_TESTP4 original videos.zip",
+      "type": "file",
+      "size": "210.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_P25.mp4",
+      "type": "file",
+      "size": "99.03 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_P25_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "122.55 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25/PSI-25_Raw Data_iss040e053783.zip",
+      "type": "file",
+      "size": "2.69 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25/PSI-25_Raw Data_GMT2014_189_BASS_S217M_TPP25_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.45 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P25/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_P25 original videos.zip",
+      "type": "file",
+      "size": "304.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P9/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P9.mp4",
+      "type": "file",
+      "size": "104.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P9/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P9_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "167.3 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P9/PSI-25_Raw Data_GMT2014_195_BASS_S202M_TPP9.zip",
+      "type": "file",
+      "size": "1.51 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P9/PSI-25_Raw Data_GMT2014_195_BASS_S202M_TPP9_ProofSheet.pdf",
+      "type": "file",
+      "size": "838.06 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16/PSI-25_Raw Data_BASS_GMT203_SAMPLE_191_TEST_P16.mp4",
+      "type": "file",
+      "size": "83.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16/PSI-25_Raw Data_BASS_GMT203_SAMPLE_191_TEST_P16_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "125.41 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16/PSI-25_Raw Data_GMT2014_203_BASS_S191M_TPP16.zip",
+      "type": "file",
+      "size": "1.55 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16/PSI-25_Raw Data_GMT2014_203_BASS_S191M_TPP16_ProofSheet.pdf",
+      "type": "file",
+      "size": "869.44 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P16/PSI-25_Raw Data_BASS_GMT203_SAMPLE_191_TEST_P16 original videos.zip",
+      "type": "file",
+      "size": "285.2 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19/PSI-25_Raw Data_BASS_GMT203_SAMPLE_194_TEST_P19.mp4",
+      "type": "file",
+      "size": "146.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19/PSI-25_Raw Data_BASS_GMT203_SAMPLE_194_TEST_P19_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "209.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19/PSI-25_Raw Data_GMT2014_203_BASS_S194M_TPP19.zip",
+      "type": "file",
+      "size": "2.91 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19/PSI-25_Raw Data_GMT2014_203_BASS_S194M_TPP19_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.6 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P19/PSI-25_Raw Data_BASS_GMT203_SAMPLE_194_TEST_P19 original videos.zip",
+      "type": "file",
+      "size": "463.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17/PSI-25_Raw Data_BASS_GMT210_SAMPLE_192_TEST_P17.mp4",
+      "type": "file",
+      "size": "99.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17/PSI-25_Raw Data_BASS_GMT210_SAMPLE_192_TEST_P17_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "127.32 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17/PSI-25_Raw Data_GMT2014_210_BASS_S192_TPP17.zip",
+      "type": "file",
+      "size": "2.0 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17/PSI-25_Raw Data_GMT2014_210_BASS_S192_TPP17_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P17/PSI-25_Raw Data_BASS_GMT210_SAMPLE_192_TEST_P17 orginal videos.zip",
+      "type": "file",
+      "size": "338.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_BASS_GMT210_SAMPLE_199_TEST_P12.mp4",
+      "type": "file",
+      "size": "103.28 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_BASS_GMT210_SAMPLE_199_TEST_P12_LOS_Portion_1132-1133.mp4",
+      "type": "file",
+      "size": "6.6 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_BASS_GMT210_SAMPLE_199_TEST_P12_LOS_Portion_1132-1133_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "5.11 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_BASS_GMT210_SAMPLE_199_TEST_P12_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "118.99 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_GMT2014_210_BASS_S199_TPP12_1.zip",
+      "type": "file",
+      "size": "1.7 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_GMT2014_210_BASS_S199_TPP12_2.zip",
+      "type": "file",
+      "size": "1.18 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_GMT2014_210_BASS_S199_TPP12_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.52 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P12/PSI-25_Raw Data_BASS_GMT210_SAMPLE_199_TEST_P12 original videos.zip",
+      "type": "file",
+      "size": "370.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_BASS_GMT211_SAMPLE_195_TEST_P20.mp4",
+      "type": "file",
+      "size": "93.6 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_BASS_GMT211_SAMPLE_195_TEST_P20_2ND_VIEW_LOS_Portion_15h33m45s_to_end_of_test.mp4",
+      "type": "file",
+      "size": "14.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_BASS_GMT211_SAMPLE_195_TEST_P20_LOS_Portion_15h33m45s_to_end_of_test.ts.mp4",
+      "type": "file",
+      "size": "11.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_BASS_GMT211_SAMPLE_195_TEST_P20_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "116.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_GMT2014_211_BASS_S195M_TPP20-1.zip",
+      "type": "file",
+      "size": "1.69 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_GMT2014_211_BASS_S195M_TPP20-2.zip",
+      "type": "file",
+      "size": "1.64 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_GMT2014_211_BASS_S195M_TPP20_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P20/PSI-25_Raw Data_BASS_GMT211_SAMPLE_195_TEST_P20 original videos.zip",
+      "type": "file",
+      "size": "330.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23/PSI-25_Raw Data_BASS_GMT211_SAMPLE_201_TEST_P23.mp4",
+      "type": "file",
+      "size": "146.89 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23/PSI-25_Raw Data_BASS_GMT211_SAMPLE_201_TEST_P23_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "162.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23/PSI-25_Raw Data_GMT2014_211_BASS_S201M_TPP23_original_NEF_images.zip",
+      "type": "file",
+      "size": "2.64 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23/PSI-25_Raw Data_GMT2014_211_BASS_S201M_TPP23_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.09 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P23/PSI-25_Raw Data_BASS_GMT211_SAMPLE_201_TEST_P23 original videos.zip",
+      "type": "file",
+      "size": "450.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_BASS_GMT211_SAMPLE_819_TEST_P24.mp4",
+      "type": "file",
+      "size": "131.9 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_BASS_GMT211_SAMPLE_819_TEST_P24_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_BASS_GMT211_SAMPLE_819_TEST_P24_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "165.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_GMT2014_211_BASS_S819L_TPP24_1.zip",
+      "type": "file",
+      "size": "1.66 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_GMT2014_211_BASS_S819L_TPP24_2.zip",
+      "type": "file",
+      "size": "1.61 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_GMT2014_211_BASS_S819L_TPP24_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.11 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P24/PSI-25_Raw Data_BASS_GMT211_SAMPLE_819_TEST_P24 original videos.zip",
+      "type": "file",
+      "size": "464.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_iss040e012414.zip",
+      "type": "file",
+      "size": "1.1 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_iss040e012518.zip",
+      "type": "file",
+      "size": "1.12 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_iss040e012614.zip",
+      "type": "file",
+      "size": "1.16 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_BASS_GMT167_SAMPLE_185_TEST_P1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_BASS_GMT167_SAMPLE_185_TEST_P1_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "57.56 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_BASS_GMT167_SAMPLE_185_TEST_P1.mp4",
+      "type": "file",
+      "size": "50.59 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_GMT2014_167_BASS_S185M_TPP1_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P1/PSI-25_Raw Data_BASS_GMT167_SAMPLE_185_TEST original videos.zip",
+      "type": "file",
+      "size": "159.74 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_iss040e053362.zip",
+      "type": "file",
+      "size": "785.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_iss040e053527.zip",
+      "type": "file",
+      "size": "1.74 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_BASS_GMT189_SAMPLE_200_TEST_P22a.mp4",
+      "type": "file",
+      "size": "31.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_BASS_GMT189_SAMPLE_200_TEST_P22a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "36.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_BASS_GMT189_SAMPLE_200_TEST_P22b.mp4",
+      "type": "file",
+      "size": "69.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_BASS_GMT189_SAMPLE_200_TEST_P22b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "87.85 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_GMT2014_189_BASS_S200M_TPP22a_ProofSheet.pdf",
+      "type": "file",
+      "size": "439.01 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_GMT2014_189_BASS_S200M_TPP22b_ProofSheet.pdf",
+      "type": "file",
+      "size": "977.53 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P22/PSI-25_Raw Data_BASS_GMT189_SAMPLE_200_TEST_P22a original videos.zip",
+      "type": "file",
+      "size": "312.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P10",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P10/PSI-25_Raw Data_iss040e032729.zip",
+      "type": "file",
+      "size": "2.63 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P10/PSI-25_Raw Data_GMT2014_184_BASS_S187M_TPP10_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P8",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P8/PSI-25_Raw Data_iss040e032805.zip",
+      "type": "file",
+      "size": "815.24 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P8/PSI-25_Raw Data_GMT2014_184_BASS_S198M_TPP8_ProofSheet.pdf",
+      "type": "file",
+      "size": "326.51 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_GMT2014_195_BASS_S202M_TPP5.zip",
+      "type": "file",
+      "size": "3.05 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P5.mp4",
+      "type": "file",
+      "size": "175.58 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P5-LOS-portion.mp4",
+      "type": "file",
+      "size": "13.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P5_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "250.74 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_GMT2014_195_BASS_S202M_TPP5_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.65 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P5/PSI-25_Raw Data_BASS_GMT195_SAMPLE_202_TEST_P5 original videos.zip",
+      "type": "file",
+      "size": "971.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_GMT2014_195_BASS_S203M_TPP13a.zip",
+      "type": "file",
+      "size": "2.58 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_GMT2014_195_BASS_S203M_TPP13b.zip",
+      "type": "file",
+      "size": "861.36 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_BASS_GMT195_SAMPLE_203_TEST_P13b.mp4",
+      "type": "file",
+      "size": "53.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_BASS_GMT195_SAMPLE_203_TEST_P13a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "235.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_BASS_GMT195_SAMPLE_203_TEST_P13a.mp4",
+      "type": "file",
+      "size": "169.61 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_GMT2014_195_BASS_S203M_TPP13a_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.42 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_GMT2014_195_BASS_S203M_TPP13b_ProofSheet.pdf",
+      "type": "file",
+      "size": "461.87 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P13/PSI-25_Raw Data_BASS_GMT195_SAMPLE_203_TEST_P13a original videos.zip",
+      "type": "file",
+      "size": "699.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_BASS_GMT211_SAMPLE_193_TEST_P18_2ND_VIEW_LOS_Portion_10h52m52s_to_end_of_test.mp4",
+      "type": "file",
+      "size": "84.34 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_BASS_GMT211_SAMPLE_193_TEST_P18_LOS_Portion_10h52m52s_to_end_of_test.mp4",
+      "type": "file",
+      "size": "56.72 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_BASS_GMT211_SAMPLE_193_TEST_P18_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "86.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_GMT2014_211_BASS_S193M_TPP18.zip",
+      "type": "file",
+      "size": "3.1 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_GMT2014_211_BASS_S193M_TPP18_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Fernandez-Pello/P18/PSI-25_Raw Data_BASS_GMT211_SAMPLE_193_TEST_P18 original videos.zip",
+      "type": "file",
+      "size": "425.37 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_BASS_GMT51_SAMPLE_167_TEST_M5_Still_Sequence_1.mp4",
+      "type": "file",
+      "size": "4.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_BASS_GMT51_SAMPLE_167_TEST_M5_Still_Sequence_2.mp4",
+      "type": "file",
+      "size": "9.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_BASS_GMT51_SAMPLE_167_TEST_M5.mp4",
+      "type": "file",
+      "size": "184.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_iss038e052905.zip",
+      "type": "file",
+      "size": "1.17 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_iss038e053008.zip",
+      "type": "file",
+      "size": "1.18 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_iss038e053071.zip",
+      "type": "file",
+      "size": "1.27 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_iss038e053229.zip",
+      "type": "file",
+      "size": "1.32 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_GMT2014_051_BASS_S167M_TPM5_ProofSheet.pdf",
+      "type": "file",
+      "size": "2.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M5/PSI-25_Raw Data_BASS_GMT51_SAMPLE_167_TEST_M5 orignial videos.zip",
+      "type": "file",
+      "size": "265.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1/PSI-25_Raw Data_BASS_GMT51_SAMPLE_222_TEST_M1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "11.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1/PSI-25_Raw Data_BASS_GMT51_SAMPLE_222_TEST_M1.mp4",
+      "type": "file",
+      "size": "55.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1/PSI-25_Raw Data_iss038e052299.zip",
+      "type": "file",
+      "size": "3.43 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1/PSI-25_Raw Data_GMT2014_051_BASS_S222M_TPM1_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M1/PSI-25_Raw Data_BASS_GMT51_SAMPLE_222_TEST_M1 original videos.zip",
+      "type": "file",
+      "size": "96.9 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_BASS_GMT51_SAMPLE_223_TEST_M14_Still_Sequence.mp4",
+      "type": "file",
+      "size": "4.19 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_BASS_GMT51_SAMPLE_223_TEST_M14.mp4",
+      "type": "file",
+      "size": "179.27 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_iss038e052427.zip",
+      "type": "file",
+      "size": "1.53 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_iss038e052560.zip",
+      "type": "file",
+      "size": "1.58 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_GMT2014_051_BASS_S223M_TPM14_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.42 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M14/PSI-25_Raw Data_BASS_GMT51_SAMPLE_223_TEST_M14.zip",
+      "type": "file",
+      "size": "242.19 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_BASS_GMT51_SAMPLE_224_TEST_M2_Still_Sequence_1.mp4",
+      "type": "file",
+      "size": "5.24 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_BASS_GMT51_SAMPLE_224_TEST_M2_Still_Sequence_2.mp4",
+      "type": "file",
+      "size": "10.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_BASS_GMT51_SAMPLE_224_TEST_M2.mp4",
+      "type": "file",
+      "size": "202.19 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_iss038e052689.zip",
+      "type": "file",
+      "size": "1.57 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_iss038e052818.zip",
+      "type": "file",
+      "size": "1.66 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_GMT2014_051_BASS_S224_TPM2_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M2/PSI-25_Raw Data_BASS_GMT51_SAMPLE_224_TEST_M2 original videos.zip",
+      "type": "file",
+      "size": "297.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_225_TESTM15.mp4",
+      "type": "file",
+      "size": "135.68 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_225_TESTM15_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "195.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15/PSI-25_Raw Data_iss040e046434.zip",
+      "type": "file",
+      "size": "1.71 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15/PSI-25_Raw Data_GMT2014_188_BASS_S225M_TPM15_ProofSheet.pdf",
+      "type": "file",
+      "size": "924.49 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M15/PSI-25_Raw Data_BASS_GMT188_SAMPLE_225_TESTM15 originla videos.zip",
+      "type": "file",
+      "size": "472.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7/PSI-25_Raw Data_BASS_GMT192_SAMPLE_177_TEST_M7.mp4",
+      "type": "file",
+      "size": "104.92 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7/PSI-25_Raw Data_BASS_GMT192_SAMPLE_177_TEST_M7_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "171.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7/PSI-25_Raw Data_GMT2014_192_BASS_S177M_TPM7.zip",
+      "type": "file",
+      "size": "3.17 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7/PSI-25_Raw Data_GMT2014_192_BASS_S177M_TPM7_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M7/PSI-25_Raw Data_BASS_GMT192_SAMPLE_177_TEST_M7 original videos.zip",
+      "type": "file",
+      "size": "397.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_BASS_GMT192_SAMPLE_178_TEST_M8.mp4",
+      "type": "file",
+      "size": "156.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_BASS_GMT192_SAMPLE_178_TEST_M8_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "242.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_GMT2014_192_BASS_S178M_TPM8_1.zip",
+      "type": "file",
+      "size": "1.12 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_GMT2014_192_BASS_S178M_TPM8_2.zip",
+      "type": "file",
+      "size": "1.06 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_GMT2014_192_BASS_S178M_TPM8_3.zip",
+      "type": "file",
+      "size": "1.06 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_GMT2014_192_BASS_S178M_TPM8_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.52 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M8/PSI-25_Raw Data_BASS_GMT192_SAMPLE_178_TEST_M8 original videos.zip",
+      "type": "file",
+      "size": "550.93 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9/PSI-25_Raw Data_BASS_GMT192_SAMPLE_179_TEST_M9.mp4",
+      "type": "file",
+      "size": "93.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9/PSI-25_Raw Data_BASS_GMT192_SAMPLE_179_TEST_M9_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "153.58 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9/PSI-25_Raw Data_GMT2014_192_BASS_S179M_TPM9.zip",
+      "type": "file",
+      "size": "1.46 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9/PSI-25_Raw Data_GMT2014_192_BASS_S179M_TPM9_ProofSheet.pdf",
+      "type": "file",
+      "size": "689.23 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M9/PSI-25_Raw Data_BASS_GMT192_SAMPLE_179_TEST_M9 original videos.zip",
+      "type": "file",
+      "size": "360.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11/PSI-25_Raw Data_BASS_GMT192_SAMPLE_181_TEST_M11.mp4",
+      "type": "file",
+      "size": "164.65 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11/PSI-25_Raw Data_BASS_GMT192_SAMPLE_181_TEST_M11_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "271.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11/PSI-25_Raw Data_GMT2014_192_BASS_S181M_TPM11.zip",
+      "type": "file",
+      "size": "2.52 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11/PSI-25_Raw Data_GMT2014_192_BASS_S181M_TPM11_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M11/PSI-25_Raw Data_BASS_GMT192_SAMPLE_181_TEST_M11 original videos.zip",
+      "type": "file",
+      "size": "601.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17/PSI-25_Raw Data_BASS_GMT196_SAMPLE_166_TEST_M17.mp4",
+      "type": "file",
+      "size": "179.72 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17/PSI-25_Raw Data_BASS_GMT196_SAMPLE_166_TEST_M17_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "297.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17/PSI-25_Raw Data_iss040e064265.zip",
+      "type": "file",
+      "size": "3.51 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17/PSI-25_Raw Data_GMT2014_196_BASS_S166M_TPM17_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M17/PSI-25_Raw Data_BASS_GMT196_SAMPLE_166_TEST_M17 original videos.zip",
+      "type": "file",
+      "size": "663.57 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18/PSI-25_Raw Data_BASS_GMT196_SAMPLE_168_TEST_M18.mp4",
+      "type": "file",
+      "size": "147.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18/PSI-25_Raw Data_BASS_GMT196_SAMPLE_168_TEST_M18_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "241.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18/PSI-25_Raw Data_GMT2014_196_BASS_S168M_TPM18.zip",
+      "type": "file",
+      "size": "1.82 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18/PSI-25_Raw Data_GMT2014_196_BASS_S168M_TPM18_ProofSheet.pdf",
+      "type": "file",
+      "size": "980.46 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M18/PSI-25_Raw Data_BASS_GMT196_SAMPLE_168_TEST_M18 original videos.zip",
+      "type": "file",
+      "size": "554.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_BASS_GMT204_SAMPLE_164_TEST_M16.mp4",
+      "type": "file",
+      "size": "106.97 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_BASS_GMT204_SAMPLE_164_TEST_M16_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "135.02 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_GMT2014_204_BASS_S164M_TPM16_1.zip",
+      "type": "file",
+      "size": "1.67 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_GMT2014_204_BASS_S164M_TPM16_2.zip",
+      "type": "file",
+      "size": "1.73 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_GMT2014_204_BASS_S164M_TPM16_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M16/PSI-25_Raw Data_BASS_GMT204_SAMPLE_164_TEST_M16 original videos.zip",
+      "type": "file",
+      "size": "330.32 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19/PSI-25_Raw Data_BASS_GMT204_SAMPLE_170_TEST_M19.mp4",
+      "type": "file",
+      "size": "174.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19/PSI-25_Raw Data_BASS_GMT204_SAMPLE_170_TEST_M19_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "216.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19/PSI-25_Raw Data_iss040e074747.zip",
+      "type": "file",
+      "size": "2.17 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19/PSI-25_Raw Data_GMT2014_204_BASS_S170M_TPM19_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M19/PSI-25_Raw Data_BASS_GMT204_SAMPLE_170_TEST_M19 original videos.zip",
+      "type": "file",
+      "size": "576.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_BASS_GMT204_SAMPLE_180_TEST_M10.mp4",
+      "type": "file",
+      "size": "200.27 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_BASS_GMT204_SAMPLE_180_TEST_M10_LOS_Portion_1754-1756.mp4",
+      "type": "file",
+      "size": "10.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_BASS_GMT204_SAMPLE_180_TEST_M10_LOS_Portion_1754-1756_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "13.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_BASS_GMT204_SAMPLE_180_TEST_M10_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "242.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_M10experimentvideo-LOS.mp4",
+      "type": "file",
+      "size": "12.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_M10-lab-camera-LOS.mp4",
+      "type": "file",
+      "size": "14.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_GMT2014_204_BASS_S180M_TPM10.zip",
+      "type": "file",
+      "size": "2.08 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_GMT2014_204_BASS_S180M_TPM10_ProofSheet.pdf",
+      "type": "file",
+      "size": "996.24 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_BASS_GMT204_SAMPLE_180_TEST_M10 original videos.zip",
+      "type": "file",
+      "size": "707.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_M10experimentvideo LOS original videos.zip",
+      "type": "file",
+      "size": "18.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M10/PSI-25_Raw Data_M10 lab camera LOS original videos.zip",
+      "type": "file",
+      "size": "19.27 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6/PSI-25_Raw Data_BASS_GMT212_SAMPLE_163_TEST_M6.mp4",
+      "type": "file",
+      "size": "138.16 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6/PSI-25_Raw Data_BASS_GMT212_SAMPLE_163_TEST_M6_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "168.78 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6/PSI-25_Raw Data_GMT2014_212_BASS_S163M_TPM6.zip",
+      "type": "file",
+      "size": "2.83 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6/PSI-25_Raw Data_GMT2014_212_BASS_S163M_TPM6_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.46 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M6/PSI-25_Raw Data_BASS_GMT212_SAMPLE_163_TEST_M6 original videos.zip",
+      "type": "file",
+      "size": "434.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_BASS_GMT212_SAMPLE_165_TEST_M12.mp4",
+      "type": "file",
+      "size": "119.83 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_BASS_GMT212_SAMPLE_165_TEST_M12_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "149.92 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_GMT2014_212_BASS_S165M_TPM12-1.zip",
+      "type": "file",
+      "size": "1.06 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_GMT2014_212_BASS_S165M_TPM12-2.zip",
+      "type": "file",
+      "size": "1.75 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_GMT2014_212_BASS_S165M_TPM12_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M12/PSI-25_Raw Data_BASS_GMT212_SAMPLE_165_TEST_M12 original videos.zip",
+      "type": "file",
+      "size": "381.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_BASS_GMT212_SAMPLE_169_TEST_M13.mp4",
+      "type": "file",
+      "size": "135.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_BASS_GMT212_SAMPLE_169_TEST_M13_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "176.43 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_GMT2014_212_BASS_S169M_TPM13-1.zip",
+      "type": "file",
+      "size": "1.41 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_GMT2014_212_BASS_S169M_TPM13-2.zip",
+      "type": "file",
+      "size": "1.43 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_GMT2014_212_BASS_S169M_TPM13_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M13/PSI-25_Raw Data_BASS_GMT212_SAMPLE_169_TEST_M13 original videos.zip",
+      "type": "file",
+      "size": "473.24 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20/PSI-25_Raw Data_BASS_GMT213_SAMPLE_172_TEST_M20.mp4",
+      "type": "file",
+      "size": "162.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20/PSI-25_Raw Data_BASS_GMT213_SAMPLE_172_TEST_M20_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "185.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20/PSI-25_Raw Data_GMT2014_213_BASS_D300sGMT2014_213_BASS_D300sGMT2014_213_BASS_S172M_TPM20.zip",
+      "type": "file",
+      "size": "1.77 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20/PSI-25_Raw Data_GMT2014_213_BASS_S172M_TPM20_ProofSheet.pdf",
+      "type": "file",
+      "size": "947.64 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M20/PSI-25_Raw Data_BASS_GMT213_SAMPLE_172_TEST_M20 original videos.zip",
+      "type": "file",
+      "size": "563.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_M3-over-the-shoulder-view-during-LOS.mp4",
+      "type": "file",
+      "size": "16.31 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_M3-rack-video-during-LOS.mp4",
+      "type": "file",
+      "size": "11.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_GMT2014_192_BASS_S226M_TPM3.zip",
+      "type": "file",
+      "size": "2.31 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_GMT2014_192_BASS_S226M_TPM3_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_M3-over the shoulder view during LOS orginal videos.zip",
+      "type": "file",
+      "size": "19.86 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M3/PSI-25_Raw Data_M3-rack video during LOS original videos.zip",
+      "type": "file",
+      "size": "17.28 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4/PSI-25_Raw Data_GMT2014_212_BASS_S171M_TPM4.zip",
+      "type": "file",
+      "size": "2.88 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4/PSI-25_Raw Data_GMT2014_212_BASS_S171M_TPM4_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.48 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4/PSI-25_Raw Data_BASS_GMT212_SAMPLE_171_TEST_M4 original videos.zip",
+      "type": "file",
+      "size": "472.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4/PSI-25_Raw Data_BASS_GMT212_SAMPLE_171_TEST_M4.mp4",
+      "type": "file",
+      "size": "146.3 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Miller/M4/PSI-25_Raw Data_BASS_GMT212_SAMPLE_171_TEST_M4_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "180.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2/PSI-25_Raw Data_BASS_GMT49_SAMPLE_204_TEST_O2_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2/PSI-25_Raw Data_BASS_GMT49_SAMPLE_204_TEST_O2.mp4",
+      "type": "file",
+      "size": "30.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2/PSI-25_Raw Data_iss038e049390.zip",
+      "type": "file",
+      "size": "2.78 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2/PSI-25_Raw Data_GMT2014_049_BASS_S204_TPO2_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.55 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O2/PSI-25_Raw Data_BASS_GMT49_SAMPLE_204_TEST_O2 original videos.zip",
+      "type": "file",
+      "size": "48.9 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1/PSI-25_Raw Data_BASS_GMT49_SAMPLE_207_TEST_O1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "5.55 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1/PSI-25_Raw Data_BASS_GMT49_SAMPLE_207_TEST_O1.mp4",
+      "type": "file",
+      "size": "32.63 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1/PSI-25_Raw Data_iss038e049157.zip",
+      "type": "file",
+      "size": "612.37 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1/PSI-25_Raw Data_GMT2014_049_BASS_S207_TPO1_ProofSheet.pdf",
+      "type": "file",
+      "size": "345.67 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O1/PSI-25_Raw Data_BASS_GMT49_SAMPLE_207_TEST_O1 original videos.zip",
+      "type": "file",
+      "size": "54.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3a.mp4",
+      "type": "file",
+      "size": "22.42 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "26.6 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3b.mp4",
+      "type": "file",
+      "size": "39.67 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3b_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "40.59 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_iss040e011273.zip",
+      "type": "file",
+      "size": "887.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_iss040e011490.zip",
+      "type": "file",
+      "size": "2.39 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_GMT2014_164_BASS_S205M_TPO3a_ProofSheet.pdf",
+      "type": "file",
+      "size": "378.6 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_GMT2014_164_BASS_S205M_TPO3b_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O3/PSI-25_Raw Data_BASS_GMT164_SAMPLE_205_TEST_O3a original videos.zip",
+      "type": "file",
+      "size": "195.74 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_BASS_GMT177_SAMPLE_206_TEST_O6.mp4",
+      "type": "file",
+      "size": "82.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_BASS_GMT177_SAMPLE_206_TEST_O6_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "123.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_iss040e020687.zip",
+      "type": "file",
+      "size": "1.43 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_iss040e020811.zip",
+      "type": "file",
+      "size": "1.45 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_GMT2014_177_BASS_S206M_TP06_ProofSheet.pdf",
+      "type": "file",
+      "size": "12.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O6/PSI-25_Raw Data_BASS_GMT177_SAMPLE_206_TEST_O6 original videos.zip",
+      "type": "file",
+      "size": "312.49 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_BASS_GMT177_SAMPLE_208_TEST_O8a.mp4",
+      "type": "file",
+      "size": "48.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_BASS_GMT177_SAMPLE_208_TEST_O8a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "74.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_BASS_GMT177_SAMPLE_208_TEST_O8b.mp4",
+      "type": "file",
+      "size": "53.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_BASS_GMT177_SAMPLE_208_TEST_O8b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "77.27 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_iss040e021212.zip",
+      "type": "file",
+      "size": "1.62 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_iss040e021375.zip",
+      "type": "file",
+      "size": "1.79 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_GMT2014_177_BASS_S208M_TP08a_ProofSheet.pdf",
+      "type": "file",
+      "size": "767.35 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_GMT2014_177_BASS_S208M_TP08b_ProofSheet.pdf",
+      "type": "file",
+      "size": "826.37 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O8/PSI-25_Raw Data_BASS_GMT177_SAMPLE_208_TEST_O8a original videos.zip",
+      "type": "file",
+      "size": "370.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9/PSI-25_Raw Data_BASS_GMT177_SAMPLE_209_TEST_O9.mp4",
+      "type": "file",
+      "size": "58.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9/PSI-25_Raw Data_BASS_GMT177_SAMPLE_209_TEST_O9_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "84.56 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9/PSI-25_Raw Data_iss040e021536.zip",
+      "type": "file",
+      "size": "1.83 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9/PSI-25_Raw Data_GMT2014_177_BASS_S209M_TP09_ProofSheet.pdf",
+      "type": "file",
+      "size": "824.31 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O9/PSI-25_Raw Data_BASS_GMT177_SAMPLE_209_TEST_O9 original videos.zip",
+      "type": "file",
+      "size": "204.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_BASS_GMT189_SAMPLE_184_TEST_O11.mp4",
+      "type": "file",
+      "size": "115.19 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_BASS_GMT189_SAMPLE_184_TEST_O11_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "155.97 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_iss040e052838.zip",
+      "type": "file",
+      "size": "1.5 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_iss040e052971.zip",
+      "type": "file",
+      "size": "1.51 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_GMT2014_189_BASS_S184M_TPO11_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O11/PSI-25_Raw Data_BASS_GMT189_SAMPLE_184_TEST_O11 original videos.zip",
+      "type": "file",
+      "size": "380.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4/PSI-25_Raw Data_BASS_GMT189_SAMPLE_216_TEST_O4.mp4",
+      "type": "file",
+      "size": "139.91 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4/PSI-25_Raw Data_BASS_GMT189_SAMPLE_216_TEST_O4_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "176.15 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4/PSI-25_Raw Data_iss040e053225.zip",
+      "type": "file",
+      "size": "2.72 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4/PSI-25_Raw Data_GMT2014_189_BASS_S216M_TPO4_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O4/PSI-25_Raw Data_BASS_GMT189_SAMPLE_216_TEST_O4 original videos.zip",
+      "type": "file",
+      "size": "453.36 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_O12.mp4",
+      "type": "file",
+      "size": "55.68 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_O12_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "68.15 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12/PSI-25_Raw Data_iss040e053285.zip",
+      "type": "file",
+      "size": "708.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12/PSI-25_Raw Data_GMT2014_189_BASS_S217M_TPO12_ProofSheet.pdf",
+      "type": "file",
+      "size": "437.12 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O12/PSI-25_Raw Data_BASS_GMT189_SAMPLE_217_TEST_O12 original videos.zip",
+      "type": "file",
+      "size": "198.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a_Part-1.mp4",
+      "type": "file",
+      "size": "34.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a_Part-1_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "43.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a_Part-2.mp4",
+      "type": "file",
+      "size": "62.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a_Part-2_Still_Sequence.mp4",
+      "type": "file",
+      "size": "983.71 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a_Part-2_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "82.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5b.mp4",
+      "type": "file",
+      "size": "25.97 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5b_Still_Sequence.mp4",
+      "type": "file",
+      "size": "35.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_O5a-all.mp4",
+      "type": "file",
+      "size": "111.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_GMT2014_202_BASS_S220M_TPO5a.zip",
+      "type": "file",
+      "size": "1.78 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_GMT2014_202_BASS_S220M_TPO5b.zip",
+      "type": "file",
+      "size": "17.99 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_GMT2014_202_BASS_S220M_TPO5a_ProofSheet.pdf",
+      "type": "file",
+      "size": "1012.53 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_GMT2014_202_BASS_S220M_TPO5b_ProofSheet.pdf",
+      "type": "file",
+      "size": "27.24 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O5/PSI-25_Raw Data_BASS_GMT202_SAMPLE_220_TEST_O5a original videos.zip",
+      "type": "file",
+      "size": "422.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13a_LOS_Portion_1741-1743.mp4",
+      "type": "file",
+      "size": "10.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13a_LOS_Portion_1741-1743_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "14.98 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13a.mp4",
+      "type": "file",
+      "size": "146.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13b.mp4",
+      "type": "file",
+      "size": "28.11 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13a_Still_Sequence.mp4",
+      "type": "file",
+      "size": "204.99 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13b_Still_Sequence.mp4",
+      "type": "file",
+      "size": "40.9 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_GMT2014_202_BASS_S221M_TPO13a.zip",
+      "type": "file",
+      "size": "2.12 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_GMT2014_202_BASS_S221M_TPO13b.zip",
+      "type": "file",
+      "size": "67.35 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_GMT2014_202_BASS_S221M_TPO13a_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.17 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_GMT2014_202_BASS_S221M_TPO13b_ProofSheet.pdf",
+      "type": "file",
+      "size": "54.66 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O13/PSI-25_Raw Data_BASS_GMT202_SAMPLE_221_TEST_O13a original videos.zip",
+      "type": "file",
+      "size": "595.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10/PSI-25_Raw Data_BASS_GMT203_SAMPLE_210_TEST_O10_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.88 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10/PSI-25_Raw Data_BASS_GMT203_SAMPLE_210_TEST_O10_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "111.01 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10/PSI-25_Raw Data_GMT2014_203_BASS_S210M_TPO10.zip",
+      "type": "file",
+      "size": "1.97 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10/PSI-25_Raw Data_GMT2014_203_BASS_S210M_TPO10_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O10/PSI-25_Raw Data_BASS_GMT203_SAMPLE_210_TEST_O10 original videos.zip",
+      "type": "file",
+      "size": "249.28 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17/PSI-25_Raw Data_BASS_GMT203_SAMPLE_211_TEST_O17_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17/PSI-25_Raw Data_BASS_GMT203_SAMPLE_211_TEST_O17_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "147.01 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17/PSI-25_Raw Data_GMT2014_203_BASS_S211M_TPO17.zip",
+      "type": "file",
+      "size": "1.78 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17/PSI-25_Raw Data_GMT2014_203_BASS_S211M_TPO17_ProofSheet.pdf",
+      "type": "file",
+      "size": "971.85 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O17/PSI-25_Raw Data_BASS_GMT203_SAMPLE_211_TEST_O17 original videos.zip",
+      "type": "file",
+      "size": "326.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_BASS_GMT209_SAMPLE_212_TEST_O18.mp4",
+      "type": "file",
+      "size": "71.66 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_BASS_GMT209_SAMPLE_212_TEST_O18_Still_Sequence.mp4",
+      "type": "file",
+      "size": "4.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_BASS_GMT209_SAMPLE_212_TEST_O18_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "84.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_iss040e082198.zip",
+      "type": "file",
+      "size": "1.91 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_GMT2014_209_BASS_S212M_TPO18_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.01 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O18/PSI-25_Raw Data_BASS_GMT209_SAMPLE_212_TEST_O18 original videos.zip",
+      "type": "file",
+      "size": "239.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_BASS_GMT209_SAMPLE_218_TEST_O15a.mp4",
+      "type": "file",
+      "size": "74.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_BASS_GMT209_SAMPLE_218_TEST_O15a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "76.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_BASS_GMT209_SAMPLE_218_TEST_O15b.mp4",
+      "type": "file",
+      "size": "211.91 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_BASS_GMT209_SAMPLE_218_TEST_O15b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "244.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_iss040e082016.zip",
+      "type": "file",
+      "size": "1.49 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_iss040e080519.zip",
+      "type": "file",
+      "size": "1.68 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_iss040e080674.zip",
+      "type": "file",
+      "size": "1.55 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_GMT2014_209_BASS_S218M_TPO15a_ProofSheet.pdf",
+      "type": "file",
+      "size": "855.06 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_GMT2014_209_BASS_S218M_TPO15b_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.77 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O15/PSI-25_Raw Data_BASS_GMT209_SAMPLE_218_TEST_O15a original videos.zip",
+      "type": "file",
+      "size": "1000.57 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14/PSI-25_Raw Data_BASS_GMT213_SAMPLE_183_TEST_O14.mp4",
+      "type": "file",
+      "size": "105.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14/PSI-25_Raw Data_BASS_GMT213_SAMPLE_183_TEST_O14_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "124.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14/PSI-25_Raw Data_GMT2014_213_BASS_D300sGMT2014_213_BASS_D300sGMT2014_213_BASS_S183M_TPO14.zip",
+      "type": "file",
+      "size": "3.02 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14/PSI-25_Raw Data_GMT2014_213_BASS_S183M_TPO14_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.69 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O14/PSI-25_Raw Data_BASS_GMT213_SAMPLE_183_TEST_O14 original videos.zip",
+      "type": "file",
+      "size": "351.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19/PSI-25_Raw Data_BASS_GMT213_SAMPLE_213_TEST_O19.mp4",
+      "type": "file",
+      "size": "104.57 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19/PSI-25_Raw Data_BASS_GMT213_SAMPLE_213_TEST_O19_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "116.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19/PSI-25_Raw Data_GMT2014_213_BASS_D300sGMT2014_213_BASS_S213M_TPO19.zip",
+      "type": "file",
+      "size": "3.09 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19/PSI-25_Raw Data_GMT2014_213_BASS_S213M_TPO19_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O19/PSI-25_Raw Data_BASS_GMT213_SAMPLE_213_TEST_O19 original videos.zip",
+      "type": "file",
+      "size": "335.18 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_iss040e020946.zip",
+      "type": "file",
+      "size": "1.46 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_iss040e021033.zip",
+      "type": "file",
+      "size": "1.48 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_GMT2014_177_BASS_S214M_TP07_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_BASS_GMT177_SAMPLE_214_TEST_O7.mp4",
+      "type": "file",
+      "size": "83.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_BASS_GMT177_SAMPLE_214_TEST_O7_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "124.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_Flame-Blowoff-BASS-GMT177-Test-O7.mp4",
+      "type": "file",
+      "size": "6.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O7/PSI-25_Raw Data_BASS_GMT177_SAMPLE_214_TEST_O7 original videos.zip",
+      "type": "file",
+      "size": "300.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_BASS_GMT210_SAMPLE_219_TEST_O16_Second_Ignition_Attempt.mp4",
+      "type": "file",
+      "size": "19.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_BASS_GMT210_SAMPLE_219_TEST_O16_Second_Ignition_Attempt_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "22.88 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_BASS_GMT210_SAMPLE_219_TEST_O16_First_Ignition_Attempt.mp4",
+      "type": "file",
+      "size": "35.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_BASS_GMT210_SAMPLE_219_TEST_O16_First_Ignition_Attempt_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "42.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_GMT2014_210_BASS_S219_TPO16_ProofSheet.pdf",
+      "type": "file",
+      "size": "96.62 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_GMT2014_210_BASS_S219_TPP16.zip",
+      "type": "file",
+      "size": "12.83 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/Olson/O16/PSI-25_Raw Data_BASS_GMT210_SAMPLE_219_TEST_O16_First_Ignition_Attempt original videos.zip",
+      "type": "file",
+      "size": "186.55 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13/PSI-25_Raw Data_BASS_GMT_100_sample137_test T13.mp4",
+      "type": "file",
+      "size": "62.7 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13/PSI-25_Raw Data_T13-post-burn-picture-camera-monitor.mp4",
+      "type": "file",
+      "size": "162.8 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13/PSI-25_Raw Data_iss039e010923.zip",
+      "type": "file",
+      "size": "664.32 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13/PSI-25_Raw Data_GMT2014_100_BASS_S137M_TPT13_ProofSheet.pdf",
+      "type": "file",
+      "size": "289.87 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T13/PSI-25_Raw Data_BASS_GMT100_SAMPLE_137_TEST_T13 original videos.zip",
+      "type": "file",
+      "size": "23.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1/PSI-25_Raw Data_BASS_GMT45_SAMPLE_128_TEST_T1_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1/PSI-25_Raw Data_BASS_GMT45_SAMPLE_128_TEST_T1.mp4",
+      "type": "file",
+      "size": "11.13 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1/PSI-25_Raw Data_iss038e048838.zip",
+      "type": "file",
+      "size": "1010.76 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1/PSI-25_Raw Data_GMT2014_045_BASS_S128_TPT1_ProofSheet.pdf",
+      "type": "file",
+      "size": "452.46 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T1/PSI-25_Raw Data_BASS_GMT45_SAMPLE_128_TEST_T1 original videos.zip",
+      "type": "file",
+      "size": "20.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2/PSI-25_Raw Data_BASS_GMT45_SAMPLE_129_TEST_T2.mp4",
+      "type": "file",
+      "size": "13.06 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2/PSI-25_Raw Data_BASS_GMT45_SAMPLE_129_TEST_T2_Still_Sequence.mp4",
+      "type": "file",
+      "size": "4.48 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2/PSI-25_Raw Data_iss038e048937.zip",
+      "type": "file",
+      "size": "1.2 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2/PSI-25_Raw Data_GMT2014_045_BASS_S129_TPT2_ProofSheet.pdf",
+      "type": "file",
+      "size": "488.09 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T2/PSI-25_Raw Data_BASS_GMT45_SAMPLE_129_TEST_T2 original videos.zip",
+      "type": "file",
+      "size": "30.01 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4/PSI-25_Raw Data_BASS_GMT45_SAMPLE_130_TEST_T4.mp4",
+      "type": "file",
+      "size": "7.71 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4/PSI-25_Raw Data_BASS_GMT45_SAMPLE_130_TEST_T4_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.43 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4/PSI-25_Raw Data_iss038e049041.zip",
+      "type": "file",
+      "size": "1.16 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4/PSI-25_Raw Data_GMT2014_045_BASS_S130_TPT4_ProofSheet.pdf",
+      "type": "file",
+      "size": "409.1 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T4/PSI-25_Raw Data_BASS_GMT45_SAMPLE_130_TEST_T4 original videos.zip",
+      "type": "file",
+      "size": "16.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15/PSI-25_Raw Data_BASS_GMT45_SAMPLE_138_TEST_T15_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15/PSI-25_Raw Data_BASS_GMT45_SAMPLE_138_TEST_T15.mp4",
+      "type": "file",
+      "size": "4.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15/PSI-25_Raw Data_iss038e049092.zip",
+      "type": "file",
+      "size": "685.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15/PSI-25_Raw Data_GMT2014_045_BASS_S138_TPT15_ProofSheet.pdf",
+      "type": "file",
+      "size": "403.52 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T15/PSI-25_Raw Data_BASS_GMT45_SAMPLE_138_TEST_T15 original videos.zip",
+      "type": "file",
+      "size": "12.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5/PSI-25_Raw Data_BASS_GMT100_SAMPLE_131_TEST_T5_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.77 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5/PSI-25_Raw Data_BASS_GMT100_SAMPLE_131_TEST_T5.mp4",
+      "type": "file",
+      "size": "34.05 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5/PSI-25_Raw Data_iss039e010762.zip",
+      "type": "file",
+      "size": "1.24 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5/PSI-25_Raw Data_GMT2014_100_BASS_S131M_TPT5_ProofSheet.pdf",
+      "type": "file",
+      "size": "574.91 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T5/PSI-25_Raw Data_BASS_GMT100_sample 131_test T5 original videos.zip",
+      "type": "file",
+      "size": "80.42 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T6",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T6/PSI-25_Raw Data_BASS_GMT100_SAMPLE_132_TEST_T6.mp4",
+      "type": "file",
+      "size": "22.51 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T6/PSI-25_Raw Data_iss039e010866.zip",
+      "type": "file",
+      "size": "1.22 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T6/PSI-25_Raw Data_GMT2014_100_BASS_S132M_TPT6_ProofSheet.pdf",
+      "type": "file",
+      "size": "548.1 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T6/PSI-25_Raw Data_BASS_GMT100_sample 132_test T6 original videos.zip",
+      "type": "file",
+      "size": "32.06 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_BASS_GMT100_SAMPLE_139_TEST_T16.mp4",
+      "type": "file",
+      "size": "33.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_BASS_GMT100_sample139_test-T16-shifted-video.mp4",
+      "type": "file",
+      "size": "34.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_iss039e011022.zip",
+      "type": "file",
+      "size": "1.15 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_T16-post-burn-picture.mp4",
+      "type": "file",
+      "size": "300.38 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_T16-post-burn-picture-2.mp4",
+      "type": "file",
+      "size": "3.83 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_T16-still-camera-monitor-image-playback.mp4",
+      "type": "file",
+      "size": "15.21 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_GMT2014_100_BASS_S139M_TPT16_ProofSheet.pdf",
+      "type": "file",
+      "size": "491.62 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T16/PSI-25_Raw Data_BASS_GMT100_sample139_test T16 original videos.zip",
+      "type": "file",
+      "size": "105.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10/PSI-25_Raw Data_BASS_GMT175_SAMPLE_134_TEST_T10.mp4",
+      "type": "file",
+      "size": "9.28 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10/PSI-25_Raw Data_BASS_GMT175_SAMPLE_134_TEST_T10_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "15.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10/PSI-25_Raw Data_iss040e017916.zip",
+      "type": "file",
+      "size": "253.45 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10/PSI-25_Raw Data_GMT2014_175_BASS_S134M_TPT10_ProofSheet.pdf",
+      "type": "file",
+      "size": "177.07 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T10/PSI-25_Raw Data_BASS_GMT175_SAMPLE_134_TEST_T10 original videos.zip",
+      "type": "file",
+      "size": "34.99 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18/PSI-25_Raw Data_BASS_GMT175_SAMPLE_141_TEST_T18.mp4",
+      "type": "file",
+      "size": "9.86 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18/PSI-25_Raw Data_BASS_GMT175_SAMPLE_141_TEST_T18_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "16.53 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18/PSI-25_Raw Data_iss040e017979.zip",
+      "type": "file",
+      "size": "559.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18/PSI-25_Raw Data_GMT2014_175_BASS_S141M_TPT18_ProofSheet.pdf",
+      "type": "file",
+      "size": "306.73 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T18/PSI-25_Raw Data_BASS_GMT175_SAMPLE_141_TEST_T18 original videos.zip",
+      "type": "file",
+      "size": "38.82 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_BASS_GMT178_SAMPLE_135_TEST_T11.mp4",
+      "type": "file",
+      "size": "11.87 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_BASS_GMT178_SAMPLE_135_TEST_T11_Still_Sequence.mp4",
+      "type": "file",
+      "size": "3.48 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_BASS_GMT178_SAMPLE_135_TEST_T11_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "30.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_iss040e023507.zip",
+      "type": "file",
+      "size": "1.08 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_GMT2014_178_BASS_S135M_TPT11_ProofSheet.pdf",
+      "type": "file",
+      "size": "606.33 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T11/PSI-25_Raw Data_BASS_GMT178_SAMPLE_135_TEST_T11 original videos.zip",
+      "type": "file",
+      "size": "66.68 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T9",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T9/PSI-25_Raw Data_iss040e017895.zip",
+      "type": "file",
+      "size": "577.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T9/PSI-25_Raw Data_BASS_GMT175_SAMPLE_133_TEST_T9.mp4",
+      "type": "file",
+      "size": "10.3 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T9/PSI-25_Raw Data_GMT2014_175_BASS_S133M_TPT09_ProofSheet.pdf",
+      "type": "file",
+      "size": "419.64 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T9/PSI-25_Raw Data_BASS_GMT175_SAMPLE_133_TEST_T9 original videos.zip",
+      "type": "file",
+      "size": "37.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12/PSI-25_Raw Data_BASS_GMT178_SAMPLE_136_TEST_T12.mp4",
+      "type": "file",
+      "size": "4.43 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12/PSI-25_Raw Data_BASS_GMT178_SAMPLE_136_TEST_T12_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "5.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12/PSI-25_Raw Data_iss040e023876.zip",
+      "type": "file",
+      "size": "559.63 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12/PSI-25_Raw Data_GMT2014_178_BASS_S136M_TPT12_ProofSheet.pdf",
+      "type": "file",
+      "size": "445.2 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T12/PSI-25_Raw Data_BASS_GMT178_SAMPLE_136_TEST_T12 original videos.zip",
+      "type": "file",
+      "size": "15.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_BASS_GMT178_SAMPLE_140_TEST_T14.mp4",
+      "type": "file",
+      "size": "13.11 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_BASS_GMT178_SAMPLE_140_TEST_T14_Still_Sequence.mp4",
+      "type": "file",
+      "size": "984.31 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_BASS_GMT178_SAMPLE_140_TEST_T14_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "16.85 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_iss040e023997.zip",
+      "type": "file",
+      "size": "1.21 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_GMT2014_178_BASS_S140M_TPT14_ProofSheet.pdf",
+      "type": "file",
+      "size": "666.39 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T14/PSI-25_Raw Data_BASS_GMT178_SAMPLE_140_TEST_T14 original videos.zip",
+      "type": "file",
+      "size": "51.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3.mp4",
+      "type": "file",
+      "size": "35.98 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "58.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3_First_Ignition_Attempts.mp4",
+      "type": "file",
+      "size": "31.44 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3_First_Ignition_Attempts_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "46.98 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_iss040e023669.zip",
+      "type": "file",
+      "size": "1.63 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_iss040e023829.zip",
+      "type": "file",
+      "size": "1.72 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_GMT2014_178_BASS_S182M_TPT03_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.63 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T3/PSI-25_Raw Data_BASS_GMT178_SAMPLE_182_TEST_T3 original videos.zip",
+      "type": "file",
+      "size": "242.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T23.mp4",
+      "type": "file",
+      "size": "5.43 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T23_Still_Sequence.mp4",
+      "type": "file",
+      "size": "316.22 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T23_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "7.09 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_GMT2014_190_BASS_S133M_TPT23.zip",
+      "type": "file",
+      "size": "602.75 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_GMT2014_190_BASS_S133M_TPT23_ProofSheet.pdf",
+      "type": "file",
+      "size": "404.36 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T23/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T23 original videos.zip",
+      "type": "file",
+      "size": "72.22 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T24.mp4",
+      "type": "file",
+      "size": "13.29 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T24_Still_Sequence.mp4",
+      "type": "file",
+      "size": "4.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24/PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T24_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "17.04 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24/PSI-25_Raw Data_GMT2014_190_BASS_S133M_TPT24.zip",
+      "type": "file",
+      "size": "1021.5 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T24/PSI-25_Raw Data_GMT2014_190_BASS_S133M_TPT24_ProofSheet.pdf",
+      "type": "file",
+      "size": "649.56 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19/PSI-25_Raw Data_BASS_GMT190_SAMPLE_143_TEST_T19.mp4",
+      "type": "file",
+      "size": "8.79 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19/PSI-25_Raw Data_BASS_GMT190_SAMPLE_143_TEST_T19_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "11.05 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19/PSI-25_Raw Data_GMT2014_190_BASS_S143M_TPT19.zip",
+      "type": "file",
+      "size": "729.86 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19/PSI-25_Raw Data_GMT2014_190_BASS_S143M_TPT19_ProofSheet.pdf",
+      "type": "file",
+      "size": "413.1 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T19/PSI-25_Raw Data_BASS_GMT190_SAMPLE_143_TEST_T19 original videos.zip",
+      "type": "file",
+      "size": "35.39 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20/PSI-25_Raw Data_BASS_GMT190_SAMPLE_144_TEST_T20_Still_Sequence.mp4",
+      "type": "file",
+      "size": "969.23 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20/PSI-25_Raw Data_BASS_GMT190_SAMPLE_144_TEST_T20_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "4.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20/PSI-25_Raw Data_GMT2014_190_BASS_S144M_TPT20.zip",
+      "type": "file",
+      "size": "416.95 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20/PSI-25_Raw Data_GMT2014_190_BASS_S144M_TPT20_ProofSheet.pdf",
+      "type": "file",
+      "size": "246.92 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T20/PSI-25_Raw Data_BASS_GMT190_SAMPLE_144_TEST_T20 original videos.zip",
+      "type": "file",
+      "size": "14.0 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_BASS_GMT190_SAMPLE_145_TEST_T21.mp4",
+      "type": "file",
+      "size": "4.49 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_BASS_GMT190_SAMPLE_145_TEST_T21_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.28 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_BASS_GMT190_SAMPLE_145_TEST_T21_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "6.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_GMT2014_190_BASS_S145M_TPT21.zip",
+      "type": "file",
+      "size": "434.02 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_vlc-record-2014-12-05-17h06m58s-BASS_GMT190_SAMPLE_145_TEST_T21.ts-.mp4",
+      "type": "file",
+      "size": "247.31 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_vlc-record-2014-12-05-17h07m02s-BASS_GMT190_SAMPLE_145_TEST_T21.ts-.mp4",
+      "type": "file",
+      "size": "886.25 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_vlc-record-2015-06-04-17h20m14s-BASS_GMT190_SAMPLE_145_TEST_T21.ts-.mp4",
+      "type": "file",
+      "size": "214.05 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_GMT2014_190_BASS_S145M_TPT21_ProofSheet.pdf",
+      "type": "file",
+      "size": "274.77 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T21/PSI-25_Raw Data_BASS_GMT190_SAMPLE_145_TEST_T21 original videos.zip",
+      "type": "file",
+      "size": "19.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_BASS_GMT190_SAMPLE_146_TEST_T22.mp4",
+      "type": "file",
+      "size": "4.78 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_BASS_GMT190_SAMPLE_146_TEST_T22_Still_Sequence.mp4",
+      "type": "file",
+      "size": "934.54 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_BASS_GMT190_SAMPLE_146_TEST_T22_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "7.39 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_GMT2014_190_BASS_S146M_TPT22.zip",
+      "type": "file",
+      "size": "476.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_GMT2014_190_BASS_S146M_TPT22_ProofSheet.pdf",
+      "type": "file",
+      "size": "282.35 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T22/PSI-25_Raw Data_BASS_GMT190_SAMPLE_146_TEST_T22 original videos.zip",
+      "type": "file",
+      "size": "19.81 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_First_Ignition_Attempts.mp4",
+      "type": "file",
+      "size": "4.12 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_First_Ignition_Attempts_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "6.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_Second_Ignition_Attempts.mp4",
+      "type": "file",
+      "size": "47.87 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_Second_Ignition_Attempts_Still_Sequence.mp4",
+      "type": "file",
+      "size": "1.47 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_Second_Ignition_Attempts_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "65.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_GMT2014_190_BASS_S182M_TPT7.zip",
+      "type": "file",
+      "size": "3.21 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_GMT2014_190_BASS_S182M_TPT7_ProofSheet.pdf",
+      "type": "file",
+      "size": "1.78 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T7/PSI-25_Raw Data_BASS_GMT190_SAMPLE_182_TEST_T7_First_Ignition_Attempts original videos.zip",
+      "type": "file",
+      "size": "176.65 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17/PSI-25_Raw Data_iss040e024084.zip",
+      "type": "file",
+      "size": "1.03 GB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17/PSI-25_Raw Data_BASS_GMT178_SAMPLE_142_TEST_T17.mp4",
+      "type": "file",
+      "size": "8.97 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17/PSI-25_Raw Data_BASS_GMT178_SAMPLE_142_TEST_T17_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "11.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17/PSI-25_Raw Data_GMT2014_178_BASS_S142M_TPT17_ProofSheet.pdf",
+      "type": "file",
+      "size": "721.64 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T17/PSI-25_Raw Data_BASS_GMT178_SAMPLE_142_TEST_T17 original videos.zip",
+      "type": "file",
+      "size": "40.74 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26/PSI-25_Raw Data_BASS_GMT216_SAMPLE_137_TEST_T26.mp4",
+      "type": "file",
+      "size": "14.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26/PSI-25_Raw Data_BASS_GMT216_SAMPLE_137_TEST_T26_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "21.1 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26/PSI-25_Raw Data_GMT2014_216_BASS_D300sGMT2014_216_BASS_S137M_TPT26.zip",
+      "type": "file",
+      "size": "1007.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26/PSI-25_Raw Data_GMT2014_216_BASS_S137M_TPT26_ProofSheet.pdf",
+      "type": "file",
+      "size": "488.12 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T26/PSI-25_Raw Data_BASS_GMT216_SAMPLE_137_TEST_T26 original videos.zip",
+      "type": "file",
+      "size": "55.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_BASS_GMT216_SAMPLE_138_TEST_T25.mp4",
+      "type": "file",
+      "size": "8.23 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_BASS_GMT216_SAMPLE_138_TEST_T25_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "9.08 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_BASS_GMT216_SAMPLE_138_TEST_T25_Still_Sequence.mp4",
+      "type": "file",
+      "size": "2.14 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_GMT2014_216_BASS_S138M_TPT25.zip",
+      "type": "file",
+      "size": "786.25 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_GMT2014_216_BASS_S138M_TPT25_ProofSheet.pdf",
+      "type": "file",
+      "size": "540.44 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T25/PSI-25_Raw Data_BASS_GMT216_SAMPLE_138_TEST_T25 original videos.zip",
+      "type": "file",
+      "size": "32.07 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28a.mp4",
+      "type": "file",
+      "size": "8.91 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28a_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "9.09 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28b.mp4",
+      "type": "file",
+      "size": "7.99 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28b_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "8.02 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_GMT2014_216_BASS_D300sGMT2014_216_BASS_S144M_TPT28a.zip",
+      "type": "file",
+      "size": "231.62 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_GMT2014_216_BASS_D300sGMT2014_216_BASS_S144M_TPT28b.zip",
+      "type": "file",
+      "size": "326.96 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_GMT2014_216_BASS_S144M_TPT28a_ProofSheet.pdf",
+      "type": "file",
+      "size": "145.47 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_GMT2014_216_BASS_S144M_TPT28b_ProofSheet.pdf",
+      "type": "file",
+      "size": "205.89 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28a original videos.zip",
+      "type": "file",
+      "size": "28.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T28/PSI-25_Raw Data_BASS_GMT216_SAMPLE_144_TEST_T28b original videos.zip",
+      "type": "file",
+      "size": "25.54 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29/PSI-25_Raw Data_BASS_GMT216_SAMPLE_145_TEST_T29.mp4",
+      "type": "file",
+      "size": "18.26 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29/PSI-25_Raw Data_BASS_GMT216_SAMPLE_145_TEST_T29_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "19.94 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29/PSI-25_Raw Data_GMT2014_216_BASS_D300sGMT2014_216_BASS_S145M_TPT29.zip",
+      "type": "file",
+      "size": "689.73 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29/PSI-25_Raw Data_GMT2014_216_BASS_S145M_TPT29_ProofSheet.pdf",
+      "type": "file",
+      "size": "346.49 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T29/PSI-25_Raw Data_BASS_GMT216_SAMPLE_145_TEST_T29 original videos.zip",
+      "type": "file",
+      "size": "58.8 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27/PSI-25_Raw Data_BASS_GMT216_SAMPLE_146_TEST_T27.mp4",
+      "type": "file",
+      "size": "13.33 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27/PSI-25_Raw Data_BASS_GMT216_SAMPLE_146_TEST_T27_2ND_VIEW.mp4",
+      "type": "file",
+      "size": "12.4 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27/PSI-25_Raw Data_GMT2014_216_BASS_D300sGMT2014_216_BASS_S146M_TPT27.zip",
+      "type": "file",
+      "size": "726.9 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27/PSI-25_Raw Data_GMT2014_216_BASS_S146M_TPT27_ProofSheet.pdf",
+      "type": "file",
+      "size": "326.54 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Raw Data/Reduced Gravity/T'ien/T27/PSI-25_Raw Data_BASS_GMT216_SAMPLE_146_TEST_T27 original videos.zip",
+      "type": "file",
+      "size": "40.38 MB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-25/Reference Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Reference Data/PSI-25_Reference Data_Fan calibration data.xlsx",
+      "type": "file",
+      "size": "23.41 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Science Documents",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+      "type": "file",
+      "size": "28.28 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_ReadMe.docx",
+      "type": "file",
+      "size": "21.03 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_SRD.pdf",
+      "type": "file",
+      "size": "1.06 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Reports",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf",
+      "type": "file",
+      "size": "46.7 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Representative Image(s)",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Representative Image(s)/PSI-25_Representative Image(s)_BASS-II_flame testing.jpg",
+      "type": "file",
+      "size": "36.65 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-25/Experimental table",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv",
+      "type": "file",
+      "size": "16.2 KB",
+      "depth": 2
+    }
+  ]
+}

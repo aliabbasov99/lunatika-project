@@ -1,0 +1,163 @@
+{
+  "id": "PSI-117",
+  "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "title": "PSI-117Version 2 Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis Investigation",
+  "Objectives": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects.",
+  "Project": "Project Type\tGround Investigation\nProposal Title\tEffect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis\nInvestigation Start Date\t02-15-2017\nInvestigation End Date\t02-14-2022\nSponsoring Agency\tNational Aeronautics and Space Administration (NASA), PSI grant\nNASA Center\tGlenn Research Center (GRC)",
+  "Approach": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets.\nTo accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments.",
+  "Hypothesis": "External thermo-convective perturbations (imposed temperature gradients, non-uniform heating, oscillatory/shear inflow) were expected to govern cool-flame ignition, oscillation, transition to hot ignition, and extinction by shifting residence time and scalar dissipation. In microgravity, where buoyancy was suppressed, this forcing was anticipated to dominate transport. A multidimensional, multi-physics CFD model was used to map perturbation-dependent stability boundaries and predict observables for comparison with FLEX data.",
+  "Research Impacts/Earth Benefits": "Space Benefits: Potential to improve spacecraft fire-safety modeling by resolving cool-flame/extinction behavior in microgravity; leverages FLEX to define safer operating envelopes/materials.\nEarth Benefits: Advances low-temperature combustion understanding relevant to engine knock, efficiency, and emissions; delivers validated CFD tools transferrable to practical combustors.",
+  "Contact(s)": "Tanvir Faroukemail,Mike Hicksemail\ntable_view\nExperimental Table\nNo associated Experimental Table\ntable_view\nModeling Table\nNo associated Modeling Table\nmenu_book\nRead Me\nDownload supporting documents and instructions for each investigation category.\nFiles\n⌄\npallet\nHardware\nNo associated hardware\nimage\nRepresentative Images/Videos\nNo associated investigation representative image(s).\nsim_card_download",
+  "files": [
+    {
+      "path": "PSI-117",
+      "type": "folder",
+      "size": "",
+      "depth": 0
+    },
+    {
+      "path": "PSI-117/Investigation Metadata Files",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-117/Investigation Metadata Files/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+      "type": "file",
+      "size": "10.14 KB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Presentations",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-117/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "type": "file",
+      "size": "10.29 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Presentations/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "type": "file",
+      "size": "11.26 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "type": "file",
+      "size": "8.58 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "type": "file",
+      "size": "29.44 MB",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Analyzed Data",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity",
+      "type": "folder",
+      "size": "",
+      "depth": 2
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation",
+      "type": "folder",
+      "size": "",
+      "depth": 3
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "type": "file",
+      "size": "10.8 KB",
+      "depth": 4
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "type": "file",
+      "size": "745.0 B",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "type": "file",
+      "size": "36.27 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "type": "file",
+      "size": "449.0 B",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+      "type": "file",
+      "size": "15.11 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/PROC1/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+      "type": "file",
+      "size": "87.04 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/MST",
+      "type": "folder",
+      "size": "",
+      "depth": 4
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/MST/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "type": "file",
+      "size": "43.07 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/MST/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+      "type": "file",
+      "size": "518.0 B",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/MST/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+      "type": "file",
+      "size": "372.0 B",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Analyzed Data/Reduced Gravity/Simulation/MST/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "type": "file",
+      "size": "80.35 KB",
+      "depth": 5
+    },
+    {
+      "path": "PSI-117/Reports",
+      "type": "folder",
+      "size": "",
+      "depth": 1
+    },
+    {
+      "path": "PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "type": "file",
+      "size": "7.7 MB",
+      "depth": 2
+    }
+  ]
+}

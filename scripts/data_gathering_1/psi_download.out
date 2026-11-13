@@ -1,0 +1,90 @@
+DB: lunatika @ 127.0.0.1:5432
+Formatlar: pdf, txt, rtf, xls, xlsx, doc, docx, ppt, pptx
+Fayl sayı: 15,644
+Gözlənilən həcm: 4.74 GB
+Paralel worker: 200
+Çıxış: /home/aliabbasov/Projects/lunatika-project-new/scripts/chunks/YUKLENENLER
+Xəta faylı: psi_download_errors.tsv
+[50/15,644] ok=0 skip=66 fail=0 həcm=318.51 MB sürət=230.4 fayl/s
+[100/15,644] ok=29 skip=66 fail=5 həcm=340.04 MB sürət=9.6 fayl/s
+[150/15,644] ok=75 skip=66 fail=9 həcm=410.01 MB sürət=8.1 fayl/s
+[200/15,644] ok=125 skip=66 fail=9 həcm=506.54 MB sürət=8.6 fayl/s
+[250/15,644] ok=172 skip=66 fail=12 həcm=525.26 MB sürət=9.2 fayl/s
+[300/15,644] ok=222 skip=66 fail=12 həcm=582.02 MB sürət=9.7 fayl/s
+[350/15,644] ok=272 skip=66 fail=12 həcm=599.58 MB sürət=10.1 fayl/s
+[400/15,644] ok=322 skip=66 fail=12 həcm=609.22 MB sürət=10.5 fayl/s
+[450/15,644] ok=372 skip=66 fail=12 həcm=638.43 MB sürət=10.9 fayl/s
+[500/15,644] ok=420 skip=66 fail=14 həcm=655.28 MB sürət=11.1 fayl/s
+[550/15,644] ok=470 skip=66 fail=14 həcm=667.38 MB sürət=11.5 fayl/s
+[600/15,644] ok=520 skip=66 fail=14 həcm=706.11 MB sürət=11.8 fayl/s
+[650/15,644] ok=570 skip=66 fail=14 həcm=711.93 MB sürət=12.2 fayl/s
+[700/15,644] ok=620 skip=66 fail=14 həcm=712.13 MB sürət=12.6 fayl/s
+[750/15,644] ok=670 skip=66 fail=14 həcm=717.56 MB sürət=12.9 fayl/s
+[800/15,644] ok=720 skip=66 fail=14 həcm=718.36 MB sürət=13.3 fayl/s
+[850/15,644] ok=770 skip=66 fail=14 həcm=723.55 MB sürət=13.5 fayl/s
+[900/15,644] ok=820 skip=66 fail=14 həcm=726.73 MB sürət=13.8 fayl/s
+[950/15,644] ok=870 skip=66 fail=14 həcm=733.13 MB sürət=14.0 fayl/s
+[1,000/15,644] ok=920 skip=66 fail=14 həcm=736.13 MB sürət=14.2 fayl/s
+[1,050/15,644] ok=970 skip=66 fail=14 həcm=746.12 MB sürət=14.4 fayl/s
+[1,100/15,644] ok=1,020 skip=66 fail=14 həcm=884.60 MB sürət=14.7 fayl/s
+[1,150/15,644] ok=1,070 skip=66 fail=14 həcm=885.84 MB sürət=14.9 fayl/s
+[1,200/15,644] ok=1,120 skip=66 fail=14 həcm=890.20 MB sürət=15.1 fayl/s
+[1,250/15,644] ok=1,170 skip=66 fail=14 həcm=890.88 MB sürət=15.3 fayl/s
+[1,300/15,644] ok=1,220 skip=66 fail=14 həcm=905.92 MB sürət=15.4 fayl/s
+[1,350/15,644] ok=1,270 skip=66 fail=14 həcm=911.60 MB sürət=15.5 fayl/s
+[1,400/15,644] ok=1,320 skip=66 fail=14 həcm=920.40 MB sürət=15.7 fayl/s
+[1,450/15,644] ok=1,370 skip=66 fail=14 həcm=921.99 MB sürət=15.9 fayl/s
+[1,500/15,644] ok=1,420 skip=66 fail=14 həcm=1.05 GB sürət=16.0 fayl/s
+[1,550/15,644] ok=1,470 skip=66 fail=14 həcm=1.05 GB sürət=16.1 fayl/s
+[1,600/15,644] ok=1,520 skip=66 fail=14 həcm=1.10 GB sürət=16.2 fayl/s
+[1,650/15,644] ok=1,570 skip=66 fail=14 həcm=1.11 GB sürət=16.2 fayl/s
+[1,700/15,644] ok=1,620 skip=66 fail=14 həcm=1.11 GB sürət=16.3 fayl/s
+[1,750/15,644] ok=1,670 skip=66 fail=14 həcm=1.12 GB sürət=16.3 fayl/s
+[1,800/15,644] ok=1,720 skip=66 fail=14 həcm=1.33 GB sürət=16.4 fayl/s
+[1,850/15,644] ok=1,770 skip=66 fail=14 həcm=1.34 GB sürət=16.4 fayl/s
+[1,900/15,644] ok=1,820 skip=66 fail=14 həcm=1.35 GB sürət=16.4 fayl/s
+[1,950/15,644] ok=1,870 skip=66 fail=14 həcm=1.35 GB sürət=16.4 fayl/s
+[2,000/15,644] ok=1,920 skip=66 fail=14 həcm=1.35 GB sürət=16.5 fayl/s
+[2,050/15,644] ok=1,970 skip=66 fail=14 həcm=1.36 GB sürət=16.6 fayl/s
+[2,100/15,644] ok=2,020 skip=66 fail=14 həcm=1.37 GB sürət=16.6 fayl/s
+[2,150/15,644] ok=2,070 skip=66 fail=14 həcm=1.37 GB sürət=16.7 fayl/s
+[2,200/15,644] ok=2,120 skip=66 fail=14 həcm=1.37 GB sürət=16.7 fayl/s
+[2,250/15,644] ok=2,170 skip=66 fail=14 həcm=1.38 GB sürət=16.8 fayl/s
+[2,300/15,644] ok=2,220 skip=66 fail=14 həcm=1.38 GB sürət=16.9 fayl/s
+[2,350/15,644] ok=2,270 skip=66 fail=14 həcm=1.39 GB sürət=16.9 fayl/s
+[2,400/15,644] ok=2,320 skip=66 fail=14 həcm=1.39 GB sürət=16.9 fayl/s
+[2,450/15,644] ok=2,370 skip=66 fail=14 həcm=1.39 GB sürət=16.9 fayl/s
+[2,500/15,644] ok=2,420 skip=66 fail=14 həcm=1.40 GB sürət=16.9 fayl/s
+[2,550/15,644] ok=2,470 skip=66 fail=14 həcm=1.42 GB sürət=16.9 fayl/s
+[2,600/15,644] ok=2,520 skip=66 fail=14 həcm=1.42 GB sürət=16.9 fayl/s
+[2,650/15,644] ok=2,570 skip=66 fail=14 həcm=1.43 GB sürət=17.0 fayl/s
+[2,700/15,644] ok=2,620 skip=66 fail=14 həcm=1.44 GB sürət=16.7 fayl/s
+[2,750/15,644] ok=2,670 skip=66 fail=14 həcm=1.45 GB sürət=16.5 fayl/s
+[2,800/15,644] ok=2,720 skip=66 fail=14 həcm=1.48 GB sürət=16.3 fayl/s
+[2,850/15,644] ok=2,770 skip=66 fail=14 həcm=1.49 GB sürət=16.1 fayl/s
+[2,900/15,644] ok=2,820 skip=66 fail=14 həcm=1.69 GB sürət=16.1 fayl/s
+[2,950/15,644] ok=2,870 skip=66 fail=14 həcm=1.69 GB sürət=16.1 fayl/s
+[3,000/15,644] ok=2,920 skip=66 fail=14 həcm=1.69 GB sürət=16.1 fayl/s
+[3,050/15,644] ok=2,970 skip=66 fail=14 həcm=1.69 GB sürət=16.1 fayl/s
+Traceback (most recent call last):
+  File "/home/aliabbasov/Projects/lunatika-project-new/scripts/chunks/psi_download.py", line 354, in <module>
+    print(f"Çıxış: {root.resolve()}", file=sys.stderr)
+    ^^^^^^
+  File "/home/aliabbasov/Projects/lunatika-project-new/scripts/chunks/psi_download.py", line 319, in main
+    ap.add_argument("--retries", type=int, default=3)
+                ^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib64/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/aliabbasov/Projects/lunatika-project-new/scripts/chunks/psi_download.py", line 185, in download_one
+    with ThreadPoolExecutor(max_workers=6) as ex:
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aliabbasov/Projects/lunatika-project-new/scripts/chunks/psi_download.py", line 141, in dest_for
+    # DB-də bəzən "//" olur; POSIX-də bu tək "/" ilə eynidir.
+ValueError: təhlükəli/boş path komponenti: 'PSI-20/Raw Data/Reduced Gravity/25-mm burner_100% ethylene/19051K1_1 Video and Image Data//PSI-20_Raw Data_19051K1_Comments.txt'
