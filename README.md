@@ -1,4 +1,22 @@
-# React + TypeScript + Vite
+# Lunatika Chat
+
+## Run
+
+Start the Python backend in one terminal:
+
+```bash
+python backend/server.py
+```
+
+Start the website in another terminal:
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173/chat`. The API key is read from `.env.local` by the
+Python backend and is never exposed to the browser. The backend searches relevant
+text files in this project and sends their contents as context when answering.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

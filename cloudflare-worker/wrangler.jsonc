@@ -1,0 +1,12 @@
+{
+  "name": "lunatika",
+  "main": "src/index.js",
+  "compatibility_date": "2024-11-01",
+  "d1_databases": [
+    {
+      "binding": "PSIDATA",
+      "database_name": "PSIDATA",
+      "database_id": "7800bd24-e123-494c-a412-76d4a3314225"
+    }
+  ]
+}

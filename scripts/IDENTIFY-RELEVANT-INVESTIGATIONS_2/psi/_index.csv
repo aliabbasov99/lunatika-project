@@ -1,0 +1,25 @@
+accession,acronym,title,sub_area,doi,license,total_gb_in_psi,url
+PSI-10,ACME/Flame Design,Advanced Combustion via Microgravity Experiments / Flame Design,Flames of Gaseous Fuels,10.60555/w4zy-bt45,,2180.44,https://psi.nasa.gov/physci/repo/data/studies/PSI-10
+PSI-20,ACME BRE,Advanced Combustion via Microgravity Experiments - Burning Rate Emulator,Flames of Gaseous Fuels,10.60555/vb93-3y72,CC0-1.0,2035.57,https://psi.nasa.gov/physci/repo/data/studies/PSI-20
+PSI-21,ACME CLD Flame,Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame,Flames of gaseous fuel,10.60555/23e1-9950,CC0-1.0,2005.54,https://psi.nasa.gov/physci/repo/data/studies/PSI-21
+PSI-22,ACME E-FIELD Flames,Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames,Laminar Flames,10.60555/se5a-8c73,CC0-1.0,950.21,https://psi.nasa.gov/physci/repo/data/studies/PSI-22
+PSI-23,ACME s-Flame,Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames,Flames of gaseous fuels,10.60555/k57n-p030,CC0-1.0,782.17,https://psi.nasa.gov/physci/repo/data/studies/PSI-23
+PSI-25,BASS-II,Burning and Suppression of Solids - II,Spacecraft Fire Safety,10.60555/4qc4-de67,CC0-1.0,274.63,https://psi.nasa.gov/physci/repo/data/studies/PSI-25
+PSI-26,BASS,Burning and Suppression of Solids,Spacecraft Fire Safety,10.60555/58h4-dy80,CC0-1.0,163.55,https://psi.nasa.gov/physci/repo/data/studies/PSI-26
+PSI-39,CFI,Cool Flames Investigation,Droplets,10.60555/m6pj-a914,CC0-1.0,718.89,https://psi.nasa.gov/physci/repo/data/studies/PSI-39
+PSI-47,DAFT / DAFT-2,Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2,Spacecraft Fire Safety,10.60555/ztgj-d202,CC0-1.0,0.04,https://psi.nasa.gov/physci/repo/data/studies/PSI-47
+PSI-60,,Computational and Experimental Analysis of SPICE Data Sets,Gaseous,10.60555/mzjm-yv57,CC0-1.0,0.0,https://psi.nasa.gov/physci/repo/data/studies/PSI-60
+PSI-62,,Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography,Spacecraft Fire Safety,10.60555/e9xp-ex83,CC0-1.0,0.0,https://psi.nasa.gov/physci/repo/data/studies/PSI-62
+PSI-68,FLEX-2,Flame Extinguishment Experiment - 2,Spacecraft Fire Safety,10.60555/byp8-h018,CC0-1.0,1224.75,https://psi.nasa.gov/physci/repo/data/studies/PSI-68
+PSI-69,FLEX,Flame Extinguishment Experiment,Spacecraft Fire Safety,10.60555/mbq8-0451,CC0-1.0,923.83,https://psi.nasa.gov/physci/repo/data/studies/PSI-69
+PSI-98,SAFFIRE-I,Spacecraft Fire Safety Experiment-I,"Spacecraft Fire, Smoke Distribution",10.60555/0t15-1z43,CC0-1.0,12.25,https://psi.nasa.gov/physci/repo/data/studies/PSI-98
+PSI-99,SAFFIRE-II,Spacecraft Fire Experiment-II,Surface Combustion,10.60555/2chp-m469,CC0-1.0,16.93,https://psi.nasa.gov/physci/repo/data/studies/PSI-99
+PSI-100,SAFFIRE-III,Spacecraft Fire Experiment-III,Spacecraft Fire Safety,10.60555/040q-4h36,CC0-1.0,35.21,https://psi.nasa.gov/physci/repo/data/studies/PSI-100
+PSI-101,SAME-R,Smoke Aerosol Measurement Experiment-Reflight,Spacecraft Fire Safety,10.60555/2np7-jv14,CC0-1.0,6.31,https://psi.nasa.gov/physci/repo/data/studies/PSI-101
+PSI-102,SAME,Smoke and Aerosol Measurement Experiment,Spacecraft Fire Safety,10.60555/gd4k-8h62,CC0-1.0,0.66,https://psi.nasa.gov/physci/repo/data/studies/PSI-102
+PSI-106,SLICE,Structure and Liftoff In Combustion Experiment,,10.60555/pm12-rg61,CC0-1.0,72.91,https://psi.nasa.gov/physci/repo/data/studies/PSI-106
+PSI-107,SPICE,Smoke Point In Co-flow Experiment,Fire Safety,10.60555/9kbh-e962,CC0-1.0,6.95,https://psi.nasa.gov/physci/repo/data/studies/PSI-107
+PSI-115,,Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity,"Smoke Aerosol, Combustion Simulation",10.60555/q0v5-1v28,CC0-1.0,0.26,https://psi.nasa.gov/physci/repo/data/studies/PSI-115
+PSI-117,,Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis,Droplet,10.60555/gz0q-b577,CC0-1.0,0.07,https://psi.nasa.gov/physci/repo/data/studies/PSI-117
+PSI-142,,Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames,Spacecraft Fire Safety,10.60555/80qf-vj95,CC0-1.0,0.0,https://psi.nasa.gov/physci/repo/data/studies/PSI-142
+PSI-159,ACME CFI-G,Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases,Flames of Gaseous Fuels,10.60555/cyt1-kh64,CC0-1.0,2085.59,https://psi.nasa.gov/physci/repo/data/studies/PSI-159

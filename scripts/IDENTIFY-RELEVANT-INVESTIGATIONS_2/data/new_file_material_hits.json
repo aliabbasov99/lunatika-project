@@ -1,0 +1,342 @@
+{
+  "PSI-10": {
+    "ethylene": [
+      "PSI-10/Experimental table/PSI-10_Experimental table_Flame Design_Normal Flame.csv"
+    ],
+    "propane": [
+      "PSI-10/Experimental table/PSI-10_Experimental table_Flame Design_Normal Flame.csv"
+    ]
+  },
+  "PSI-100": {
+    "sibal": [
+      "PSI-100/Experimental table/PSI-100_Experimental table_SAFFIRE-3.csv"
+    ]
+  },
+  "PSI-101": {
+    "kapton": [
+      "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+      "PSI-101/skipped_files.csv"
+    ],
+    "silicone": [
+      "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+      "PSI-101/skipped_files.csv"
+    ],
+    "lampwick": [
+      "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+      "PSI-101/skipped_files.csv"
+    ],
+    "teflon": [
+      "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+      "PSI-101/skipped_files.csv"
+    ],
+    "pyrell": [
+      "PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+      "PSI-101/skipped_files.csv"
+    ],
+    "cotton": [
+      "PSI-101/skipped_files.csv"
+    ]
+  },
+  "PSI-102": {
+    "teflon": [
+      "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv",
+      "PSI-102/skipped_files.csv"
+    ],
+    "kapton": [
+      "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv",
+      "PSI-102/skipped_files.csv"
+    ],
+    "silicone": [
+      "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv",
+      "PSI-102/skipped_files.csv"
+    ],
+    "lampwick": [
+      "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv",
+      "PSI-102/skipped_files.csv"
+    ],
+    "dbp": [
+      "PSI-102/Experimental table/PSI-102_Experimental table_SAME.csv"
+    ],
+    "cotton": [
+      "PSI-102/skipped_files.csv"
+    ]
+  },
+  "PSI-106": {
+    "methane": [
+      "PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf",
+      "PSI-106/Raw Data/Legacy/External Presentation - Effects of Fuel Dilution and Gravity on Laminar Coflow Methane-Air Diffusion Flames_ A Computational and Experimental Study. The 8th US National Combustion Meeting/SLICE EP-04 2013 US Combustion.pdf",
+      "PSI-106/Raw Data/Legacy/External Presentation - Soot Formation in a Coflow Jet Flame under Microgravity and Normal Gravity.  29th Annual meeting of the American Society of Gravitational and Space Research and 5th International Symposium for Physical Sciences in Space/SLICE EP-05 2013 ASGSR.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Research Review Board - Completed Milestone/SLICE IP-H completion summary.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Structure and Liftoff in Combustion Experiment. Increment 25-26 Science Symposium/SLICE IP-B Incr. 25-26 Science.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "ethylene": [
+      "PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf",
+      "PSI-106/Raw Data/Legacy/External Presentation - Soot Formation in a Coflow Jet Flame under Microgravity and Normal Gravity.  29th Annual meeting of the American Society of Gravitational and Space Research and 5th International Symposium for Physical Sciences in Space/SLICE EP-05 2013 ASGSR.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Research Review Board - Completed Milestone/SLICE IP-H completion summary.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Structure and Liftoff in Combustion Experiment. Increment 25-26 Science Symposium/SLICE IP-B Incr. 25-26 Science.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "ethane": [
+      "PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Structure and Liftoff in Combustion Experiment. Increment 25-26 Science Symposium/SLICE IP-B Incr. 25-26 Science.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "propane": [
+      "PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SLICE_ Structure and Liftoff in Combustion Experiment. Increment 25-26 Science Symposium/SLICE IP-B Incr. 25-26 Science.pdf",
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "paper": [
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf",
+      "PSI-106/Raw Data/Legacy/External Presentation - Effects of Fuel Dilution and Gravity on Laminar Coflow Methane-Air Diffusion Flames_ A Computational and Experimental Study. The 8th US National Combustion Meeting/SLICE EP-04 2013 US Combustion.pdf",
+      "PSI-106/Raw Data/Legacy/External Presentation - Soot Formation in a Coflow Jet Flame under Microgravity and Normal Gravity.  29th Annual meeting of the American Society of Gravitational and Space Research and 5th International Symposium for Physical Sciences in Space/SLICE EP-05 2013 ASGSR.pdf"
+    ],
+    "silicone": [
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf"
+    ],
+    "lexan": [
+      "PSI-106/Raw Data/Legacy/2014 - SLICE Final Report/SLICE final report 20141229.pdf",
+      "PSI-106/Raw Data/Legacy/2016 - SLICE Final Report/SLICE final report 20161221.pdf",
+      "PSI-106/Raw Data/Legacy/2017 - SLICE Final Report/SLICE final report 20171226.pdf"
+    ],
+    "propylene": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "pmma": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "sibal": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "cotton": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "fiberglass": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "nomex": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "nylon": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ],
+    "ultem": [
+      "PSI-106/Raw Data/Legacy/Internal NASA Presentation - SPICE, SLICE and BASS Crew Training.  October, 2010/SLICE IP-C crew training 2010.pdf"
+    ]
+  },
+  "PSI-107": {
+    "ethylene": [
+      "PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ],
+    "propane": [
+      "PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ],
+    "propylene": [
+      "PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ],
+    "methane": [
+      "PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ],
+    "hydrogen": [
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ],
+    "ethane": [
+      "PSI-107/Reports/PSI-107_Reports_SMOKE POINTS OF MICROGRAVITY AND  NORMAL GRAVITY COFLOW DIFFUSION  FLAMES_DotsonThesis.pdf"
+    ]
+  },
+  "PSI-159": {
+    "ethane": [
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv"
+    ],
+    "hydrogen": [
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv"
+    ],
+    "propane": [
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv"
+    ],
+    "butane": [
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "PSI-159/skipped_files.csv"
+    ]
+  },
+  "PSI-20": {
+    "ethylene": [
+      "PSI-20/Experimental table/PSI-20_Experimental table_ACME BRE.csv",
+      "PSI-20/skipped_files.csv"
+    ],
+    "methane": [
+      "PSI-20/Experimental table/PSI-20_Experimental table_ACME BRE.csv",
+      "PSI-20/skipped_files.csv"
+    ]
+  },
+  "PSI-21": {
+    "methane": [
+      "PSI-21/Experimental table/PSI-21_Experimental table_CLD Flame.csv",
+      "PSI-21/Raw Data/Legacy/2016 - ACME Coflow Laminar Diffusion Flame Burner_ Preliminary Characterization and Results/2016 Giassi et al ACME Coflow Laminar Diffusion Flame Burner - Preliminary Characterization and Results.pdf",
+      "PSI-21/skipped_files.csv",
+      "PSI-21/skipped_files.xlsx"
+    ],
+    "ethylene": [
+      "PSI-21/Experimental table/PSI-21_Experimental table_CLD Flame.csv",
+      "PSI-21/Raw Data/Legacy/2016 - ACME Coflow Laminar Diffusion Flame Burner_ Preliminary Characterization and Results/2016 Giassi et al ACME Coflow Laminar Diffusion Flame Burner - Preliminary Characterization and Results.pdf",
+      "PSI-21/skipped_files.csv",
+      "PSI-21/skipped_files.xlsx"
+    ],
+    "ethane": [
+      "PSI-21/Experimental table/PSI-21_Experimental table_CLD Flame.csv"
+    ]
+  },
+  "PSI-22": {
+    "methane": [
+      "PSI-22/Experimental table/PSI-22_Experimental table_ACME E-FIELD Flames.csv"
+    ],
+    "ethylene": [
+      "PSI-22/Experimental table/PSI-22_Experimental table_ACME E-FIELD Flames.csv"
+    ]
+  },
+  "PSI-23": {
+    "ethylene": [
+      "PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv",
+      "PSI-23/Science Documents/PSI-23_Science Documents_ACME s-Flame  DoD.pdf"
+    ],
+    "methane": [
+      "PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv",
+      "PSI-23/Science Documents/PSI-23_Science Documents_ACME s-Flame  DoD.pdf"
+    ],
+    "hydrogen": [
+      "PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv",
+      "PSI-23/Science Documents/PSI-23_Science Documents_ACME s-Flame  DoD.pdf"
+    ]
+  },
+  "PSI-25": {
+    "pmma": [
+      "PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv"
+    ],
+    "nomex": [
+      "PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv"
+    ],
+    "sibal": [
+      "PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv"
+    ]
+  },
+  "PSI-26": {
+    "sibal": [
+      "PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv"
+    ],
+    "pmma": [
+      "PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv"
+    ],
+    "nomex": [
+      "PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv"
+    ],
+    "ultem": [
+      "PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv"
+    ]
+  },
+  "PSI-39": {
+    "isododecane": [
+      "PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv",
+      "PSI-39/skipped_files.csv"
+    ],
+    "dodecane": [
+      "PSI-39/skipped_files.csv"
+    ],
+    "farnesane": [
+      "PSI-39/skipped_files.csv"
+    ]
+  },
+  "PSI-68": {
+    "octane": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "heptane": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "decane": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "ethanol": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "propanol": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "glycerol": [
+      "PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+      "PSI-68/skipped_files.csv"
+    ],
+    "propylbenzene": [
+      "PSI-68/skipped_files.csv"
+    ],
+    "toluene": [
+      "PSI-68/skipped_files.csv"
+    ]
+  },
+  "PSI-69": {
+    "methanol": [
+      "PSI-69/Experimental table/PSI-69_Experimental table_FLEX.csv",
+      "PSI-69/Raw Data/Reduced Gravity/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/PSI-69_Raw Data_FLEX-277_Summary.pdf",
+      "PSI-69/Raw Data/Reduced Gravity/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/MeOH/FLEX_277_05_Dec_2011_MeOH_H15M102/PSI-69_Raw Data_FLEX_277_Summary.pdf",
+      "PSI-69/skipped_files.csv"
+    ],
+    "heptane": [
+      "PSI-69/Experimental table/PSI-69_Experimental table_FLEX.csv",
+      "PSI-69/skipped_files.csv"
+    ]
+  },
+  "PSI-98": {
+    "sibal": [
+      "PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv"
+    ]
+  },
+  "PSI-99": {
+    "silicone": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ],
+    "cotton": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ],
+    "fiberglass": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ],
+    "sibal": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ],
+    "pmma": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ],
+    "nomex": [
+      "PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv"
+    ]
+  }
+}

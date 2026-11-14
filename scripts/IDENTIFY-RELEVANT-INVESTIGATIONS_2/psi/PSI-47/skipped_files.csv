@@ -1,0 +1,8 @@
+folder,file,size_mb,reason
+Raw Data/Reduced Gravity/P-TRAK,PSI-47_Raw Data_PTrk0003.txt,0.0,raw sensor data (use --raw-mb)
+Raw Data/Reduced Gravity/P-TRAK,PSI-47_Raw Data_PTrk0002.txt,0.0,raw sensor data (use --raw-mb)
+Raw Data/Reduced Gravity/P-TRAK,PSI-47_Raw Data_PTrk0004.txt,0.0,raw sensor data (use --raw-mb)
+Raw Data/Reduced Gravity/DustTrak,PSI-47_Raw Data_DTrk0003.txt,0.0,raw sensor data (use --raw-mb)
+Raw Data/Reduced Gravity/DustTrak,PSI-47_Raw Data_DTrk0002.txt,0.0,raw sensor data (use --raw-mb)
+Raw Data/Reduced Gravity/DustTrak,PSI-47_Raw Data_DTrk0004.txt,0.0,raw sensor data (use --raw-mb)
+Representative Image(s),PSI-47_Representative Image(s)_DAFT on ISS.jpg,1.31,type (video/archive)

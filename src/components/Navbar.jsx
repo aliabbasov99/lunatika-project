@@ -2,7 +2,18 @@ import React from 'react'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = React.useState(false)
-    const navItems = ['Home', 'Findings', 'Simulator', 'AI Asistent', 'About Us'];
+    const navItems = [
+        { label: 'Home', href: '/' },
+        { label: 'AI Chatbot', href: '/chat' },
+        { label: 'Simulator', href: '#' },
+        { label: 'AI Asistent', href: '#' },
+        { label: 'About Us', href: '#' },
+    ]
+
+    const isActive = (href) => {
+        if (href === '#') return false
+        return typeof window !== 'undefined' && window.location.pathname === href
+    }
 
     return (
         <>
@@ -25,8 +36,8 @@ const Navbar = () => {
                 {/* Desktop Menu Container */}
                 <div className="hidden md:flex items-center bg-zinc-900 border border-zinc-800 rounded-full px-1 py-1 gap-2">
                     {navItems.map((item) => (
-                        <a key={item} href="#" className={`px-4 py-1.5 rounded-full text-sm transition-colors ${item === 'Home' ? 'bg-zinc-800 border border-zinc-700 font-medium text-zinc-100 hover:text-zinc-300' : 'text-zinc-400 hover:text-zinc-200' }`} >
-                            {item}
+                        <a key={item.label} href={item.href} className={`px-4 py-1.5 rounded-full text-sm transition-colors ${isActive(item.href) ? 'bg-zinc-800 border border-zinc-700 font-medium text-zinc-100 hover:text-zinc-300' : 'text-zinc-400 hover:text-zinc-200' }`} >
+                            {item.label}
                         </a>
                     ))}
                 </div>
@@ -50,8 +61,8 @@ const Navbar = () => {
                 {menuOpen && (
                     <div className="absolute top-full left-0 w-full bg-zinc-950 border-t border-zinc-800 flex flex-col p-5 gap-1 md:hidden z-50 shadow-2xl">
                         {navItems.map((item) => (
-                            <a key={item} href="#" className={`px-4 py-2.5 rounded-lg text-sm ${item === 'Home' ? 'bg-zinc-900 font-medium text-zinc-100' : 'text-zinc-400 hover:bg-zinc-900/60 hover:text-zinc-200' }`} >
-                                {item}
+                            <a key={item.label} href={item.href} className={`px-4 py-2.5 rounded-lg text-sm ${isActive(item.href) ? 'bg-zinc-900 font-medium text-zinc-100' : 'text-zinc-400 hover:bg-zinc-900/60 hover:text-zinc-200' }`} >
+                                {item.label}
                             </a>
                         ))}
                     </div>
