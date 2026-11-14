@@ -30,9 +30,6 @@ const Navbar = () => {
                     className="flex items-center gap-2 group transition-opacity hover:opacity-80"
                     style={{ color: '#FFFFFF' }}
                 >
-                    <span className="text-white text-sm font-semibold opacity-100 group-hover:scale-110 transition-transform">
-                        ⁒
-                    </span>
                     <span 
                         className="text-white text-[clamp(11px,0.75rem+0.25vw,14px)] font-semibold tracking-[0.25em] uppercase drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
                         style={{ color: '#FFFFFF' }}

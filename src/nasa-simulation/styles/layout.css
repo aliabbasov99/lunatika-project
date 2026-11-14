@@ -62,7 +62,6 @@
 }
 .countdown b { color: var(--ink); font-weight: 500; }
 
-main { padding-block: 34px 90px; }
 .view { display: grid; grid-template-columns: minmax(0, 1fr); gap: 34px; }
 .subview { display: grid; grid-template-columns: minmax(0, 1fr); gap: 34px; }
 .view > *, .subview > *, .grid-2 > *, .grid-sim > * { min-width: 0; }

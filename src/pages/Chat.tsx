@@ -58,7 +58,7 @@ export function Chat() {
       <StarfieldBackground />
 
       {/* Main Container Wrapper with Left & Right Max-width limits */}
-      <div className="relative z-10 w-full max-w-[940px] h-[calc(100vh-140px)] mt-20 my-auto rounded-3xl overflow-hidden flex shadow-[0_20px_70px_rgba(0,0,0,0.9)] border border-white/[0.12] backdrop-blur-2xl">
+      <div className="relative z-10 w-full max-w-[940px] h-[calc(100%_-_48px)] my-4 rounded-3xl overflow-hidden flex shadow-[0_20px_70px_rgba(0,0,0,0.9)] border border-white/[0.12] backdrop-blur-2xl">
         <div className="gemini-page w-full !bg-white/[0.03] backdrop-blur-2xl !text-white">
     <aside className={`gemini-sidebar animate-stagger-1 ${sidebar ? '' : 'closed'}`}>
       <div className="gemini-side-head"><div /><div><button onClick={() => setShowSearch(!showSearch)} aria-label="Search"><Search size={18} /></button><button onClick={() => setSidebar(false)} aria-label="Close panel"><PanelLeft size={18} /></button></div></div>
