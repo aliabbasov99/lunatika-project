@@ -1,74 +1,105 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = React.useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
+    const location = useLocation()
+
+    // Navbardakı sözlər və göndərdiyi səhifələr (tam saxlanılıb)
     const navItems = [
         { label: 'Home', href: '/' },
         { label: 'AI Chatbot', href: '/chat' },
-        { label: 'Simulator', href: '#' },
+        { label: 'Simulation', href: '/simulation' },
         { label: 'AI Asistent', href: '#' },
         { label: 'About Us', href: '#' },
     ]
 
-    const isActive = (href) => {
+    const isCurrentActive = (href) => {
         if (href === '#') return false
-        return typeof window !== 'undefined' && window.location.pathname === href
+        return location.pathname === href
     }
 
     return (
-        <>
-            <style>
-                {`
-                    @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-                    *{
-                        font-family: "Geist", sans-serif;
-                    }
-                `}
-            </style>
-            <nav className="bg-zinc-950 text-zinc-100 px-6 md:px-12 lg:px-24 xl:px-40 py-4 flex items-center justify-between relative border-b border-zinc-800/80">
-                {/* Logo & Brand Name */}
-                <a href="#" className="flex items-center gap-3 group">
-                    <span className="font-bold md:text-2xl text-2xl tracking-wide text-white transition-colors">
+        <header className="fixed top-0 left-0 w-full z-50 flex justify-center pt-3 sm:pt-4 px-4 pointer-events-none select-none">
+            {/* Minimalist Ultra-Clean Glass Bar */}
+            <div className="pointer-events-auto w-full max-w-4xl px-5 sm:px-7 py-2 min-h-[44px] rounded-full bg-white/[0.02] backdrop-blur-md border border-white/[0.06] shadow-[0_6px_25px_rgba(0,0,0,0.45)] flex items-center justify-between transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.035]">
+                
+                {/* Minimalist Logo */}
+                <Link 
+                    to="/" 
+                    className="flex items-center gap-2 group transition-opacity hover:opacity-80"
+                    style={{ color: '#FFFFFF' }}
+                >
+                    <span className="text-white text-sm font-semibold opacity-100 group-hover:scale-110 transition-transform">
+                        ⁒
+                    </span>
+                    <span 
+                        className="text-white text-[clamp(11px,0.75rem+0.25vw,14px)] font-semibold tracking-[0.25em] uppercase drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
+                        style={{ color: '#FFFFFF' }}
+                    >
                         Lunatika
                     </span>
-                </a>
+                </Link>
 
-                {/* Desktop Menu Container */}
-                <div className="hidden md:flex items-center bg-zinc-900 border border-zinc-800 rounded-full px-1 py-1 gap-2">
-                    {navItems.map((item) => (
-                        <a key={item.label} href={item.href} className={`px-4 py-1.5 rounded-full text-sm transition-colors ${isActive(item.href) ? 'bg-zinc-800 border border-zinc-700 font-medium text-zinc-100 hover:text-zinc-300' : 'text-zinc-400 hover:text-zinc-200' }`} >
-                            {item.label}
-                        </a>
-                    ))}
-                </div>
+                {/* Minimalist Soft Grey Links - Xəfif boz rəng (#b5b8bd) */}
+                <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[clamp(11.5px,0.7rem+0.2vw,13.5px)] font-normal tracking-wide">
+                    {navItems.map((item) => {
+                        const active = isCurrentActive(item.href)
 
-                {/* Get Started Button */}
-                {/* <button className="hidden md:flex items-center gap-2.5 bg-gradient-to-r from-zinc-100 to-zinc-400 text-zinc-950 hover:text-zinc-800 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0 transition-all shadow-md shadow-zinc-900/50">
-                    Get started
-                    <span className="size-7 rounded-full bg-zinc-950 flex items-center justify-center">
-                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    </span>
-                </button> */}
+                        return (
+                            <Link
+                                key={item.label}
+                                to={item.href}
+                                className={`transition-all duration-200 nav-link-item ${
+                                    active ? 'active-link font-semibold' : 'font-normal'
+                                }`}
+                                style={{ 
+                                    color: active ? '#FFFFFF' : '#b5b8bd',
+                                    textDecoration: 'none' 
+                                }}
+                            >
+                                {item.label}
+                            </Link>
+                        )
+                    })}
+                </nav>
 
                 {/* Mobile Menu Button */}
-                <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden flex flex-col gap-1.5 cursor-pointer bg-transparent border-0 p-1">
-                    <span className={`block w-6 h-0.5 bg-zinc-100 transition-transform ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`block w-6 h-0.5 bg-zinc-100 transition-opacity ${menuOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`block w-6 h-0.5 bg-zinc-100 transition-transform ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                <button 
+                    onClick={() => setMenuOpen(!menuOpen)} 
+                    aria-label="Toggle Menu"
+                    className="md:hidden flex flex-col justify-center gap-1.5 w-7 h-7 p-1 cursor-pointer bg-transparent border-0 text-white opacity-85 hover:opacity-100"
+                >
+                    <span className={`block w-4 h-0.5 bg-white transition-transform duration-200 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                    <span className={`block w-4 h-0.5 bg-white transition-opacity duration-200 ${menuOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`block w-4 h-0.5 bg-white transition-transform duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
+            </div>
 
-                {/* Mobile Dropdown */}
-                {menuOpen && (
-                    <div className="absolute top-full left-0 w-full bg-zinc-950 border-t border-zinc-800 flex flex-col p-5 gap-1 md:hidden z-50 shadow-2xl">
-                        {navItems.map((item) => (
-                            <a key={item.label} href={item.href} className={`px-4 py-2.5 rounded-lg text-sm ${isActive(item.href) ? 'bg-zinc-900 font-medium text-zinc-100' : 'text-zinc-400 hover:bg-zinc-900/60 hover:text-zinc-200' }`} >
+            {/* Mobile Dropdown Menu (Minimalist Glass) */}
+            {menuOpen && (
+                <div className="pointer-events-auto absolute top-full mt-2 w-[92%] max-w-sm rounded-2xl bg-black/85 backdrop-blur-3xl border border-white/10 flex flex-col p-3.5 gap-1.5 md:hidden shadow-2xl">
+                    {navItems.map((item) => {
+                        const active = isCurrentActive(item.href)
+                        return (
+                            <Link 
+                                key={item.label} 
+                                to={item.href} 
+                                onClick={() => setMenuOpen(false)}
+                                className="px-4 py-2 rounded-xl text-xs font-normal transition-all nav-link-item"
+                                style={{ 
+                                    color: active ? '#FFFFFF' : '#b5b8bd',
+                                    backgroundColor: active ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
+                                    textDecoration: 'none' 
+                                }}
+                            >
                                 {item.label}
-                            </a>
-                        ))}
-                    </div>
-                )}
-            </nav>
-        </>
+                            </Link>
+                        )
+                    })}
+                </div>
+            )}
+        </header>
     )
 }
 
