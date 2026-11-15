@@ -27,3 +27,4 @@ scripts/data_gathering_1/psi_work/tmp/
 *.njsproj
 *.sln
 *.sw?
+.vercel

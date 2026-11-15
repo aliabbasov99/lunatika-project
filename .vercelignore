@@ -1,0 +1,6 @@
+**/*.py
+**/__pycache__/**
+backend/**
+scripts/**
+NASA-SPACE-APPS-main/**
+artifacts/lunatika_skeleton/flame.db

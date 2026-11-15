@@ -32,8 +32,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent.parent
-API_URL = "https://api.vialera.online/v1/chat/completions"
-MODEL = os.getenv("VIALERA_MODEL", "gpt-6-luna")
+API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 PSI_TEXT_ROOT = ROOT / "scripts" / "PSI-TEXT-FILES_1_1"
 
 # Use "the language of the user's question" to answer in the user's language instead.
@@ -208,13 +207,15 @@ def load_local_env() -> None:
 # ---------------------------------------------------------------------------
 
 def call_llm(messages: list[dict], temperature: float = 0.2, timeout: int = 120) -> str:
-    api_key = os.getenv("VIALERA_API_KEY")
+    api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
-        raise RuntimeError("VIALERA_API_KEY tapılmadı. .env.local faylını yoxla.")
-    payload = json.dumps({"model": os.getenv("VIALERA_MODEL", MODEL), "messages": messages,
-                          "temperature": temperature}).encode("utf-8")
-    request = Request(API_URL, data=payload, method="POST", headers={
-        "Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
+        raise RuntimeError("GOOGLE_API_KEY tapılmadı. .env.local faylını yoxla.")
+    system = "\n\n".join(str(message.get("content", "")) for message in messages if message.get("role") == "system")
+    contents = [{"role": "model" if message.get("role") == "assistant" else "user", "parts": [{"text": str(message.get("content", ""))}]} for message in messages if message.get("role") != "system"]
+    payload = json.dumps({"systemInstruction": {"parts": [{"text": system}]} if system else None,
+                          "contents": contents, "generationConfig": {"temperature": temperature}}).encode("utf-8")
+    request = Request(f"{API_URL}?key={api_key}", data=payload, method="POST", headers={
+        "Content-Type": "application/json",
         "Accept": "application/json", "User-Agent": "Lunatika/1.0",
     })
     try:
@@ -225,7 +226,7 @@ def call_llm(messages: list[dict], temperature: float = 0.2, timeout: int = 120)
         raise RuntimeError(f"Vialera API xətası ({error.code}): {detail}") from error
     except URLError as error:
         raise RuntimeError(f"Vialera API-yə qoşulmaq olmadı: {error.reason}") from error
-    content = result.get("choices", [{}])[0].get("message", {}).get("content")
+    content = "".join(part.get("text", "") for part in result.get("candidates", [{}])[0].get("content", {}).get("parts", []))
     if not content:
         raise RuntimeError("Vialera API boş cavab qaytardı.")
     return content
@@ -718,7 +719,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         if self.path in {"/api/health", "/health"}:
-            self.send_json({"ok": True, "model": os.getenv("VIALERA_MODEL", MODEL)})
+            self.send_json({"ok": True, "model": "gemini-2.5-flash"})
         elif self.path == "/api/atlas-data":
             try:
                 self.send_json(atlas_data())

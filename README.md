@@ -18,6 +18,21 @@ Open `http://localhost:5173/chat`. The API key is read from `.env.local` by the
 Python backend and is never exposed to the browser. The backend searches relevant
 text files in this project and sends their contents as context when answering.
 
+## Vercel deployment
+
+This project can be deployed as a standalone Vercel app. The Applications page
+reads `artifacts/lunatika_skeleton/website_data` through the serverless endpoint
+`/api/website-atlas-data`. Chat requests use Google Gemini server-side.
+
+Set this Vercel environment variable before deploying:
+
+```text
+GOOGLE_API_KEY=your_google_gemini_api_key
+```
+
+Do not put the key in frontend code or commit it to `.env.local`. Vercel serves
+the built Vite app from `dist` and discovers the Python functions in `api/`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
