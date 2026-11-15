@@ -23,6 +23,7 @@ import json
 import os
 import re
 import subprocess
+import csv
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -115,6 +116,29 @@ def atlas_data() -> dict:
     )
     """
     return psql_json(sql, timeout=30) or {'investigations': [], 'findings': []}
+
+
+def website_atlas_data() -> dict:
+    """Read the curated website dataset used by the Applications atlas."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_dir = os.path.join(root, "artifacts", "lunatika_skeleton", "website_data")
+    with open(os.path.join(data_dir, "overview.json"), encoding="utf-8") as file:
+        overview = json.load(file)
+    with open(os.path.join(data_dir, "findings.csv"), newline="", encoding="utf-8-sig") as file:
+        findings = list(csv.DictReader(file))
+    investigations = overview.get("investigations", [])
+    investigation_map = {item.get("investigation_id"): item for item in investigations}
+    for finding in findings:
+        investigation = investigation_map.get(finding.get("investigation_id"), {})
+        finding["acronym"] = investigation.get("acronym")
+        finding["investigation_title"] = investigation.get("title")
+        finding["psi_url"] = investigation.get("psi_url")
+    return {
+        "investigations": investigations,
+        "findings": findings,
+        "counts": overview.get("totals", {}),
+        "source": "artifacts/lunatika_skeleton/website_data",
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -683,6 +707,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.send_header("Access-Control-Allow-Headers", "Content-Type")
             self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
             self.end_headers()
             self.wfile.write(data)
         except (BrokenPipeError, ConnectionResetError):
@@ -698,6 +723,11 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 self.send_json(atlas_data())
             except RuntimeError as error:
+                self.send_json({"error": str(error)}, 503)
+        elif self.path == "/api/website-atlas-data":
+            try:
+                self.send_json(website_atlas_data())
+            except (OSError, ValueError, csv.Error) as error:
                 self.send_json({"error": str(error)}, 503)
         elif self.path == "/api/chats":
             self.send_json({"chats": load_chats_db()})

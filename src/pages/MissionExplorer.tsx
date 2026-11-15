@@ -6,7 +6,7 @@ export function MissionExplorer({ applicationView = false }: { applicationView?:
   }, [])
 
   return (
-    <div className="w-full h-full pt-0 flex flex-col box-border">
+    <div className="w-full h-full flex flex-col box-border">
       <iframe
         title="Fire Safety Atlas"
         src={applicationView ? '/artifacts/fire-safety-atlas.html#Applications' : '/artifacts/fire-safety-atlas.html'}

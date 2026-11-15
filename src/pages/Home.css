@@ -15,7 +15,7 @@
   --h-cyan: #6dd6e5;
   --h-flame: linear-gradient(100deg, #ffd48a 0%, #ff8a3d 34%, #c98bd6 62%, #8fa9ff 100%);
   --h-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --h-max: 1160px;
+  --h-max: 1240px;
 
   position: relative;
   min-height: 100%;
@@ -88,7 +88,7 @@
 
 .home-title {
   margin: 0;
-  font-size: clamp(2.4rem, 1.4rem + 3.2vw, 4.6rem);
+  font-size: clamp(2.4rem, 1.4rem + 3.2vw, 4.2rem);
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.04em;

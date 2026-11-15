@@ -15,7 +15,7 @@
 <div id="app"></div>
 <template id="tpl-Main">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -503,7 +503,7 @@ class Component extends DCLogic {
 </script>
 <template id="tpl-Prevention">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -742,7 +742,7 @@ class Component extends DCLogic {
 </script>
 <template id="tpl-Detection">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -859,7 +859,7 @@ class Component extends DCLogic {
 </script>
 <template id="tpl-Suppression">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -991,7 +991,7 @@ class Component extends DCLogic {
 </script>
 <template id="tpl-Evidence">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -1067,7 +1067,7 @@ class Component extends DCLogic {
 </script>
 <template id="tpl-Applications">
 
-<div class="pg">
+<div class="pg" style="margin-top: 80px;">
 <div class="wrap">
 <header class="nav">
 <nav aria-label="Sections">
@@ -1434,13 +1434,13 @@ class Component extends DCLogic {
     // Applications are populated exclusively from accepted PostgreSQL findings.
     var R = window.__atlasResearch || [];
     function dot(c) { return 'width:9px;height:9px;border-radius:50%;display:inline-block;flex:0 0 auto;background:' + c + ';box-shadow:0 0 8px ' + c; }
-    var inCat = function (r) { return s.cat === 'all' || r.cat === s.cat; };
+    var inCat = function (r) { return s.cat === 'all' || (r.cats || [r.cat]).indexOf(s.cat) >= 0; };
     function studiesFor(k) { return R.filter(function (r) { return r.fits.indexOf(k) >= 0 && inCat(r); }); }
     function openDest(k, sid) { return function () { self.setState({ view: D[k].view, dest: k, study: sid || null }); }; }
     var mapView = s.view === 'list' ? null : s.view;
     var dk = s.dest && D[s.dest] && D[s.dest].view === mapView ? s.dest : null;
     var cats = [{ k: 'all', n: 'All', c: '#e8eef6' }].concat(Object.keys(CAT).map(function (k) { return { k: k, n: CAT[k].n, c: CAT[k].c }; }))
-      .map(function (c) { return { n: c.n, dot: dot(c.c), count: R.filter(function (r) { return c.k === 'all' || r.cat === c.k; }).length, pressed: s.cat === c.k ? 'true' : 'false', pick: function () { self.setState({ cat: c.k }); } }; });
+       .map(function (c) { return { n: c.n, dot: dot(c.c), count: R.filter(function (r) { return c.k === 'all' || (r.cats || [r.cat]).indexOf(c.k) >= 0; }).length, pressed: s.cat === c.k ? 'true' : 'false', pick: function () { self.setState({ cat: c.k }); } }; });
     var destKeys = Object.keys(D).filter(function (k) { return D[k].view === mapView; });
     var pins = destKeys.map(function (k) {
       var st = studiesFor(k), risks = {};
@@ -1678,7 +1678,9 @@ class Component extends DCLogic {
     apiUrls.push('http://localhost:8000/api/atlas-data');
     function requestApi(index) {
       if (index >= apiUrls.length) return Promise.reject(new Error('Atlas API unavailable'));
-      return fetch(apiUrls[index], { headers: { Accept: 'application/json' } }).then(function (response) {
+      return fetch(apiUrls[index] + (apiUrls[index].indexOf('?') >= 0 ? '&' : '?') + '_=' + Date.now(), {
+        cache: 'no-store', headers: { Accept: 'application/json' }
+      }).then(function (response) {
         if (!response.ok) throw new Error('Atlas API returned ' + response.status);
         return response.json();
       }).catch(function () { return requestApi(index + 1); });
@@ -1719,7 +1721,8 @@ class Component extends DCLogic {
           org: id || 'NASA PSI',
           year: Number(item.document_year) || 0,
           type: 'NASA PSI finding',
-          cat: cat,
+           cat: cat,
+           cats: cats.map(function (value) { return categories[value] || 'spread'; }),
           env: grav.indexOf('micro') >= 0 ? 'space' : 'both',
           fits: fits,
           risk: /smoke|aerosol|detector|sensor/.test(text) ? 'Late detection' : /suppress|extinguish|extinction/.test(text) ? 'Re-ignition' : 'Fire spread',
@@ -1730,6 +1733,10 @@ class Component extends DCLogic {
         };
       });
       window.__atlasResearch = mapped;
+      if ((location.hash || '').slice(1) === 'Applications') {
+        current = null;
+        show();
+      }
       var evidenceScript = document.getElementById('js-Evidence');
       if (evidenceScript) {
         var accepted = rows.slice(0, 60).map(function (item) {
@@ -1771,15 +1778,53 @@ class Component extends DCLogic {
       }
     });
   }
-  show();
-  if ((location.hash || '').slice(1) === 'Applications') {
-    var loading = document.createElement('div');
-    loading.className = 'atlas-api-loading';
-    loading.textContent = 'Loading PostgreSQL research…';
-    loading.style.cssText = 'position:fixed;top:92px;left:50%;transform:translateX(-50%);z-index:5;color:#9fb0c4;font:12px Unbounded,system-ui,sans-serif';
-    document.body.appendChild(loading);
+
+  function loadWebsiteFindings() {
+    var urls = [
+      (window.location.origin + '/data/applications-data.json'),
+      (window.location.protocol === 'file:' ? 'http://127.0.0.1:8000' : window.location.origin) + '/api/website-atlas-data',
+      'http://127.0.0.1:8000/api/website-atlas-data',
+      'http://localhost:8000/api/website-atlas-data'
+    ];
+    function request(index) {
+      if (index >= urls.length) return Promise.reject(new Error('Website dataset unavailable'));
+      return fetch(urls[index] + '?_=' + Date.now(), { cache: 'no-store' }).then(function (response) {
+        if (!response.ok) throw new Error('Website dataset returned ' + response.status);
+        return response.json();
+      }).catch(function () { return request(index + 1); });
+    }
+    request(0).then(function (data) {
+      var rows = Array.isArray(data.findings) ? data.findings.filter(function (item) { return item.statement; }) : [];
+      var categories = { detection: 'sensors', prevention: 'materials', suppression: 'suppression', fundamental: 'spread' };
+      window.__atlasResearch = rows.map(function (item, index) {
+        var cats = [];
+        try { cats = JSON.parse(item.category || '[]'); } catch (_) {}
+        var text = ((item.statement || '') + ' ' + (item.earth_application || '') + ' ' + (item.safety_implication || '')).toLowerCase();
+        var fits = [];
+        if (/smoke|aerosol|detector|sensor|particle/.test(text)) fits.push('station', 'vehicles', 'homes');
+        if (/material|flammab|spread|ignit|burning|flame/.test(text)) fits.push('station', 'moon', 'rover', 'mars', 'industry');
+        if (/suppress|extinguish|extinction|oxygen|ventilation|cool flame/.test(text)) fits.push('station', 'moon', 'rover', 'mars');
+        if (!fits.length) fits = ['station', 'industry'];
+        fits = fits.filter(function (value, at, all) { return all.indexOf(value) === at; });
+        var mappedCats = cats.map(function (value) { return categories[value] || 'spread'; });
+        return {
+          id: item.finding_id || item.investigation_id + ':' + index,
+          t: (item.acronym ? item.acronym + ' · ' : '') + (item.investigation_title || item.investigation_id),
+          org: item.investigation_id || 'NASA PSI', year: Number(item.year) || 0,
+          type: item.finding_type || 'NASA PSI finding', cat: mappedCats[0] || 'spread', cats: mappedCats,
+          env: (item.gravity || '').toLowerCase().indexOf('micro') >= 0 ? 'space' : 'both', fits: fits,
+          risk: /smoke|aerosol|detector|sensor/.test(text) ? 'Late detection' : /suppress|extinguish|extinction/.test(text) ? 'Re-ignition' : 'Fire spread',
+          ev: Number(item.confidence) >= .9 ? 3 : 2, finding: item.statement,
+          relevance: item.safety_implication || item.earth_application || '',
+          suggestion: item.equipment_implication || item.earth_application || item.safety_implication || item.statement
+        };
+      });
+      if ((location.hash || '').slice(1) === 'Applications') { current = null; show(); }
+    }).catch(function (error) { console.warn('[Fire Safety Atlas] Website dataset unavailable:', error.message); });
   }
-  loadPostgresFindings();
+  show();
+  loadWebsiteFindings();
+  if ((location.hash || '').slice(1) !== 'Applications') loadPostgresFindings();
 })();
 </script>
 </body>
