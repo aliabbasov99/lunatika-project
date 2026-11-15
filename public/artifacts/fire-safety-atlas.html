@@ -1,0 +1,1786 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fire Safety Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&amp;display=swap">
+<style>html,body{margin:0;background:#060b16}</style>
+<style id="page-css"></style>
+</head>
+<body>
+<div id="app"></div>
+<template id="tpl-Main">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main" class="on" aria-current="page">Overview</a>
+<a href="#Prevention">Prevention</a>
+<a href="#Detection">Detection</a>
+<a href="#Suppression">Suppression</a>
+<a href="#Evidence">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 52px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+<div>
+<div class="eyebrow">NASA Space Apps · Flame in Freefall</div>
+<h1 class="hero">Fire safety in <span class="hero-gradient-word">microgravity</span></h1>
+<p class="lede">A live habitat model and evidence-based checks across NASA's three fire safety layers: prevention, detection and suppression.</p>
+</div>
+<span class="chip" style="border: 1px solid #2a3d56; color: #cfe9ef; font-size: 11px; letter-spacing: .06em">PROTOTYPE · EXAMPLE DATA</span>
+</section>
+
+<div style="display: flex; gap: 8px; overflow-x: auto; margin-top: 26px; padding-bottom: 4px" role="group" aria-label="Choose a mission">
+<template data-sc="for" list="{{missions}}" as="m" hint-placeholder-count="4">
+<button type="button" class="mb" onClick="{{m.pick}}" aria-pressed="{{m.pressed}}"><b>{{m.n}}</b><span>{{m.s}}</span></button>
+</template>
+</div>
+
+<section class="card scene" style="margin-top: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding: 4px 6px 12px">
+<div>
+<div class="eyebrow">Live habitat model</div>
+<h2 style="margin: 4px 0 0; font-size: 22px; font-weight: 700">{{sceneTitle}}</h2>
+</div>
+<div class="seg" role="group" aria-label="Gravity comparison">
+<button type="button" aria-pressed="{{gMicro}}" onClick="{{setMicro}}">{{missionGravLabel}}</button>
+<button type="button" aria-pressed="{{gEarth}}" onClick="{{setEarth}}">Earth gravity</button>
+</div>
+</div>
+
+<svg class="sv" viewBox="0 0 1000 440" role="img" aria-label="{{sceneLabel}}">
+<defs>
+<linearGradient id="hull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#f4f1ea"></stop><stop offset=".22" style="stop-color:#e2ddd2"></stop><stop offset=".55" style="stop-color:#a9a79f"></stop><stop offset=".85" style="stop-color:#5e6470"></stop><stop offset="1" style="stop-color:#2c3340"></stop></linearGradient>
+<radialGradient id="cap" cx=".35" cy=".3" r=".85"><stop offset="0" style="stop-color:#eeeae2"></stop><stop offset="1" style="stop-color:#58606e"></stop></radialGradient>
+<linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#14304a"></stop><stop offset="1" style="stop-color:#07121f"></stop></linearGradient>
+<linearGradient id="solar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:#f0c56a"></stop><stop offset=".45" style="stop-color:#b9782a"></stop><stop offset="1" style="stop-color:#5a3410"></stop></linearGradient>
+<linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:#3a6cc0"></stop><stop offset="1" style="stop-color:#0c1d3d"></stop></linearGradient>
+<radialGradient id="earth" cx=".42" cy=".04" r=".72"><stop offset="0" style="stop-color:#7cc6ff"></stop><stop offset=".3" style="stop-color:#2f7ad0"></stop><stop offset=".7" style="stop-color:#123f86"></stop><stop offset="1" style="stop-color:#041330"></stop></radialGradient>
+<linearGradient id="night" x1="0" y1="0" x2="1" y2="0"><stop offset=".5" style="stop-color:#000;stop-opacity:0"></stop><stop offset=".62" style="stop-color:#000;stop-opacity:.55"></stop><stop offset="1" style="stop-color:#000;stop-opacity:.7"></stop></linearGradient>
+<radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#ffffff;stop-opacity:.9"></stop><stop offset=".12" style="stop-color:#fff4d6;stop-opacity:.55"></stop><stop offset=".4" style="stop-color:#9be7f2;stop-opacity:.12"></stop><stop offset="1" style="stop-color:#9be7f2;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="neb" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#6b4bd6;stop-opacity:.28"></stop><stop offset=".6" style="stop-color:#2f6fd6;stop-opacity:.08"></stop><stop offset="1" style="stop-color:#2f6fd6;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="ball" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#fff1c9"></stop><stop offset=".28" style="stop-color:#ffb067;stop-opacity:.75"></stop><stop offset=".55" style="stop-color:#4f8cff;stop-opacity:.7"></stop><stop offset=".82" style="stop-color:#2a5cff;stop-opacity:.35"></stop><stop offset="1" style="stop-color:#2a5cff;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#67d4e4;stop-opacity:.35"></stop><stop offset="1" style="stop-color:#67d4e4;stop-opacity:0"></stop></radialGradient>
+<linearGradient id="tear" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#fff4b8"></stop><stop offset=".45" style="stop-color:#ffb03d"></stop><stop offset=".82" style="stop-color:#ff6a2a"></stop><stop offset="1" style="stop-color:#3f7bff"></stop></linearGradient>
+<linearGradient id="marsSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#170a09"></stop><stop offset=".6" style="stop-color:#5a2a1c"></stop><stop offset="1" style="stop-color:#b0643c"></stop></linearGradient>
+<linearGradient id="moonGround" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#8c929c"></stop><stop offset="1" style="stop-color:#2a2f37"></stop></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:#fff6d8;stop-opacity:.45"></stop><stop offset="1" style="stop-color:#fff6d8;stop-opacity:0"></stop></linearGradient>
+<radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".6" style="stop-color:#000;stop-opacity:0"></stop><stop offset="1" style="stop-color:#000;stop-opacity:.55"></stop></radialGradient>
+</defs>
+
+<rect x="0" y="0" width="1000" height="440" fill="#040912"></rect>
+<template data-sc="if" value="{{mars}}" hint-placeholder-val="{{ false }}">
+<rect x="0" y="0" width="1000" height="440" fill="url(#marsSky)"></rect>
+</template>
+<template data-sc="if" value="{{notMars}}" hint-placeholder-val="{{ true }}">
+<ellipse cx="770" cy="130" rx="320" ry="150" fill="url(#neb)"></ellipse>
+<ellipse cx="140" cy="300" rx="220" ry="120" fill="url(#neb)" opacity=".6"></ellipse>
+</template>
+<g fill="#ffffff">
+<circle class="tw" cx="40" cy="60" r="1.4"></circle><circle class="tw" cx="120" cy="150" r="1" style="animation-delay:-1s"></circle><circle class="tw" cx="210" cy="40" r="1.6" style="animation-delay:-2s"></circle><circle class="tw" cx="300" cy="70" r="1" style="animation-delay:-.5s"></circle><circle class="tw" cx="430" cy="30" r="1.3" style="animation-delay:-1.7s"></circle><circle class="tw" cx="560" cy="70" r="1" style="animation-delay:-2.4s"></circle><circle class="tw" cx="640" cy="24" r="1.5" style="animation-delay:-.9s"></circle><circle class="tw" cx="760" cy="60" r="1.1" style="animation-delay:-2.9s"></circle><circle class="tw" cx="850" cy="150" r="1.4" style="animation-delay:-1.3s"></circle><circle class="tw" cx="960" cy="40" r="1" style="animation-delay:-.2s"></circle><circle class="tw" cx="70" cy="250" r="1.2" style="animation-delay:-2.1s"></circle><circle class="tw" cx="975" cy="260" r="1.2" style="animation-delay:-1.5s"></circle><circle class="tw" cx="520" cy="12" r="1" style="animation-delay:-.7s"></circle><circle class="tw" cx="700" cy="110" r=".9" style="animation-delay:-2.6s"></circle>
+</g>
+<template data-sc="if" value="{{notMars}}" hint-placeholder-val="{{ true }}">
+<line class="shoot" x1="560" y1="20" x2="600" y2="36" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></line>
+</template>
+
+<template data-sc="if" value="{{sunBright}}" hint-placeholder-val="{{ true }}">
+<circle class="glow" cx="170" cy="58" r="140" fill="url(#sun)"></circle>
+<circle cx="170" cy="58" r="11" fill="#ffffff"></circle>
+<circle cx="236" cy="88" r="10" fill="#9be7f2" opacity=".14"></circle>
+<circle cx="262" cy="100" r="4" fill="#ffffff" opacity=".22"></circle>
+</template>
+
+<template data-sc="if" value="{{orbit}}" hint-placeholder-val="{{ true }}">
+<circle cx="500" cy="1290" r="962" fill="none" stroke="#67d4e4" stroke-opacity=".07" stroke-width="34"></circle>
+<circle cx="500" cy="1290" r="952" fill="none" stroke="#67d4e4" stroke-opacity=".16" stroke-width="16"></circle>
+<circle cx="500" cy="1290" r="944" fill="none" stroke="#a5ecf5" stroke-opacity=".65" stroke-width="3"></circle>
+<circle cx="500" cy="1290" r="940" fill="url(#earth)"></circle>
+<g class="drift" fill="#ffffff">
+<ellipse cx="260" cy="366" rx="95" ry="6" opacity=".26"></ellipse><ellipse cx="560" cy="358" rx="130" ry="5" opacity=".24"></ellipse><ellipse cx="820" cy="372" rx="80" ry="6" opacity=".2"></ellipse><ellipse cx="420" cy="388" rx="70" ry="7" opacity=".18"></ellipse><ellipse cx="700" cy="400" rx="110" ry="8" opacity=".14"></ellipse><ellipse cx="150" cy="410" rx="90" ry="9" opacity=".16"></ellipse>
+</g>
+<rect x="0" y="340" width="1000" height="100" fill="url(#night)"></rect>
+<g fill="#ffcf7a">
+<circle class="tw" cx="790" cy="372" r="1.2"></circle><circle class="tw" cx="828" cy="386" r="1.4" style="animation-delay:-1s"></circle><circle class="tw" cx="866" cy="368" r="1" style="animation-delay:-2s"></circle><circle class="tw" cx="905" cy="396" r="1.3" style="animation-delay:-.6s"></circle><circle class="tw" cx="944" cy="378" r="1.1" style="animation-delay:-1.8s"></circle><circle class="tw" cx="972" cy="410" r="1.4" style="animation-delay:-2.4s"></circle><circle class="tw" cx="880" cy="420" r="1" style="animation-delay:-.3s"></circle>
+</g>
+</template>
+<template data-sc="if" value="{{moon}}" hint-placeholder-val="{{ false }}">
+<circle cx="890" cy="74" r="34" fill="none" stroke="#a5ecf5" stroke-opacity=".3" stroke-width="8"></circle>
+<circle cx="890" cy="74" r="26" fill="url(#earth)"></circle>
+<path d="M890,48 A26,26 0 0,1 890,100 A14,26 0 0,0 890,48Z" fill="#000" opacity=".45"></path>
+<path d="M0,352 Q240,336 500,350 T1000,344 L1000,440 L0,440Z" fill="url(#moonGround)"></path>
+<ellipse cx="160" cy="392" rx="48" ry="8" fill="#3b414b"></ellipse><ellipse cx="820" cy="404" rx="64" ry="10" fill="#3b414b"></ellipse><ellipse cx="560" cy="420" rx="34" ry="6" fill="#3b414b"></ellipse><ellipse cx="420" cy="380" rx="18" ry="3" fill="#4a505a"></ellipse>
+</template>
+<template data-sc="if" value="{{mars}}" hint-placeholder-val="{{ false }}">
+<circle cx="840" cy="78" r="40" fill="url(#sun)" opacity=".7"></circle>
+<circle cx="840" cy="78" r="7" fill="#fff3e0" opacity=".85"></circle>
+<path d="M0,346 L110,326 L210,342 L330,318 L460,340 L590,322 L720,338 L860,320 L1000,334 L1000,440 L0,440Z" fill="#6e2f1e"></path>
+<path d="M0,380 Q200,360 420,378 T1000,372 L1000,440 L0,440Z" fill="#9b4a2e"></path>
+<g stroke="#5a2416" stroke-opacity=".5"><line x1="80" y1="404" x2="190" y2="398"></line><line x1="640" y1="414" x2="780" y2="408"></line></g>
+</template>
+
+<template data-sc="if" value="{{ground}}" hint-placeholder-val="{{ false }}">
+<path d="M170,354 Q500,226 830,354Z" fill="#000" opacity=".22"></path>
+<path d="M190,354 Q500,240 810,354Z" fill="{{bermFill}}"></path>
+<g stroke="#9aa5b5" stroke-width="3"><line x1="110" y1="352" x2="110" y2="250"></line><line x1="98" y1="352" x2="110" y2="300"></line><line x1="122" y1="352" x2="110" y2="300"></line></g>
+<ellipse cx="110" cy="246" rx="18" ry="7" fill="#e8e4dc" stroke="#8a96a8"></ellipse>
+<circle class="blink" cx="110" cy="240" r="3" fill="#ff5a4a"></circle>
+<g>
+<line x1="870" y1="352" x2="870" y2="318" stroke="#8a96a8" stroke-width="3"></line>
+<line x1="940" y1="352" x2="940" y2="318" stroke="#8a96a8" stroke-width="3"></line>
+<polygon points="842,318 900,300 900,322 842,340" fill="url(#panel)" stroke="#7fa6e0" stroke-opacity=".6"></polygon>
+<polygon points="912,318 970,300 970,322 912,340" fill="url(#panel)" stroke="#7fa6e0" stroke-opacity=".6"></polygon>
+</g>
+<g fill="#67d4e4"><circle class="tw" cx="200" cy="362" r="2"></circle><circle class="tw" cx="260" cy="364" r="2" style="animation-delay:-.4s"></circle><circle class="tw" cx="740" cy="364" r="2" style="animation-delay:-.8s"></circle><circle class="tw" cx="800" cy="362" r="2" style="animation-delay:-1.2s"></circle></g>
+</template>
+<template data-sc="if" value="{{rover}}" hint-placeholder-val="{{ false }}">
+<polygon points="792,250 1000,196 1000,330" fill="url(#beam)"></polygon>
+</template>
+
+<g class="{{floatCls}}">
+<template data-sc="if" value="{{orbit}}" hint-placeholder-val="{{ true }}">
+<rect x="226" y="209" width="38" height="12" fill="#8d98aa"></rect>
+<rect x="786" y="209" width="28" height="12" fill="#8d98aa"></rect>
+<g stroke="#5d687a" stroke-width="1.2"><line x1="230" y1="209" x2="240" y2="221"></line><line x1="240" y1="209" x2="250" y2="221"></line><line x1="250" y1="209" x2="260" y2="221"></line><line x1="792" y1="209" x2="802" y2="221"></line><line x1="802" y1="209" x2="812" y2="221"></line></g>
+<polygon points="40,108 228,168 228,211 40,211" fill="url(#solar)" stroke="#f6d58b" stroke-opacity=".55"></polygon>
+<polygon points="40,219 228,219 228,262 40,322" fill="url(#solar)" stroke="#f6d58b" stroke-opacity=".55"></polygon>
+<polygon points="812,168 996,108 996,211 812,211" fill="url(#solar)" stroke="#f6d58b" stroke-opacity=".55"></polygon>
+<polygon points="812,219 996,219 996,322 812,262" fill="url(#solar)" stroke="#f6d58b" stroke-opacity=".55"></polygon>
+<g stroke="#3a2408" stroke-opacity=".55" stroke-width="1.2">
+<line x1="87" y1="123" x2="87" y2="211"></line><line x1="87" y1="219" x2="87" y2="307"></line><line x1="134" y1="138" x2="134" y2="211"></line><line x1="134" y1="219" x2="134" y2="292"></line><line x1="181" y1="153" x2="181" y2="211"></line><line x1="181" y1="219" x2="181" y2="277"></line>
+<line x1="40" y1="160" x2="228" y2="190"></line><line x1="40" y1="270" x2="228" y2="240"></line>
+<line x1="858" y1="153" x2="858" y2="211"></line><line x1="858" y1="219" x2="858" y2="277"></line><line x1="904" y1="138" x2="904" y2="211"></line><line x1="904" y1="219" x2="904" y2="292"></line><line x1="950" y1="123" x2="950" y2="211"></line><line x1="950" y1="219" x2="950" y2="307"></line>
+<line x1="812" y1="190" x2="996" y2="160"></line><line x1="812" y1="240" x2="996" y2="270"></line>
+</g>
+<line x1="40" y1="215" x2="228" y2="215" stroke="#d6dbe2" stroke-width="3"></line>
+<line x1="812" y1="215" x2="996" y2="215" stroke="#d6dbe2" stroke-width="3"></line>
+<polygon points="52,116 112,135 100,176 46,160" fill="#ffffff" opacity=".13"></polygon>
+<polygon points="830,166 880,150 884,190 832,200" fill="#ffffff" opacity=".1"></polygon>
+</template>
+<template data-sc="if" value="{{ground}}" hint-placeholder-val="{{ false }}">
+<g stroke="#9aa5b5" stroke-width="5" stroke-linecap="round"><line x1="330" y1="284" x2="306" y2="352"></line><line x1="670" y1="284" x2="694" y2="352"></line><line x1="500" y1="290" x2="500" y2="350"></line></g>
+<g fill="#9aa5b5"><rect x="290" y="348" width="32" height="6" rx="3"></rect><rect x="678" y="348" width="32" height="6" rx="3"></rect><rect x="484" y="346" width="32" height="6" rx="3"></rect></g>
+<rect x="204" y="183" width="58" height="64" fill="url(#hull)"></rect>
+<ellipse cx="204" cy="215" rx="11" ry="32" fill="url(#cap)" stroke="#3f4a5c" stroke-width="2"></ellipse>
+<rect x="198" y="205" width="10" height="20" rx="3" fill="#2c3340"></rect>
+<line x1="204" y1="247" x2="196" y2="352" stroke="#9aa5b5" stroke-width="4"></line>
+</template>
+<template data-sc="if" value="{{rover}}" hint-placeholder-val="{{ false }}">
+<rect x="300" y="286" width="400" height="16" rx="6" fill="#3a4352"></rect>
+<g><circle cx="350" cy="316" r="30" fill="#151b26" stroke="#4b5568" stroke-width="5"></circle><circle cx="350" cy="316" r="9" fill="#8a96a8"></circle><circle cx="500" cy="316" r="30" fill="#151b26" stroke="#4b5568" stroke-width="5"></circle><circle cx="500" cy="316" r="9" fill="#8a96a8"></circle><circle cx="650" cy="316" r="30" fill="#151b26" stroke="#4b5568" stroke-width="5"></circle><circle cx="650" cy="316" r="9" fill="#8a96a8"></circle></g>
+<circle cx="792" cy="250" r="5" fill="#fff6d8"></circle>
+</template>
+
+<ellipse cx="262" cy="215" rx="30" ry="76" fill="#4f5664"></ellipse>
+<rect x="262" y="139" width="476" height="152" fill="url(#hull)"></rect>
+<g stroke="#2a3342" stroke-opacity=".2">
+<line x1="262" y1="158" x2="738" y2="158"></line><line x1="262" y1="177" x2="738" y2="177"></line><line x1="262" y1="253" x2="738" y2="253"></line><line x1="262" y1="272" x2="738" y2="272"></line>
+<line x1="310" y1="139" x2="310" y2="291"></line><line x1="360" y1="139" x2="360" y2="160"></line><line x1="410" y1="139" x2="410" y2="160"></line><line x1="460" y1="139" x2="460" y2="160"></line><line x1="510" y1="139" x2="510" y2="160"></line><line x1="560" y1="139" x2="560" y2="160"></line><line x1="610" y1="139" x2="610" y2="160"></line><line x1="660" y1="139" x2="660" y2="160"></line>
+<line x1="360" y1="270" x2="360" y2="291"></line><line x1="410" y1="270" x2="410" y2="291"></line><line x1="460" y1="270" x2="460" y2="291"></line><line x1="510" y1="270" x2="510" y2="291"></line><line x1="560" y1="270" x2="560" y2="291"></line><line x1="610" y1="270" x2="610" y2="291"></line><line x1="660" y1="270" x2="660" y2="291"></line>
+<line x1="710" y1="139" x2="710" y2="291"></line>
+</g>
+<g fill="#000" opacity=".16"><rect x="294" y="139" width="6" height="152"></rect><rect x="716" y="139" width="6" height="152"></rect></g>
+<rect x="262" y="146" width="476" height="9" fill="#ffffff" opacity=".42"></rect>
+<g fill="#e3b23c"><rect x="330" y="141" width="22" height="3" rx="1.5"></rect><rect x="420" y="141" width="22" height="3" rx="1.5"></rect><rect x="560" y="141" width="22" height="3" rx="1.5"></rect><rect x="650" y="141" width="22" height="3" rx="1.5"></rect><rect x="330" y="286" width="22" height="3" rx="1.5"></rect><rect x="470" y="286" width="22" height="3" rx="1.5"></rect><rect x="620" y="286" width="22" height="3" rx="1.5"></rect></g>
+<ellipse cx="738" cy="215" rx="30" ry="76" fill="url(#cap)"></ellipse>
+<ellipse cx="738" cy="215" rx="22" ry="58" fill="none" stroke="#3f4a5c" stroke-opacity=".5" stroke-width="2"></ellipse>
+<rect x="738" y="177" width="50" height="76" fill="url(#hull)"></rect>
+<ellipse cx="788" cy="215" rx="12" ry="38" fill="url(#cap)" stroke="#3f4a5c" stroke-width="2"></ellipse>
+<ellipse cx="788" cy="215" rx="6" ry="22" fill="none" stroke="#e3b23c" stroke-width="2"></ellipse>
+<line x1="300" y1="139" x2="300" y2="120" stroke="#c9d1db" stroke-width="2"></line>
+<ellipse cx="300" cy="116" rx="15" ry="6" fill="#eef2f6" stroke="#8a96a8"></ellipse>
+<circle class="blink" cx="300" cy="113" r="2" fill="#ff6b5b"></circle>
+<circle class="blink" cx="262" cy="150" r="3" fill="#ff4d4d"></circle>
+<circle class="blink" cx="788" cy="182" r="3" fill="#4ade80" style="animation-delay:-.6s"></circle>
+
+<rect x="318" y="160" width="378" height="110" rx="16" fill="#061020"></rect>
+<polygon points="330,166 684,166 662,180 352,180" fill="#16304b"></polygon>
+<polygon points="352,250 662,250 684,264 330,264" fill="#0a1626"></polygon>
+<polygon points="330,166 352,180 352,250 330,264" fill="#0e2137"></polygon>
+<polygon points="684,166 662,180 662,250 684,264" fill="#0e2137"></polygon>
+<rect x="352" y="180" width="310" height="70" fill="url(#inside)"></rect>
+<g fill="#10243b" stroke="#24476b" stroke-width="1">
+<rect x="360" y="185" width="46" height="60" rx="3"></rect><rect x="412" y="185" width="46" height="60" rx="3"></rect><rect x="464" y="185" width="46" height="60" rx="3"></rect><rect x="516" y="185" width="46" height="60" rx="3"></rect><rect x="568" y="185" width="46" height="60" rx="3"></rect><rect x="620" y="185" width="38" height="60" rx="3"></rect>
+</g>
+<g stroke="#1d3a58"><line x1="364" y1="215" x2="402" y2="215"></line><line x1="416" y1="205" x2="454" y2="205"></line><line x1="416" y1="225" x2="454" y2="225"></line><line x1="572" y1="215" x2="610" y2="215"></line><line x1="624" y1="205" x2="654" y2="205"></line></g>
+<circle class="led" cx="368" cy="192" r="1.8" fill="#4ade80"></circle><circle class="led" cx="375" cy="192" r="1.8" fill="#67d4e4" style="animation-delay:-.7s"></circle>
+<circle class="led" cx="420" cy="192" r="1.8" fill="#fbbf24" style="animation-delay:-1.3s"></circle><circle class="led" cx="427" cy="192" r="1.8" fill="#4ade80" style="animation-delay:-.4s"></circle>
+<circle class="led" cx="576" cy="192" r="1.8" fill="#67d4e4" style="animation-delay:-1.9s"></circle><circle class="led" cx="583" cy="192" r="1.8" fill="#4ade80" style="animation-delay:-1s"></circle>
+<circle class="led" cx="628" cy="192" r="1.8" fill="#4ade80" style="animation-delay:-2.2s"></circle>
+<line x1="360" y1="182" x2="654" y2="182" stroke="#d9f4ff" stroke-opacity=".7" stroke-width="2"></line>
+<polygon points="360,182 654,182 640,200 374,200" fill="#d9f4ff" opacity=".05"></polygon>
+
+<rect x="664" y="183" width="22" height="64" rx="4" fill="#1b2a3e" stroke="#4a6080"></rect>
+<g stroke="#6f86a6" stroke-width="1.5"><line x1="668" y1="194" x2="682" y2="194"></line><line x1="668" y1="204" x2="682" y2="204"></line><line x1="668" y1="214" x2="682" y2="214"></line><line x1="668" y1="224" x2="682" y2="224"></line><line x1="668" y1="234" x2="682" y2="234"></line></g>
+
+<circle cx="350" cy="215" r="21" fill="#132338" stroke="#4a6080"></circle>
+<g class="{{fanCls}}">
+<path d="M350,215 C342,200 346,195 350,195 C356,195 356,206 350,215Z" fill="#67d4e4"></path>
+<path d="M350,215 C366,213 368,219 366,222 C363,227 353,222 350,215Z" fill="#67d4e4"></path>
+<path d="M350,215 C342,229 336,228 334,224 C332,219 342,215 350,215Z" fill="#67d4e4"></path>
+</g>
+<circle cx="350" cy="215" r="4" fill="#e8eef6"></circle>
+
+<template data-sc="if" value="{{ventOn}}" hint-placeholder-val="{{ true }}">
+<g stroke="#67d4e4" stroke-width="2" stroke-linecap="round">
+<line class="air" x1="378" y1="190" x2="404" y2="190"></line>
+<line class="air" x1="378" y1="202" x2="410" y2="202" style="animation-delay:-.6s"></line>
+<line class="air" x1="378" y1="230" x2="410" y2="230" style="animation-delay:-1.2s"></line>
+<line class="air" x1="378" y1="244" x2="402" y2="244" style="animation-delay:-1.8s"></line>
+<line class="air" x1="378" y1="216" x2="398" y2="216" style="animation-delay:-.3s"></line>
+</g>
+</template>
+
+<rect x="606" y="236" width="11" height="26" rx="3" fill="#e5484d"></rect>
+<rect x="608" y="231" width="7" height="6" rx="1" fill="#2b3444"></rect>
+
+<g fill="#b9c3d0">
+<template data-sc="if" value="{{flow}}" hint-placeholder-val="{{ true }}">
+<circle class="sm fA" cx="512" cy="212" r="7"></circle><circle class="sm fB" cx="512" cy="212" r="8" style="animation-delay:-.55s"></circle><circle class="sm fC" cx="512" cy="212" r="6" style="animation-delay:-1.1s"></circle><circle class="sm fA" cx="512" cy="212" r="8" style="animation-delay:-1.6s"></circle><circle class="sm fB" cx="512" cy="212" r="7" style="animation-delay:-2.15s"></circle><circle class="sm fC" cx="512" cy="212" r="8" style="animation-delay:-2.7s"></circle>
+</template>
+<template data-sc="if" value="{{cloud}}" hint-placeholder-val="{{ false }}">
+<circle class="sm cA" cx="512" cy="212" r="8"></circle><circle class="sm cB" cx="512" cy="212" r="8" style="animation-delay:-1s"></circle><circle class="sm cC" cx="512" cy="212" r="8" style="animation-delay:-2s"></circle><circle class="sm cD" cx="512" cy="212" r="8" style="animation-delay:-3s"></circle><circle class="sm cA" cx="512" cy="212" r="7" style="animation-delay:-2.5s"></circle><circle class="sm cC" cx="512" cy="212" r="7" style="animation-delay:-.5s"></circle>
+</template>
+<template data-sc="if" value="{{rise}}" hint-placeholder-val="{{ false }}">
+<circle class="sm rL" cx="512" cy="200" r="7"></circle><circle class="sm rR" cx="512" cy="200" r="7" style="animation-delay:-.6s"></circle><circle class="sm rL" cx="512" cy="200" r="8" style="animation-delay:-1.2s"></circle><circle class="sm rR" cx="512" cy="200" r="8" style="animation-delay:-1.8s"></circle><circle class="sm rL" cx="512" cy="200" r="6" style="animation-delay:-2.4s"></circle><circle class="sm rR" cx="512" cy="200" r="6" style="animation-delay:-3s"></circle>
+</template>
+</g>
+
+<template data-sc="if" value="{{sphere}}" hint-placeholder-val="{{ true }}">
+<circle cx="512" cy="215" r="48" fill="url(#halo)"></circle>
+<circle class="flick" cx="512" cy="215" r="30" fill="url(#ball)"></circle>
+<circle cx="512" cy="215" r="5" fill="#2b2016" stroke="#ffcf8a" stroke-width="1.5"></circle>
+</template>
+<template data-sc="if" value="{{tear}}" hint-placeholder-val="{{ false }}">
+<circle cx="512" cy="222" r="44" fill="url(#halo)"></circle>
+<path class="flickT" d="{{tearPath}}" fill="url(#tear)" opacity=".92"></path>
+<circle cx="512" cy="238" r="5" fill="#2b2016" stroke="#ffcf8a" stroke-width="1.5"></circle>
+</template>
+
+<template data-sc="if" value="{{detAlive}}" hint-placeholder-val="{{ false }}">
+<circle class="ping" cx="{{detX}}" cy="{{detY}}" r="8" fill="none" stroke="{{detColor}}" stroke-width="2"></circle>
+</template>
+<circle cx="{{detX}}" cy="{{detY}}" r="8" fill="#0b1626" stroke="{{detColor}}" stroke-width="2.5"></circle>
+<circle cx="{{detX}}" cy="{{detY}}" r="3" fill="{{detColor}}"></circle>
+
+<rect x="318" y="160" width="378" height="110" rx="16" fill="none" stroke="#67d4e4" stroke-opacity=".6" stroke-width="1.5"></rect>
+<rect x="320" y="162" width="374" height="106" rx="14" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="5"></rect>
+<polygon points="330,164 410,164 372,268 330,268" fill="#ffffff" opacity=".035"></polygon>
+</g>
+
+<template data-sc="if" value="{{mars}}" hint-placeholder-val="{{ false }}">
+<g fill="#e3a27a">
+<circle class="dust" cx="80" cy="300" r="2"></circle><circle class="dust" cx="300" cy="360" r="1.6" style="animation-delay:-2s"></circle><circle class="dust" cx="520" cy="330" r="2.2" style="animation-delay:-4s"></circle><circle class="dust" cx="700" cy="390" r="1.5" style="animation-delay:-1s"></circle><circle class="dust" cx="160" cy="410" r="1.8" style="animation-delay:-5s"></circle><circle class="dust" cx="620" cy="280" r="1.4" style="animation-delay:-3s"></circle>
+</g>
+</template>
+
+<rect x="0" y="0" width="1000" height="440" fill="url(#vig)"></rect>
+
+<g stroke="#67d4e4" stroke-opacity=".6" stroke-dasharray="3 3">
+<line x1="512" y1="180" x2="512" y2="108"></line>
+<line x1="{{detX}}" y1="{{detLineY}}" x2="640" y2="108"></line>
+<line x1="350" y1="238" x2="350" y2="{{fanLabelLine}}"></line>
+</g>
+<text x="520" y="98" font-size="14" font-weight="600" fill="#e8eef6" text-anchor="end" font-family="Sora, sans-serif">{{flameTxt}}</text>
+<text x="604" y="98" font-size="14" font-weight="600" fill="{{detColor}}" font-family="Sora, sans-serif">Detector · {{detShort}}</text>
+<text x="350" y="{{fanLabelY}}" font-size="13" font-weight="600" fill="#cfe9ef" text-anchor="middle" font-family="Sora, sans-serif">Ventilation · {{ventTxt}}</text>
+
+<rect x="16" y="16" width="148" height="28" rx="14" fill="#000" fill-opacity=".45" stroke="#67d4e4" stroke-opacity=".3"></rect>
+<circle class="blink" cx="32" cy="30" r="5" fill="#ff6b5b"></circle>
+<text x="44" y="35" font-size="12.5" font-weight="700" fill="#e8eef6" font-family="Sora, sans-serif" letter-spacing="1.5">LIVE</text>
+<text x="88" y="35" font-size="12.5" fill="#cfe9ef" font-family="Sora, sans-serif">T+ {{clock}}</text>
+<text x="976" y="35" font-size="13" fill="#cfe9ef" text-anchor="end" font-family="Sora, sans-serif">{{hud}}</text>
+</svg>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; justify-content: space-between; padding: 14px 6px 4px">
+<div style="display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center">
+<div style="display: flex; align-items: center; gap: 10px"><span class="tk">Airflow</span>
+<div class="seg" role="group" aria-label="Ventilation"><button type="button" aria-pressed="{{ventOnP}}" onClick="{{setVentOn}}">Fans on</button><button type="button" aria-pressed="{{ventOffP}}" onClick="{{setVentOff}}">Fans off</button></div></div>
+<div style="display: flex; align-items: center; gap: 10px"><span class="tk">Detector</span>
+<div class="seg" role="group" aria-label="Detector placement"><button type="button" aria-pressed="{{detCeilP}}" onClick="{{setCeil}}">Ceiling</button><button type="button" aria-pressed="{{detDuctP}}" onClick="{{setDuct}}">Duct</button></div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<span class="chip {{detS}}">{{detLabel}}</span>
+<span style="font-size: 13px; color: #b8c4d4; max-width: 44ch">{{detMsg}}</span>
+</div>
+</div>
+</section>
+
+<template data-sc="if" value="{{partial}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top: 14px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; background: rgba(103,212,228,.08); border: 1px solid rgba(103,212,228,.3); border-radius: 12px; padding: 10px 14px; font-size: 13.5px">
+<b style="color: #67d4e4">Partial-gravity data gap.</b>
+<span style="color: #cfd8e4">PSI holds no Moon or Mars combustion data yet, so results show a range between the 0 g and 1 g cases.</span>
+<a href="#Evidence">Evidence</a>
+</div>
+</template>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 14px">
+<div class="card tile"><div class="tk">Gravity</div><div class="tv">{{gTxt}}</div><div class="ts">{{gSub}}</div></div>
+<div class="card tile"><div class="tk">Cabin pressure</div><div class="tv">{{cur.p}}</div><div class="ts">psi</div></div>
+<div class="card tile"><div class="tk">Oxygen</div><div class="tv">{{cur.o2}} %</div><div class="ts">molar fraction {{o2frac}}</div></div>
+<div class="card tile"><div class="tk">Smoke reaches detector</div><div class="tv">{{detTime}}</div><div class="ts">{{detTimeSub}}</div></div>
+</div>
+
+<section style="margin-top: 56px">
+<div class="eyebrow">Evidence-based checks</div>
+<h2 class="h2">Mission fire safety summary</h2>
+<p class="lede" style="margin-bottom: 20px">Status across NASA's three fire safety layers for the selected mission. Detection follows the habitat settings above.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px">
+<a href="#Prevention" class="card lc s-bad">
+<span class="tk">Will it burn?</span>
+<span style="font-size: 26px; font-weight: 700">Prevention</span>
+<span class="chip bad" style="align-self: flex-start">FAIL</span>
+<span style="font-size: 13.5px; color: #b8c4d4">Cotton-fiberglass fabric keeps burning at {{cur.o2}}% O₂ and 5 cm/s airflow.</span>
+<span style="color: #67d4e4; font-size: 13.5px; font-weight: 600">Open prevention →</span>
+</a>
+<a href="#Detection" class="card lc s-{{detS}}">
+<span class="tk">Will we notice in time?</span>
+<span style="font-size: 26px; font-weight: 700">Detection</span>
+<span class="chip {{detS}}" style="align-self: flex-start">{{detLabel}}</span>
+<span style="font-size: 13.5px; color: #b8c4d4">{{detMsg}}</span>
+<span style="color: #67d4e4; font-size: 13.5px; font-weight: 600">Open detection →</span>
+</a>
+<a href="#Suppression" class="card lc s-ok">
+<span class="tk">Can we put it out?</span>
+<span style="font-size: 26px; font-weight: 700">Suppression</span>
+<span class="chip ok" style="align-self: flex-start">PASS</span>
+<span style="font-size: 13.5px; color: #b8c4d4">CO₂ with ventilation shut down first stops the flame.</span>
+<span style="color: #67d4e4; font-size: 13.5px; font-weight: 600">Open suppression →</span>
+</a>
+</div>
+</section>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Curves and values are illustrative until filled from NASA Physical Sciences Informatics data. Not for real engineering decisions.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Main">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(ellipse 900px 500px at 80% -10%,rgba(103,212,228,.10),transparent 70%),radial-gradient(ellipse 700px 500px at 0% 30%,rgba(107,75,214,.10),transparent 70%),radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1px at 93% 90%,rgba(255,255,255,.45) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:100% 1400px,100% 1400px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px;background-repeat:no-repeat,no-repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:840px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px;box-shadow:0 10px 40px -20px rgba(103,212,228,.4)}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 13px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:50px;font-weight:700;letter-spacing:-.025em;margin:10px 0 10px;line-height:1.08;background:linear-gradient(100deg,#ffffff 30%,#9be7f2 70%,#67d4e4);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-gradient-word{background:linear-gradient(100deg,#ffd48a 0%,#ff8a3d 34%,#c98bd6 62%,#8fa9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.h2{font-size:30px;font-weight:700;letter-spacing:-.015em;margin:8px 0 6px;line-height:1.15}
+.lede{color:#b8c4d4;max-width:62ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0}
+.scene{padding:14px;border-color:rgba(103,212,228,.28);box-shadow:0 0 0 1px rgba(103,212,228,.06),0 40px 90px -40px rgba(103,212,228,.45)}
+.tile{position:relative;overflow:hidden}
+.tile::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#67d4e4,transparent);opacity:.7}
+.tk{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8fa0b6;font-weight:600}
+.tv{font-size:28px;font-weight:700;letter-spacing:-.01em;margin-top:4px}
+.ts{font-size:12.5px;color:#9fb0c4}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid #26384f;border-radius:999px;padding:4px;gap:2px;background:rgba(10,18,32,.7)}
+.seg button{border:0;background:transparent;color:#cfd8e4;font:inherit;font-size:13.5px;padding:8px 16px;border-radius:999px;cursor:pointer;min-height:38px}
+.seg button[aria-pressed="true"]{background:#67d4e4;color:#04202a;font-weight:600;box-shadow:0 0 18px rgba(103,212,228,.45)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;white-space:nowrap}
+.ok{background:rgba(74,222,128,.14);color:#7ee8a8}.warn{background:rgba(251,191,36,.14);color:#fcd34d}.bad{background:rgba(248,113,113,.16);color:#fca5a5}
+.mb{flex:0 0 auto;border:1px solid #26384f;background:rgba(12,21,36,.7);border-radius:12px;padding:9px 15px;text-align:left;min-width:150px;color:#e8eef6;font:inherit;cursor:pointer}
+.mb[aria-pressed="true"]{border-color:#67d4e4;background:rgba(103,212,228,.13);box-shadow:0 0 22px -6px rgba(103,212,228,.6)}
+.mb b{display:block;font-size:14px;font-weight:600}.mb span{font-size:11.5px;color:#9fb0c4}
+.lc{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:#e8eef6;border-top-width:3px}
+.lc:hover{border-color:#67d4e4}
+.lc.s-ok{border-top-color:#4ade80}.lc.s-warn{border-top-color:#fbbf24}.lc.s-bad{border-top-color:#f87171}
+.ft{max-width:1040px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+.sv{display:block;width:100%;height:auto;border-radius:12px}
+.sv .tw{animation:tw 3.2s ease-in-out infinite}
+.sv .float{animation:float 8s ease-in-out infinite;transform-box:view-box}
+.sv .drift{animation:drift 26s ease-in-out infinite alternate;transform-box:view-box;transform-origin:500px 1290px}
+.sv .fan{transform-box:fill-box;transform-origin:center}
+.sv .spin{animation:spin 1.1s linear infinite}
+.sv .air{animation:air 2.4s linear infinite}
+.sv .flick{transform-box:fill-box;transform-origin:center;animation:flick 1.6s ease-in-out infinite}
+.sv .flickT{transform-box:fill-box;transform-origin:50% 100%;animation:flickT .9s ease-in-out infinite}
+.sv .sm{transform-box:fill-box;transform-origin:center;opacity:0}
+.sv .fA{animation:fA 3.2s linear infinite}.sv .fB{animation:fB 3.2s linear infinite}.sv .fC{animation:fC 3.2s linear infinite}
+.sv .cA{animation:cA 4s ease-out infinite}.sv .cB{animation:cB 4s ease-out infinite}.sv .cC{animation:cC 4s ease-out infinite}.sv .cD{animation:cD 4s ease-out infinite}
+.sv .rL{animation:rL 3.6s ease-out infinite}.sv .rR{animation:rR 3.6s ease-out infinite}
+.sv .ping{transform-box:fill-box;transform-origin:center;animation:ping 1.4s ease-out infinite}
+.sv .blink{animation:tw 1.2s ease-in-out infinite}
+.sv .led{animation:led 2.6s steps(2,jump-none) infinite}
+.sv .shoot{animation:shoot 11s linear infinite}
+.sv .dust{animation:dust 7s linear infinite}
+.sv .glow{transform-box:fill-box;transform-origin:center;animation:glow 6s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes led{0%{opacity:1}100%{opacity:.2}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-9px) rotate(-.4deg)}}
+@keyframes drift{0%{transform:rotate(-2.5deg)}100%{transform:rotate(2.5deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes air{0%{transform:translateX(0);opacity:0}15%{opacity:.9}85%{opacity:.5}100%{transform:translateX(270px);opacity:0}}
+@keyframes flick{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.82}}
+@keyframes flickT{0%,100%{transform:scaleY(1) skewX(0deg)}33%{transform:scaleY(1.07) skewX(2deg)}66%{transform:scaleY(.95) skewX(-2deg)}}
+@keyframes fA{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.75}100%{transform:translate(140px,-16px) scale(1.8);opacity:0}}
+@keyframes fB{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.75}100%{transform:translate(140px,3px) scale(1.8);opacity:0}}
+@keyframes fC{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.75}100%{transform:translate(140px,20px) scale(1.8);opacity:0}}
+@keyframes cA{0%{transform:translate(0,0) scale(.3);opacity:0}30%{opacity:.65}100%{transform:translate(-36px,-22px) scale(2.3);opacity:0}}
+@keyframes cB{0%{transform:translate(0,0) scale(.3);opacity:0}30%{opacity:.65}100%{transform:translate(36px,-24px) scale(2.3);opacity:0}}
+@keyframes cC{0%{transform:translate(0,0) scale(.3);opacity:0}30%{opacity:.65}100%{transform:translate(32px,24px) scale(2.3);opacity:0}}
+@keyframes cD{0%{transform:translate(0,0) scale(.3);opacity:0}30%{opacity:.65}100%{transform:translate(-32px,22px) scale(2.3);opacity:0}}
+@keyframes rL{0%{transform:translate(0,0) scale(.4);opacity:0}20%{opacity:.8}55%{transform:translate(-4px,-34px) scale(1.2)}100%{transform:translate(-95px,-38px) scale(2.1);opacity:0}}
+@keyframes rR{0%{transform:translate(0,0) scale(.4);opacity:0}20%{opacity:.8}55%{transform:translate(4px,-34px) scale(1.2)}100%{transform:translate(95px,-38px) scale(2.1);opacity:0}}
+@keyframes ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.4);opacity:0}}
+@keyframes shoot{0%{transform:translate(0,0);opacity:0}1%{opacity:1}8%{transform:translate(300px,120px);opacity:0}100%{transform:translate(300px,120px);opacity:0}}
+@keyframes dust{0%{transform:translateX(-60px);opacity:0}20%{opacity:.6}100%{transform:translateX(340px);opacity:0}}
+@keyframes glow{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.06);opacity:1}}
+@media (prefers-reduced-motion:reduce){.sv *{animation:none!important}.sv .sm{opacity:.5}}
+@media (max-width:640px){.hero{font-size:34px}.nav{border-radius:20px}}
+</script>
+<script type="text/plain" id="js-Main">
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { mission: 'iss', vent: 'on', det: 'ceiling', grav: 'micro', t: 0 }; }
+  componentDidMount() { var self = this; this._i = setInterval(function () { self.setState(function (s) { return { t: s.t + 1 }; }); }, 1000); }
+  componentWillUnmount() { clearInterval(this._i); }
+  renderVals() {
+    var M = {
+      iss: { n: 'Space station', s: 'ISS · 0 g', g: 0, p: 14.7, o2: 21, title: 'Space station module' },
+      moon: { n: 'Moon base', s: '0.16 g · 30% O₂', g: 0.16, p: 10.2, o2: 30, title: 'Lunar surface habitat' },
+      rover: { n: 'Pressurized rover', s: '0.16 g · 30% O₂', g: 0.16, p: 10.2, o2: 30, title: 'Pressurized lunar rover' },
+      mars: { n: 'Mars base', s: '0.38 g · assumed', g: 0.38, p: 10.2, o2: 30, title: 'Mars surface habitat' }
+    };
+    var self = this, s = this.state, sel = M[s.mission] ? s.mission : 'iss', c = M[sel];
+    var missions = Object.keys(M).map(function (k) {
+      return { n: M[k].n, s: M[k].s, pressed: k === sel ? 'true' : 'false', pick: function () { self.setState({ mission: k, grav: 'micro' }); } };
+    });
+    var g = s.grav === 'earth' ? 1 : c.g, g0 = g === 0, ventOn = s.vent === 'on';
+    var orbit = sel === 'iss', mars = sel === 'mars', moon = sel === 'moon' || sel === 'rover';
+    var gStr = g === 0 ? '0 g' : g + ' g';
+    var d, label, msg, short, time, timeSub;
+    if (s.det === 'ceiling') {
+      if (g0) { d = 'bad'; label = 'FAIL'; short = 'ceiling · no signal'; msg = 'Smoke does not rise in microgravity, so the ceiling detector never sees it. Move it into the duct.'; time = 'Never'; timeSub = 'smoke does not rise in 0 g'; }
+      else if (g < 1) { d = 'warn'; label = 'WATCH'; short = 'ceiling · late alarm'; msg = 'At ' + g + ' g smoke rises slowly, so a ceiling detector alarms late. Add one in the duct.'; time = '≈ ' + Math.round(4 / Math.sqrt(g)) + ' s'; timeSub = 'slow buoyant rise'; }
+      else { d = 'ok'; label = 'PASS'; short = 'ceiling · alarm'; msg = 'With full gravity hot smoke rises straight to the ceiling detector.'; time = '≈ 4 s'; timeSub = 'buoyant rise'; }
+    } else {
+      if (ventOn) { d = 'ok'; label = 'PASS'; short = 'duct · alarm'; msg = 'The detector sits in the airflow path, so ventilation carries smoke to it at any gravity level.'; time = '≈ 3 s'; timeSub = 'carried by airflow'; }
+      else if (g0) { d = 'warn'; label = 'WATCH'; short = 'duct · weak signal'; msg = 'With fans off and no buoyancy, smoke lingers around the fire and only slowly diffuses to the duct.'; time = '> 60 s'; timeSub = 'diffusion only'; }
+      else { d = 'warn'; label = 'WATCH'; short = 'duct · late alarm'; msg = 'With fans off, smoke rises to the ceiling and reaches the duct late.'; time = '≈ 20 s'; timeSub = 'no forced airflow'; }
+    }
+    var colors = { ok: '#4ade80', warn: '#fbbf24', bad: '#f87171' };
+    var detX = s.det === 'duct' ? 652 : 580, detY = s.det === 'duct' ? 200 : 188;
+    var h = g0 ? 0 : Math.round(26 + 22 * Math.min(1, Math.sqrt(g)));
+    var tearPath = 'M512,244 C490,244 486,222 496,206 C503,194 508,' + (236 - h - 14) + ' 512,' + (236 - h) + ' C516,' + (236 - h - 14) + ' 521,194 528,206 C538,222 534,244 512,244Z';
+    var mm = Math.floor(s.t / 60), ss = s.t % 60;
+    return {
+      missions: missions, sceneTitle: c.title,
+      cur: { p: c.p, o2: c.o2 }, o2frac: (c.o2 / 100).toFixed(2),
+      gTxt: gStr, gSub: s.grav === 'earth' ? 'comparison view' : c.n,
+      partial: c.g > 0 && c.g < 1,
+      orbit: orbit, moon: moon, mars: mars, notMars: !mars, sunBright: !mars,
+      ground: (moon || mars) && sel !== 'rover', rover: sel === 'rover',
+      bermFill: mars ? '#7d3825' : '#575d68',
+      floatCls: orbit ? 'float' : '',
+      missionGravLabel: c.g === 0 ? 'Microgravity' : c.g + ' g mission',
+      gMicro: s.grav === 'micro' ? 'true' : 'false', gEarth: s.grav === 'earth' ? 'true' : 'false',
+      setMicro: function () { self.setState({ grav: 'micro' }); }, setEarth: function () { self.setState({ grav: 'earth' }); },
+      ventOn: ventOn, ventOnP: ventOn ? 'true' : 'false', ventOffP: ventOn ? 'false' : 'true',
+      setVentOn: function () { self.setState({ vent: 'on' }); }, setVentOff: function () { self.setState({ vent: 'off' }); },
+      detCeilP: s.det === 'ceiling' ? 'true' : 'false', detDuctP: s.det === 'duct' ? 'true' : 'false',
+      setCeil: function () { self.setState({ det: 'ceiling' }); }, setDuct: function () { self.setState({ det: 'duct' }); },
+      fanCls: ventOn ? 'fan spin' : 'fan',
+      flow: g0 && ventOn, cloud: g0 && !ventOn, rise: !g0,
+      sphere: g0, tear: !g0, tearPath: tearPath,
+      flameTxt: g0 ? 'Spherical flame · no buoyancy' : (g === 1 ? 'Teardrop flame · hot gas rises' : 'Taller flame · weak buoyancy'),
+      ventTxt: ventOn ? 'fans on' : 'fans off',
+      detX: detX, detY: detY, detLineY: detY - 10, detColor: colors[d], detAlive: d !== 'bad',
+      detS: d, detLabel: label, detMsg: msg, detShort: short, detTime: time, detTimeSub: timeSub,
+      fanLabelLine: orbit ? 318 : 322, fanLabelY: orbit ? 336 : 338,
+      clock: (mm < 10 ? '0' : '') + mm + ':' + (ss < 10 ? '0' : '') + ss,
+      hud: c.n + ' · ' + gStr + ' · ' + c.o2 + '% O₂ · ' + c.p + ' psi',
+      sceneLabel: c.title + ' at ' + gStr + ': ' + (g0 ? 'a spherical flame' : 'a teardrop flame') + ', ventilation ' + (ventOn ? 'on' : 'off') + ', smoke detector on the ' + s.det + ' (' + label + ')'
+    };
+  }
+}
+</script>
+<template id="tpl-Prevention">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main">Overview</a>
+<a href="#Prevention" class="on" aria-current="page">Prevention</a>
+<a href="#Detection">Detection</a>
+<a href="#Suppression">Suppression</a>
+<a href="#Evidence">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 48px; margin-bottom: 26px">
+<div class="eyebrow">Layer 1 · Prevention</div>
+<h1 class="hero">Will it burn?</h1>
+<p class="lede">Flammability depends on oxygen and, in microgravity, on airflow. The glowing curve marks the lowest oxygen level at which a flame keeps spreading over the material. Space station cabin, 21% O₂.</p>
+</section>
+
+<div class="card glowcard">
+<div class="hd"><h3>Flammability map</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 22px">
+<div style="flex: 999 1 560px; min-width: 0">
+<svg class="fm" viewBox="0 0 640 380" role="img" aria-label="{{mapLabel}}" style="width: 100%; display: block">
+<defs>
+<linearGradient id="ext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#1f5c9e;stop-opacity:.5"></stop><stop offset="1" style="stop-color:#0b2340;stop-opacity:.35"></stop></linearGradient>
+<linearGradient id="spr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:#ffc35c;stop-opacity:.7"></stop><stop offset=".35" style="stop-color:#ff7a3d;stop-opacity:.55"></stop><stop offset="1" style="stop-color:#b81f3c;stop-opacity:.5"></stop></linearGradient>
+<radialGradient id="dotGlow" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#ffffff;stop-opacity:.5"></stop><stop offset="1" style="stop-color:#ffffff;stop-opacity:0"></stop></radialGradient>
+</defs>
+<rect x="56" y="20" width="560" height="300" rx="6" fill="#07101e"></rect>
+<rect x="56" y="20" width="560" height="300" rx="6" fill="url(#ext)"></rect>
+<path d="{{spread}}" fill="url(#spr)"></path>
+<g stroke="#ffffff" stroke-opacity=".07">
+<line x1="168" y1="20" x2="168" y2="320"></line><line x1="280" y1="20" x2="280" y2="320"></line><line x1="392" y1="20" x2="392" y2="320"></line><line x1="504" y1="20" x2="504" y2="320"></line>
+<line x1="56" y1="275" x2="616" y2="275"></line><line x1="56" y1="200" x2="616" y2="200"></line><line x1="56" y1="125" x2="616" y2="125"></line><line x1="56" y1="50" x2="616" y2="50"></line>
+</g>
+<g fill="#ffd27a">
+<template data-sc="for" list="{{embers}}" as="e" hint-placeholder-count="12">
+<circle class="ember" cx="{{e.x}}" cy="{{e.y}}" r="{{e.r}}" style="{{e.st}}"></circle>
+</template>
+</g>
+<text x="600" y="44" font-size="12" font-weight="700" fill="#ffd9b8" text-anchor="end" letter-spacing="1.5" font-family="Sora, sans-serif">FLAME SPREADS</text>
+<text x="600" y="60" font-size="11" fill="#ffd9b8" fill-opacity=".75" text-anchor="end" font-family="Sora, sans-serif">enough oxygen to keep burning</text>
+<text x="{{dieX}}" y="300" font-size="12" font-weight="700" fill="#a8d8ff" letter-spacing="1.5" text-anchor="{{dieAnchor}}" font-family="Sora, sans-serif">FLAME DIES OUT</text>
+
+<path d="{{curve}}" fill="none" stroke="#9be7f2" stroke-opacity=".18" stroke-width="12" stroke-linecap="round"></path>
+<path d="{{curve}}" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"></path>
+<path class="dash" d="{{curve}}" fill="none" stroke="#67d4e4" stroke-width="2.5" stroke-dasharray="6 26" stroke-linecap="round"></path>
+<text x="{{quenchX}}" y="{{quenchY}}" font-size="10.5" fill="#cfe9ef" font-family="Sora, sans-serif">← low-flow quenching</text>
+<text x="{{blowX}}" y="{{blowY}}" font-size="10.5" fill="#cfe9ef" font-family="Sora, sans-serif">← blow-off</text>
+
+<line x1="190.4" x2="190.4" y1="20" y2="320" stroke="#ffffff" stroke-opacity=".35" stroke-dasharray="3 4"></line>
+<line x1="392" x2="392" y1="20" y2="320" stroke="#ffffff" stroke-opacity=".22" stroke-dasharray="3 4"></line>
+<text x="396" y="314" font-size="10.5" fill="#cfd8e4" fill-opacity=".8" font-family="Sora, sans-serif">Moon base 30%</text>
+<line x1="56" x2="190.4" y1="{{dotY}}" y2="{{dotY}}" stroke="#ffffff" stroke-opacity=".35" stroke-dasharray="3 4"></line>
+
+<g font-size="11" fill="#a9b6c8" text-anchor="middle" font-family="Sora, sans-serif">
+<text x="56" y="340">15</text><text x="168" y="340">20</text><text x="280" y="340">25</text><text x="392" y="340">30</text><text x="504" y="340">35</text><text x="616" y="340">40</text>
+</g>
+<g font-size="11" fill="#a9b6c8" text-anchor="end" font-family="Sora, sans-serif">
+<text x="48" y="324">0.5</text><text x="48" y="279">1</text><text x="48" y="129">10</text><text x="48" y="24">50</text>
+</g>
+<text x="336" y="368" font-size="12" fill="#a9b6c8" text-anchor="middle" font-family="Sora, sans-serif">Oxygen concentration (%)</text>
+<text x="14" y="170" font-size="12" fill="#a9b6c8" text-anchor="middle" transform="rotate(-90 14 170)" font-family="Sora, sans-serif">Airflow (cm/s)</text>
+
+<rect x="172" y="326" width="37" height="18" rx="9" fill="#e8eef6"></rect>
+<text x="190.4" y="339" font-size="11" font-weight="700" fill="#06121f" text-anchor="middle" font-family="Sora, sans-serif">21%</text>
+<rect x="0" y="{{tagY}}" width="52" height="18" rx="9" fill="#e8eef6"></rect>
+<text x="26" y="{{tagTextY}}" font-size="10.5" font-weight="700" fill="#06121f" text-anchor="middle" font-family="Sora, sans-serif">{{flowShort}}</text>
+
+<circle cx="190.4" cy="{{dotY}}" r="26" fill="url(#dotGlow)"></circle>
+<circle class="ping" cx="190.4" cy="{{dotY}}" r="8" fill="none" stroke="{{dotFill}}" stroke-width="2"></circle>
+<circle cx="190.4" cy="{{dotY}}" r="8" fill="{{dotFill}}" stroke="#ffffff" stroke-width="2.5"></circle>
+
+<rect x="206" y="{{boxY}}" width="150" height="46" rx="10" fill="#0a1424" fill-opacity=".92" stroke="{{dotFill}}" stroke-opacity=".7"></rect>
+<text x="218" y="{{boxT1}}" font-size="11.5" font-weight="700" fill="#ffffff" font-family="Sora, sans-serif">Your cabin</text>
+<text x="218" y="{{boxT2}}" font-size="11" fill="{{dotFill}}" font-family="Sora, sans-serif">{{boxLine}}</text>
+</svg>
+</div>
+
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div>
+<div class="tk" style="margin-bottom: 8px">Material</div>
+<div style="display: flex; flex-direction: column; gap: 6px" role="group" aria-label="Material">
+<template data-sc="for" list="{{mats}}" as="m" hint-placeholder-count="6">
+<button type="button" class="mat" aria-pressed="{{m.pressed}}" onClick="{{m.pick}}"><span>{{m.n}}</span><small>{{m.b}}% O₂</small></button>
+</template>
+</div>
+</div>
+<div>
+<div style="display: flex; justify-content: space-between; align-items: baseline"><label for="flow" class="tk">Cabin airflow</label><span style="font-weight: 700">{{flowTxt}}</span></div>
+<input id="flow" type="range" min="-0.3" max="1.7" step="0.01" value="{{u}}" onInput="{{onFlow}}">
+</div>
+<div style="border: 1px solid #1f2f45; border-radius: 12px; padding: 12px 14px; background: rgba(255,255,255,.02)">
+<div class="tk">Safety margin</div>
+<div style="display: flex; align-items: baseline; gap: 10px; margin-top: 2px"><span style="font-size: 34px; font-weight: 700; letter-spacing: -.02em; color: {{dotFill}}">{{marginTxt}}</span><span style="color: #9fb0c4; font-size: 13px">O₂ points</span><span class="chip {{check.s}}" style="margin-left: auto">{{check.label}}</span></div>
+</div>
+</div>
+</div>
+<div class="check"><span class="chip {{check.s}}">{{check.label}}</span><p>{{check.text}}</p></div>
+</div>
+
+<div class="card" style="margin-top: 14px">
+<div class="hd"><h3>Material ranking for this mission</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<div style="overflow-x: auto">
+<table>
+<thead><tr><th>Material</th><th class="n">O₂ limit</th><th class="n">Margin</th><th style="min-width: 160px">Margin vs cabin</th><th>Status</th></tr></thead>
+<tbody>
+<template data-sc="for" list="{{rank}}" as="r" hint-placeholder-count="6">
+<tr><td>{{r.n}}</td><td class="n">{{r.l}}</td><td class="n">{{r.mg}}</td><td><div class="bar"><b></b><i style="{{r.bar}}"></i></div></td><td><span class="chip {{r.s}}">{{r.label}}</span></td></tr>
+</template>
+</tbody>
+</table>
+</div>
+<p class="note">Margin is the material's limit minus cabin oxygen at the current airflow. Bars to the right are safer.</p>
+<div class="check"><span class="chip warn">FLAG</span><p>Earth flammability tests rely on buoyant flow. A material that passes on the ground can behave differently in slow microgravity airflow, so check space data before approving it.</p></div>
+</div>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Curves and values are illustrative until filled from NASA Physical Sciences Informatics data. Not for real engineering decisions.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Prevention">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(ellipse 900px 500px at 80% -10%,rgba(255,122,69,.08),transparent 70%),radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:100% 1200px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px;background-repeat:no-repeat,repeat,repeat,repeat,repeat,repeat,repeat;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:840px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 13px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.12}
+.lede{color:#b8c4d4;max-width:62ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0}
+.card h3{margin:0;font-size:16px;font-weight:600}
+.glowcard{border-color:rgba(255,122,69,.28);box-shadow:0 40px 90px -45px rgba(255,122,69,.45)}
+.hd{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+.evb{font-size:11px;font-weight:600;letter-spacing:.08em;color:#cfe9ef;border:1px solid #2a3d56;border-radius:8px;padding:5px 10px;text-decoration:none}
+.evb:hover{border-color:#67d4e4;color:#fff}
+.tk{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8fa0b6;font-weight:600}
+.mat{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;border:1px solid #22344b;background:rgba(10,18,32,.6);color:#dbe3ee;border-radius:10px;padding:9px 12px;font:inherit;font-size:13.5px;cursor:pointer;min-height:42px}
+.mat:hover{border-color:#3a5878}
+.mat[aria-pressed="true"]{border-color:#67d4e4;background:rgba(103,212,228,.12);color:#fff;box-shadow:0 0 18px -6px rgba(103,212,228,.6)}
+.mat small{font-size:11.5px;color:#9fb0c4}
+.chip{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ok{background:rgba(74,222,128,.14);color:#7ee8a8}.warn{background:rgba(251,191,36,.14);color:#fcd34d}.bad{background:rgba(248,113,113,.16);color:#fca5a5}
+.check{display:flex;gap:10px;align-items:flex-start;border-radius:12px;padding:11px 13px;font-size:13.5px;margin-top:12px;border:1px solid #1f2f45;background:rgba(255,255,255,.02)}
+.check p{margin:0;flex:1;color:#dbe3ee}
+.note{font-size:12px;color:#8fa0b6;margin:10px 0 0}
+input[type=range]{width:100%;accent-color:#67d4e4}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{padding:8px 6px;border-bottom:1px solid #1f2f45;text-align:left;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8fa0b6;font-weight:600}
+td{padding:10px 6px;border-bottom:1px solid #16243a;vertical-align:middle}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{position:relative;height:10px;border-radius:5px;background:rgba(255,255,255,.04);min-width:120px}
+.bar i{position:absolute;top:0;bottom:0;border-radius:5px}
+.bar b{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:#4b5d75}
+.ft{max-width:1040px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+.fm .ember{transform-box:fill-box;transform-origin:center;animation:ember 3.4s ease-out infinite;opacity:0}
+.fm .ping{transform-box:fill-box;transform-origin:center;animation:ping 1.6s ease-out infinite}
+.fm .dash{animation:dash 1.4s linear infinite}
+@keyframes ember{0%{transform:translate(0,0) scale(.6);opacity:0}25%{opacity:.95}100%{transform:translate(5px,-30px) scale(.2);opacity:0}}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
+@keyframes dash{to{stroke-dashoffset:-32}}
+@media (prefers-reduced-motion:reduce){.fm *{animation:none!important}.fm .ember{opacity:.5}}
+@media (max-width:640px){.hero{font-size:30px}.nav{border-radius:20px}}
+</script>
+<script type="text/plain" id="js-Prevention">
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { mat: 'cotton', u: 0.7 }; }
+  renderVals() {
+    var self = this, O2 = 21, u = this.state.u;
+    var MATS = [
+      { id: 'cotton', n: 'Cotton-fiberglass fabric', b: 16 },
+      { id: 'pmma', n: 'Acrylic (PMMA)', b: 17.5 },
+      { id: 'foam', n: 'Polyurethane foam', b: 18.5 },
+      { id: 'silicone', n: 'Silicone rubber', b: 22 },
+      { id: 'nomex', n: 'Nomex fabric', b: 26 },
+      { id: 'ptfe', n: 'PTFE-coated fiberglass', b: 33 }
+    ];
+    function lim(u, b) { return b + 9 * Math.pow(Math.max(0, 0.6 - u), 1.3) + 12 * Math.pow(Math.max(0, u - 1.1), 1.5); }
+    function sev(m) { return m > 3 ? 'ok' : m >= 0 ? 'warn' : 'bad'; }
+    var LAB = { ok: 'PASS', warn: 'WATCH', bad: 'FAIL' };
+    var COL = { ok: '#4ade80', warn: '#fbbf24', bad: '#f87171' };
+    function flowV(u) { var v = Math.pow(10, u); return v < 10 ? v.toFixed(1) : String(Math.round(v)); }
+    var L = 56, T = 20, PW = 560, PH = 300, X0 = 15, X1 = 40, U0 = -0.3, U1 = 1.7;
+    function xp(o) { return L + (Math.min(X1, Math.max(X0, o)) - X0) / (X1 - X0) * PW; }
+    function yp(v) { return T + (1 - (v - U0) / (U1 - U0)) * PH; }
+    var m = MATS.filter(function (x) { return x.id === self.state.mat; })[0];
+    var pts = [];
+    for (var i = 0; i <= 80; i++) { var uu = U0 + (U1 - U0) * i / 80; pts.push([xp(lim(uu, m.b)).toFixed(1), yp(uu).toFixed(1)]); }
+    var curve = 'M' + pts.map(function (p) { return p.join(','); }).join(' L');
+    var spread = 'M' + (L + PW) + ',' + yp(U1) + pts.slice().reverse().map(function (p) { return ' L' + p.join(','); }).join('') + ' L' + (L + PW) + ',' + yp(U0) + 'Z';
+    var embers = [], seed = 7;
+    function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    for (var k = 0; k < 40 && embers.length < 16; k++) {
+      var eu = U0 + 0.08 + rnd() * (U1 - U0 - 0.16), ex = L + 10 + rnd() * (PW - 20), cx = xp(lim(eu, m.b));
+      if (ex > cx + 14) embers.push({ x: ex.toFixed(1), y: yp(eu).toFixed(1), r: (1.2 + rnd() * 1.8).toFixed(1), st: 'animation-delay:-' + (rnd() * 3.4).toFixed(2) + 's' });
+    }
+    var dieX = 64, dieAnchor = 'start';
+    var lowX = xp(lim(U0, m.b));
+    if (lowX < 190) { dieX = 64; }
+    var qU = -0.18, bU = 1.6;
+    var mg = lim(u, m.b) - O2, c = sev(mg), txt;
+    if (c === 'ok') txt = m.n + ' should not sustain a flame at 21% O₂ and ' + flowV(u) + ' cm/s. Margin: ' + mg.toFixed(1) + ' points.';
+    else if (c === 'warn') txt = m.n + ' is close to its limit at 21% O₂. Margin is only ' + mg.toFixed(1) + ' points, so a small airflow change could let it burn.';
+    else txt = m.n + ' would keep burning at 21% O₂ and ' + flowV(u) + ' cm/s. Choose a more resistant material or adjust airflow.';
+    var dotY = yp(u), boxY = dotY < 70 ? dotY + 14 : dotY - 60;
+    var rank = MATS.map(function (x) { var l = lim(u, x.b); return { n: x.n, lv: l, mgv: l - O2 }; })
+      .sort(function (a, b) { return b.mgv - a.mgv; })
+      .map(function (r) {
+        var s = sev(r.mgv), w = Math.min(50, Math.abs(r.mgv) / 15 * 50);
+        var bar = (r.mgv >= 0 ? 'left:50%;' : 'left:' + (50 - w) + '%;') + 'width:' + w + '%;background:' + COL[s] + ';box-shadow:0 0 10px ' + COL[s] + '66';
+        return { n: r.n, l: r.lv.toFixed(1) + '%', mg: (r.mgv > 0 ? '+' : '') + r.mgv.toFixed(1), label: LAB[s], s: s, bar: bar };
+      });
+    return {
+      mats: MATS.map(function (x) { return { n: x.n, b: x.b, pressed: x.id === m.id ? 'true' : 'false', pick: function () { self.setState({ mat: x.id }); } }; }),
+      onFlow: function (e) { self.setState({ u: +e.target.value }); },
+      u: u, flowTxt: flowV(u) + ' cm/s', flowShort: flowV(u) + ' cm/s',
+      curve: curve, spread: spread, embers: embers,
+      dieX: dieX, dieAnchor: dieAnchor,
+      quenchX: (xp(lim(qU, m.b)) + 10).toFixed(1), quenchY: (yp(qU) + 4).toFixed(1),
+      blowX: (xp(lim(bU, m.b)) + 10).toFixed(1), blowY: (yp(bU) + 4).toFixed(1),
+      dotY: dotY.toFixed(1), dotFill: COL[c],
+      tagY: (dotY - 9).toFixed(1), tagTextY: (dotY + 4).toFixed(1),
+      boxY: boxY.toFixed(1), boxT1: (boxY + 19).toFixed(1), boxT2: (boxY + 36).toFixed(1),
+      boxLine: '21% O₂ · ' + flowV(u) + ' cm/s · ' + LAB[c],
+      marginTxt: (mg > 0 ? '+' : '') + mg.toFixed(1),
+      check: { label: LAB[c], text: txt, s: c },
+      rank: rank,
+      mapLabel: 'Flammability map for ' + m.n + ': the cabin at 21% oxygen and ' + flowV(u) + ' cm/s airflow is in the ' + (mg < 0 ? 'flame spreads' : 'flame dies out') + ' region, margin ' + mg.toFixed(1) + ' points'
+    };
+  }
+}
+</script>
+<template id="tpl-Detection">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main">Overview</a>
+<a href="#Prevention">Prevention</a>
+<a href="#Detection" class="on" aria-current="page">Detection</a>
+<a href="#Suppression">Suppression</a>
+<a href="#Evidence">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 48px; margin-bottom: 26px">
+<div class="eyebrow">Layer 2 · Detection</div>
+<h1 class="hero">Will we notice in time?</h1>
+<p class="lede">Smoke doesn't rise in microgravity. It goes wherever the airflow carries it, and its particle size depends on the material and how it's heated.</p>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px">
+<div class="card">
+<div class="hd"><h3>Detector setup</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<label for="dplace" class="f">Placement</label>
+<select id="dplace" onChange="{{onPlace}}" style="margin-bottom: 14px">
+<option value="ceiling" selected="{{placeCeiling}}">Ceiling mount</option>
+<option value="duct" selected="{{placeDuct}}">In the ventilation duct</option>
+</select>
+<label for="dtype" class="f">Sensor type</label>
+<select id="dtype" onChange="{{onType}}">
+<option value="photo" selected="{{typePhoto}}">Light-scattering (photoelectric)</option>
+<option value="ion" selected="{{typeIon}}">Ionization</option>
+<option value="multi" selected="{{typeMulti}}">Multi-sensor (particles + gas)</option>
+</select>
+<template data-sc="for" list="{{checks}}" as="c" hint-placeholder-count="2">
+<div class="check"><span class="chip {{c.s}}">{{c.label}}</span><p>{{c.text}}</p></div>
+</template>
+</div>
+
+<div class="card">
+<div class="hd"><h3>Typical smoke particle size by source</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<svg viewBox="0 0 420 230" role="img" aria-label="Bar chart of example mean smoke particle sizes: silicone rubber 0.90, cotton fabric 0.60, wire insulation 0.45, Kapton 0.35, Teflon 0.20 micrometers" style="width: 100%; display: block">
+<g font-size="12" fill="#a9b6c8" text-anchor="end" font-family="Sora, sans-serif">
+<text x="110" y="25">Silicone rubber</text><text x="110" y="63">Cotton fabric</text><text x="110" y="101">Wire insulation</text><text x="110" y="139">Kapton</text><text x="110" y="177">Teflon</text>
+</g>
+<g fill="#67d4e4">
+<rect x="118" y="8" width="239.4" height="26" rx="6"></rect>
+<rect x="118" y="46" width="159.6" height="26" rx="6" fill-opacity=".85"></rect>
+<rect x="118" y="84" width="119.7" height="26" rx="6" fill-opacity=".7"></rect>
+<rect x="118" y="122" width="93.1" height="26" rx="6" fill-opacity=".58"></rect>
+<rect x="118" y="160" width="53.2" height="26" rx="6" fill-opacity=".46"></rect>
+</g>
+<g font-size="11.5" fill="#e8eef6" font-weight="600" font-family="Sora, sans-serif">
+<text x="363.4" y="25">0.90</text><text x="283.6" y="63">0.60</text><text x="243.7" y="101">0.45</text><text x="217.1" y="139">0.35</text><text x="177.2" y="177">0.20</text>
+</g>
+<text x="118" y="214" font-size="11" fill="#8fa0b6" font-family="Sora, sans-serif">Mean particle diameter (µm), example values</text>
+</svg>
+<p class="note">Example values for layout. The real chart will use SAME and SAME-R measurements.</p>
+</div>
+</div>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Curves and values are illustrative until filled from NASA Physical Sciences Informatics data. Not for real engineering decisions.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Detection">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:540px 540px;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:840px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 13px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.12}
+.lede{color:#b8c4d4;max-width:62ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0}
+.card h3{margin:0;font-size:16px;font-weight:600}
+.hd{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+.evb{font-size:11px;font-weight:600;letter-spacing:.08em;color:#cfe9ef;border:1px solid #2a3d56;border-radius:8px;padding:5px 10px;text-decoration:none}
+.evb:hover{border-color:#67d4e4;color:#fff}
+.f{display:block;font-size:13px;color:#a9b6c8;margin-bottom:6px}
+select{width:100%;min-height:44px;background:#0a1322;border:1px solid #2a3d56;color:#e8eef6;border-radius:10px;padding:8px 12px;font:inherit;font-size:14px}
+.chip{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ok{background:rgba(74,222,128,.14);color:#7ee8a8}.warn{background:rgba(251,191,36,.14);color:#fcd34d}.bad{background:rgba(248,113,113,.16);color:#fca5a5}
+.check{display:flex;gap:10px;align-items:flex-start;border-radius:12px;padding:11px 13px;font-size:13.5px;margin-top:12px;border:1px solid #1f2f45;background:rgba(255,255,255,.02)}
+.check p{margin:0;flex:1;color:#dbe3ee}
+.note{font-size:12px;color:#8fa0b6;margin:10px 0 0}
+.ft{max-width:1040px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+@media (max-width:640px){.hero{font-size:30px}.nav{border-radius:20px}}
+</script>
+<script type="text/plain" id="js-Detection">
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { place: 'ceiling', type: 'photo' }; }
+  renderVals() {
+    var self = this, s = this.state;
+    var LAB = { ok: 'PASS', warn: 'WATCH', bad: 'FAIL' };
+    function chk(c, t) { return { label: LAB[c], text: t, s: c }; }
+    var checks = [];
+    if (s.place === 'ceiling') checks.push(chk('bad', 'Smoke does not rise in microgravity. A ceiling detector only sees smoke the airflow happens to carry there. Move it into the ventilation duct.'));
+    else checks.push(chk('ok', 'The detector sits in the airflow path, so ventilation carries smoke to it at any gravity level.'));
+    if (s.type === 'ion') checks.push(chk('warn', 'Ionization sensors favor very small particles. Smoldering materials can make larger particles that this sensor may under-report.'));
+    else if (s.type === 'multi') checks.push(chk('ok', 'Combining particle and gas sensing covers both flaming and smoldering sources.'));
+    else checks.push(chk('ok', 'Light-scattering sensors respond well to the larger particles typical of smoldering and overheated materials.'));
+    return {
+      checks: checks,
+      placeCeiling: s.place === 'ceiling', placeDuct: s.place === 'duct',
+      typePhoto: s.type === 'photo', typeIon: s.type === 'ion', typeMulti: s.type === 'multi',
+      onPlace: function (e) { self.setState({ place: e.target.value }); },
+      onType: function (e) { self.setState({ type: e.target.value }); }
+    };
+  }
+}
+</script>
+<template id="tpl-Suppression">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main">Overview</a>
+<a href="#Prevention">Prevention</a>
+<a href="#Detection">Detection</a>
+<a href="#Suppression" class="on" aria-current="page">Suppression</a>
+<a href="#Evidence">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 48px; margin-bottom: 26px">
+<div class="eyebrow">Layer 3 · Suppression</div>
+<h1 class="hero">Can we put it out?</h1>
+<p class="lede">FLEX studied how diluting the cabin air with carbon dioxide or helium puts out flames. Higher cabin oxygen means more agent is needed.</p>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px">
+<div class="card">
+<div class="hd"><h3>Agent and response</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<label for="agent" class="f">Extinguishing agent</label>
+<select id="agent" onChange="{{onAgent}}" style="margin-bottom: 14px">
+<option value="co2" selected="{{aCo2}}">Carbon dioxide</option>
+<option value="mist" selected="{{aMist}}">Fine water mist</option>
+<option value="he" selected="{{aHe}}">Helium (research)</option>
+</select>
+<label for="fan" class="f">First response</label>
+<select id="fan" onChange="{{onFan}}">
+<option value="off" selected="{{fanOff}}">Shut down ventilation, then discharge</option>
+<option value="on" selected="{{fanOn}}">Discharge with ventilation running</option>
+</select>
+<template data-sc="for" list="{{checks}}" as="c" hint-placeholder-count="3">
+<div class="check"><span class="chip {{c.s}}">{{c.label}}</span><p>{{c.text}}</p></div>
+</template>
+</div>
+
+<div class="card">
+<div class="hd"><h3>Agent needed to stop a flame</h3><a href="#Evidence" class="evb">EVIDENCE</a></div>
+<svg viewBox="0 0 420 260" role="img" aria-label="Agent concentration needed to extinguish a flame rises with cabin oxygen; helium needs more than carbon dioxide" style="width: 100%; display: block">
+<template data-sc="for" list="{{grid}}" as="g" hint-placeholder-count="5">
+<line x1="44" x2="406" y1="{{g.y}}" y2="{{g.y}}" stroke="#1f2f45"></line>
+<text x="38" y="{{g.ty}}" font-size="11" fill="#a9b6c8" text-anchor="end" font-family="Sora, sans-serif">{{g.t}}</text>
+</template>
+<g font-size="11" fill="#a9b6c8" text-anchor="middle" font-family="Sora, sans-serif">
+<text x="60.5" y="232">20%</text><text x="142.7" y="232">25%</text><text x="225" y="232">30%</text><text x="307.3" y="232">35%</text><text x="389.5" y="232">40%</text>
+</g>
+<text x="225" y="252" font-size="12" fill="#a9b6c8" text-anchor="middle" font-family="Sora, sans-serif">Cabin oxygen</text>
+<path d="{{co2Path}}" fill="none" stroke="#ff8a4c" stroke-width="2.5"></path>
+<path d="{{hePath}}" fill="none" stroke="#67d4e4" stroke-width="2.5"></path>
+<line x1="93.4" x2="93.4" y1="12" y2="216" stroke="#e8eef6" stroke-opacity=".5" stroke-dasharray="4 3"></line>
+<circle cx="93.4" cy="{{dotY}}" r="13" fill="#e8eef6" fill-opacity=".15"></circle>
+<circle cx="93.4" cy="{{dotY}}" r="6" fill="#e8eef6" stroke="#0c1524" stroke-width="2"></circle>
+</svg>
+<div class="lg">
+<span><span style="width: 16px; height: 3px; border-radius: 2px; background: #ff8a4c"></span>CO₂</span>
+<span><span style="width: 16px; height: 3px; border-radius: 2px; background: #67d4e4"></span>Helium</span>
+<span><span style="width: 10px; height: 10px; border-radius: 5px; background: #e8eef6"></span>Your cabin (21% O₂)</span>
+</div>
+<p class="note">Schematic curves. The real chart will be fitted to FLEX and FLEX-2 droplet tests.</p>
+</div>
+</div>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Curves and values are illustrative until filled from NASA Physical Sciences Informatics data. Not for real engineering decisions.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Suppression">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:540px 540px;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:840px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 13px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.12}
+.lede{color:#b8c4d4;max-width:62ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0}
+.card h3{margin:0;font-size:16px;font-weight:600}
+.hd{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+.evb{font-size:11px;font-weight:600;letter-spacing:.08em;color:#cfe9ef;border:1px solid #2a3d56;border-radius:8px;padding:5px 10px;text-decoration:none}
+.evb:hover{border-color:#67d4e4;color:#fff}
+.f{display:block;font-size:13px;color:#a9b6c8;margin-bottom:6px}
+select{width:100%;min-height:44px;background:#0a1322;border:1px solid #2a3d56;color:#e8eef6;border-radius:10px;padding:8px 12px;font:inherit;font-size:14px}
+.chip{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ok{background:rgba(74,222,128,.14);color:#7ee8a8}.warn{background:rgba(251,191,36,.14);color:#fcd34d}.bad{background:rgba(248,113,113,.16);color:#fca5a5}
+.check{display:flex;gap:10px;align-items:flex-start;border-radius:12px;padding:11px 13px;font-size:13.5px;margin-top:12px;border:1px solid #1f2f45;background:rgba(255,255,255,.02)}
+.check p{margin:0;flex:1;color:#dbe3ee}
+.note{font-size:12px;color:#8fa0b6;margin:10px 0 0}
+.lg{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#a9b6c8;margin-top:8px}
+.lg span{display:inline-flex;align-items:center;gap:6px}
+.ft{max-width:1040px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+@media (max-width:640px){.hero{font-size:30px}.nav{border-radius:20px}}
+</script>
+<script type="text/plain" id="js-Suppression">
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { agent: 'co2', fan: 'off' }; }
+  renderVals() {
+    var self = this, s = this.state, O2 = 21;
+    var LAB = { ok: 'PASS', warn: 'WATCH', bad: 'FAIL' };
+    function chk(c, t, lbl) { return { label: lbl || LAB[c], text: t, s: c }; }
+    function needed(o2, k) { return k * (1 - 17 / o2) * 100; }
+    var L = 44, T = 12, PW = 362, PH = 204, X0 = 18, X1 = 40, Y1 = 80;
+    function xp(o) { return L + (o - X0) / (X1 - X0) * PW; }
+    function yp(v) { return T + (1 - v / Y1) * PH; }
+    function path(k) { var d = ''; for (var o = X0; o <= X1; o += 0.5) { var v = Math.min(Y1, needed(o, k)); d += (d ? ' L' : 'M') + xp(o).toFixed(1) + ',' + yp(v).toFixed(1); } return d; }
+    var checks = [];
+    if (s.agent === 'co2') checks.push(chk('ok', 'At 21% O₂, roughly ' + Math.round(needed(O2, 1.05)) + '% CO₂ in the local air is needed to stop a flame. Crew must wear masks because CO₂ builds up in a sealed cabin.'));
+    else if (s.agent === 'he') checks.push(chk('warn', 'Helium needs about ' + Math.round(needed(O2, 1.6)) + '% at this oxygen level, more than CO₂. It is studied in FLEX but not used as a crew extinguisher.'));
+    else checks.push(chk('warn', 'Water droplets float in microgravity and can drift into electronics. Aim carefully and plan cleanup.'));
+    if (s.fan === 'on') checks.push(chk('bad', 'Running fans keep feeding oxygen to the fire and spread smoke and agent. Standard response shuts ventilation first.'));
+    else checks.push(chk('ok', 'Ventilation shutdown starves the flame of fresh oxygen, as in ISS procedures.'));
+    checks.push(chk('warn', 'FLEX found that some fuel droplets kept burning as invisible cool flames after the visible flame went out. Confirm extinguishment with gas sensors, not just sight.', 'NOTE'));
+    var k = s.agent === 'he' ? 1.6 : 1.05;
+    return {
+      checks: checks,
+      grid: [0, 20, 40, 60, 80].map(function (v) { return { y: yp(v), ty: yp(v) + 4, t: v + '%' }; }),
+      co2Path: path(1.05), hePath: path(1.6), dotY: yp(Math.min(Y1, needed(O2, k))).toFixed(1),
+      aCo2: s.agent === 'co2', aMist: s.agent === 'mist', aHe: s.agent === 'he',
+      fanOff: s.fan === 'off', fanOn: s.fan === 'on',
+      onAgent: function (e) { self.setState({ agent: e.target.value }); },
+      onFan: function (e) { self.setState({ fan: e.target.value }); }
+    };
+  }
+}
+</script>
+<template id="tpl-Evidence">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main">Overview</a>
+<a href="#Prevention">Prevention</a>
+<a href="#Detection">Detection</a>
+<a href="#Suppression">Suppression</a>
+<a href="#Evidence" class="on" aria-current="page">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 48px; margin-bottom: 26px">
+<div class="eyebrow">FLEX · BASS · Saffire · NASA PSI</div>
+<h1 class="hero">Evidence behind every check</h1>
+<p class="lede">Each check in the atlas draws on NASA microgravity combustion experiments held in the Physical Sciences Informatics (PSI) repository.</p>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px">
+<template data-sc="for" list="{{ev}}" as="e" hint-placeholder-count="6">
+<article class="card">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+<b style="font-size: 16px">{{e.n}}</b>
+<span class="conf">{{e.c}}</span>
+</div>
+<div class="hw">{{e.hw}}</div>
+<div style="font-size: 11.5px; color: #67d4e4">Researchers: {{e.authors}}</div>
+<p style="margin: 4px 0; font-size: 14px; color: #cfd8e4; flex: 1">{{e.w}}</p>
+<div style="font-size: 12px; color: #8fa0b6">Used in: <span style="color: #e8eef6">{{e.used}}</span></div>
+<a href="{{e.source}}" target="_blank" rel="noreferrer" style="font-size: 13.5px; font-weight: 600">Open in NASA PSI →</a>
+</article>
+</template>
+</div>
+<p style="font-size: 12px; color: #8fa0b6; margin: 18px 0 0">In the full version each check will list the exact test runs and conditions it draws on.</p>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Curves and values are illustrative until filled from NASA Physical Sciences Informatics data. Not for real engineering decisions.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Evidence">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:540px 540px;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:840px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 13px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.12}
+.lede{color:#b8c4d4;max-width:62ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.card:hover{border-color:#2f4a66}
+.conf{font-size:11px;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(103,212,228,.12);color:#8be3f0;white-space:nowrap}
+.hw{font-size:12px;color:#8fa0b6}
+.ft{max-width:1040px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+@media (max-width:640px){.hero{font-size:30px}.nav{border-radius:20px}}
+</script>
+<script type="text/plain" id="js-Evidence">
+class Component extends DCLogic {
+  renderVals() {
+    return { ev: [
+      { n: 'BASS and BASS-II', hw: 'Microgravity Science Glovebox · SPICE flow duct', w: 'Flame spread over solid samples such as acrylic and fabrics at varied oxygen levels and airflow speeds, plus extinguishment by nitrogen flow.', c: 'High for 0 g', used: 'Prevention' },
+      { n: 'Saffire-I, -II and -III', hw: 'Cygnus cargo vehicle after leaving the ISS', w: 'Large-scale burns of spacecraft materials, measuring flame growth and how a sealed cabin responds.', c: 'High for 0 g', used: 'Prevention' },
+      { n: 'ACME Burning Rate Emulator (BRE)', hw: 'ACME hardware · Combustion Integrated Rack', w: 'Gas burner that emulates burning solids in still air, linking flammability to material properties.', c: 'Medium', used: 'Prevention' },
+      { n: 'SAME and SAME-R', hw: 'Microgravity Science Glovebox', w: 'Smoke produced by heating common spacecraft materials, with particle sizes measured and compared with detector response.', c: 'Medium', used: 'Detection' },
+      { n: 'FLEX, FLEX-2 and CFI', hw: 'Multi-user Droplet Combustion Apparatus · Combustion Integrated Rack', w: 'Burning fuel droplets. Tested extinction by diluting the chamber with carbon dioxide and helium, and found cool flames that kept burning after the visible flame went out.', c: 'High for 0 g', used: 'Suppression, habitat flame model' },
+      { n: 'Partial-gravity gap', hw: 'No PSI data yet', w: 'There is no partial-gravity combustion data in PSI. LUCI and FM2 are expected to add it. Until then, Moon and Mars results are bounded by microgravity and Earth-gravity results. ACME E-FIELD Flames mimicked partial gravity with an electric field.', c: 'Bounded estimate', used: 'Moon, rover and Mars missions' }
+    ] };
+  }
+}
+</script>
+<template id="tpl-Applications">
+
+<div class="pg">
+<div class="wrap">
+<header class="nav">
+<nav aria-label="Sections">
+<a href="#Main">Overview</a>
+<a href="#Prevention">Prevention</a>
+<a href="#Detection">Detection</a>
+<a href="#Suppression">Suppression</a>
+<a href="#Evidence">Evidence</a>
+</nav>
+</header>
+
+<section style="margin-top: 48px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+<div>
+<div class="eyebrow">Applications on Earth &amp; in space</div>
+<h1 class="hero">From orbit research to safer places</h1>
+<p class="lede">Each study shows what it found, which fire risk it points to, and a safety suggestion based on that result. Pick a place on Earth or a mission in space to zoom in and see which studies fit it, or browse all research.</p>
+</div>
+<div class="seg" role="group" aria-label="View">
+<button type="button" aria-pressed="{{vEarthP}}" onClick="{{showEarth}}">Earth view</button>
+<button type="button" aria-pressed="{{vSpaceP}}" onClick="{{showSpace}}">Space view</button>
+<button type="button" aria-pressed="{{vListP}}" onClick="{{showList}}">All research ({{total}})</button>
+</div>
+</section>
+
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px" role="group" aria-label="Category">
+<template data-sc="for" list="{{cats}}" as="c" hint-placeholder-count="5">
+<button type="button" class="cat" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}"><span style="{{c.dot}}"></span>{{c.n}}<small>{{c.count}}</small></button>
+</template>
+</div>
+
+<template data-sc="if" value="{{isMap}}" hint-placeholder-val="{{ true }}">
+<div class="card" style="margin-top: 16px; padding: 10px; border-color: rgba(103,212,228,.25)">
+<div class="stagebox">
+<div class="zoomer" style="{{zoomStyle}}">
+
+<template data-sc="if" value="{{isEarth}}" hint-placeholder-val="{{ true }}">
+<svg class="gl" viewBox="0 0 600 440" role="img" aria-label="Rotating Earth with highlighted applications on homes, laboratories and vehicles" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<defs>
+<radialGradient id="ocean" cx=".4" cy=".35" r=".75"><stop offset="0" style="stop-color:#2a7fd4"></stop><stop offset=".55" style="stop-color:#114a94"></stop><stop offset="1" style="stop-color:#061d45"></stop></radialGradient>
+<radialGradient id="sphere" cx=".38" cy=".34" r=".7"><stop offset=".45" style="stop-color:#000;stop-opacity:0"></stop><stop offset=".85" style="stop-color:#020814;stop-opacity:.55"></stop><stop offset="1" style="stop-color:#020814;stop-opacity:.9"></stop></radialGradient>
+<linearGradient id="term" x1="0" y1="0" x2="1" y2=".25"><stop offset=".52" style="stop-color:#000;stop-opacity:0"></stop><stop offset=".68" style="stop-color:#01040b;stop-opacity:.72"></stop><stop offset="1" style="stop-color:#01040b;stop-opacity:.85"></stop></linearGradient>
+<radialGradient id="spec" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#ffffff;stop-opacity:.35"></stop><stop offset="1" style="stop-color:#ffffff;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="atm" cx=".5" cy=".5" r=".5"><stop offset=".86" style="stop-color:#5fb4ff;stop-opacity:0"></stop><stop offset=".9" style="stop-color:#5fb4ff;stop-opacity:.5"></stop><stop offset="1" style="stop-color:#5fb4ff;stop-opacity:0"></stop></radialGradient>
+<linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#6c8f5a"></stop><stop offset=".5" style="stop-color:#3f7a45"></stop><stop offset="1" style="stop-color:#5b7a48"></stop></linearGradient>
+<clipPath id="globeClip"><circle cx="300" cy="220" r="150"></circle></clipPath>
+</defs>
+<g fill="#ffffff">
+<circle class="tw" cx="40" cy="40" r="1.2"></circle><circle class="tw" cx="560" cy="60" r="1.4" style="animation-delay:-1s"></circle><circle class="tw" cx="520" cy="400" r="1.1" style="animation-delay:-2s"></circle><circle class="tw" cx="90" cy="410" r="1.3" style="animation-delay:-.5s"></circle><circle class="tw" cx="300" cy="20" r="1" style="animation-delay:-1.5s"></circle><circle class="tw" cx="585" cy="230" r="1" style="animation-delay:-2.5s"></circle><circle class="tw" cx="20" cy="220" r="1.2" style="animation-delay:-.8s"></circle><circle class="tw" cx="470" cy="30" r=".9" style="animation-delay:-2.2s"></circle>
+</g>
+<circle cx="300" cy="220" r="178" fill="url(#atm)"></circle>
+<circle cx="300" cy="220" r="150" fill="url(#ocean)"></circle>
+<g clip-path="url(#globeClip)">
+<g class="land" fill="url(#land)">
+<g>
+<path d="M30,105 L90,90 L150,95 L175,115 L160,140 L135,150 L120,175 L105,180 L95,160 L70,140 L45,130Z"></path>
+<path d="M190,80 L225,78 L220,105 L200,110Z" fill="#e6eef2"></path>
+<path d="M150,190 L185,195 L200,215 L185,250 L170,290 L160,300 L155,265 L145,230 L140,205Z"></path>
+<path d="M290,110 L330,100 L345,115 L330,130 L300,135 L285,125Z"></path>
+<path d="M285,150 L330,145 L355,165 L365,190 L350,230 L335,265 L320,270 L310,240 L300,210 L280,190 L275,165Z"></path>
+<ellipse cx="315" cy="170" rx="28" ry="14" fill="#c2a46a" opacity=".75"></ellipse>
+<path d="M345,95 L420,85 L500,90 L545,105 L540,130 L510,150 L490,175 L460,180 L440,165 L410,175 L390,160 L370,140 L350,130Z"></path>
+<ellipse cx="395" cy="145" rx="22" ry="8" fill="#c2a46a" opacity=".6"></ellipse>
+<path d="M420,165 L440,165 L432,195Z"></path>
+<ellipse cx="482" cy="205" rx="12" ry="4"></ellipse><ellipse cx="505" cy="212" rx="9" ry="3"></ellipse>
+<path d="M490,240 L530,235 L545,255 L530,275 L500,272 L488,258Z"></path>
+<ellipse cx="512" cy="255" rx="14" ry="8" fill="#c2a46a" opacity=".6"></ellipse>
+<path d="M0,352 L600,352 L600,372 L0,372Z" fill="#e6eef2"></path>
+</g>
+<g transform="translate(600 0)">
+<path d="M30,105 L90,90 L150,95 L175,115 L160,140 L135,150 L120,175 L105,180 L95,160 L70,140 L45,130Z"></path>
+<path d="M190,80 L225,78 L220,105 L200,110Z" fill="#e6eef2"></path>
+<path d="M150,190 L185,195 L200,215 L185,250 L170,290 L160,300 L155,265 L145,230 L140,205Z"></path>
+<path d="M290,110 L330,100 L345,115 L330,130 L300,135 L285,125Z"></path>
+<path d="M285,150 L330,145 L355,165 L365,190 L350,230 L335,265 L320,270 L310,240 L300,210 L280,190 L275,165Z"></path>
+<ellipse cx="315" cy="170" rx="28" ry="14" fill="#c2a46a" opacity=".75"></ellipse>
+<path d="M345,95 L420,85 L500,90 L545,105 L540,130 L510,150 L490,175 L460,180 L440,165 L410,175 L390,160 L370,140 L350,130Z"></path>
+<ellipse cx="395" cy="145" rx="22" ry="8" fill="#c2a46a" opacity=".6"></ellipse>
+<path d="M420,165 L440,165 L432,195Z"></path>
+<ellipse cx="482" cy="205" rx="12" ry="4"></ellipse><ellipse cx="505" cy="212" rx="9" ry="3"></ellipse>
+<path d="M490,240 L530,235 L545,255 L530,275 L500,272 L488,258Z"></path>
+<ellipse cx="512" cy="255" rx="14" ry="8" fill="#c2a46a" opacity=".6"></ellipse>
+<path d="M0,352 L600,352 L600,372 L0,372Z" fill="#e6eef2"></path>
+</g>
+</g>
+<rect x="150" y="62" width="300" height="20" fill="#eef4f8" opacity=".85"></rect>
+<g class="cloud" fill="#ffffff">
+<g opacity=".55"><ellipse cx="60" cy="150" rx="40" ry="6"></ellipse><ellipse cx="200" cy="120" rx="55" ry="5"></ellipse><ellipse cx="330" cy="230" rx="45" ry="7"></ellipse><ellipse cx="450" cy="200" rx="60" ry="5"></ellipse><ellipse cx="540" cy="300" rx="40" ry="6"></ellipse><ellipse cx="260" cy="300" rx="50" ry="5"></ellipse><ellipse cx="120" cy="260" rx="35" ry="4"></ellipse></g>
+<g opacity=".55" transform="translate(600 0)"><ellipse cx="60" cy="150" rx="40" ry="6"></ellipse><ellipse cx="200" cy="120" rx="55" ry="5"></ellipse><ellipse cx="330" cy="230" rx="45" ry="7"></ellipse><ellipse cx="450" cy="200" rx="60" ry="5"></ellipse><ellipse cx="540" cy="300" rx="40" ry="6"></ellipse><ellipse cx="260" cy="300" rx="50" ry="5"></ellipse><ellipse cx="120" cy="260" rx="35" ry="4"></ellipse></g>
+</g>
+<rect x="150" y="70" width="300" height="300" fill="url(#term)"></rect>
+<g fill="#ffd38a">
+<circle class="tw" cx="398" cy="170" r="1.2"></circle><circle class="tw" cx="410" cy="196" r="1" style="animation-delay:-1s"></circle><circle class="tw" cx="425" cy="150" r="1.3" style="animation-delay:-2s"></circle><circle class="tw" cx="388" cy="240" r="1" style="animation-delay:-.5s"></circle><circle class="tw" cx="432" cy="226" r="1.2" style="animation-delay:-1.6s"></circle><circle class="tw" cx="404" cy="280" r="1" style="animation-delay:-2.4s"></circle><circle class="tw" cx="380" cy="130" r="1.1" style="animation-delay:-.9s"></circle><circle class="tw" cx="418" cy="262" r="1.3" style="animation-delay:-1.9s"></circle>
+</g>
+<circle cx="300" cy="220" r="150" fill="url(#sphere)"></circle>
+</g>
+<ellipse cx="248" cy="160" rx="60" ry="42" fill="url(#spec)"></ellipse>
+<circle cx="300" cy="220" r="151" fill="none" stroke="#8fd0ff" stroke-opacity=".55" stroke-width="2"></circle>
+<g class="orb"><g transform="translate(300 32)"><rect x="-10" y="-2" width="7" height="4" fill="#d9a441"></rect><rect x="3" y="-2" width="7" height="4" fill="#d9a441"></rect><rect x="-3" y="-3" width="6" height="6" rx="1.5" fill="#e8eef6"></rect></g></g>
+<template data-sc="for" list="{{lines}}" as="l" hint-placeholder-count="3">
+<line x1="{{l.x1}}" y1="{{l.y1}}" x2="{{l.x2}}" y2="{{l.y2}}" stroke="#67d4e4" stroke-opacity=".55" stroke-dasharray="3 4"></line>
+<circle cx="{{l.x2}}" cy="{{l.y2}}" r="3.5" fill="#67d4e4" stroke="#ffffff" stroke-width="1"></circle>
+</template>
+<template data-sc="if" value="{{hasFocus}}" hint-placeholder-val="{{ false }}">
+<circle class="ping" cx="{{fx}}" cy="{{fy}}" r="4" fill="none" stroke="#67d4e4" stroke-width="1.2"></circle>
+<circle cx="{{fx}}" cy="{{fy}}" r="3" fill="#67d4e4" stroke="#ffffff" stroke-width=".8"></circle>
+</template>
+</svg>
+</template>
+
+<template data-sc="if" value="{{isSpace}}" hint-placeholder-val="{{ false }}">
+<svg class="gl" viewBox="0 0 600 440" role="img" aria-label="Space view with four mission destinations: space station, Moon base, pressurized rover and Mars base" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<defs>
+<radialGradient id="sOcean" cx=".6" cy=".2" r=".8"><stop offset="0" style="stop-color:#3d93e6"></stop><stop offset=".5" style="stop-color:#124c98"></stop><stop offset="1" style="stop-color:#041330"></stop></radialGradient>
+<radialGradient id="moonG" cx=".35" cy=".35" r=".75"><stop offset="0" style="stop-color:#ebe9e2"></stop><stop offset=".6" style="stop-color:#9c9a94"></stop><stop offset="1" style="stop-color:#38383a"></stop></radialGradient>
+<radialGradient id="marsG" cx=".35" cy=".35" r=".75"><stop offset="0" style="stop-color:#f2a676"></stop><stop offset=".6" style="stop-color:#c0532e"></stop><stop offset="1" style="stop-color:#4a1a0e"></stop></radialGradient>
+<radialGradient id="sunG" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#ffffff;stop-opacity:.85"></stop><stop offset=".15" style="stop-color:#fff1cc;stop-opacity:.45"></stop><stop offset="1" style="stop-color:#9be7f2;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="neb2" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#6b4bd6;stop-opacity:.25"></stop><stop offset="1" style="stop-color:#6b4bd6;stop-opacity:0"></stop></radialGradient>
+<radialGradient id="baseGlow" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:#67d4e4;stop-opacity:.7"></stop><stop offset="1" style="stop-color:#67d4e4;stop-opacity:0"></stop></radialGradient>
+<linearGradient id="solarG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:#f0c56a"></stop><stop offset="1" style="stop-color:#7a4a12"></stop></linearGradient>
+</defs>
+<ellipse cx="420" cy="200" rx="260" ry="150" fill="url(#neb2)"></ellipse>
+<g fill="#ffffff">
+<circle class="tw" cx="40" cy="40" r="1.2"></circle><circle class="tw" cx="200" cy="60" r="1" style="animation-delay:-1s"></circle><circle class="tw" cx="580" cy="200" r="1.3" style="animation-delay:-2s"></circle><circle class="tw" cx="430" cy="410" r="1.1" style="animation-delay:-.5s"></circle><circle class="tw" cx="320" cy="20" r="1" style="animation-delay:-1.5s"></circle><circle class="tw" cx="300" cy="300" r="1" style="animation-delay:-2.5s"></circle><circle class="tw" cx="250" cy="110" r=".9" style="animation-delay:-.8s"></circle><circle class="tw" cx="590" cy="420" r="1.2" style="animation-delay:-2.1s"></circle>
+</g>
+<circle cx="90" cy="60" r="90" fill="url(#sunG)"></circle>
+<circle cx="90" cy="60" r="8" fill="#ffffff"></circle>
+<circle cx="40" cy="610" r="318" fill="none" stroke="#67d4e4" stroke-opacity=".12" stroke-width="22"></circle>
+<circle cx="40" cy="610" r="306" fill="none" stroke="#a5ecf5" stroke-opacity=".6" stroke-width="2.5"></circle>
+<circle cx="40" cy="610" r="304" fill="url(#sOcean)"></circle>
+<g fill="#ffffff" opacity=".22"><ellipse cx="120" cy="330" rx="70" ry="6"></ellipse><ellipse cx="230" cy="372" rx="60" ry="7"></ellipse><ellipse cx="60" cy="380" rx="50" ry="6"></ellipse></g>
+<text x="24" y="424" font-size="11" fill="#cfe9ef" letter-spacing="2" font-family="Sora, sans-serif">EARTH</text>
+<path d="M150,300 Q300,200 440,150" fill="none" stroke="#9be7f2" stroke-opacity=".22" stroke-dasharray="2 6"></path>
+<path d="M200,330 Q420,330 540,335" fill="none" stroke="#ff8a4c" stroke-opacity=".18" stroke-dasharray="2 6"></path>
+
+<g class="bob">
+<rect x="226" y="228" width="88" height="3" fill="#c9d1db"></rect>
+<g fill="url(#solarG)" stroke="#f6d58b" stroke-opacity=".5" stroke-width=".5">
+<rect x="228" y="206" width="9" height="20"></rect><rect x="228" y="233" width="9" height="20"></rect>
+<rect x="241" y="206" width="9" height="20"></rect><rect x="241" y="233" width="9" height="20"></rect>
+<rect x="290" y="206" width="9" height="20"></rect><rect x="290" y="233" width="9" height="20"></rect>
+<rect x="303" y="206" width="9" height="20"></rect><rect x="303" y="233" width="9" height="20"></rect>
+</g>
+<rect x="256" y="223" width="30" height="13" rx="4" fill="#e6e1d6" stroke="#8a96a8" stroke-width=".6"></rect>
+<rect x="266" y="216" width="10" height="27" rx="4" fill="#d9d4c8" stroke="#8a96a8" stroke-width=".6"></rect>
+<circle class="tw" cx="286" cy="229" r="1.3" fill="#4ade80"></circle>
+</g>
+<text x="270" y="272" font-size="11" font-weight="600" fill="#e8eef6" text-anchor="middle" font-family="Sora, sans-serif">Space station · 0 g</text>
+
+<circle cx="440" cy="130" r="76" fill="#b8b6ae" opacity=".06"></circle>
+<circle cx="440" cy="130" r="62" fill="url(#moonG)"></circle>
+<g fill="#5e5c58" opacity=".5"><circle cx="415" cy="105" r="10"></circle><circle cx="458" cy="160" r="7"></circle><circle cx="455" cy="95" r="5"></circle><circle cx="410" cy="155" r="4"></circle><circle cx="478" cy="128" r="6"></circle></g>
+<path d="M440,68 A62,62 0 0,1 440,192 A34,62 0 0,0 440,68Z" fill="#000" opacity=".42"></path>
+<circle cx="428" cy="120" r="14" fill="url(#baseGlow)"></circle>
+<path d="M421,123 A7,7 0 0,1 435,123Z" fill="#f4f6f8" stroke="#67d4e4" stroke-width="1"></path>
+<rect x="436" y="120" width="6" height="3" fill="#d9dee5"></rect>
+<g>
+<rect x="461" y="148" width="14" height="6" rx="2" fill="#f4f6f8" stroke="#67d4e4" stroke-width=".8"></rect>
+<circle cx="464" cy="155" r="1.8" fill="#2b3444"></circle><circle cx="472" cy="155" r="1.8" fill="#2b3444"></circle>
+</g>
+<text x="440" y="210" font-size="11" font-weight="600" fill="#e8eef6" text-anchor="middle" font-family="Sora, sans-serif">Moon · 0.16 g</text>
+
+<circle cx="545" cy="335" r="44" fill="#c0532e" opacity=".08"></circle>
+<circle cx="545" cy="335" r="34" fill="url(#marsG)"></circle>
+<g fill="#7a2e18" opacity=".45"><ellipse cx="535" cy="322" rx="9" ry="4"></ellipse><ellipse cx="556" cy="348" rx="7" ry="3"></ellipse></g>
+<path d="M545,301 A34,34 0 0,1 545,369 A18,34 0 0,0 545,301Z" fill="#000" opacity=".42"></path>
+<circle cx="538" cy="332" r="12" fill="url(#baseGlow)"></circle>
+<path d="M532,335 A6,6 0 0,1 544,335Z" fill="#f4f6f8" stroke="#67d4e4" stroke-width="1"></path>
+<text x="545" y="388" font-size="11" font-weight="600" fill="#e8eef6" text-anchor="middle" font-family="Sora, sans-serif">Mars · 0.38 g</text>
+
+<template data-sc="for" list="{{lines}}" as="l" hint-placeholder-count="4">
+<line x1="{{l.x1}}" y1="{{l.y1}}" x2="{{l.x2}}" y2="{{l.y2}}" stroke="#67d4e4" stroke-opacity=".55" stroke-dasharray="3 4"></line>
+<circle cx="{{l.x2}}" cy="{{l.y2}}" r="3" fill="#67d4e4" stroke="#ffffff" stroke-width="1"></circle>
+</template>
+<template data-sc="if" value="{{hasFocus}}" hint-placeholder-val="{{ false }}">
+<circle class="ping" cx="{{fx}}" cy="{{fy}}" r="4" fill="none" stroke="#67d4e4" stroke-width="1.2"></circle>
+<circle cx="{{fx}}" cy="{{fy}}" r="3" fill="#67d4e4" stroke="#ffffff" stroke-width=".8"></circle>
+</template>
+</svg>
+</template>
+
+<template data-sc="for" list="{{pins}}" as="p" hint-placeholder-count="4">
+<button type="button" class="{{p.cls}}" style="{{p.pos}}" onClick="{{p.pick}}">
+<span style="font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #67d4e4; font-weight: 600">{{p.kicker}}</span>
+<b style="font-size: 15px">{{p.n}}</b>
+<span>{{p.count}} · {{p.risks}}</span>
+</button>
+</template>
+</div>
+
+<template data-sc="if" value="{{hasFocus}}" hint-placeholder-val="{{ false }}">
+<aside class="detail" aria-label="Studies for this destination">
+<button type="button" class="back" onClick="{{unfocus}}">← Back to {{backTo}}</button>
+<div>
+<div class="tk" style="color: #67d4e4">Best fit for</div>
+<h2 style="margin: 2px 0 0; font-size: 24px; font-weight: 700">{{dest.n}}</h2>
+<div style="font-size: 12.5px; color: #9fb0c4">{{dest.sub}} · {{dest.count}}</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px" role="group" aria-label="Studies">
+<template data-sc="for" list="{{destStudies}}" as="d" hint-placeholder-count="3">
+<button type="button" class="{{d.cls}}" aria-pressed="{{d.pressed}}" onClick="{{d.pick}}"><span style="{{d.dot}}"></span><span style="flex: 1">{{d.t}}</span><small>{{d.year}}</small></button>
+</template>
+</div>
+<div style="height: 1px; background: #1f2f45"></div>
+<div style="display: flex; gap: 6px; flex-wrap: wrap"><span class="tag {{sel.envCls}}">{{sel.env}} research</span><span class="tag t-plain">{{sel.type}}</span><span class="tag t-plain"><span style="{{sel.dot}}"></span>{{sel.cat}}</span></div>
+<div>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; line-height: 1.3">{{sel.t}}</h3>
+<div style="font-size: 12.5px; color: #9fb0c4; margin-top: 4px">{{sel.org}} · {{sel.year}}</div>
+</div>
+<div class="step" style="padding: 8px 10px"><div class="tk">Also fits</div><div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px"><template data-sc="for" list="{{sel.fits}}" as="f" hint-placeholder-count="3"><span class="tag t-plain">{{f.n}}</span></template></div></div>
+<div class="step"><div class="tk" style="color: #8be3f0">① Finding</div><p>{{sel.finding}}</p></div>
+<div class="arrow" aria-hidden="true">↓</div>
+<div class="step" style="border-color: rgba(251,191,36,.3)"><div class="tk" style="color: #fcd34d">② Risk · {{sel.risk}}</div><p>{{sel.relevance}}</p></div>
+<div class="arrow" aria-hidden="true">↓</div>
+<div class="step" style="border-color: rgba(74,222,128,.35); background: rgba(74,222,128,.05)"><div class="tk" style="color: #86efac">③ Safety suggestion for {{dest.n}}</div><p>{{sel.suggestion}}</p></div>
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 12.5px"><span class="tk">Evidence level</span><span style="font-weight: 600">{{sel.evidence}}</span></div>
+<div class="meter" style="margin-top: 6px"><i style="{{sel.m1}}"></i><i style="{{sel.m2}}"></i><i style="{{sel.m3}}"></i></div>
+</div>
+<p style="margin: 0; font-size: 11.5px; color: #8fa0b6">A possible measure based on this study's result, not a verified safety guarantee.</p>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<a href="#Main" class="btn pri">Try in simulator →</a>
+<a href="https://psi.nasa.gov/physci/repo/search?q=&amp;data_source=psi&amp;data_type=investigation" class="btn sec">Open source</a>
+</div>
+</aside>
+</template>
+</div>
+<div class="legend">
+<span>{{mapHint}}</span>
+<span style="margin-left: auto">{{totalHint}} <button type="button" class="cat" style="min-height: 30px; padding: 2px 12px" onClick="{{showList}}">All research →</button></span>
+</div>
+</div>
+</template>
+
+<template data-sc="if" value="{{isList}}" hint-placeholder-val="{{ false }}">
+<div class="card" style="margin-top: 16px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
+<div class="f" style="flex: 2 1 260px">
+<span class="tk">Environment</span>
+<div class="seg" role="group" aria-label="Environment">
+<template data-sc="for" list="{{envs}}" as="e" hint-placeholder-count="4">
+<button type="button" aria-pressed="{{e.pressed}}" onClick="{{e.pick}}">{{e.n}}</button>
+</template>
+</div>
+</div>
+<div class="f"><label for="risk">Risk type</label>
+<select id="risk" onChange="{{onRisk}}"><template data-sc="for" list="{{riskOpts}}" as="o" hint-placeholder-count="5"><option value="{{o.v}}" selected="{{o.sel}}">{{o.n}}</option></template></select></div>
+<div class="f"><label for="area">Application area</label>
+<select id="area" onChange="{{onArea}}"><template data-sc="for" list="{{areaOpts}}" as="o" hint-placeholder-count="5"><option value="{{o.v}}" selected="{{o.sel}}">{{o.n}}</option></template></select></div>
+<div class="f"><label for="rtype">Research type</label>
+<select id="rtype" onChange="{{onType}}"><template data-sc="for" list="{{typeOpts}}" as="o" hint-placeholder-count="5"><option value="{{o.v}}" selected="{{o.sel}}">{{o.n}}</option></template></select></div>
+<div class="f"><label for="sort">Year</label>
+<select id="sort" onChange="{{onSort}}"><option value="new" selected="{{sortNew}}">Newest first</option><option value="old" selected="{{sortOld}}">Oldest first</option></select></div>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 14px 4px 10px; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13.5px; color: #b8c4d4"><b style="color: #fff">{{listCount}}</b> studies match · open one to fly to where it fits</span>
+<button type="button" class="cat" onClick="{{reset}}">Clear filters</button>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px">
+<template data-sc="for" list="{{list}}" as="r" hint-placeholder-count="6">
+<button type="button" class="rc" onClick="{{r.pick}}">
+<span style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center"><span class="tag {{r.envCls}}">{{r.env}}</span><span class="tag t-plain"><span style="{{r.dot}}"></span>{{r.cat}}</span><span style="font-size: 12px; color: #8fa0b6">{{r.year}}</span></span>
+<b style="font-size: 15px; font-weight: 600; line-height: 1.35">{{r.t}}</b>
+<span style="font-size: 12.5px; color: #9fb0c4">{{r.org}} · {{r.type}}</span>
+<span style="font-size: 13px; color: #cfd8e4">{{r.short}}</span>
+<span style="font-size: 12.5px; color: #67d4e4; font-weight: 600">{{r.go}}</span>
+</button>
+</template>
+</div>
+<template data-sc="if" value="{{empty}}" hint-placeholder-val="{{ false }}">
+<div class="card" style="text-align: center; color: #b8c4d4">No studies match these filters. Try clearing one.</div>
+</template>
+</template>
+</div>
+<footer class="ft">Prototype for the NASA Space Apps 2026 challenge "Flame in Freefall". Study years, findings and suggestions are example content to verify against NASA PSI before use.</footer>
+</div>
+</template>
+<script type="text/plain" id="css-Applications">
+body{margin:0;background:#060b16}
+a{color:#67d4e4}a:hover{color:#a5ecf5}
+.pg{min-height:100%;background-color:#060b16;background-image:radial-gradient(ellipse 800px 500px at 30% 0%,rgba(103,212,228,.08),transparent 70%),radial-gradient(circle 1px at 8% 12%,rgba(255,255,255,.75) 98%,transparent 100%),radial-gradient(circle 1px at 27% 64%,rgba(255,255,255,.5) 98%,transparent 100%),radial-gradient(circle 1.5px at 46% 22%,rgba(255,255,255,.6) 98%,transparent 100%),radial-gradient(circle 1px at 63% 81%,rgba(255,255,255,.55) 98%,transparent 100%),radial-gradient(circle 1px at 82% 37%,rgba(255,255,255,.7) 98%,transparent 100%),radial-gradient(circle 1.5px at 15% 92%,rgba(255,255,255,.5) 98%,transparent 100%);background-size:100% 1200px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px,540px 540px;background-repeat:no-repeat,repeat,repeat,repeat,repeat,repeat,repeat;color:#e8eef6;font-family:Sora,system-ui,sans-serif;font-size:15px;line-height:1.6;padding-bottom:1px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.nav{margin:18px auto 0;max-width:920px;display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:rgba(22,36,56,.72);border:1px solid #26384f;border-radius:999px;padding:8px 10px 8px 26px}
+.brand{font-weight:700;letter-spacing:.22em;font-size:13px;white-space:nowrap}
+.nav nav{display:flex;gap:2px;flex-wrap:wrap}
+.nav nav a{color:#a9b6c8;text-decoration:none;font-size:14px;font-weight:500;padding:9px 12px;border-radius:999px}
+.nav nav a:hover{color:#fff;background:rgba(103,212,228,.08)}
+.nav nav a.on{color:#fff;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#67d4e4;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:1px;background:#67d4e4}
+.hero{font-size:42px;font-weight:700;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.1}
+.lede{color:#b8c4d4;max-width:64ch;margin:0}
+.card{background:rgba(12,21,36,.86);border:1px solid #1f2f45;border-radius:16px;padding:18px 20px;min-width:0}
+.tk{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8fa0b6;font-weight:600}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid #26384f;border-radius:999px;padding:4px;gap:2px;background:rgba(10,18,32,.7)}
+.seg button{border:0;background:transparent;color:#cfd8e4;font:inherit;font-size:13.5px;padding:8px 16px;border-radius:999px;cursor:pointer;min-height:38px}
+.seg button[aria-pressed="true"]{background:#67d4e4;color:#04202a;font-weight:600;box-shadow:0 0 18px rgba(103,212,228,.4)}
+.cat{display:inline-flex;align-items:center;gap:8px;border:1px solid #26384f;background:rgba(10,18,32,.6);color:#dbe3ee;border-radius:999px;padding:8px 14px;font:inherit;font-size:13.5px;cursor:pointer;min-height:40px}
+.cat[aria-pressed="true"]{border-color:#67d4e4;background:rgba(103,212,228,.12);color:#fff}
+.cat small{color:#8fa0b6;font-size:12px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.t-earth{background:rgba(74,222,128,.14);color:#86efac}.t-space{background:rgba(103,212,228,.15);color:#8be3f0}.t-both{background:rgba(196,161,255,.16);color:#d7c2ff}
+.t-plain{background:rgba(255,255,255,.06);color:#cfd8e4}
+.stagebox{position:relative;overflow:hidden;border-radius:14px;background:#030711}
+.zoomer{position:relative;aspect-ratio:600/440;width:100%;transform-origin:50% 50%;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.pin{position:absolute;transform:translate(-50%,-50%);width:200px;text-align:left;border:1px solid #2a3d56;background:rgba(9,17,30,.9);color:#e8eef6;border-radius:12px;padding:9px 11px;font:inherit;cursor:pointer;display:flex;flex-direction:column;gap:3px;box-shadow:0 10px 30px -12px rgba(0,0,0,.8);transition:opacity .4s,border-color .2s}
+.pin:hover{border-color:#67d4e4;box-shadow:0 0 24px -6px rgba(103,212,228,.6)}
+.pin b{font-size:13px;font-weight:600;line-height:1.3}
+.pin span{font-size:11px;color:#9fb0c4}
+.pin.dim{opacity:.28}
+.pin.gone{opacity:0;pointer-events:none}
+.detail{position:absolute;top:14px;right:14px;bottom:14px;width:min(420px,calc(100% - 28px));overflow:auto;background:rgba(7,13,24,.94);border:1px solid rgba(103,212,228,.35);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;box-shadow:0 30px 80px -20px rgba(0,0,0,.9);animation:slide .6s .35s cubic-bezier(.2,.7,.2,1) both}
+@keyframes slide{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:none}}
+.back{align-self:flex-start;border:1px solid #2a3d56;background:transparent;color:#e8eef6;border-radius:999px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;min-height:36px}
+.back:hover{border-color:#67d4e4}
+.sb{display:flex;align-items:center;gap:8px;width:100%;text-align:left;border:1px solid #22344b;background:rgba(10,18,32,.6);color:#dbe3ee;border-radius:10px;padding:8px 11px;font:inherit;font-size:13px;cursor:pointer;min-height:40px}
+.sb small{color:#8fa0b6;font-size:11.5px}
+.sb:hover{border-color:#3a5878}
+.sb[aria-pressed="true"]{border-color:#67d4e4;background:rgba(103,212,228,.12);color:#fff}
+.rc{display:flex;flex-direction:column;gap:6px;text-align:left;border:1px solid #1f2f45;background:rgba(12,21,36,.86);color:#e8eef6;border-radius:14px;padding:14px 16px;font:inherit;cursor:pointer}
+.rc:hover{border-color:#67d4e4}
+.f{display:flex;flex-direction:column;gap:5px;min-width:150px;flex:1 1 150px}
+.f label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8fa0b6;font-weight:600}
+select{width:100%;min-height:42px;background:#0a1322;border:1px solid #2a3d56;color:#e8eef6;border-radius:10px;padding:8px 10px;font:inherit;font-size:13.5px}
+.step{border:1px solid #1f2f45;border-radius:12px;padding:10px 12px;background:rgba(255,255,255,.02)}
+.step p{margin:4px 0 0;font-size:13.5px;color:#dbe3ee}
+.arrow{text-align:center;color:#67d4e4;font-size:14px;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none}
+.btn.pri{background:#67d4e4;color:#04202a}.btn.pri:hover{background:#8be3f0;color:#04202a}
+.btn.sec{border:1px solid #2a3d56;color:#e8eef6}.btn.sec:hover{border-color:#67d4e4;color:#fff}
+.meter{display:flex;gap:4px}.meter i{flex:1;height:6px;border-radius:3px;background:#1f2f45}
+.legend{display:flex;gap:16px;flex-wrap:wrap;padding:10px 12px 4px;font-size:12.5px;color:#9fb0c4}
+.ft{max-width:1140px;margin:40px auto 0;padding:18px 20px 40px;border-top:1px solid #1c2a3f;font-size:12px;color:#8fa0b6}
+.gl .land{animation:rotL 90s linear infinite}
+.gl .cloud{animation:rotL 55s linear infinite}
+.gl .tw{animation:tw 3s ease-in-out infinite}
+.gl .ping{transform-box:fill-box;transform-origin:center;animation:ping 1.5s ease-out infinite}
+.gl .orb{animation:orb 40s linear infinite;transform-box:view-box;transform-origin:300px 220px}
+.gl .bob{animation:bob 6s ease-in-out infinite;transform-box:view-box}
+@keyframes rotL{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+@keyframes tw{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.5);opacity:0}}
+@keyframes orb{to{transform:rotate(360deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.gl *,.zoomer,.detail{animation:none!important;transition:none!important}}
+@media (max-width:760px){.hero{font-size:30px}.nav{border-radius:20px}.pin{width:140px;padding:7px 9px}.pin b{font-size:11.5px}}
+</script>
+<script type="text/plain" id="js-Applications">
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { view: 'earth', cat: 'all', env: 'all', risk: 'all', area: 'all', type: 'all', sort: 'new', dest: null, study: null }; }
+  renderVals() {
+    var self = this, s = this.state;
+    var CAT = { sensors: { n: 'Sensors', c: '#67d4e4' }, spread: { n: 'Fire spread', c: '#ff8a4c' }, materials: { n: 'Materials', c: '#c4a1ff' }, suppression: { n: 'Suppression systems', c: '#4ade80' } };
+    var ENV = { earth: { n: 'Earth', cls: 't-earth' }, space: { n: 'Space', cls: 't-space' }, both: { n: 'Both', cls: 't-both' } };
+    var D = {
+      station: { n: 'Space station', sub: 'Orbit · 0 g · 21% O₂', view: 'space', kicker: 'Orbit', px: 16, py: 30, tx: 270, ty: 229 },
+      moon: { n: 'Moon base', sub: 'Lunar surface · 0.16 g · 30% O₂', view: 'space', kicker: 'Moon', px: 58, py: 9, tx: 428, ty: 121 },
+      rover: { n: 'Pressurized rover', sub: 'Lunar surface · 0.16 g · small cabin', view: 'space', kicker: 'Moon', px: 87, py: 60, tx: 468, ty: 151 },
+      mars: { n: 'Mars base', sub: 'Martian surface · 0.38 g · 30% O₂', view: 'space', kicker: 'Mars', px: 60, py: 86, tx: 538, ty: 333 },
+      homes: { n: 'Homes & buildings', sub: 'Earth · everyday spaces', view: 'earth', kicker: 'Earth', px: 14, py: 22, tx: 245, ty: 175 },
+      industry: { n: 'Industry & test labs', sub: 'Earth · material testing', view: 'earth', kicker: 'Earth', px: 14, py: 76, tx: 205, ty: 228 },
+      vehicles: { n: 'Aircraft & ships', sub: 'Earth · closed vehicles', view: 'earth', kicker: 'Earth', px: 86, py: 66, tx: 352, ty: 262 }
+    };
+    // Applications are populated exclusively from accepted PostgreSQL findings.
+    var R = window.__atlasResearch || [];
+    function dot(c) { return 'width:9px;height:9px;border-radius:50%;display:inline-block;flex:0 0 auto;background:' + c + ';box-shadow:0 0 8px ' + c; }
+    var inCat = function (r) { return s.cat === 'all' || r.cat === s.cat; };
+    function studiesFor(k) { return R.filter(function (r) { return r.fits.indexOf(k) >= 0 && inCat(r); }); }
+    function openDest(k, sid) { return function () { self.setState({ view: D[k].view, dest: k, study: sid || null }); }; }
+    var mapView = s.view === 'list' ? null : s.view;
+    var dk = s.dest && D[s.dest] && D[s.dest].view === mapView ? s.dest : null;
+    var cats = [{ k: 'all', n: 'All', c: '#e8eef6' }].concat(Object.keys(CAT).map(function (k) { return { k: k, n: CAT[k].n, c: CAT[k].c }; }))
+      .map(function (c) { return { n: c.n, dot: dot(c.c), count: R.filter(function (r) { return c.k === 'all' || r.cat === c.k; }).length, pressed: s.cat === c.k ? 'true' : 'false', pick: function () { self.setState({ cat: c.k }); } }; });
+    var destKeys = Object.keys(D).filter(function (k) { return D[k].view === mapView; });
+    var pins = destKeys.map(function (k) {
+      var st = studiesFor(k), risks = {};
+      st.forEach(function (r) { risks[r.risk] = 1; });
+      return { n: D[k].n, kicker: D[k].kicker, count: st.length + (st.length === 1 ? ' study' : ' studies'), risks: Object.keys(risks).slice(0, 2).join(', ') || 'none in this category',
+        dots: st.map(function (r) { return { st: dot(CAT[r.cat].c) }; }),
+        pos: 'left:' + D[k].px + '%;top:' + D[k].py + '%', cls: 'pin' + (dk ? ' gone' : (st.length ? '' : ' dim')), pick: openDest(k) };
+    });
+    var lines = dk ? [] : destKeys.map(function (k) { return { x1: D[k].px * 6, y1: D[k].py * 4.4, x2: D[k].tx, y2: D[k].ty }; });
+    var zoom = '';
+    if (dk) {
+      var sc = 2.4, px = D[dk].tx / 600, py = D[dk].ty / 440;
+      var tx = ((0.3 - 0.5) / sc + 0.5 - px) * 100, ty = (0.5 - py) * 100;
+      zoom = 'transform: scale(' + sc + ') translate(' + tx.toFixed(2) + '%, ' + ty.toFixed(2) + '%)';
+    }
+    var dStudies = dk ? studiesFor(dk) : [];
+    if (dk && !dStudies.length) dStudies = R.filter(function (r) { return r.fits.indexOf(dk) >= 0; });
+    var r = dStudies.filter(function (x) { return x.id === s.study; })[0] || dStudies[0] || R[0] || {
+      id: '', t: 'Loading PostgreSQL research', org: 'NASA PSI', year: '', type: 'Research', cat: 'spread',
+      env: 'both', fits: [], risk: 'Awaiting data', ev: 1, finding: 'Loading accepted findings from PostgreSQL…',
+      relevance: '', suggestion: ''
+    };
+    var list = R.filter(function (x) {
+      return inCat(x) && (s.env === 'all' || x.env === s.env) && (s.risk === 'all' || x.risk === s.risk) && (s.area === 'all' || x.fits.indexOf(s.area) >= 0) && (s.type === 'all' || x.type === s.type);
+    }).sort(function (a, b) { return s.sort === 'new' ? b.year - a.year : a.year - b.year; })
+      .map(function (x) { return { t: x.t, org: x.org, type: x.type, year: x.year, cat: CAT[x.cat].n, dot: dot(CAT[x.cat].c), env: ENV[x.env].n, envCls: ENV[x.env].cls, short: x.finding,
+        go: 'Fits: ' + x.fits.map(function (k) { return D[k].n; }).join(', ') + ' →', pick: openDest(x.fits[0], x.id) }; });
+    function opts(key, values, labels) { return [{ v: 'all', n: 'All', sel: s[key] === 'all' }].concat(values.map(function (v, i) { return { v: v, n: labels ? labels[i] : v, sel: s[key] === v }; })); }
+    var on = 'background:#67d4e4;box-shadow:0 0 8px rgba(103,212,228,.6)';
+    function setView(v) { return function () { self.setState({ view: v, dest: null, study: null }); }; }
+    var nSpace = R.filter(function (x) { return x.fits.some(function (k) { return D[k].view === 'space'; }); }).length;
+    var nEarth = R.filter(function (x) { return x.fits.some(function (k) { return D[k].view === 'earth'; }); }).length;
+    return {
+      total: R.length, isMap: s.view !== 'list', isEarth: s.view === 'earth', isSpace: s.view === 'space', isList: s.view === 'list',
+      vEarthP: s.view === 'earth' ? 'true' : 'false', vSpaceP: s.view === 'space' ? 'true' : 'false', vListP: s.view === 'list' ? 'true' : 'false',
+      showEarth: setView('earth'), showSpace: setView('space'), showList: setView('list'),
+      cats: cats, pins: pins, lines: lines,
+      hasFocus: !!dk, fx: dk ? D[dk].tx : 0, fy: dk ? D[dk].ty : 0,
+      zoomStyle: zoom, unfocus: function () { self.setState({ dest: null, study: null }); },
+      backTo: s.view === 'space' ? 'space' : 'Earth',
+      mapHint: s.view === 'space' ? 'Pick a mission to see which studies fit it and what they suggest.' : 'Pick a place on Earth to see which space fire studies apply there.',
+      totalHint: (s.view === 'space' ? nSpace : nEarth) + ' of ' + R.length + ' studies fit here ·',
+      dest: dk ? { n: D[dk].n, sub: D[dk].sub, count: dStudies.length + (dStudies.length === 1 ? ' fitting study' : ' fitting studies') } : { n: '', sub: '', count: '' },
+      destStudies: dStudies.map(function (x) { return { t: x.t, year: x.year, dot: dot(CAT[x.cat].c), cls: 'sb', pressed: x.id === r.id ? 'true' : 'false', pick: function () { self.setState({ study: x.id }); } }; }),
+      envs: [{ k: 'all', n: 'All' }, { k: 'earth', n: 'Earth' }, { k: 'space', n: 'Space' }, { k: 'both', n: 'Both' }].map(function (e) { return { n: e.n, pressed: s.env === e.k ? 'true' : 'false', pick: function () { self.setState({ env: e.k }); } }; }),
+      riskOpts: opts('risk', ['Ignition', 'Fire spread', 'Late detection', 'Re-ignition']),
+      areaOpts: opts('area', Object.keys(D), Object.keys(D).map(function (k) { return D[k].n; })),
+      typeOpts: opts('type', ['Flight experiment', 'Ground test', 'Model', 'Operational practice']),
+      sortNew: s.sort === 'new', sortOld: s.sort === 'old',
+      onRisk: function (e) { self.setState({ risk: e.target.value }); }, onArea: function (e) { self.setState({ area: e.target.value }); },
+      onType: function (e) { self.setState({ type: e.target.value }); }, onSort: function (e) { self.setState({ sort: e.target.value }); },
+      reset: function () { self.setState({ cat: 'all', env: 'all', risk: 'all', area: 'all', type: 'all' }); },
+      list: list, listCount: list.length, empty: list.length === 0,
+      sel: { t: r.t, org: r.org, year: r.year, type: r.type, cat: CAT[r.cat].n, dot: dot(CAT[r.cat].c), env: ENV[r.env].n, envCls: ENV[r.env].cls,
+        fits: r.fits.filter(function (k) { return k !== dk; }).map(function (k) { return { n: D[k].n }; }),
+        risk: r.risk, finding: r.finding, relevance: r.relevance, suggestion: r.suggestion,
+        evidence: ['Low', 'Medium', 'High'][r.ev - 1], m1: on, m2: r.ev >= 2 ? on : '', m3: r.ev >= 3 ? on : '' }
+    };
+  }
+}
+</script>
+
+<script>!function(n,l){"object"==typeof exports&&"undefined"!=typeof module?l(exports):"function"==typeof define&&define.amd?define(["exports"],l):l((n||self).preact={})}(this,function(n){var l,u,t,i,o,r,f,e,c,s=65536,a=1<<17,h={},p=[],v=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,y=Array.isArray;function d(n,l){for(var u in l)n[u]=l[u];return n}function _(n){var l=n.parentNode;l&&l.removeChild(n)}function b(n,u,t){var i,o,r,f={};for(r in u)"key"==r?i=u[r]:"ref"==r?o=u[r]:f[r]=u[r];if(arguments.length>2&&(f.children=arguments.length>3?l.call(arguments,2):t),"function"==typeof n&&null!=n.defaultProps)for(r in n.defaultProps)void 0===f[r]&&(f[r]=n.defaultProps[r]);return g(n,f,i,o,null)}function g(n,l,i,o,r){var f={type:n,props:l,key:i,ref:o,__k:null,__:null,__b:0,__e:null,__d:void 0,__c:null,constructor:void 0,__v:null==r?++t:r,__i:-1,__u:0};return null==r&&null!=u.vnode&&u.vnode(f),f}function m(n){return n.children}function k(n,l){this.props=n,this.context=l}function w(n,l){if(null==l)return n.__?w(n.__,n.__i+1):null;for(var u;l<n.__k.length;l++)if(null!=(u=n.__k[l])&&null!=u.__e)return u.__e;return"function"==typeof n.type?w(n):null}function x(n){var l,u;if(null!=(n=n.__)&&null!=n.__c){for(n.__e=n.__c.base=null,l=0;l<n.__k.length;l++)if(null!=(u=n.__k[l])&&null!=u.__e){n.__e=n.__c.base=u.__e;break}return x(n)}}function P(n){(!n.__d&&(n.__d=!0)&&o.push(n)&&!S.__r++||r!==u.debounceRendering)&&((r=u.debounceRendering)||f)(S)}function S(){var n,l,t,i,r,f,c,s,a;for(o.sort(e);n=o.shift();)n.__d&&(l=o.length,i=void 0,f=(r=(t=n).__v).__e,s=[],a=[],(c=t.__P)&&((i=d({},r)).__v=r.__v+1,u.vnode&&u.vnode(i),L(c,i,r,t.__n,void 0!==c.ownerSVGElement,32&r.__u?[f]:null,s,null==f?w(r):f,!!(32&r.__u),a),i.__.__k[i.__i]=i,M(s,i,a),i.__e!=f&&x(i)),o.length>l&&o.sort(e));S.__r=0}function T(n,l,u,t,i,o,r,f,e,c,a){var v,y,d,_,b,g=t&&t.__k||p,m=l.length;for(u.__d=e,$(u,l,g),e=u.__d,v=0;v<m;v++)null!=(d=u.__k[v])&&"boolean"!=typeof d&&"function"!=typeof d&&(y=-1===d.__i?h:g[d.__i]||h,d.__i=v,L(n,d,y,i,o,r,f,e,c,a),_=d.__e,d.ref&&y.ref!=d.ref&&(y.ref&&N(y.ref,null,d),a.push(d.ref,d.__c||_,d)),null==b&&null!=_&&(b=_),d.__u&s||y.__k===d.__k?e=C(d,e,n):"function"==typeof d.type&&void 0!==d.__d?e=d.__d:_&&(e=_.nextSibling),d.__d=void 0,d.__u&=-196609);u.__d=e,u.__e=b}function $(n,l,u){var t,i,o,r,f,e=l.length,c=u.length,h=c,p=0;for(n.__k=[],t=0;t<e;t++)null!=(i=n.__k[t]=null==(i=l[t])||"boolean"==typeof i||"function"==typeof i?null:"string"==typeof i||"number"==typeof i||"bigint"==typeof i||i.constructor==String?g(null,i,null,null,i):y(i)?g(m,{children:i},null,null,null):void 0===i.constructor&&i.__b>0?g(i.type,i.props,i.key,i.ref?i.ref:null,i.__v):i)?(i.__=n,i.__b=n.__b+1,f=H(i,u,r=t+p,h),i.__i=f,o=null,-1!==f&&(h--,(o=u[f])&&(o.__u|=a)),null==o||null===o.__v?(-1==f&&p--,"function"!=typeof i.type&&(i.__u|=s)):f!==r&&(f===r+1?p++:f>r?h>e-r?p+=f-r:p--:p=f<r&&f==r-1?f-r:0,f!==t+p&&(i.__u|=s))):(o=u[t])&&null==o.key&&o.__e&&(o.__e==n.__d&&(n.__d=w(o)),O(o,o,!1),u[t]=null,h--);if(h)for(t=0;t<c;t++)null!=(o=u[t])&&0==(o.__u&a)&&(o.__e==n.__d&&(n.__d=w(o)),O(o,o))}function C(n,l,u){var t,i;if("function"==typeof n.type){for(t=n.__k,i=0;t&&i<t.length;i++)t[i]&&(t[i].__=n,l=C(t[i],l,u));return l}return n.__e!=l&&(u.insertBefore(n.__e,l||null),l=n.__e),l&&l.nextSibling}function H(n,l,u,t){var i=n.key,o=n.type,r=u-1,f=u+1,e=l[u];if(null===e||e&&i==e.key&&o===e.type)return u;if(t>(null!=e&&0==(e.__u&a)?1:0))for(;r>=0||f<l.length;){if(r>=0){if((e=l[r])&&0==(e.__u&a)&&i==e.key&&o===e.type)return r;r--}if(f<l.length){if((e=l[f])&&0==(e.__u&a)&&i==e.key&&o===e.type)return f;f++}}return-1}function I(n,l,u){"-"===l[0]?n.setProperty(l,null==u?"":u):n[l]=null==u?"":"number"!=typeof u||v.test(l)?u:u+"px"}function j(n,l,u,t,i){var o;n:if("style"===l)if("string"==typeof u)n.style.cssText=u;else{if("string"==typeof t&&(n.style.cssText=t=""),t)for(l in t)u&&l in u||I(n.style,l,"");if(u)for(l in u)t&&u[l]===t[l]||I(n.style,l,u[l])}else if("o"===l[0]&&"n"===l[1])o=l!==(l=l.replace(/(PointerCapture)$|Capture$/,"$1")),l=l.toLowerCase()in n?l.toLowerCase().slice(2):l.slice(2),n.l||(n.l={}),n.l[l+o]=u,u?t?u.u=t.u:(u.u=Date.now(),n.addEventListener(l,o?D:A,o)):n.removeEventListener(l,o?D:A,o);else{if(i)l=l.replace(/xlink(H|:h)/,"h").replace(/sName$/,"s");else if("width"!==l&&"height"!==l&&"href"!==l&&"list"!==l&&"form"!==l&&"tabIndex"!==l&&"download"!==l&&"rowSpan"!==l&&"colSpan"!==l&&"role"!==l&&l in n)try{n[l]=null==u?"":u;break n}catch(n){}"function"==typeof u||(null==u||!1===u&&"-"!==l[4]?n.removeAttribute(l):n.setAttribute(l,u))}}function A(n){var l=this.l[n.type+!1];if(n.t){if(n.t<=l.u)return}else n.t=Date.now();return l(u.event?u.event(n):n)}function D(n){return this.l[n.type+!0](u.event?u.event(n):n)}function L(n,l,t,i,o,r,f,e,c,s){var a,h,p,v,_,b,g,w,x,P,S,$,C,H,I,j=l.type;if(void 0!==l.constructor)return null;128&t.__u&&(c=!!(32&t.__u),r=[e=l.__e=t.__e]),(a=u.__b)&&a(l);n:if("function"==typeof j)try{if(w=l.props,x=(a=j.contextType)&&i[a.__c],P=a?x?x.props.value:a.__:i,t.__c?g=(h=l.__c=t.__c).__=h.__E:("prototype"in j&&j.prototype.render?l.__c=h=new j(w,P):(l.__c=h=new k(w,P),h.constructor=j,h.render=q),x&&x.sub(h),h.props=w,h.state||(h.state={}),h.context=P,h.__n=i,p=h.__d=!0,h.__h=[],h._sb=[]),null==h.__s&&(h.__s=h.state),null!=j.getDerivedStateFromProps&&(h.__s==h.state&&(h.__s=d({},h.__s)),d(h.__s,j.getDerivedStateFromProps(w,h.__s))),v=h.props,_=h.state,h.__v=l,p)null==j.getDerivedStateFromProps&&null!=h.componentWillMount&&h.componentWillMount(),null!=h.componentDidMount&&h.__h.push(h.componentDidMount);else{if(null==j.getDerivedStateFromProps&&w!==v&&null!=h.componentWillReceiveProps&&h.componentWillReceiveProps(w,P),!h.__e&&(null!=h.shouldComponentUpdate&&!1===h.shouldComponentUpdate(w,h.__s,P)||l.__v===t.__v)){for(l.__v!==t.__v&&(h.props=w,h.state=h.__s,h.__d=!1),l.__e=t.__e,l.__k=t.__k,l.__k.forEach(function(n){n&&(n.__=l)}),S=0;S<h._sb.length;S++)h.__h.push(h._sb[S]);h._sb=[],h.__h.length&&f.push(h);break n}null!=h.componentWillUpdate&&h.componentWillUpdate(w,h.__s,P),null!=h.componentDidUpdate&&h.__h.push(function(){h.componentDidUpdate(v,_,b)})}if(h.context=P,h.props=w,h.__P=n,h.__e=!1,$=u.__r,C=0,"prototype"in j&&j.prototype.render){for(h.state=h.__s,h.__d=!1,$&&$(l),a=h.render(h.props,h.state,h.context),H=0;H<h._sb.length;H++)h.__h.push(h._sb[H]);h._sb=[]}else do{h.__d=!1,$&&$(l),a=h.render(h.props,h.state,h.context),h.state=h.__s}while(h.__d&&++C<25);h.state=h.__s,null!=h.getChildContext&&(i=d(d({},i),h.getChildContext())),p||null==h.getSnapshotBeforeUpdate||(b=h.getSnapshotBeforeUpdate(v,_)),T(n,y(I=null!=a&&a.type===m&&null==a.key?a.props.children:a)?I:[I],l,t,i,o,r,f,e,c,s),h.base=l.__e,l.__u&=-161,h.__h.length&&f.push(h),g&&(h.__E=h.__=null)}catch(n){l.__v=null,c||null!=r?(l.__e=e,l.__u|=c?160:32,r[r.indexOf(e)]=null):(l.__e=t.__e,l.__k=t.__k),u.__e(n,l,t)}else null==r&&l.__v===t.__v?(l.__k=t.__k,l.__e=t.__e):l.__e=z(t.__e,l,t,i,o,r,f,c,s);(a=u.diffed)&&a(l)}function M(n,l,t){l.__d=void 0;for(var i=0;i<t.length;i++)N(t[i],t[++i],t[++i]);u.__c&&u.__c(l,n),n.some(function(l){try{n=l.__h,l.__h=[],n.some(function(n){n.call(l)})}catch(n){u.__e(n,l.__v)}})}function z(n,u,t,i,o,r,f,e,c){var s,a,p,v,d,b,g,m=t.props,k=u.props,x=u.type;if("svg"===x&&(o=!0),null!=r)for(s=0;s<r.length;s++)if((d=r[s])&&"setAttribute"in d==!!x&&(x?d.localName===x:3===d.nodeType)){n=d,r[s]=null;break}if(null==n){if(null===x)return document.createTextNode(k);n=o?document.createElementNS("http://www.w3.org/2000/svg",x):document.createElement(x,k.is&&k),r=null,e=!1}if(null===x)m===k||e&&n.data===k||(n.data=k);else{if(r=r&&l.call(n.childNodes),m=t.props||h,!e&&null!=r)for(m={},s=0;s<n.attributes.length;s++)m[(d=n.attributes[s]).name]=d.value;for(s in m)d=m[s],"children"==s||("dangerouslySetInnerHTML"==s?p=d:"key"===s||s in k||j(n,s,null,d,o));for(s in k)d=k[s],"children"==s?v=d:"dangerouslySetInnerHTML"==s?a=d:"value"==s?b=d:"checked"==s?g=d:"key"===s||e&&"function"!=typeof d||m[s]===d||j(n,s,d,m[s],o);if(a)e||p&&(a.__html===p.__html||a.__html===n.innerHTML)||(n.innerHTML=a.__html),u.__k=[];else if(p&&(n.innerHTML=""),T(n,y(v)?v:[v],u,t,i,o&&"foreignObject"!==x,r,f,r?r[0]:t.__k&&w(t,0),e,c),null!=r)for(s=r.length;s--;)null!=r[s]&&_(r[s]);e||(s="value",void 0!==b&&(b!==n[s]||"progress"===x&&!b||"option"===x&&b!==m[s])&&j(n,s,b,m[s],!1),s="checked",void 0!==g&&g!==n[s]&&j(n,s,g,m[s],!1))}return n}function N(n,l,t){try{"function"==typeof n?n(l):n.current=l}catch(n){u.__e(n,t)}}function O(n,l,t){var i,o;if(u.unmount&&u.unmount(n),(i=n.ref)&&(i.current&&i.current!==n.__e||N(i,null,l)),null!=(i=n.__c)){if(i.componentWillUnmount)try{i.componentWillUnmount()}catch(n){u.__e(n,l)}i.base=i.__P=null,n.__c=void 0}if(i=n.__k)for(o=0;o<i.length;o++)i[o]&&O(i[o],l,t||"function"!=typeof n.type);t||null==n.__e||_(n.__e),n.__=n.__e=n.__d=void 0}function q(n,l,u){return this.constructor(n,u)}function B(n,t,i){var o,r,f,e;u.__&&u.__(n,t),r=(o="function"==typeof i)?null:i&&i.__k||t.__k,f=[],e=[],L(t,n=(!o&&i||t).__k=b(m,null,[n]),r||h,h,void 0!==t.ownerSVGElement,!o&&i?[i]:r?null:t.firstChild?l.call(t.childNodes):null,f,!o&&i?i:r?r.__e:t.firstChild,o,e),M(f,n,e)}l=p.slice,u={__e:function(n,l,u,t){for(var i,o,r;l=l.__;)if((i=l.__c)&&!i.__)try{if((o=i.constructor)&&null!=o.getDerivedStateFromError&&(i.setState(o.getDerivedStateFromError(n)),r=i.__d),null!=i.componentDidCatch&&(i.componentDidCatch(n,t||{}),r=i.__d),r)return i.__E=i}catch(l){n=l}throw n}},t=0,i=function(n){return null!=n&&null==n.constructor},k.prototype.setState=function(n,l){var u;u=null!=this.__s&&this.__s!==this.state?this.__s:this.__s=d({},this.state),"function"==typeof n&&(n=n(d({},u),this.props)),n&&d(u,n),null!=n&&this.__v&&(l&&this._sb.push(l),P(this))},k.prototype.forceUpdate=function(n){this.__v&&(this.__e=!0,n&&this.__h.push(n),P(this))},k.prototype.render=m,o=[],f="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,e=function(n,l){return n.__v.__b-l.__v.__b},S.__r=0,c=0,n.Component=k,n.Fragment=m,n.cloneElement=function(n,u,t){var i,o,r,f,e=d({},n.props);for(r in n.type&&n.type.defaultProps&&(f=n.type.defaultProps),u)"key"==r?i=u[r]:"ref"==r?o=u[r]:e[r]=void 0===u[r]&&void 0!==f?f[r]:u[r];return arguments.length>2&&(e.children=arguments.length>3?l.call(arguments,2):t),g(n.type,e,i||n.key,o||n.ref,null)},n.createContext=function(n,l){var u={__c:l="__cC"+c++,__:n,Consumer:function(n,l){return n.children(l)},Provider:function(n){var u,t;return this.getChildContext||(u=[],(t={})[l]=this,this.getChildContext=function(){return t},this.shouldComponentUpdate=function(n){this.props.value!==n.value&&u.some(function(n){n.__e=!0,P(n)})},this.sub=function(n){u.push(n);var l=n.componentWillUnmount;n.componentWillUnmount=function(){u.splice(u.indexOf(n),1),l&&l.call(n)}}),n.children}};return u.Provider.__=u.Consumer.contextType=u},n.createElement=b,n.createRef=function(){return{current:null}},n.h=b,n.hydrate=function n(l,u){B(l,u,n)},n.isValidElement=i,n.options=u,n.render=B,n.toChildArray=function n(l,u){return u=u||[],null==l||"boolean"==typeof l||(y(l)?l.some(function(l){n(l,u)}):u.push(l)),u}});
+//# sourceMappingURL=preact.umd.js.map
+</script>
+<script>
+(function () {
+  var P = window.preact, h = P.h;
+  var PAGES = ["Main", "Prevention", "Detection", "Suppression", "Evidence", "Applications"], TITLES = {"Main": "Overview", "Prevention": "Prevention", "Detection": "Detection", "Suppression": "Suppression", "Evidence": "Evidence", "Applications": "Earth & Space Applications"};
+  var WHOLE = /^\s*\{\{([^}]+)\}\}\s*$/, ANY = /\{\{([^}]+)\}\}/g;
+  function get(scope, path) {
+    path = path.trim();
+    if (path === 'true') return true; if (path === 'false') return false; if (path === 'null') return null;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return +path;
+    if (/^'.*'$|^".*"$/.test(path)) return path.slice(1, -1);
+    var ps = path.split('.'), v = scope;
+    for (var i = 0; i < ps.length; i++) { if (v == null) return undefined; v = v[ps[i]]; }
+    return v;
+  }
+  function interp(str, scope) { return str.replace(ANY, function (_, p) { var v = get(scope, p); return v == null ? '' : String(v); }); }
+  var uid = 0, ids = new WeakMap(); function nid(n) { var i = ids.get(n); if (!i) { i = ++uid; ids.set(n, i); } return i; }
+  function kids(n) { return n.content ? n.content.childNodes : n.childNodes; }
+  function renderList(nodes, scope, out) { for (var i = 0; i < nodes.length; i++) renderNode(nodes[i], scope, out); return out; }
+  function renderNode(n, scope, out) {
+    if (n.nodeType === 3) { var t = n.nodeValue; out.push(t.indexOf('{{') >= 0 ? interp(t, scope) : t); return; }
+    if (n.nodeType !== 1) return;
+    var sc = n.getAttribute('data-sc');
+    if (sc === 'for') {
+      var lm = (n.getAttribute('list') || '').match(WHOLE), list = lm ? get(scope, lm[1]) : null, as = n.getAttribute('as') || 'item';
+      var id = nid(n); (list || []).forEach(function (it, idx) { var s = Object.create(scope); s[as] = it; s.$index = idx; out.push(h(P.Fragment, { key: 'f' + id + '_' + idx }, renderList(kids(n), s, []))); });
+      return;
+    }
+    if (sc === 'if') { var m = (n.getAttribute('value') || '').match(WHOLE); if (m && get(scope, m[1])) out.push(h(P.Fragment, { key: 'i' + nid(n) }, renderList(kids(n), scope, []))); return; }
+    var props = {};
+    for (var i = 0; i < n.attributes.length; i++) {
+      var a = n.attributes[i], name = a.name, val = a.value;
+      if (name.indexOf('hint-') === 0) continue;
+      var w = val.match(WHOLE), v = w ? get(scope, w[1]) : (val.indexOf('{{') >= 0 ? interp(val, scope) : val);
+      if (/^on[a-z]+$/.test(name)) { if (typeof v === 'function') props['on' + name.charAt(2).toUpperCase() + name.slice(3)] = v; continue; }
+      if (v === undefined || v === null) continue;
+      props[name] = v;
+    }
+    out.push(h(n.localName, props, renderList(kids(n), scope, [])));
+  }
+  class DCLogic extends P.Component {
+    render() { return h(P.Fragment, null, renderList(this.constructor.__nodes, this.renderVals ? this.renderVals() : {}, [])); }
+  }
+  var cache = {};
+  function comp(name) {
+    if (!cache[name]) {
+      var C = new Function('DCLogic', document.getElementById('js-' + name).textContent + '\n;return Component;')(DCLogic);
+      C.__nodes = document.getElementById('tpl-' + name).content.childNodes;
+      cache[name] = C;
+    }
+    return cache[name];
+  }
+  var root = document.getElementById('app'), css = document.getElementById('page-css'), current = null, atlasDataset = null;
+  function renderAtlasResearch(page) {
+    var previous = root.querySelector('.atlas-db-research');
+    if (previous) previous.remove();
+    if (!atlasDataset) return;
+    var categoryMap = { Prevention: 'prevention', Detection: 'detection', Suppression: 'suppression' };
+    var category = categoryMap[page];
+    var items = (atlasDataset.findings || []).filter(function (item) {
+      if (!category) return true;
+      try { return JSON.parse(item.category || '[]').indexOf(category) >= 0; } catch (_) { return false; }
+    }).slice(0, page === 'Main' ? 6 : 8);
+    var section = document.createElement('section');
+    section.className = 'atlas-db-research';
+    section.style.cssText = 'max-width:1240px;margin:0 auto 28px;padding:0 20px;color:#e8eef6;font-family:Unbounded,system-ui,sans-serif';
+    var title = document.createElement('h2');
+    title.textContent = page === 'Main' ? 'NASA PSI research in this atlas' : 'NASA PSI research evidence';
+    title.style.cssText = 'font-size:20px;margin:12px 0 8px';
+    section.appendChild(title);
+    var summary = document.createElement('p');
+    summary.textContent = (atlasDataset.counts && atlasDataset.counts.investigations || 0) + ' investigations · ' + (atlasDataset.counts && atlasDataset.counts.findings || items.length) + ' accepted findings from PostgreSQL';
+    summary.style.cssText = 'color:#9fb0c4;font-size:12px;margin:0 0 14px';
+    section.appendChild(summary);
+    var grid = document.createElement('div');
+    grid.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px';
+    items.forEach(function (item) {
+      var card = document.createElement('article');
+      card.style.cssText = 'padding:14px;border:1px solid #1f2f45;border-radius:8px;background:#0c1524';
+      var heading = document.createElement('h3');
+      heading.textContent = (item.investigation_id || '') + ' · ' + (item.acronym || item.investigation_title || 'NASA PSI study');
+      heading.style.cssText = 'font-size:12px;color:#67d4e4;margin:0 0 8px';
+      var finding = document.createElement('p');
+      finding.textContent = item.statement || '';
+      finding.style.cssText = 'font-size:12px;line-height:1.6;margin:0;color:#d4dce8';
+      card.appendChild(heading);
+      card.appendChild(finding);
+      var implicationText = item.safety_implication || item.earth_application || item.equipment_implication;
+      if (implicationText) {
+        var implication = document.createElement('p');
+        implication.textContent = implicationText;
+        implication.style.cssText = 'font-size:11px;line-height:1.5;color:#9fb0c4;margin:8px 0 0';
+        card.appendChild(implication);
+      }
+      grid.appendChild(card);
+    });
+    section.appendChild(grid);
+    var footer = root.querySelector('.ft');
+    if (footer) footer.before(section); else root.appendChild(section);
+  }
+  function renderApplicationsResearch() {
+    var loading = document.querySelector('.atlas-api-loading');
+    if (loading) loading.remove();
+    root.replaceChildren();
+    var page = document.createElement('main');
+    page.style.cssText = 'max-width:1240px;margin:0 auto;padding:40px 20px;color:#e8eef6;font-family:Unbounded,system-ui,sans-serif';
+    var heading = document.createElement('h1');
+    heading.textContent = 'Research applications';
+    heading.style.cssText = 'font-size:30px;line-height:1.2;margin:0 0 8px';
+    page.appendChild(heading);
+    var findings = atlasDataset && Array.isArray(atlasDataset.findings) ? atlasDataset.findings : [];
+    var summary = document.createElement('p');
+    summary.textContent = findings.length + ' accepted findings from PostgreSQL';
+    summary.style.cssText = 'color:#9fb0c4;font-size:13px;margin:0 0 20px';
+    page.appendChild(summary);
+    var grid = document.createElement('div');
+    grid.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px';
+    findings.forEach(function (item) {
+      var card = document.createElement('article');
+      card.style.cssText = 'display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid #26384f;border-radius:8px;background:#0c1524';
+      var label = document.createElement('div');
+      label.textContent = [item.investigation_id, item.acronym, item.document_year].filter(Boolean).join(' · ');
+      label.style.cssText = 'font-size:11px;color:#67d4e4';
+      var title = document.createElement('h2');
+      title.textContent = item.document_title || item.investigation_title || 'NASA PSI finding';
+      title.style.cssText = 'font-size:14px;line-height:1.45;margin:0';
+      var statement = document.createElement('p');
+      statement.textContent = item.statement || '';
+      statement.style.cssText = 'font-size:13px;line-height:1.6;color:#d4dce8;margin:0';
+      card.appendChild(label);
+      card.appendChild(title);
+      card.appendChild(statement);
+      var impact = item.safety_implication || item.earth_application || item.equipment_implication;
+      if (impact) {
+        var implication = document.createElement('p');
+        implication.textContent = impact;
+        implication.style.cssText = 'font-size:12px;line-height:1.55;color:#9fb0c4;margin:0';
+        card.appendChild(implication);
+      }
+      grid.appendChild(card);
+    });
+    page.appendChild(grid);
+    root.appendChild(page);
+  }
+  var tabCss = 'html,body,.pg,.wrap{font-family:"Unbounded",system-ui,sans-serif!important}.wrap{max-width:1240px;margin:0 auto;padding:0 20px}.nav{max-width:none!important;margin:0 auto!important;padding:0!important;display:block!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}.nav nav{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:28px;border-bottom:1px solid #1c3542}.nav nav a{position:relative;display:inline-flex;align-items:center;border:0;border-bottom:2px solid transparent;border-radius:0!important;background:transparent!important;color:#78949e;padding:12px 16px!important;font:500 14px/1.4 "Unbounded",system-ui,sans-serif!important}.nav nav a:hover{color:#e7f7f8!important;background:transparent!important}.nav nav a.on{color:#e7f7f8!important;font-weight:600;border-bottom-color:#75dce5}.nav nav a.on:after{display:none}.hero{font-family:"Unbounded",system-ui,sans-serif!important;font-size:clamp(24px,3.5vw,42px)!important;line-height:1.12!important;letter-spacing:0!important}.lede,.note,.check,.card,.tk,.tv,.ts,.chip,.btn,select,input,button{font-family:"Unbounded",system-ui,sans-serif!important}section[style*="margin-top: 52px"],section[style*="margin-top: 48px"]{margin-top:0!important}@media(max-width:640px){.nav{margin-top:0!important}.nav nav{gap:0}.nav nav a{padding:11px 10px!important;font-size:13px!important}}';
+  function show() {
+    var name = (location.hash || '').slice(1);
+    if (PAGES.indexOf(name) < 0) name = 'Main';
+    if (name === current && name !== 'Applications') return;
+    current = name;
+    css.textContent = document.getElementById('css-' + name).textContent + tabCss;
+    document.title = 'Fire Safety Atlas — ' + TITLES[name];
+    try {
+      P.render(h(comp(name), { key: name }), root);
+    } catch (error) {
+      console.error('[Fire Safety Atlas] Page render failed:', error);
+      root.innerHTML = '<div style="padding:32px;color:#e8eef6;font-family:Unbounded,system-ui,sans-serif">Unable to render this research page.</div>';
+    }
+    if (name === 'Applications') {
+      root.querySelectorAll('.nav nav').forEach(function (nav) { nav.style.display = 'none'; });
+      root.querySelectorAll('.eyebrow').forEach(function (eyebrow) { eyebrow.style.marginTop = '18px'; });
+    }
+    renderAtlasResearch(name);
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', show);
+  function loadPostgresFindings() {
+    var apiUrls = [];
+    if (window.location.protocol !== 'file:') apiUrls.push(window.location.origin + '/api/atlas-data');
+    apiUrls.push('http://127.0.0.1:8000/api/atlas-data');
+    apiUrls.push('http://localhost:8000/api/atlas-data');
+    function requestApi(index) {
+      if (index >= apiUrls.length) return Promise.reject(new Error('Atlas API unavailable'));
+      return fetch(apiUrls[index], { headers: { Accept: 'application/json' } }).then(function (response) {
+        if (!response.ok) throw new Error('Atlas API returned ' + response.status);
+        return response.json();
+      }).catch(function () { return requestApi(index + 1); });
+    }
+    requestApi(0).then(function (data) {
+      atlasDataset = data;
+      var rows = Array.isArray(data.findings) ? data.findings.filter(function (item) {
+        return item.verdict === 'accepted' && item.statement;
+      }) : [];
+      if (!rows.length) {
+        window.__atlasResearch = [];
+        cache.Applications = null;
+        current = null;
+        show();
+        return;
+      }
+      var categories = { detection: 'sensors', prevention: 'materials', suppression: 'suppression', fundamental: 'spread' };
+      var mapped = rows.map(function (item, index) {
+        var cats = [];
+        try { cats = JSON.parse(item.category || '[]'); } catch (_) {}
+        var cat = categories[cats[0]] || 'spread';
+        var id = item.investigation_id || '';
+        var investigation = (data.investigations || []).find(function (record) { return record.id === id; });
+        var title = investigation ? investigation.acronym + ' · ' + investigation.title : id;
+        var statement = item.statement || '';
+        var application = item.earth_application || item.safety_implication || item.equipment_implication || statement;
+        var text = (statement + ' ' + application).toLowerCase();
+        var fits = [];
+        if (/smoke|aerosol|detector|sensor|particle/.test(text)) fits.push('station', 'vehicles', 'homes');
+        if (/material|flammab|spread|ignit|burning|flame/.test(text)) fits.push('station', 'moon', 'rover', 'mars', 'industry');
+        if (/suppress|extinguish|extinction|oxygen|ventilation|cool flame/.test(text)) fits.push('station', 'moon', 'rover', 'mars');
+        if (!fits.length) fits = ['station', 'industry'];
+        fits = fits.filter(function (value, at, all) { return all.indexOf(value) === at; });
+        var grav = (item.gravity || '').toLowerCase();
+        return {
+          id: item.id || id + ':' + index,
+          t: title,
+          org: id || 'NASA PSI',
+          year: Number(item.document_year) || 0,
+          type: 'NASA PSI finding',
+          cat: cat,
+          env: grav.indexOf('micro') >= 0 ? 'space' : 'both',
+          fits: fits,
+          risk: /smoke|aerosol|detector|sensor/.test(text) ? 'Late detection' : /suppress|extinguish|extinction/.test(text) ? 'Re-ignition' : 'Fire spread',
+          ev: Number(item.confidence) >= .9 ? 3 : 2,
+          finding: statement,
+          relevance: item.safety_implication || application,
+          suggestion: item.equipment_implication || item.earth_application || item.safety_implication || statement
+        };
+      });
+      window.__atlasResearch = mapped;
+      var evidenceScript = document.getElementById('js-Evidence');
+      if (evidenceScript) {
+        var accepted = rows.slice(0, 60).map(function (item) {
+          var cats = [];
+          try { cats = JSON.parse(item.category || '[]'); } catch (_) {}
+          var investigation = (data.investigations || []).find(function (record) { return record.id === item.investigation_id; });
+          return {
+            n: item.acronym ? item.investigation_id + ' · ' + item.acronym : item.investigation_id,
+            hw: (item.document_title || 'NASA PSI finding') + (item.document_year ? ' · ' + item.document_year : ''),
+            authors: item.document_authors || 'NASA PSI research team',
+            w: item.statement,
+            c: item.importance === 'key' ? 'Key finding' : 'Accepted finding',
+            used: cats.join(', ') || 'Fundamental',
+            source: item.psi_url || (investigation && investigation.psi_url) || 'https://psi.nasa.gov'
+          };
+        });
+        var evidenceSource = evidenceScript.textContent;
+        var evidenceStart = evidenceSource.indexOf('return { ev: [');
+        var evidenceEnd = evidenceSource.indexOf('] };', evidenceStart);
+        if (evidenceStart >= 0 && evidenceEnd >= 0) {
+          evidenceScript.textContent = evidenceSource.slice(0, evidenceStart) + 'return { ev: ' + JSON.stringify(accepted) + ' };' + evidenceSource.slice(evidenceEnd + 4);
+        }
+      }
+      cache.Applications = null;
+      cache.Evidence = null;
+      if ((location.hash || '').slice(1) === 'Applications') {
+        var loading = root.querySelector('.atlas-api-loading');
+        if (loading) loading.remove();
+      }
+      current = null;
+      show();
+      renderAtlasResearch((location.hash || '#Main').slice(1));
+    }).catch(function (error) {
+      console.warn('[Fire Safety Atlas] Using fallback data:', error.message);
+      var loading = root.querySelector('.atlas-api-loading');
+      if (loading) {
+        loading.textContent = 'PostgreSQL research is unavailable.';
+        loading.style.color = '#fbbf24';
+      }
+    });
+  }
+  show();
+  if ((location.hash || '').slice(1) === 'Applications') {
+    var loading = document.createElement('div');
+    loading.className = 'atlas-api-loading';
+    loading.textContent = 'Loading PostgreSQL research…';
+    loading.style.cssText = 'position:fixed;top:92px;left:50%;transform:translateX(-50%);z-index:5;color:#9fb0c4;font:12px Unbounded,system-ui,sans-serif';
+    document.body.appendChild(loading);
+  }
+  loadPostgresFindings();
+})();
+</script>
+</body>
+</html>

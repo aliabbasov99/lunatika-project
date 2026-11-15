@@ -14,7 +14,7 @@ export function mountExplorer(root, data, { open }) {
 
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">FLEX · Flame Extinguishment Experiment · ISS 2009–2011</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Tasa de quemado contra oxígeno</h2>
       <p class="lede">Cada punto es una gota de combustible encendida en la Estación Espacial. La tasa de quemado K mide qué tan rápido se consume la gota (ley d²: d² = d₀² − K·t). El relleno indica cómo terminó el ensayo y un clic abre su ficha completa.</p>
     </div>

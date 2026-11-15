@@ -1,0 +1,1106 @@
+{
+ "totals": {
+  "investigations": 24,
+  "tests": 1871,
+  "table_rows": 2009,
+  "publications": 352,
+  "document_files": 1274,
+  "downloaded_gb": 2.84,
+  "findings": 136,
+  "by_category": {
+   "prevention": 8,
+   "suppression": 4,
+   "detection": 8,
+   "fundamental": 12
+  },
+  "tests_by_habitat": {
+   "spacecraft": 478,
+   "space station": 478,
+   "lunar base": 37,
+   "pressurized rover": 37,
+   "Martian base": 37
+  }
+ },
+ "investigations": [
+  {
+   "investigation_id": "PSI-20",
+   "acronym": "ACME BRE",
+   "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+   "tier": 1,
+   "categories": [
+    "prevention"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Burning Rate Emulator: materials flammability in still air as a function of material properties.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-20",
+   "n_tests": 0,
+   "n_rows": 18,
+   "n_publications": 16,
+   "n_document_files": 61,
+   "o2_range_pct": [
+    21.0,
+    40.0
+   ],
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {
+    "lunar base": 17,
+    "pressurized rover": 17,
+    "Martian base": 17,
+    "spacecraft": 1,
+    "space station": 1
+   },
+   "condition_counts": {
+    "elevated O2 (23.5-40%)": 17,
+    "air-like O2 (19.5-23.5%)": 1
+   },
+   "materials": {
+    "ethylene": 16,
+    "methane": 2
+   },
+   "start_date": "01-01-2010",
+   "end_date": "02-08-2025",
+   "total_gb_in_psi": 2035.57,
+   "downloaded_gb": 0.187,
+   "downloaded_files": 65,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-25",
+   "acronym": "BASS-II",
+   "title": "Burning and Suppression of Solids - II",
+   "tier": 1,
+   "categories": [
+    "prevention",
+    "suppression"
+   ],
+   "fuel_state": "solid",
+   "hardware": "MSG (SPICE flow duct)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Flammability of solids vs. oxygen and airflow, nitrogen dilution; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-25",
+   "n_tests": 129,
+   "n_rows": 129,
+   "n_publications": 17,
+   "n_document_files": 130,
+   "o2_range_pct": [
+    13.6,
+    22.2
+   ],
+   "habitat_counts": {
+    "spacecraft": 45,
+    "space station": 45
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 45,
+    "low airflow (<= 5 cm/s)": 77,
+    "airflow > 5 cm/s": 45,
+    "low O2 (< 19.5%)": 84,
+    "diluted with nitrogen": 88,
+    "no airflow (quiescent)": 1
+   },
+   "materials": {
+    "PMMA (acrylic)": 98,
+    "SIBAL (cotton-fiberglass fabric)": 27,
+    "Nomex": 3,
+    "wax (candle)": 1
+   },
+   "start_date": "01-01-2010",
+   "end_date": "12-31-2022",
+   "total_gb_in_psi": 274.63,
+   "downloaded_gb": 0.176,
+   "downloaded_files": 138,
+   "n_findings": 110,
+   "n_key_findings": 22,
+   "n_earth_applications": 0,
+   "equipment_counts": {
+    "material": 43,
+    "atmosphere": 4,
+    "ventilation": 11,
+    "procedure": 6,
+    "detector": 3
+   }
+  },
+  {
+   "investigation_id": "PSI-26",
+   "acronym": "BASS",
+   "title": "Burning and Suppression of Solids",
+   "tier": 1,
+   "categories": [
+    "prevention",
+    "suppression"
+   ],
+   "fuel_state": "solid",
+   "hardware": "MSG (SPICE flow duct)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Flammability of solid materials (fabrics, plastics) and nitrogen suppression; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-26",
+   "n_tests": 122,
+   "n_rows": 122,
+   "n_publications": 10,
+   "n_document_files": 33,
+   "o2_range_pct": [
+    21.0,
+    21.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 122,
+    "space station": 122
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 122
+   },
+   "materials": {
+    "PMMA (acrylic)": 78,
+    "wax (candle)": 23,
+    "SIBAL (cotton-fiberglass fabric)": 12,
+    "Nomex": 6,
+    "Ultem": 2
+   },
+   "start_date": "10-01-2009",
+   "end_date": "06-30-2013",
+   "total_gb_in_psi": 163.55,
+   "downloaded_gb": 0.039,
+   "downloaded_files": 39,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-69",
+   "acronym": "FLEX",
+   "title": "Flame Extinguishment Experiment",
+   "tier": 1,
+   "categories": [
+    "suppression"
+   ],
+   "fuel_state": "liquid",
+   "hardware": "CIR (MDCA)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Droplet flame extinguishment by CO2 and helium dilution; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-69",
+   "n_tests": 274,
+   "n_rows": 274,
+   "n_publications": 51,
+   "n_document_files": 313,
+   "o2_range_pct": [
+    12.0,
+    34.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 49,
+    "space station": 49,
+    "lunar base": 17,
+    "pressurized rover": 17,
+    "Martian base": 17
+   },
+   "habitat_o2_only_counts": {
+    "spacecraft": 54,
+    "space station": 54,
+    "lunar base": 7,
+    "pressurized rover": 7,
+    "Martian base": 7
+   },
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 103,
+    "diluted with nitrogen": 101,
+    "elevated pressure (> 18.9 psi)": 9,
+    "diluted with CO2": 123,
+    "elevated O2 (23.5-40%)": 49,
+    "reduced pressure (<= 10.9 psi)": 103,
+    "low O2 (< 19.5%)": 122,
+    "diluted with helium": 50
+   },
+   "materials": {
+    "methanol": 157,
+    "heptane": 117
+   },
+   "start_date": "08-01-2007",
+   "end_date": "07-31-2016",
+   "total_gb_in_psi": 923.83,
+   "downloaded_gb": 0.136,
+   "downloaded_files": 525,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-98",
+   "acronym": "SAFFIRE-I",
+   "title": "Spacecraft Fire Safety Experiment-I",
+   "tier": 1,
+   "categories": [
+    "prevention",
+    "detection"
+   ],
+   "fuel_state": "solid",
+   "hardware": "Saffire flow unit",
+   "platform": "Cygnus (uncrewed)",
+   "gravity": "microgravity",
+   "challenge_note": "Large-scale fire of a cotton-fiberglass fabric in a spacecraft; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-98",
+   "n_tests": 2,
+   "n_rows": 4,
+   "n_publications": 6,
+   "n_document_files": 4,
+   "o2_range_pct": [
+    21.5,
+    21.7
+   ],
+   "habitat_counts": {
+    "spacecraft": 2,
+    "space station": 2
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 2,
+    "airflow > 5 cm/s": 2
+   },
+   "materials": {
+    "SIBAL (cotton-fiberglass fabric)": 2
+   },
+   "start_date": "03-02-2001",
+   "end_date": "02-28-2008",
+   "total_gb_in_psi": 12.25,
+   "downloaded_gb": 0.013,
+   "downloaded_files": 9,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-99",
+   "acronym": "SAFFIRE-II",
+   "title": "Spacecraft Fire Experiment-II",
+   "tier": 1,
+   "categories": [
+    "prevention"
+   ],
+   "fuel_state": "solid",
+   "hardware": "Saffire flow unit",
+   "platform": "Cygnus (uncrewed)",
+   "gravity": "microgravity",
+   "challenge_note": "Flammability of 9 materials, compared with normal-gravity tests; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-99",
+   "n_tests": 9,
+   "n_rows": 15,
+   "n_publications": 7,
+   "n_document_files": 6,
+   "o2_range_pct": [
+    21.5,
+    22.1
+   ],
+   "habitat_counts": {
+    "spacecraft": 9,
+    "space station": 9
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 9,
+    "airflow > 5 cm/s": 9
+   },
+   "materials": {
+    "silicone": 4,
+    "SIBAL (cotton-fiberglass fabric)": 1,
+    "PMMA (acrylic) + Nomex": 1,
+    "PMMA (acrylic)": 1
+   },
+   "start_date": "09-30-2016",
+   "end_date": "04-01-2017",
+   "total_gb_in_psi": 16.93,
+   "downloaded_gb": 0.022,
+   "downloaded_files": 11,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-100",
+   "acronym": "SAFFIRE-III",
+   "title": "Spacecraft Fire Experiment-III",
+   "tier": 1,
+   "categories": [
+    "prevention",
+    "detection"
+   ],
+   "fuel_state": "solid",
+   "hardware": "Saffire flow unit",
+   "platform": "Cygnus (uncrewed)",
+   "gravity": "microgravity",
+   "challenge_note": "Large-scale fabric fire in a spacecraft, repeat of Saffire-I; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-100",
+   "n_tests": 2,
+   "n_rows": 2,
+   "n_publications": 3,
+   "n_document_files": 4,
+   "o2_range_pct": [
+    21.0,
+    21.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 2,
+    "space station": 2
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 2,
+    "airflow > 5 cm/s": 2
+   },
+   "materials": {
+    "SIBAL (cotton-fiberglass fabric)": 2
+   },
+   "start_date": "04-18-2017",
+   "end_date": "",
+   "total_gb_in_psi": 35.21,
+   "downloaded_gb": 0.016,
+   "downloaded_files": 10,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-101",
+   "acronym": "SAME-R",
+   "title": "Smoke Aerosol Measurement Experiment-Reflight",
+   "tier": 1,
+   "categories": [
+    "detection"
+   ],
+   "fuel_state": "solid",
+   "hardware": "MSG",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Re-flight of SAME with more materials and aging times; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-101",
+   "n_tests": 109,
+   "n_rows": 109,
+   "n_publications": 6,
+   "n_document_files": 40,
+   "o2_range_pct": [
+    21.0,
+    21.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 109,
+    "space station": 109
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 109,
+    "airflow > 5 cm/s": 76,
+    "no airflow (quiescent)": 22,
+    "low airflow (<= 5 cm/s)": 11
+   },
+   "materials": {
+    "Kapton": 29,
+    "silicone": 22,
+    "lampwick (cotton)": 20,
+    "Pyrell (polyurethane foam)": 20,
+    "Teflon (PTFE)": 18
+   },
+   "start_date": "07-01-2010",
+   "end_date": "09-30-2010",
+   "total_gb_in_psi": 6.31,
+   "downloaded_gb": 0.554,
+   "downloaded_files": 132,
+   "n_findings": 26,
+   "n_key_findings": 16,
+   "n_earth_applications": 0,
+   "equipment_counts": {
+    "procedure": 3,
+    "detector": 18
+   }
+  },
+  {
+   "investigation_id": "PSI-102",
+   "acronym": "SAME",
+   "title": "Smoke and Aerosol Measurement Experiment",
+   "tier": 1,
+   "categories": [
+    "detection"
+   ],
+   "fuel_state": "solid",
+   "hardware": "MSG",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Smoke particles from heated spacecraft materials, for smoke detector design; named in the challenge.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-102",
+   "n_tests": 8,
+   "n_rows": 8,
+   "n_publications": 16,
+   "n_document_files": 33,
+   "o2_range_pct": [
+    21.0,
+    21.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 8,
+    "space station": 8
+   },
+   "habitat_o2_only_counts": {},
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 8,
+    "low airflow (<= 5 cm/s)": 3,
+    "airflow > 5 cm/s": 1
+   },
+   "materials": {
+    "Teflon (PTFE)": 4,
+    "Kapton": 1,
+    "silicone": 1,
+    "lampwick (cotton)": 1,
+    "dibutyl phthalate": 1
+   },
+   "start_date": "03-02-2001",
+   "end_date": "02-28-2008",
+   "total_gb_in_psi": 0.66,
+   "downloaded_gb": 0.31,
+   "downloaded_files": 98,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-10",
+   "acronym": "ACME/Flame Design",
+   "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Soot and flame design of gas flames; ACME hardware.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-10",
+   "n_tests": 327,
+   "n_rows": 327,
+   "n_publications": 33,
+   "n_document_files": 76,
+   "o2_range_pct": [
+    19.805,
+    40.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 71,
+    "space station": 71
+   },
+   "habitat_o2_only_counts": {
+    "lunar base": 136,
+    "pressurized rover": 136,
+    "Martian base": 136
+   },
+   "condition_counts": {
+    "O2 in burner stream (inverse flame)": 120,
+    "reduced pressure (<= 10.9 psi)": 27,
+    "elevated pressure (> 18.9 psi)": 37,
+    "air-like O2 (19.5-23.5%)": 71,
+    "elevated O2 (23.5-40%)": 136
+   },
+   "materials": {
+    "ethylene": 307,
+    "propane": 20
+   },
+   "start_date": "01-14-1999",
+   "end_date": "04-30-2025",
+   "total_gb_in_psi": 2180.44,
+   "downloaded_gb": 0.129,
+   "downloaded_files": 82,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-21",
+   "acronym": "ACME CLD Flame",
+   "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Coflow laminar diffusion flames; ACME hardware.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-21",
+   "n_tests": 0,
+   "n_rows": 32,
+   "n_publications": 18,
+   "n_document_files": 50,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {
+    "methane": 16,
+    "ethylene": 16
+   },
+   "start_date": "10-01-2006",
+   "end_date": "05-31-2022",
+   "total_gb_in_psi": 2005.54,
+   "downloaded_gb": 0.2,
+   "downloaded_files": 55,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-22",
+   "acronym": "ACME E-FIELD Flames",
+   "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity; partial gravity mimicked by electric field",
+   "challenge_note": "Electric fields acting on flame ions mimic partial gravity: the only PSI proxy for Moon/Mars gravity.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-22",
+   "n_tests": 0,
+   "n_rows": 32,
+   "n_publications": 25,
+   "n_document_files": 56,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {
+    "methane": 11,
+    "ethylene": 10
+   },
+   "start_date": "11-18-2016",
+   "end_date": "11-17-2020",
+   "total_gb_in_psi": 950.21,
+   "downloaded_gb": 0.179,
+   "downloaded_files": 61,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-23",
+   "acronym": "ACME s-Flame",
+   "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Structure and response of spherical diffusion flames; ACME hardware.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-23",
+   "n_tests": 0,
+   "n_rows": 18,
+   "n_publications": 44,
+   "n_document_files": 38,
+   "o2_range_pct": [
+    21.0,
+    30.0
+   ],
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {
+    "spacecraft": 10,
+    "space station": 10,
+    "lunar base": 8,
+    "pressurized rover": 8,
+    "Martian base": 8
+   },
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 10,
+    "elevated O2 (23.5-40%)": 8
+   },
+   "materials": {
+    "ethylene": 6,
+    "methane + hydrogen": 5,
+    "hydrogen": 4,
+    "methane": 3
+   },
+   "start_date": "02-05-2015",
+   "end_date": "11-24-2019",
+   "total_gb_in_psi": 782.17,
+   "downloaded_gb": 0.12,
+   "downloaded_files": 42,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-39",
+   "acronym": "CFI",
+   "title": "Cool Flames Investigation",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "liquid",
+   "hardware": "CIR (MDCA)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Cool flames of droplets; same hardware as FLEX.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-39",
+   "n_tests": 87,
+   "n_rows": 87,
+   "n_publications": 7,
+   "n_document_files": 48,
+   "o2_range_pct": [
+    17.0,
+    21.0
+   ],
+   "habitat_counts": {
+    "spacecraft": 28,
+    "space station": 28
+   },
+   "habitat_o2_only_counts": {
+    "spacecraft": 35,
+    "space station": 35
+   },
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 63,
+    "diluted with nitrogen": 87,
+    "low O2 (< 19.5%)": 24,
+    "elevated pressure (> 18.9 psi)": 24,
+    "reduced pressure (<= 10.9 psi)": 3,
+    "diluted with helium": 14
+   },
+   "materials": {
+    "iso-dodecane + dodecane": 65,
+    "dodecane": 22
+   },
+   "start_date": "10-01-2020",
+   "end_date": "10-20-2021",
+   "total_gb_in_psi": 718.89,
+   "downloaded_gb": 0.045,
+   "downloaded_files": 53,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-47",
+   "acronym": "DAFT / DAFT-2",
+   "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+   "tier": 2,
+   "categories": [
+    "detection"
+   ],
+   "fuel_state": "aerosol",
+   "hardware": "MSG",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Dust measurement with the same instrument used for smoke detection in SAME.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-47",
+   "n_tests": 0,
+   "n_rows": 2,
+   "n_publications": 2,
+   "n_document_files": 12,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {
+    "Arizona road dust": 2
+   },
+   "start_date": "03-01-2003",
+   "end_date": "06-01-2009",
+   "total_gb_in_psi": 0.04,
+   "downloaded_gb": 0.042,
+   "downloaded_files": 29,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-68",
+   "acronym": "FLEX-2",
+   "title": "Flame Extinguishment Experiment - 2",
+   "tier": 2,
+   "categories": [
+    "suppression",
+    "fundamental"
+   ],
+   "fuel_state": "liquid",
+   "hardware": "CIR (MDCA)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Droplet burning of pure and mixed fuels; same hardware as FLEX.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-68",
+   "n_tests": 0,
+   "n_rows": 8,
+   "n_publications": 48,
+   "n_document_files": 11,
+   "o2_range_pct": [
+    17.0,
+    30.0
+   ],
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {
+    "lunar base": 8,
+    "pressurized rover": 8,
+    "Martian base": 8
+   },
+   "condition_counts": {
+    "elevated O2 (23.5-40%)": 8,
+    "diluted with helium": 8,
+    "diluted with nitrogen": 8
+   },
+   "materials": {
+    "propanol + glycerol": 2,
+    "isooctane": 1,
+    "n-octane": 1,
+    "heptane": 1,
+    "decane": 1,
+    "ethanol": 1,
+    "isooctane + heptane": 1
+   },
+   "start_date": "08-12-2016",
+   "end_date": "09-30-2019",
+   "total_gb_in_psi": 1224.75,
+   "downloaded_gb": 0.014,
+   "downloaded_files": 15,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-106",
+   "acronym": "SLICE",
+   "title": "Structure and Liftoff In Combustion Experiment",
+   "tier": 2,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "MSG (SPICE flow duct)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Flame structure and liftoff; shares the flow duct with BASS.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-106",
+   "n_tests": 0,
+   "n_rows": 12,
+   "n_publications": 5,
+   "n_document_files": 238,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {
+    "methane": 8,
+    "ethylene": 3,
+    "ethane": 1
+   },
+   "start_date": "",
+   "end_date": "",
+   "total_gb_in_psi": 72.91,
+   "downloaded_gb": 0.118,
+   "downloaded_files": 242,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-107",
+   "acronym": "SPICE",
+   "title": "Smoke Point In Co-flow Experiment",
+   "tier": 2,
+   "categories": [
+    "detection",
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "MSG (SPICE flow duct)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Smoke point (soot) of gas jet flames; shares the flow duct with BASS.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-107",
+   "n_tests": 469,
+   "n_rows": 469,
+   "n_publications": 9,
+   "n_document_files": 21,
+   "o2_range_pct": [
+    21.0,
+    21.0
+   ],
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {
+    "spacecraft": 469,
+    "space station": 469
+   },
+   "condition_counts": {
+    "air-like O2 (19.5-23.5%)": 469,
+    "airflow > 5 cm/s": 436,
+    "low airflow (<= 5 cm/s)": 8
+   },
+   "materials": {
+    "propylene": 368,
+    "propane": 50,
+    "ethylene": 47,
+    "methane": 4
+   },
+   "start_date": "",
+   "end_date": "",
+   "total_gb_in_psi": 6.95,
+   "downloaded_gb": 0.05,
+   "downloaded_files": 25,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-159",
+   "acronym": "ACME CFI-G",
+   "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+   "tier": 2,
+   "categories": [
+    "prevention",
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "CIR (ACME)",
+   "platform": "ISS",
+   "gravity": "microgravity",
+   "challenge_note": "Highest oxygen tests in microgravity (up to 85% O2 in inverse flames); relevant to Moon Base atmospheres.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-159",
+   "n_tests": 333,
+   "n_rows": 333,
+   "n_publications": 2,
+   "n_document_files": 93,
+   "o2_range_pct": [
+    17.969,
+    39.97
+   ],
+   "habitat_counts": {
+    "spacecraft": 33,
+    "space station": 33,
+    "lunar base": 20,
+    "pressurized rover": 20,
+    "Martian base": 20
+   },
+   "habitat_o2_only_counts": {
+    "lunar base": 95,
+    "pressurized rover": 95,
+    "Martian base": 95,
+    "spacecraft": 29,
+    "space station": 29
+   },
+   "condition_counts": {
+    "O2 in burner stream (inverse flame)": 154,
+    "reduced pressure (<= 10.9 psi)": 65,
+    "elevated pressure (> 18.9 psi)": 121,
+    "elevated O2 (23.5-40%)": 115,
+    "air-like O2 (19.5-23.5%)": 62,
+    "low O2 (< 19.5%)": 2
+   },
+   "materials": {
+    "butane": 140,
+    "propane": 99,
+    "ethane": 94
+   },
+   "start_date": "",
+   "end_date": "",
+   "total_gb_in_psi": 2085.59,
+   "downloaded_gb": 0.152,
+   "downloaded_files": 99,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-60",
+   "acronym": null,
+   "title": "Computational and Experimental Analysis of SPICE Data Sets",
+   "tier": 3,
+   "categories": [
+    "detection",
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "analysis",
+   "platform": "analysis",
+   "gravity": "n/a (analysis)",
+   "challenge_note": "Computational and experimental analysis of SPICE data.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-60",
+   "n_tests": 0,
+   "n_rows": 0,
+   "n_publications": 1,
+   "n_document_files": 0,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {},
+   "start_date": "06-05-2019",
+   "end_date": "08-29-2022",
+   "total_gb_in_psi": 0.0,
+   "downloaded_gb": 0.0,
+   "downloaded_files": 3,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-62",
+   "acronym": null,
+   "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+   "tier": 3,
+   "categories": [
+    "prevention"
+   ],
+   "fuel_state": "solid",
+   "hardware": "analysis",
+   "platform": "analysis",
+   "gravity": "n/a (analysis)",
+   "challenge_note": "Modeling of concurrent flame spread compared with BASS experiments.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-62",
+   "n_tests": 0,
+   "n_rows": 0,
+   "n_publications": 4,
+   "n_document_files": 0,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {},
+   "start_date": "05-01-2019",
+   "end_date": "04-30-2021",
+   "total_gb_in_psi": 0.0,
+   "downloaded_gb": 0.0,
+   "downloaded_files": 3,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-115",
+   "acronym": null,
+   "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+   "tier": 3,
+   "categories": [
+    "detection"
+   ],
+   "fuel_state": "solid",
+   "hardware": "analysis",
+   "platform": "analysis",
+   "gravity": "n/a (analysis)",
+   "challenge_note": "Use of SAME data for advanced smoke detection and simulation.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-115",
+   "n_tests": 0,
+   "n_rows": 0,
+   "n_publications": 0,
+   "n_document_files": 2,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {},
+   "start_date": "01-30-2017",
+   "end_date": "12-31-2019",
+   "total_gb_in_psi": 0.26,
+   "downloaded_gb": 0.264,
+   "downloaded_files": 49,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-117",
+   "acronym": null,
+   "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+   "tier": 3,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "liquid",
+   "hardware": "analysis",
+   "platform": "analysis",
+   "gravity": "n/a (analysis)",
+   "challenge_note": "Cool flame dynamics of droplets under external perturbation.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-117",
+   "n_tests": 0,
+   "n_rows": 0,
+   "n_publications": 10,
+   "n_document_files": 5,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {},
+   "start_date": "02-15-2017",
+   "end_date": "02-14-2022",
+   "total_gb_in_psi": 0.07,
+   "downloaded_gb": 0.071,
+   "downloaded_files": 18,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  },
+  {
+   "investigation_id": "PSI-142",
+   "acronym": null,
+   "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+   "tier": 3,
+   "categories": [
+    "fundamental"
+   ],
+   "fuel_state": "gas",
+   "hardware": "ground / analysis",
+   "platform": "analysis",
+   "gravity": "n/a (analysis)",
+   "challenge_note": "Cool flame transitions in counterflow flames; summary of published data.",
+   "psi_url": "https://psi.nasa.gov/physci/repo/data/studies/PSI-142",
+   "n_tests": 0,
+   "n_rows": 8,
+   "n_publications": 12,
+   "n_document_files": 0,
+   "o2_range_pct": null,
+   "habitat_counts": {},
+   "habitat_o2_only_counts": {},
+   "condition_counts": {},
+   "materials": {},
+   "start_date": "08-01-2016",
+   "end_date": "07-31-2021",
+   "total_gb_in_psi": 0.0,
+   "downloaded_gb": 0.001,
+   "downloaded_files": 5,
+   "n_findings": 0,
+   "n_key_findings": 0,
+   "n_earth_applications": 0,
+   "equipment_counts": {}
+  }
+ ],
+ "source": "NASA Physical Sciences Informatics (PSI), CC0"
+}

@@ -10,6 +10,7 @@ import { conditions, gravity, scenario, initScenario } from '../nasa-simulation/
 import { createControls } from '../nasa-simulation/ui/controls.js'
 import { mountSimulator } from '../nasa-simulation/views/simulator.js'
 import { mountFlame3D } from '../nasa-simulation/views/flame3dView.js'
+import { StarfieldBackground } from '../components/StarfieldBackground'
 
 type SimulationView = { enter: () => void | Promise<void>; leave: () => void }
 
@@ -60,11 +61,12 @@ export function Simulation() {
 
   return (
     <main className="nasa-simulation-shell">
+      <StarfieldBackground />
       <div className="simulation-wrap">
         <header className="simulation-header">
           <div>
-            <div className="eyebrow">NASA Space Apps · Flame in Freefall</div>
-            <h1>Combustion in microgravity</h1>
+             <div className="eyebrow">NASA Space Apps · Flame in Freefall</div>
+            <h1>What does a fuel droplet do under <span className="simulation-gradient-text">these conditions?</span></h1>
             <p className="lede">Evidence-based 2D prediction and an interactive 3D FLEX combustion laboratory.</p>
           </div>
           <span className="simulation-badge">FLEX / NASA PSI</span>

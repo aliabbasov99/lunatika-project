@@ -12,7 +12,7 @@ const FLOW = [
 export function mountPipeline(root) {
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Arquitectura propuesta</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>De 30 años de PDFs a recomendaciones con cita</h2>
       <p class="lede">Cada paso usa la herramienta que mejor encaja. Jev, de TypeSafe AI, devuelve decisiones tipadas (elegir una opción, sí o no, puntuar) con probabilidad calibrada: encaja en clasificar y verificar, no en predecir el fuego ni en extraer números.</p>
     </div>

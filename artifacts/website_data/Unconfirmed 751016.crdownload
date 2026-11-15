@@ -1,0 +1,370 @@
+"""Step 2: load the downloaded PSI files into the master database data/flame.db.
+
+Reads data/raw/psi/<PSI-xx>/investigation.json and Experimental table/*.csv,
+fills the tables `investigations`, `publications` and `tests`.
+
+Rules:
+  - Every test row keeps its source file and line, and the full original row (tests.raw).
+  - Every interpreted, assumed or suspicious value leaves a note in tests.qc_flags.
+  - No row is deleted; exact duplicates are kept and flagged.
+
+Usage: python pipeline/02_load_psi.py
+"""
+import csv
+import glob
+import json
+import os
+import re
+import sqlite3
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from adapters import Row, adapter_for  # noqa: E402
+from parse import cell  # noqa: E402
+from materials import material_of  # noqa: E402
+from investigation_info import INFO, DEFAULT_O2_PCT, DEFAULT_PRESSURE_PSI, HABITATS  # noqa: E402
+
+ROOT = os.path.join(HERE, "..")
+RAW = os.path.join(ROOT, "data", "raw", "psi")
+DB = os.path.join(ROOT, "data", "flame.db")
+STUDY_PAGE = "https://psi.nasa.gov/physci/repo/data/studies/{}"
+
+TEST_COLS = ["test_id", "investigation_id", "source_table", "source_line", "row_kind", "label", "test_date",
+             "fuel", "fuel_state", "flame_type", "thickness_mm", "length_mm", "width_mm", "diameter_mm",
+             "o2_pct", "o2_pct_min", "o2_pct_max", "o2_note", "pressure_psi", "pressure_psi_min", "pressure_psi_max",
+             "flow_cm_s", "flow_direction", "diluent", "ignited", "burn_time_s", "end_condition",
+             "spread_rate_mm_s", "spread_rate_1g_mm_s", "burn_length_mm", "burn_length_1g", "outcome",
+             "material", "relevant_habitats", "habitats_o2_only", "condition_tags", "qc_flags", "raw"]
+
+
+def _o2_p(t):
+    o2, p = t.get("o2_pct"), t.get("pressure_psi")
+    if o2 is None and t.get("o2_pct_max") is not None:
+        o2 = t["o2_pct_max"]  # a test matrix/day: tag by the highest value tested
+    if t.get("o2_note"):      # inverse flames: O2 is in the burner stream, not the surrounding atmosphere
+        o2 = None
+    return o2, p
+
+
+def relevant_habitats(t):
+    """RELEVANCE (not where the test was done): which crew habitats' planned atmosphere the test conditions match.
+    Returns (full matches: O2 and pressure, O2-only matches: pressure differs or unknown).
+    Habitats and their atmospheres are defined in investigation_info.HABITATS."""
+    o2, p = _o2_p(t)
+    full, o2_only = [], []
+    if o2 is None:
+        return full, o2_only
+    for h in HABITATS:
+        if not h["o2"][0] <= o2 <= h["o2"][1]:
+            continue
+        if p is not None and h["psi"][0] <= p <= h["psi"][1]:
+            full.append(h["name"])
+        else:
+            o2_only.append(h["name"])
+    return full, o2_only
+
+
+def condition_tags(t):
+    """CONDITIONS: plain labels for the test atmosphere and flow (used for filters and the research map)."""
+    o2, p = _o2_p(t)
+    tags = []
+    if t.get("o2_note"):
+        tags.append("O2 in burner stream (inverse flame)")
+    if o2 is not None:
+        tags.append("low O2 (< 19.5%)" if o2 < 19.5 else "air-like O2 (19.5-23.5%)" if o2 <= 23.5 else
+                    "elevated O2 (23.5-40%)" if o2 <= 40 else "very high O2 (> 40%)")
+    if p is not None:
+        if p <= 10.9:
+            tags.append("reduced pressure (<= 10.9 psi)")
+        elif p > 18.9:
+            tags.append("elevated pressure (> 18.9 psi)")
+    f = t.get("flow_cm_s")
+    if f is not None:
+        tags.append("no airflow (quiescent)" if f == 0 else "low airflow (<= 5 cm/s)" if f <= 5 else "airflow > 5 cm/s")
+    d = (t.get("diluent") or "").lower()
+    for gas, label in (("co2", "CO2"), ("he", "helium"), ("n2", "nitrogen")):
+        if re.search(rf"\b{gas}\b", d):
+            tags.append(f"diluted with {label}")
+    return tags
+
+
+def load_investigation(con, acc, inv):
+    info = INFO.get(acc, {})
+    gb, n_files = downloaded_size(acc)
+    con.execute("INSERT OR REPLACE INTO investigations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        acc, inv.get("investigationAcronym") or None, inv.get("title"), inv.get("subResearchArea"),
+        info.get("tier", 3), json.dumps(info.get("categories", ["fundamental"])), info.get("fuel_state"),
+        info.get("hardware") or inv.get("experimentHardware"), info.get("platform") or inv.get("flightProgram"),
+        info.get("gravity", "microgravity" if info.get("platform") != "analysis" else "n/a (analysis)"),
+        info.get("note"), inv.get("objective"), inv.get("hypothesis"), inv.get("approach"),
+        inv.get("researchImpacts"), inv.get("investigationStartDate"), inv.get("investigationEndDate"),
+        inv.get("doi"), inv.get("licenseIdentifier"), STUDY_PAGE.format(acc),
+        round((inv.get("totalFileSize") or 0) / 1e9, 2), gb, n_files, inv.get("related_glds") or None,
+    ))
+    for i, pub in enumerate(inv.get("publications") or [], 1):
+        status = (pub.get("status") or {}).get("annotationValue") if isinstance(pub.get("status"), dict) else pub.get("status")
+        y = re.search(r"(19|20)\d{2}", str(pub.get("year") or pub.get("publicationDate") or pub.get("citation") or ""))
+        con.execute("INSERT OR REPLACE INTO documents (document_id, investigation_id, title, authors, year, doi, doc_type, "
+                    "source, status) VALUES (?,?,?,?,?,?,?,?,?)",
+                    (f"{acc}:pub:{i}", acc, pub.get("title"), pub.get("authorList"), int(y.group(0)) if y else None,
+                     pub.get("doi") or None, "publication", "psi_publication_list", status))
+    register_files(con, acc)
+
+
+DOC_EXT = {".pdf", ".doc", ".docx", ".ppt", ".pptx"}
+DOC_TYPES = {"reports": "report", "science documents": "science document", "engineering documents": "engineering document",
+             "presentations": "presentation", "raw data": "raw data document", "papers": "paper"}
+
+
+def document_id(acc, path):
+    """Same id as 04_extract_findings.py uses, so findings link to their document."""
+    stem = re.sub(r"[^A-Za-z0-9]+", "_", os.path.splitext(os.path.basename(path))[0]).strip("_")[:80]
+    return f"{acc}:file:{stem}"
+
+
+def register_files(con, acc):
+    """Every document FILE we have for this investigation becomes a row in `documents`."""
+    roots = [(os.path.join(RAW, acc, "documents"), "psi_files"), (os.path.join(ROOT, "data", "raw", "papers", acc), "papers_folder")]
+    for base, source in roots:
+        for path in glob.glob(os.path.join(base, "**", "*"), recursive=True):
+            if os.path.splitext(path)[1].lower() not in DOC_EXT or not os.path.isfile(path):
+                continue
+            top = os.path.relpath(path, base).split(os.sep)[0].lower()
+            doc_type = "paper" if source == "papers_folder" else DOC_TYPES.get(top, top or "document")
+            con.execute("INSERT OR REPLACE INTO documents (document_id, investigation_id, title, doc_type, source, file_path, "
+                        "file_mb) VALUES (?,?,?,?,?,?,?)",
+                        (document_id(acc, path), acc, os.path.splitext(os.path.basename(path))[0], doc_type, source,
+                         os.path.relpath(path, ROOT), round(os.path.getsize(path) / 1e6, 2)))
+
+
+def downloaded_size(acc):
+    """GB and number of files we have locally for one investigation."""
+    total, n = 0, 0
+    for base in (os.path.join(RAW, acc), os.path.join(ROOT, "data", "raw", "papers", acc)):
+        for dirpath, _, files in os.walk(base):
+            for f in files:
+                total += os.path.getsize(os.path.join(dirpath, f))
+                n += 1
+    return round(total / 1e9, 3), n
+
+
+SIZE_COLS = ("thickness_mm", "length_mm", "width_mm", "diameter_mm")
+
+
+def validate(t, row, years):
+    """Physical-limit and consistency checks. A failing value is removed (cell left empty) and flagged;
+    the test itself is always kept, and the original value stays in tests.raw."""
+    def drop(k, why):
+        t[k] = None
+        row.flag(k, why)
+    for k in ("o2_pct", "o2_pct_min", "o2_pct_max"):
+        if t.get(k) is not None and t[k] < 0:
+            drop(k, "negative_value_removed")
+    # 0 is a valid RESULT for burn time / burn length / spread rate (no ignition, no spread): only negatives fail
+    for k in ("flow_cm_s", "spread_rate_mm_s", "spread_rate_1g_mm_s", "burn_time_s", "burn_length_mm"):
+        if t.get(k) is not None and t[k] < 0:
+            drop(k, "negative_value_removed")
+    for k in SIZE_COLS:                       # a sample cannot have size 0
+        if t.get(k) is not None and t[k] <= 0:
+            drop(k, "zero_or_negative_size_removed")
+    # gas mixture given as mole fractions should add up to ~1
+    fr = [cell(v).value for h, v in row.data.items() if "mole fraction" in h.lower() and v.strip()]
+    fr = [v for v in fr if v is not None]
+    if len(fr) >= 2 and abs(sum(fr) - 1) > 0.03:
+        row.flag("o2_pct", f"gas_fractions_add_up_to_{round(sum(fr), 3)}_not_1")
+    # flame extinction diameter must be smaller than the initial droplet
+    ext = next((cell(v).value for h, v in row.data.items() if "extinction diameter" in h.lower()), None)
+    if ext is not None and t.get("diameter_mm") is not None and ext >= t["diameter_mm"]:
+        row.flag("diameter_mm", f"extinction_diameter_{ext}_not_smaller_than_initial_check_source")
+    # test date should fall within the investigation's years (+-1)
+    y = re.search(r"(19|20)\d{2}", t.get("test_date") or "")
+    if y and years and not (years[0] - 1 <= int(y.group(0)) <= years[1] + 1):
+        row.flag("test_date", f"year_{y.group(0)}_outside_investigation_{years[0]}-{years[1]}_check_source")
+
+
+def neighbor_check(con, acc, name):
+    """Flag a value that differs strongly from both neighbouring tests while those two agree
+    (e.g. 0 mmHg among tests at ~535 mmHg). Only flags, never changes values."""
+    rows = con.execute("SELECT test_id, pressure_psi, qc_flags, label FROM tests WHERE investigation_id=? AND source_table=? "
+                       "AND row_kind='test' ORDER BY source_line", (acc, name)).fetchall()
+    n = 0
+    for i in range(1, len(rows) - 1):
+        (_, a, _, la), (tid, v, q, lv), (_, b, _, lb) = rows[i - 1], rows[i], rows[i + 1]
+        series = lambda lab: (lab or "")[:3]          # e.g. 'C11' in C11M101, C11M201: same test series
+        if not (series(la) == series(lv) == series(lb)):
+            continue
+        if a is None or b is None or abs(a - b) > 0.02 * max(a, b):
+            continue
+        mean = (a + b) / 2
+        flags = json.loads(q)
+        if v is None and any(f.startswith("pressure_psi:") and "removed" in f for f in flags):
+            flags.append(f"pressure_psi:neighbouring_tests_in_this_series_at_{round(mean, 1)}_psi")
+        elif v is not None and abs(v - mean) > 0.25 * mean:
+            flags.append(f"pressure_psi:differs_from_neighbouring_tests_({round(mean, 1)}_psi)_check_source")
+        else:
+            continue
+        con.execute("UPDATE tests SET qc_flags=? WHERE test_id=?", (json.dumps(flags), tid))
+        n += 1
+    return n
+
+
+def date_check(con, acc, name):
+    """Flag a test year far from the other tests in the same table (e.g. 2018 among 2012-2015 tests: likely a typo)."""
+    rows = con.execute("SELECT test_id, test_date, qc_flags FROM tests WHERE investigation_id=? AND source_table=?",
+                       (acc, name)).fetchall()
+    yrs = {tid: int(m.group(0)) for tid, d, _ in rows for m in [re.search(r"(19|20)\d{2}", d or "")] if m}
+    if len(yrs) < 5:
+        return
+    ys = sorted(yrs.values())
+    lo, hi = ys[len(ys) // 10], ys[-(len(ys) // 10) - 1]          # range of the middle 80% of tests
+    for tid, d, q in rows:
+        y = yrs.get(tid)
+        if y and (y < lo - 1 or y > hi + 1):
+            flags = json.loads(q) + [f"test_date:year_{y}_far_from_other_tests_({lo}-{hi})_check_source"]
+            con.execute("UPDATE tests SET qc_flags=? WHERE test_id=?", (json.dumps(flags), tid))
+
+
+def inv_years(con, acc):
+    r = con.execute("SELECT start_date, end_date FROM investigations WHERE investigation_id=?", (acc,)).fetchone()
+    ys = [int(m.group(0)) for d in (r or ()) if d for m in [re.search(r"(19|20)\d{2}", str(d))] if m]
+    return (min(ys), max(ys)) if len(ys) == 2 else None
+
+
+def load_table(con, acc, path):
+    name = os.path.basename(path)
+    fn = adapter_for(name)
+    if fn is None:
+        print(f"  [skip] no adapter for {name}")
+        return 0, 0
+    with open(path, encoding="utf-8-sig", errors="replace", newline="") as f:
+        rows = list(csv.reader(f))
+    header = rows[0]
+    years = inv_years(con, acc)
+    seen = {}
+    n = skipped = 0
+    for line_no, values in enumerate(rows[1:], start=2):
+        row = Row(header, values)
+        if row.is_empty():
+            skipped += 1
+            continue
+        t = fn(row)
+        if t is None:
+            skipped += 1
+            continue
+        key = tuple(v.strip() for v in values)
+        if key in seen:
+            row.flag("row", f"exact_duplicate_of_line_{seen[key]}")
+        else:
+            seen[key] = line_no
+        # sanity rules for errors found in the source tables, always flagged
+        for k in ("o2_pct", "o2_pct_min", "o2_pct_max"):
+            v = t.get(k)
+            if v is not None and v > 100:
+                if v / 100 <= 100:
+                    t[k] = round(v / 100, 3)
+                    row.flag(k, "source_shows_value_x100_(spreadsheet_percent_format)_divided_by_100")
+                else:
+                    t[k] = None
+                    row.flag(k, "impossible_value_removed")
+        for k in ("pressure_psi", "pressure_psi_min", "pressure_psi_max"):
+            if t.get(k) is not None and t[k] <= 0:
+                t[k] = None
+                row.flag(k, "zero_or_negative_in_source_removed")
+        validate(t, row, years)
+        t["material"], fixed_fuel = material_of(t.get("fuel"), acc, row.flag)
+        if fixed_fuel:
+            t["fuel"] = fixed_fuel
+        # investigation-level defaults, always flagged
+        if t.get("row_kind") == "test":
+            if t.get("pressure_psi") is None and acc in DEFAULT_PRESSURE_PSI:
+                t["pressure_psi"] = DEFAULT_PRESSURE_PSI[acc]
+                row.flag("pressure_psi", "assumed_cabin_pressure")
+            if t.get("o2_pct") is None and t.get("o2_pct_min") is None and acc in DEFAULT_O2_PCT:
+                t["o2_pct"] = DEFAULT_O2_PCT[acc]
+                row.flag("o2_pct", "assumed_cabin_air")
+        if t.get("length_mm") and t.get("width_mm") and t["length_mm"] < t["width_mm"] and t.get("fuel_state") == "solid":
+            row.flag("length_mm", "shorter_than_width_check_source")
+        t.update(test_id=f"{acc}:{os.path.splitext(name)[0].split('_', 2)[-1]}:{line_no}",
+                 investigation_id=acc, source_table=name, source_line=line_no,
+                 relevant_habitats=json.dumps(relevant_habitats(t)[0]),
+                 habitats_o2_only=json.dumps(relevant_habitats(t)[1]), condition_tags=json.dumps(condition_tags(t)),
+                 qc_flags=json.dumps(row.flags),
+                 raw=json.dumps(row.data, ensure_ascii=False))
+        for k in ("fuel", "label", "outcome", "flow_direction", "test_date"):
+            if isinstance(t.get(k), str):
+                t[k] = t[k].strip() or None
+        con.execute(f"INSERT OR REPLACE INTO tests ({','.join(TEST_COLS)}) VALUES ({','.join('?' * len(TEST_COLS))})",
+                    [t.get(c) for c in TEST_COLS])
+        n += 1
+    neighbor_check(con, acc, name)
+    date_check(con, acc, name)
+    return n, skipped
+
+
+def load_test_notes(con):
+    """Attach checked per-test notes from 06_extract_test_notes.py (accepted rows only) to the matching tests."""
+    n = 0
+    for path in glob.glob(os.path.join(ROOT, "data", "processed", "test_notes", "*", "*.jsonl")):
+        latest = {}
+        for line in open(path, encoding="utf-8"):
+            if line.strip():
+                r = json.loads(line)
+                if not r.get("error"):
+                    latest[r["chunk"]] = r
+        for rec in latest.values():
+            for row in rec["tests"]:
+                if row.get("verdict") != "accepted" or not row.get("observation") and not row.get("flow_direction"):
+                    continue
+                label = re.sub(r"\s+", "", str(row["test_label"])).lower()
+                src = f'{rec["document_id"]} p.{row["source_page"]}'
+                for tid, obs, fd in con.execute(
+                        "SELECT test_id, observation, flow_direction FROM tests WHERE investigation_id=? "
+                        "AND lower(replace(label, ' ', ''))=?", (rec["investigation_id"], label)).fetchall():
+                    new_obs = row.get("observation")
+                    if obs and new_obs and new_obs not in obs:
+                        new_obs = obs + " | " + new_obs
+                    con.execute("UPDATE tests SET observation=?, observation_source=?, flow_direction=? WHERE test_id=?",
+                                (new_obs or obs, src, fd or row.get("flow_direction"), tid))
+                    n += 1
+    return n
+
+
+def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", nargs="*", help="load only these investigations, e.g. --only PSI-25 PSI-69")
+    a = ap.parse_args()
+    os.makedirs(os.path.dirname(DB), exist_ok=True)
+    if os.path.exists(DB):
+        os.remove(DB)  # rebuilt from raw files every time
+    con = sqlite3.connect(DB)
+    con.executescript(open(os.path.join(HERE, "schema.sql"), encoding="utf-8").read())
+    total = 0
+    for d in sorted(glob.glob(os.path.join(RAW, "PSI-*")), key=lambda p: int(os.path.basename(p).split("-")[1])):
+        acc = os.path.basename(d)
+        if a.only and acc not in a.only:
+            continue
+        jpath = os.path.join(d, "investigation.json")
+        if not os.path.exists(jpath):
+            continue
+        inv = json.load(open(jpath, encoding="utf-8"))
+        load_investigation(con, acc, inv)
+        for path in sorted(glob.glob(os.path.join(d, "Experimental table", "*.csv"))):
+            n, skipped = load_table(con, acc, path)
+            total += n
+            print(f"{acc:8} {os.path.basename(path)[:60]:60} rows={n:4} skipped_empty={skipped}")
+    notes = load_test_notes(con)
+    if notes:
+        print(f"attached {notes} checked per-test notes (06_extract_test_notes.py)")
+    con.commit()
+    inv_n = con.execute("select count(*) from investigations").fetchone()[0]
+    pub_n = con.execute("select count(*) from documents where source='psi_publication_list'").fetchone()[0]
+    file_n = con.execute("select count(*) from documents where file_path is not null").fetchone()[0]
+    print(f"\n{inv_n} investigations, {pub_n} listed publications, {file_n} document files, {total} table rows "
+          f"-> {os.path.relpath(DB, ROOT)}")
+    con.close()
+
+
+if __name__ == "__main__":
+    main()

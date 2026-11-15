@@ -38,7 +38,7 @@ function strip(svg, peers, k, current, cols, onPick) {
 export function mountExperiments(root, base, { go, gravity }) {
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Experimento individual · tablas de NASA PSI limpias</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Cada ensayo, con su fuente</h2>
       <p class="lede">Elige un ensayo para ver sus condiciones, cómo terminó y dónde queda frente al resto de su campaña. Cada valor enlaza a la tabla de NASA de donde salió, y los ensayos de gotas se pueden repetir en el laboratorio 3D.</p>
     </div>

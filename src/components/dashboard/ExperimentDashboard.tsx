@@ -127,16 +127,16 @@ export function ExperimentDashboard({ ranked, userQuery, onClose }: Props) {
   const badgeColor = evidence_badge === 'High' ? 'text-emerald-400 border-emerald-800' : evidence_badge === 'Medium' ? 'text-amber-400 border-amber-800' : 'text-zinc-400 border-zinc-700'
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-sm" onClick={onClose}>
+    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-x-hidden overflow-y-auto bg-black/70 p-4 backdrop-blur-sm" onClick={onClose}>
       <div
-        className="my-8 w-full max-w-4xl rounded-xl border bg-zinc-950 shadow-2xl"
+        className="experiment-dashboard my-8 min-w-0 w-full max-w-4xl overflow-hidden rounded-xl border bg-zinc-950 shadow-2xl"
         style={{ borderColor: `${accent}44` }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header & metadata bar */}
-        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-zinc-800 p-5" style={{ background: `linear-gradient(135deg, ${accent}11, transparent 60%)` }}>
-          <div>
-            <div className="flex items-center gap-2">
+        <div className="experiment-dashboard-header flex flex-wrap items-start justify-between gap-3 border-b border-zinc-800 p-5" style={{ background: `linear-gradient(135deg, ${accent}11, transparent 60%)` }}>
+          <div className="min-w-0 flex-1">
+            <div className="flex min-w-0 flex-wrap items-center gap-2">
               <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider" style={{ background: `${accent}22`, color: accent }}>
                 {exp.domain_cluster.replace(/_/g, ' ')}
               </span>
@@ -155,7 +155,7 @@ export function ExperimentDashboard({ ranked, userQuery, onClose }: Props) {
               className="group relative flex cursor-pointer flex-col items-center rounded-lg border border-zinc-700 bg-zinc-900 px-4 py-2 hover:border-zinc-500"
               title="Score breakdown (40/25/20/15)"
             >
-              <span className="text-2xl font-bold" style={{ color: accent }}>{total_score}%</span>
+              <span className="text-xl font-bold" style={{ color: accent }}>{total_score}%</span>
               <span className="flex items-center gap-1 text-[10px] text-zinc-500">
                 total score {showBreakdown ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
               </span>
@@ -182,7 +182,7 @@ export function ExperimentDashboard({ ranked, userQuery, onClose }: Props) {
           </div>
         ) : null}
 
-        <div className="space-y-6 p-5">
+        <div className="experiment-dashboard-body min-w-0 space-y-6 p-5">
           {/* AI Executive Synthesis */}
           <section>
             <h3 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">

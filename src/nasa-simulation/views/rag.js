@@ -24,7 +24,7 @@ const SAMPLES = [
 export function mountRag(root, data, shared) {
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Inteligencia Artificial Generativa + Cubo OLAP</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Asistente Científico RAG</h2>
       <p class="lede">Consulta los 277 documentos técnicos de NTRS indexados localmente con <b>IVF (Inverted File Index)</b> y <b>Amazon Titan Embeddings</b>. Cada respuesta generada por <b>Google Gemma 3 (12B IT)</b> en AWS Bedrock se cruza en vivo mediante <code>titulo_paper</code> con la telemetría del Cubo OLAP de PSI.</p>
     </div>

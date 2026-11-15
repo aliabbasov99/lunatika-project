@@ -1,11 +1,11 @@
 .nasa-simulation-shell {
   position: relative;
   min-height: 100%;
-  height: 100%;
+  height: auto;
   overflow: visible;
   isolation: isolate;
   padding-top: 76px;
-  --space: #07111b;
+  --space: #02050e;
   --panel: rgba(12, 32, 44, .9);
   --panel-2: #123342;
   --panel-solid: #0c202c;
@@ -18,7 +18,9 @@
   --accent-strong: #4fc4d0;
   --accent-soft: rgba(117, 220, 229, .14);
   --accent-ink: #06131b;
-  background: radial-gradient(circle at 75% 0%, #0c2430 0, transparent 35%), #07111b;
+  background:
+    radial-gradient(circle at 76% 8%, rgba(14, 40, 80, 0.22) 0, transparent 35%),
+    linear-gradient(180deg, rgba(2, 6, 14, 0.25), rgba(2, 5, 12, 0.85));
   color: #e7edf4;
   font-family: "Unbounded", system-ui, sans-serif;
 }
@@ -72,6 +74,8 @@
 }
 
 .simulation-wrap {
+  position: relative;
+  z-index: 1;
   width: min(100% - 32px, var(--maxw));
   margin: 0 auto;
   padding: 20px 0 80px;
@@ -86,9 +90,38 @@
 }
 
 .simulation-header h1 {
-  margin-top: 8px;
-  font: 600 clamp(24px, 3.5vw, 42px) / 1.12 var(--f-display);
-  letter-spacing: 0;
+  margin: 10px 0 8px;
+  color: #f4f8fb;
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-family: "Unbounded", system-ui, sans-serif;
+}
+
+.simulation-gradient-text {
+  background: linear-gradient(100deg, #ffd48a 0%, #ff8a3d 34%, #c98bd6 62%, #8fa9ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.simulation-eyebrow {
+  color: #67d4e4;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  font-family: "Unbounded", system-ui, sans-serif;
+  text-transform: uppercase;
+}
+
+.simulation-header p.lede {
+  max-width: 680px;
+  margin: 0;
+  color: #b8c4d4;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: "Unbounded", system-ui, sans-serif;
 }
 
 .simulation-badge {
@@ -98,7 +131,7 @@
   background: #0c202c;
   padding: 8px 10px;
   color: #91b4bd;
-  font: 500 10px/1 var(--f-body);
+  font: 500 11px/1 "Unbounded", system-ui, sans-serif;
 }
 
 .simulation-tabs {
@@ -115,7 +148,7 @@
   color: #78949e;
   cursor: pointer;
   padding: 10px 14px;
-  font: 500 11px var(--f-body);
+  font: 500 13px/1.4 "Unbounded", system-ui, sans-serif;
 }
 
 .simulation-tabs button:hover,

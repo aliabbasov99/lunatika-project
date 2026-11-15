@@ -33,7 +33,7 @@ function seg(box, options, value, onPick) {
 export function mountFlame3D(root, data, { controls, scenario, gravity }) {
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Virtual laboratory · model-driven</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Enter the laboratory where the droplet burns</h2>
       <p class="lede">The same prediction shown in the 2D charts, inside a recreation of the FLEX combustion chamber: needles that deploy the droplet, hot-wire igniters, and the real scientific cameras. Each scenario changes the atmosphere and the environment.</p>
     </div>

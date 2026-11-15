@@ -20,7 +20,7 @@ export function mountEvidence(root, data) {
 
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Corpus para extracción y RAG</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Biblioteca de evidencia</h2>
       <p class="lede">Todos los documentos descargados, buscables por título y tema. Los 277 reportes de NTRS son los que consulta el asistente de arriba para responder.</p>
     </div>

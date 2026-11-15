@@ -70,9 +70,10 @@ export const StarfieldBackground: React.FC = () => {
     const initScene = () => {
       stars = []
       nebulas = [
-        { x: width * 0.25, y: height * 0.35, radius: Math.max(width, height) * 0.35, color: '20, 35, 60', alpha: 0.06 },
-        { x: width * 0.75, y: height * 0.45, radius: Math.max(width, height) * 0.38, color: '35, 20, 50', alpha: 0.05 },
-        { x: width * 0.50, y: height * 0.80, radius: Math.max(width, height) * 0.42, color: '15, 30, 45', alpha: 0.055 },
+        { x: width * 0.25, y: height * 0.35, radius: Math.max(width, height) * 0.40, color: '16, 45, 95', alpha: 0.08 },
+        { x: width * 0.75, y: height * 0.45, radius: Math.max(width, height) * 0.45, color: '12, 36, 80', alpha: 0.07 },
+        { x: width * 0.50, y: height * 0.80, radius: Math.max(width, height) * 0.50, color: '10, 28, 65', alpha: 0.07 },
+        { x: width * 0.85, y: height * 0.18, radius: Math.max(width, height) * 0.35, color: '20, 60, 120', alpha: 0.06 },
       ]
 
       const starCount = Math.floor((width * height) / 1600) // Rich density
@@ -234,7 +235,10 @@ export const StarfieldBackground: React.FC = () => {
   return (
     <canvas 
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0 bg-[#000000]"
+      className="fixed inset-0 pointer-events-none z-0"
+      style={{
+        background: 'radial-gradient(ellipse at 50% 20%, #07152b 0%, #040d1c 50%, #02050e 100%)',
+      }}
     />
   )
 }

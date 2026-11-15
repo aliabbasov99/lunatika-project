@@ -20,7 +20,7 @@ export function mountPanorama(root, data, { go }) {
   root.innerHTML = `
     <div class="hero">
       <div>
-        <div class="eyebrow">NASA Space Apps 2026 · Reto #08</div>
+        <div class="eyebrow">NASA PSI · DATA CATALOG</div>
         <h1>Cómo arde el fuego <span class="flame">sin gravedad</span></h1>
         <p class="lede">Tres décadas de experimentos de combustión en la Estación Espacial, reunidos, medidos y explicados. Cada cifra sale de una tabla o un documento de NASA y enlaza a su fuente, para decidir con evidencia cómo proteger a una tripulación de un incendio.</p>
         <div class="hero-cta">
@@ -50,7 +50,7 @@ export function mountPanorama(root, data, { go }) {
     </div>
 
     <div class="section-head">
-      <div class="eyebrow">El problema real</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Dónde se atoran hoy los científicos</h2>
       <p class="lede">Lo que encontramos al descargar y cruzar los datos. Cada problema viene con la evidencia que lo sostiene y el punto donde la visualización puede atacarlo.</p>
     </div>
@@ -95,7 +95,7 @@ export function mountPanorama(root, data, { go }) {
     </div>
 
     <div class="section-head">
-      <div class="eyebrow">Lo que ya dicen los datos</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Hallazgos en 273 gotas encendidas en órbita</h2>
       <p class="lede">Calculados en vivo desde la tabla de FLEX. Son correlaciones entre ensayos, no reglas de diseño: el siguiente paso es validarlas con el modelo y con la literatura.</p>
     </div>
@@ -104,7 +104,7 @@ export function mountPanorama(root, data, { go }) {
     </div>
 
     <div class="section-head">
-      <div class="eyebrow">Inventario</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>Las 24 investigaciones</h2>
       <p class="lede">Ensayos = filas de la tabla experimental de cada investigación. Tamaño total en PSI = todo lo publicado, casi todo video; descargado = tablas, documentos y datos reducidos.</p>
     </div>

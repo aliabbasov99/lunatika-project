@@ -12,7 +12,7 @@ export function statusLine(sim) {
 export function mountSimulator(root, data, { controls, scenario, gravity }) {
   root.innerHTML = `
     <div class="section-head">
-      <div class="eyebrow">Evidence-based prediction</div>
+      <div class="eyebrow">NASA PSI · DATA CATALOG</div>
       <h2>What does a fuel droplet do under these conditions?</h2>
       <p class="lede">The model finds the real FLEX tests most similar to the selected conditions and averages their results. Each prediction shows which tests support it and warns when conditions fall outside the measured range.</p>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import GlassSurface from './GlassSurface'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -8,21 +9,34 @@ const Navbar = () => {
     // Navbardakı sözlər və göndərdiyi səhifələr (tam saxlanılıb)
     const navItems = [
         { label: 'Home', href: '/' },
+        { label: 'Data', href: '/data' },
         { label: 'AI Chatbot', href: '/chat' },
         { label: 'Simulation', href: '/simulation' },
-        { label: 'AI Asistent', href: '#' },
-        { label: 'About Us', href: '#' },
+        { label: 'Mission Explorer', href: '/mission-explorer' },
+        { label: 'Applications', href: '/applications' },
+        { label: 'How It Works', href: '/how-it-works' },
     ]
 
     const isCurrentActive = (href) => {
         if (href === '#') return false
-        return location.pathname === href
+        return href === '/mission-explorer'
+            ? location.pathname.startsWith(href)
+            : location.pathname === href
     }
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 flex justify-center pt-3 sm:pt-4 px-4 pointer-events-none select-none">
+        <header className="fixed top-0 left-0 w-full z-50 flex justify-center pt-2 sm:pt-3 px-4 pointer-events-none select-none">
             {/* Minimalist Ultra-Clean Glass Bar */}
-            <div className="pointer-events-auto w-full max-w-4xl px-5 sm:px-7 py-2 min-h-[44px] rounded-full bg-white/[0.02] backdrop-blur-md border border-white/[0.06] shadow-[0_6px_25px_rgba(0,0,0,0.45)] flex items-center justify-between transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.035]">
+            <GlassSurface
+                className="pointer-events-auto w-full max-w-5xl"
+                borderRadius={38}
+                borderWidth={0.07}
+                backgroundOpacity={0.08}
+                brightness={1.05}
+                blur={14}
+                saturation={1.15}
+            >
+              <div className="px-5 sm:px-7 py-1.5 min-h-[40px] flex items-center justify-between">
                 
                 {/* Minimalist Logo */}
                 <Link 
@@ -71,7 +85,8 @@ const Navbar = () => {
                     <span className={`block w-4 h-0.5 bg-white transition-opacity duration-200 ${menuOpen ? 'opacity-0' : ''}`}></span>
                     <span className={`block w-4 h-0.5 bg-white transition-transform duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
-            </div>
+              </div>
+            </GlassSurface>
 
             {/* Mobile Dropdown Menu (Minimalist Glass) */}
             {menuOpen && (

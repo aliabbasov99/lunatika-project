@@ -73,6 +73,50 @@ def psql_json(sql: str, timeout: int = 20):
     return json.loads(out) if out else None
 
 
+def atlas_data() -> dict:
+    """Small, read-only dataset used by Mission Explorer and Applications."""
+    sql = """
+    SELECT jsonb_build_object(
+      'investigations', (SELECT COALESCE(jsonb_agg(jsonb_build_object(
+        'id', i.investigation_id, 'acronym', i.acronym, 'title', i.title,
+        'categories', i.categories, 'fuel_state', i.fuel_state, 'gravity', i.gravity,
+        'platform', i.platform, 'hardware', i.hardware, 'objective', i.objective,
+        'approach', i.approach, 'research_impacts', i.research_impacts, 'psi_url', i.psi_url,
+        'n_tests', (SELECT count(*) FROM skeleton_tests t WHERE t.investigation_id = i.investigation_id),
+        'n_findings', (SELECT count(*) FROM skeleton_findings f WHERE f.investigation_id = i.investigation_id AND f.verdict = 'accepted')
+      ) ORDER BY i.investigation_id), '[]'::jsonb) FROM skeleton_investigations i),
+      'findings', (SELECT COALESCE(jsonb_agg(jsonb_build_object(
+        'id', f.finding_id, 'investigation_id', f.investigation_id,
+        'type', f.finding_type, 'kind', f.kind, 'category', f.category,
+        'material', f.material, 'gravity', f.gravity, 'o2_pct', f.o2_pct,
+        'pressure_psi', f.pressure_psi, 'quantity', f.quantity, 'value', f.value,
+        'unit', f.unit, 'statement', f.statement, 'safety_implication', f.safety_implication,
+        'earth_application', f.earth_application, 'equipment_implication', f.equipment_implication,
+        'source_page', f.source_page, 'verdict', f.verdict, 'confidence', f.confidence,
+        'importance', f.importance, 'psi_url', i.psi_url, 'investigation_title', i.title,
+        'acronym', i.acronym, 'hardware', i.hardware, 'platform', i.platform,
+        'document_title', d.title, 'document_year', d.year, 'document_authors', d.authors,
+        'document_doi', d.doi
+      ) ORDER BY CASE f.importance WHEN 'key' THEN 0 WHEN 'supporting' THEN 1 ELSE 2 END, f.finding_id), '[]'::jsonb)
+        FROM skeleton_findings f
+        LEFT JOIN skeleton_investigations i ON i.investigation_id = f.investigation_id
+        LEFT JOIN skeleton_documents d ON d.document_id = f.document_id
+       WHERE f.verdict = 'accepted'),
+      'documents', (SELECT COALESCE(jsonb_agg(jsonb_build_object(
+        'id', document_id, 'investigation_id', investigation_id, 'title', title,
+        'authors', authors, 'year', year, 'doi', doi, 'type', doc_type, 'source', source
+      ) ORDER BY year DESC NULLS LAST, title), '[]'::jsonb) FROM skeleton_documents),
+      'counts', jsonb_build_object(
+        'investigations', (SELECT count(*) FROM skeleton_investigations),
+        'tests', (SELECT count(*) FROM skeleton_tests),
+        'documents', (SELECT count(*) FROM skeleton_documents),
+        'findings', (SELECT count(*) FROM skeleton_findings WHERE verdict = 'accepted')
+      )
+    )
+    """
+    return psql_json(sql, timeout=30) or {'investigations': [], 'findings': []}
+
+
 # ---------------------------------------------------------------------------
 # Chat history persistence (unchanged behaviour)
 # ---------------------------------------------------------------------------
@@ -650,6 +694,11 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         if self.path in {"/api/health", "/health"}:
             self.send_json({"ok": True, "model": os.getenv("VIALERA_MODEL", MODEL)})
+        elif self.path == "/api/atlas-data":
+            try:
+                self.send_json(atlas_data())
+            except RuntimeError as error:
+                self.send_json({"error": str(error)}, 503)
         elif self.path == "/api/chats":
             self.send_json({"chats": load_chats_db()})
         else:
